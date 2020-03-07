@@ -1,4 +1,5 @@
-# StressTestTools
+# StressTestTools  
+java -jar -client StressTestTool-0.1-SNAPSHOT.jar 2 1 2000  
 启动参数为3个  
 第1个参数是ai设别号，为了多台PC同时测试，取到不同ID的AI，设置不同的ai设别号，对应数据库kys_player表，is_ai字段，设置不重复且大于1小于128的数字。  
   
