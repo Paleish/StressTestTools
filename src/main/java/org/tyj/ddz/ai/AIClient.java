@@ -19,6 +19,7 @@ import org.springframework.stereotype.Component;
 import org.tyj.constant.AIModeEnum;
 import org.tyj.ddz.bean.LoginInfo;
 import org.tyj.ddz.bean.PlayerInfo;
+import org.tyj.ddz.sender.LuckyTimeSender;
 import org.tyj.ddz.service.LoginService;
 import org.tyj.util.ChannelUtil;
 import org.tyj.web.MessageSender;
@@ -48,6 +49,9 @@ public class AIClient extends Thread {
 
     @Resource
     private LoginService loginService;
+
+    @Resource
+    private LuckyTimeSender luckyTimeSender;
 
     private ConcurrentHashMap<Long, AIMessage> msgMap = new ConcurrentHashMap<>();
 
@@ -155,6 +159,9 @@ public class AIClient extends Thread {
                                 break;
                             case "skin":
                                 skinFunction(am.getArgs());
+                                break;
+                            case "lucky":
+                                luckyTimeSender.sendLuckyTimeQuery(userId);
                                 break;
                             default:
                                 break;

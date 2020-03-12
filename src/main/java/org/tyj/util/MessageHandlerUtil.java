@@ -28,7 +28,7 @@ public class MessageHandlerUtil {
     private static ThreadPoolExecutor service;
 
     static {
-        service = new ThreadPoolExecutor(4000, Integer.MAX_VALUE, 30l, TimeUnit.SECONDS,
+        service = new ThreadPoolExecutor(16, Integer.MAX_VALUE, 30l, TimeUnit.SECONDS,
                 new SynchronousQueue<>());
         service.prestartAllCoreThreads();
     }

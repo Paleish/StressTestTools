@@ -89,7 +89,7 @@ public class UserHandler extends AbsMessageHandler {
      */
     public void receiveHeart(ChannelHandlerContext ctx, ProtoMsg.ServerResponse message) {
         int userId = ChannelAttributeUtil.getPlayerId(ctx.channel());
-        logger.info("player{}send heart beat message", userId);
+        //logger.info("player{}send heart beat message", userId);
         ProtoMsg.ClientRequest.Builder cr = ProtoMsg.ClientRequest.newBuilder();
         LoginProto.ClientReturnHallHeartBeat.Builder chh = LoginProto.ClientReturnHallHeartBeat.newBuilder();
         chh.setServiceTime(message.getServerSendHallHeartBeat().getServiceTime());
