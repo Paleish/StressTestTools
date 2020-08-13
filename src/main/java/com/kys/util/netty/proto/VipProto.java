@@ -14,27 +14,23 @@ public final class VipProto {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface ClientGetVipInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientGetVipInfo)
+  public interface ClientGetVipOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientGetVip)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   ** 请求获取vip界面展示的属性 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.ClientGetVipInfo}
+   * Protobuf type {@code com.kys.util.netty.proto.ClientGetVip}
    */
-  public  static final class ClientGetVipInfo extends
+  public  static final class ClientGetVip extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientGetVipInfo)
-      ClientGetVipInfoOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientGetVip)
+      ClientGetVipOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use ClientGetVipInfo.newBuilder() to construct.
-    private ClientGetVipInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use ClientGetVip.newBuilder() to construct.
+    private ClientGetVip(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private ClientGetVipInfo() {
+    private ClientGetVip() {
     }
 
     @java.lang.Override
@@ -42,7 +38,7 @@ public final class VipProto {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ClientGetVipInfo(
+    private ClientGetVip(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -78,14 +74,14 @@ public final class VipProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipInfo_descriptor;
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVip_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipInfo_fieldAccessorTable
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVip_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.VipProto.ClientGetVipInfo.class, com.kys.util.netty.proto.VipProto.ClientGetVipInfo.Builder.class);
+              com.kys.util.netty.proto.VipProto.ClientGetVip.class, com.kys.util.netty.proto.VipProto.ClientGetVip.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -118,10 +114,10 @@ public final class VipProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kys.util.netty.proto.VipProto.ClientGetVipInfo)) {
+      if (!(obj instanceof com.kys.util.netty.proto.VipProto.ClientGetVip)) {
         return super.equals(obj);
       }
-      com.kys.util.netty.proto.VipProto.ClientGetVipInfo other = (com.kys.util.netty.proto.VipProto.ClientGetVipInfo) obj;
+      com.kys.util.netty.proto.VipProto.ClientGetVip other = (com.kys.util.netty.proto.VipProto.ClientGetVip) obj;
 
       boolean result = true;
       result = result && unknownFields.equals(other.unknownFields);
@@ -140,69 +136,69 @@ public final class VipProto {
       return hash;
     }
 
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(byte[] data)
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseDelimitedFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseDelimitedFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -214,7 +210,7 @@ public final class VipProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.ClientGetVipInfo prototype) {
+    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.ClientGetVip prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -229,29 +225,25 @@ public final class VipProto {
       return builder;
     }
     /**
-     * <pre>
-     ** 请求获取vip界面展示的属性 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.ClientGetVipInfo}
+     * Protobuf type {@code com.kys.util.netty.proto.ClientGetVip}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientGetVipInfo)
-        com.kys.util.netty.proto.VipProto.ClientGetVipInfoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientGetVip)
+        com.kys.util.netty.proto.VipProto.ClientGetVipOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipInfo_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVip_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipInfo_fieldAccessorTable
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVip_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.VipProto.ClientGetVipInfo.class, com.kys.util.netty.proto.VipProto.ClientGetVipInfo.Builder.class);
+                com.kys.util.netty.proto.VipProto.ClientGetVip.class, com.kys.util.netty.proto.VipProto.ClientGetVip.Builder.class);
       }
 
-      // Construct using com.kys.util.netty.proto.VipProto.ClientGetVipInfo.newBuilder()
+      // Construct using com.kys.util.netty.proto.VipProto.ClientGetVip.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -273,23 +265,23 @@ public final class VipProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipInfo_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVip_descriptor;
       }
 
-      public com.kys.util.netty.proto.VipProto.ClientGetVipInfo getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.VipProto.ClientGetVipInfo.getDefaultInstance();
+      public com.kys.util.netty.proto.VipProto.ClientGetVip getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.VipProto.ClientGetVip.getDefaultInstance();
       }
 
-      public com.kys.util.netty.proto.VipProto.ClientGetVipInfo build() {
-        com.kys.util.netty.proto.VipProto.ClientGetVipInfo result = buildPartial();
+      public com.kys.util.netty.proto.VipProto.ClientGetVip build() {
+        com.kys.util.netty.proto.VipProto.ClientGetVip result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.kys.util.netty.proto.VipProto.ClientGetVipInfo buildPartial() {
-        com.kys.util.netty.proto.VipProto.ClientGetVipInfo result = new com.kys.util.netty.proto.VipProto.ClientGetVipInfo(this);
+      public com.kys.util.netty.proto.VipProto.ClientGetVip buildPartial() {
+        com.kys.util.netty.proto.VipProto.ClientGetVip result = new com.kys.util.netty.proto.VipProto.ClientGetVip(this);
         onBuilt();
         return result;
       }
@@ -321,16 +313,16 @@ public final class VipProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.VipProto.ClientGetVipInfo) {
-          return mergeFrom((com.kys.util.netty.proto.VipProto.ClientGetVipInfo)other);
+        if (other instanceof com.kys.util.netty.proto.VipProto.ClientGetVip) {
+          return mergeFrom((com.kys.util.netty.proto.VipProto.ClientGetVip)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.ClientGetVipInfo other) {
-        if (other == com.kys.util.netty.proto.VipProto.ClientGetVipInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.ClientGetVip other) {
+        if (other == com.kys.util.netty.proto.VipProto.ClientGetVip.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -344,11 +336,11 @@ public final class VipProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kys.util.netty.proto.VipProto.ClientGetVipInfo parsedMessage = null;
+        com.kys.util.netty.proto.VipProto.ClientGetVip parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.VipProto.ClientGetVipInfo) e.getUnfinishedMessage();
+          parsedMessage = (com.kys.util.netty.proto.VipProto.ClientGetVip) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -368,150 +360,146 @@ public final class VipProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientGetVipInfo)
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientGetVip)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientGetVipInfo)
-    private static final com.kys.util.netty.proto.VipProto.ClientGetVipInfo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientGetVip)
+    private static final com.kys.util.netty.proto.VipProto.ClientGetVip DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.ClientGetVipInfo();
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.ClientGetVip();
     }
 
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipInfo getDefaultInstance() {
+    public static com.kys.util.netty.proto.VipProto.ClientGetVip getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<ClientGetVipInfo>
-        PARSER = new com.google.protobuf.AbstractParser<ClientGetVipInfo>() {
-      public ClientGetVipInfo parsePartialFrom(
+    private static final com.google.protobuf.Parser<ClientGetVip>
+        PARSER = new com.google.protobuf.AbstractParser<ClientGetVip>() {
+      public ClientGetVip parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ClientGetVipInfo(input, extensionRegistry);
+          return new ClientGetVip(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<ClientGetVipInfo> parser() {
+    public static com.google.protobuf.Parser<ClientGetVip> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<ClientGetVipInfo> getParserForType() {
+    public com.google.protobuf.Parser<ClientGetVip> getParserForType() {
       return PARSER;
     }
 
-    public com.kys.util.netty.proto.VipProto.ClientGetVipInfo getDefaultInstanceForType() {
+    public com.kys.util.netty.proto.VipProto.ClientGetVip getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface ServerGetVipInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerGetVipInfo)
+  public interface ServerGetVipOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerGetVip)
       com.google.protobuf.MessageOrBuilder {
 
     /**
      * <pre>
-     ** vip等级 
+     ** 当前vip等级 
      * </pre>
      *
-     * <code>int32 level = 1;</code>
+     * <code>int32 lv = 1;</code>
      */
-    int getLevel();
+    int getLv();
 
     /**
      * <pre>
-     ** 个人累积充值 
+     ** 当前经验值 
      * </pre>
      *
-     * <code>int32 selfMoney = 2;</code>
+     * <code>int32 current = 2;</code>
      */
-    int getSelfMoney();
+    int getCurrent();
 
     /**
      * <pre>
-     ** 下一级vip需要累积充值到的一个数值 
+     ** 升级到下一级需要到达的经验值 
      * </pre>
      *
-     * <code>int32 nextMoney = 3;</code>
+     * <code>int32 next = 3;</code>
      */
-    int getNextMoney();
+    int getNext();
 
     /**
      * <pre>
-     ** 1表示不可领取，2表示可以领取，3表示已领取 
+     ** 每日礼包状态，1表示不可领取，2表示可以领取，3表示已领取 
      * </pre>
      *
-     * <code>int32 weekGift = 4;</code>
+     * <code>int32 state = 4;</code>
      */
-    int getWeekGift();
+    int getState();
 
     /**
      * <pre>
-     ** 10个vip等级对应的奖励 
+     ** 所有vip等级的配置 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
      */
-    java.util.List<com.kys.util.netty.proto.VipProto.VipLvUpGift> 
-        getGiftListList();
+    java.util.List<com.kys.util.netty.proto.VipProto.VipLevelInfo> 
+        getInfosList();
     /**
      * <pre>
-     ** 10个vip等级对应的奖励 
+     ** 所有vip等级的配置 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
      */
-    com.kys.util.netty.proto.VipProto.VipLvUpGift getGiftList(int index);
+    com.kys.util.netty.proto.VipProto.VipLevelInfo getInfos(int index);
     /**
      * <pre>
-     ** 10个vip等级对应的奖励 
+     ** 所有vip等级的配置 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
      */
-    int getGiftListCount();
+    int getInfosCount();
     /**
      * <pre>
-     ** 10个vip等级对应的奖励 
+     ** 所有vip等级的配置 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
      */
-    java.util.List<? extends com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder> 
-        getGiftListOrBuilderList();
+    java.util.List<? extends com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder> 
+        getInfosOrBuilderList();
     /**
      * <pre>
-     ** 10个vip等级对应的奖励 
+     ** 所有vip等级的配置 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
      */
-    com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder getGiftListOrBuilder(
+    com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder getInfosOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   ** 服务器返回VIP界面展示所需的属性 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.ServerGetVipInfo}
+   * Protobuf type {@code com.kys.util.netty.proto.ServerGetVip}
    */
-  public  static final class ServerGetVipInfo extends
+  public  static final class ServerGetVip extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerGetVipInfo)
-      ServerGetVipInfoOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerGetVip)
+      ServerGetVipOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use ServerGetVipInfo.newBuilder() to construct.
-    private ServerGetVipInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use ServerGetVip.newBuilder() to construct.
+    private ServerGetVip(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private ServerGetVipInfo() {
-      level_ = 0;
-      selfMoney_ = 0;
-      nextMoney_ = 0;
-      weekGift_ = 0;
-      giftList_ = java.util.Collections.emptyList();
+    private ServerGetVip() {
+      lv_ = 0;
+      current_ = 0;
+      next_ = 0;
+      state_ = 0;
+      infos_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -519,7 +507,7 @@ public final class VipProto {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ServerGetVipInfo(
+    private ServerGetVip(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -544,31 +532,31 @@ public final class VipProto {
             }
             case 8: {
 
-              level_ = input.readInt32();
+              lv_ = input.readInt32();
               break;
             }
             case 16: {
 
-              selfMoney_ = input.readInt32();
+              current_ = input.readInt32();
               break;
             }
             case 24: {
 
-              nextMoney_ = input.readInt32();
+              next_ = input.readInt32();
               break;
             }
             case 32: {
 
-              weekGift_ = input.readInt32();
+              state_ = input.readInt32();
               break;
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
-                giftList_ = new java.util.ArrayList<com.kys.util.netty.proto.VipProto.VipLvUpGift>();
+                infos_ = new java.util.ArrayList<com.kys.util.netty.proto.VipProto.VipLevelInfo>();
                 mutable_bitField0_ |= 0x00000010;
               }
-              giftList_.add(
-                  input.readMessage(com.kys.util.netty.proto.VipProto.VipLvUpGift.parser(), extensionRegistry));
+              infos_.add(
+                  input.readMessage(com.kys.util.netty.proto.VipProto.VipLevelInfo.parser(), extensionRegistry));
               break;
             }
           }
@@ -580,1170 +568,6 @@ public final class VipProto {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
-          giftList_ = java.util.Collections.unmodifiableList(giftList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipInfo_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipInfo_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.VipProto.ServerGetVipInfo.class, com.kys.util.netty.proto.VipProto.ServerGetVipInfo.Builder.class);
-    }
-
-    private int bitField0_;
-    public static final int LEVEL_FIELD_NUMBER = 1;
-    private int level_;
-    /**
-     * <pre>
-     ** vip等级 
-     * </pre>
-     *
-     * <code>int32 level = 1;</code>
-     */
-    public int getLevel() {
-      return level_;
-    }
-
-    public static final int SELFMONEY_FIELD_NUMBER = 2;
-    private int selfMoney_;
-    /**
-     * <pre>
-     ** 个人累积充值 
-     * </pre>
-     *
-     * <code>int32 selfMoney = 2;</code>
-     */
-    public int getSelfMoney() {
-      return selfMoney_;
-    }
-
-    public static final int NEXTMONEY_FIELD_NUMBER = 3;
-    private int nextMoney_;
-    /**
-     * <pre>
-     ** 下一级vip需要累积充值到的一个数值 
-     * </pre>
-     *
-     * <code>int32 nextMoney = 3;</code>
-     */
-    public int getNextMoney() {
-      return nextMoney_;
-    }
-
-    public static final int WEEKGIFT_FIELD_NUMBER = 4;
-    private int weekGift_;
-    /**
-     * <pre>
-     ** 1表示不可领取，2表示可以领取，3表示已领取 
-     * </pre>
-     *
-     * <code>int32 weekGift = 4;</code>
-     */
-    public int getWeekGift() {
-      return weekGift_;
-    }
-
-    public static final int GIFTLIST_FIELD_NUMBER = 5;
-    private java.util.List<com.kys.util.netty.proto.VipProto.VipLvUpGift> giftList_;
-    /**
-     * <pre>
-     ** 10个vip等级对应的奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-     */
-    public java.util.List<com.kys.util.netty.proto.VipProto.VipLvUpGift> getGiftListList() {
-      return giftList_;
-    }
-    /**
-     * <pre>
-     ** 10个vip等级对应的奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-     */
-    public java.util.List<? extends com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder> 
-        getGiftListOrBuilderList() {
-      return giftList_;
-    }
-    /**
-     * <pre>
-     ** 10个vip等级对应的奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-     */
-    public int getGiftListCount() {
-      return giftList_.size();
-    }
-    /**
-     * <pre>
-     ** 10个vip等级对应的奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-     */
-    public com.kys.util.netty.proto.VipProto.VipLvUpGift getGiftList(int index) {
-      return giftList_.get(index);
-    }
-    /**
-     * <pre>
-     ** 10个vip等级对应的奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-     */
-    public com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder getGiftListOrBuilder(
-        int index) {
-      return giftList_.get(index);
-    }
-
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (level_ != 0) {
-        output.writeInt32(1, level_);
-      }
-      if (selfMoney_ != 0) {
-        output.writeInt32(2, selfMoney_);
-      }
-      if (nextMoney_ != 0) {
-        output.writeInt32(3, nextMoney_);
-      }
-      if (weekGift_ != 0) {
-        output.writeInt32(4, weekGift_);
-      }
-      for (int i = 0; i < giftList_.size(); i++) {
-        output.writeMessage(5, giftList_.get(i));
-      }
-      unknownFields.writeTo(output);
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (level_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, level_);
-      }
-      if (selfMoney_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, selfMoney_);
-      }
-      if (nextMoney_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, nextMoney_);
-      }
-      if (weekGift_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, weekGift_);
-      }
-      for (int i = 0; i < giftList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, giftList_.get(i));
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.kys.util.netty.proto.VipProto.ServerGetVipInfo)) {
-        return super.equals(obj);
-      }
-      com.kys.util.netty.proto.VipProto.ServerGetVipInfo other = (com.kys.util.netty.proto.VipProto.ServerGetVipInfo) obj;
-
-      boolean result = true;
-      result = result && (getLevel()
-          == other.getLevel());
-      result = result && (getSelfMoney()
-          == other.getSelfMoney());
-      result = result && (getNextMoney()
-          == other.getNextMoney());
-      result = result && (getWeekGift()
-          == other.getWeekGift());
-      result = result && getGiftListList()
-          .equals(other.getGiftListList());
-      result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + SELFMONEY_FIELD_NUMBER;
-      hash = (53 * hash) + getSelfMoney();
-      hash = (37 * hash) + NEXTMONEY_FIELD_NUMBER;
-      hash = (53 * hash) + getNextMoney();
-      hash = (37 * hash) + WEEKGIFT_FIELD_NUMBER;
-      hash = (53 * hash) + getWeekGift();
-      if (getGiftListCount() > 0) {
-        hash = (37 * hash) + GIFTLIST_FIELD_NUMBER;
-        hash = (53 * hash) + getGiftListList().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.ServerGetVipInfo prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * <pre>
-     ** 服务器返回VIP界面展示所需的属性 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.ServerGetVipInfo}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerGetVipInfo)
-        com.kys.util.netty.proto.VipProto.ServerGetVipInfoOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipInfo_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipInfo_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.VipProto.ServerGetVipInfo.class, com.kys.util.netty.proto.VipProto.ServerGetVipInfo.Builder.class);
-      }
-
-      // Construct using com.kys.util.netty.proto.VipProto.ServerGetVipInfo.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getGiftListFieldBuilder();
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        level_ = 0;
-
-        selfMoney_ = 0;
-
-        nextMoney_ = 0;
-
-        weekGift_ = 0;
-
-        if (giftListBuilder_ == null) {
-          giftList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
-        } else {
-          giftListBuilder_.clear();
-        }
-        return this;
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipInfo_descriptor;
-      }
-
-      public com.kys.util.netty.proto.VipProto.ServerGetVipInfo getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.VipProto.ServerGetVipInfo.getDefaultInstance();
-      }
-
-      public com.kys.util.netty.proto.VipProto.ServerGetVipInfo build() {
-        com.kys.util.netty.proto.VipProto.ServerGetVipInfo result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.kys.util.netty.proto.VipProto.ServerGetVipInfo buildPartial() {
-        com.kys.util.netty.proto.VipProto.ServerGetVipInfo result = new com.kys.util.netty.proto.VipProto.ServerGetVipInfo(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        result.level_ = level_;
-        result.selfMoney_ = selfMoney_;
-        result.nextMoney_ = nextMoney_;
-        result.weekGift_ = weekGift_;
-        if (giftListBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) == 0x00000010)) {
-            giftList_ = java.util.Collections.unmodifiableList(giftList_);
-            bitField0_ = (bitField0_ & ~0x00000010);
-          }
-          result.giftList_ = giftList_;
-        } else {
-          result.giftList_ = giftListBuilder_.build();
-        }
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.VipProto.ServerGetVipInfo) {
-          return mergeFrom((com.kys.util.netty.proto.VipProto.ServerGetVipInfo)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.ServerGetVipInfo other) {
-        if (other == com.kys.util.netty.proto.VipProto.ServerGetVipInfo.getDefaultInstance()) return this;
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
-        }
-        if (other.getSelfMoney() != 0) {
-          setSelfMoney(other.getSelfMoney());
-        }
-        if (other.getNextMoney() != 0) {
-          setNextMoney(other.getNextMoney());
-        }
-        if (other.getWeekGift() != 0) {
-          setWeekGift(other.getWeekGift());
-        }
-        if (giftListBuilder_ == null) {
-          if (!other.giftList_.isEmpty()) {
-            if (giftList_.isEmpty()) {
-              giftList_ = other.giftList_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-            } else {
-              ensureGiftListIsMutable();
-              giftList_.addAll(other.giftList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.giftList_.isEmpty()) {
-            if (giftListBuilder_.isEmpty()) {
-              giftListBuilder_.dispose();
-              giftListBuilder_ = null;
-              giftList_ = other.giftList_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-              giftListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getGiftListFieldBuilder() : null;
-            } else {
-              giftListBuilder_.addAllMessages(other.giftList_);
-            }
-          }
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.kys.util.netty.proto.VipProto.ServerGetVipInfo parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.VipProto.ServerGetVipInfo) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      private int level_ ;
-      /**
-       * <pre>
-       ** vip等级 
-       * </pre>
-       *
-       * <code>int32 level = 1;</code>
-       */
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <pre>
-       ** vip等级 
-       * </pre>
-       *
-       * <code>int32 level = 1;</code>
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** vip等级 
-       * </pre>
-       *
-       * <code>int32 level = 1;</code>
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int selfMoney_ ;
-      /**
-       * <pre>
-       ** 个人累积充值 
-       * </pre>
-       *
-       * <code>int32 selfMoney = 2;</code>
-       */
-      public int getSelfMoney() {
-        return selfMoney_;
-      }
-      /**
-       * <pre>
-       ** 个人累积充值 
-       * </pre>
-       *
-       * <code>int32 selfMoney = 2;</code>
-       */
-      public Builder setSelfMoney(int value) {
-        
-        selfMoney_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 个人累积充值 
-       * </pre>
-       *
-       * <code>int32 selfMoney = 2;</code>
-       */
-      public Builder clearSelfMoney() {
-        
-        selfMoney_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nextMoney_ ;
-      /**
-       * <pre>
-       ** 下一级vip需要累积充值到的一个数值 
-       * </pre>
-       *
-       * <code>int32 nextMoney = 3;</code>
-       */
-      public int getNextMoney() {
-        return nextMoney_;
-      }
-      /**
-       * <pre>
-       ** 下一级vip需要累积充值到的一个数值 
-       * </pre>
-       *
-       * <code>int32 nextMoney = 3;</code>
-       */
-      public Builder setNextMoney(int value) {
-        
-        nextMoney_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 下一级vip需要累积充值到的一个数值 
-       * </pre>
-       *
-       * <code>int32 nextMoney = 3;</code>
-       */
-      public Builder clearNextMoney() {
-        
-        nextMoney_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int weekGift_ ;
-      /**
-       * <pre>
-       ** 1表示不可领取，2表示可以领取，3表示已领取 
-       * </pre>
-       *
-       * <code>int32 weekGift = 4;</code>
-       */
-      public int getWeekGift() {
-        return weekGift_;
-      }
-      /**
-       * <pre>
-       ** 1表示不可领取，2表示可以领取，3表示已领取 
-       * </pre>
-       *
-       * <code>int32 weekGift = 4;</code>
-       */
-      public Builder setWeekGift(int value) {
-        
-        weekGift_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 1表示不可领取，2表示可以领取，3表示已领取 
-       * </pre>
-       *
-       * <code>int32 weekGift = 4;</code>
-       */
-      public Builder clearWeekGift() {
-        
-        weekGift_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<com.kys.util.netty.proto.VipProto.VipLvUpGift> giftList_ =
-        java.util.Collections.emptyList();
-      private void ensureGiftListIsMutable() {
-        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
-          giftList_ = new java.util.ArrayList<com.kys.util.netty.proto.VipProto.VipLvUpGift>(giftList_);
-          bitField0_ |= 0x00000010;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.kys.util.netty.proto.VipProto.VipLvUpGift, com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder, com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder> giftListBuilder_;
-
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public java.util.List<com.kys.util.netty.proto.VipProto.VipLvUpGift> getGiftListList() {
-        if (giftListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(giftList_);
-        } else {
-          return giftListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public int getGiftListCount() {
-        if (giftListBuilder_ == null) {
-          return giftList_.size();
-        } else {
-          return giftListBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public com.kys.util.netty.proto.VipProto.VipLvUpGift getGiftList(int index) {
-        if (giftListBuilder_ == null) {
-          return giftList_.get(index);
-        } else {
-          return giftListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public Builder setGiftList(
-          int index, com.kys.util.netty.proto.VipProto.VipLvUpGift value) {
-        if (giftListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureGiftListIsMutable();
-          giftList_.set(index, value);
-          onChanged();
-        } else {
-          giftListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public Builder setGiftList(
-          int index, com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder builderForValue) {
-        if (giftListBuilder_ == null) {
-          ensureGiftListIsMutable();
-          giftList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          giftListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public Builder addGiftList(com.kys.util.netty.proto.VipProto.VipLvUpGift value) {
-        if (giftListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureGiftListIsMutable();
-          giftList_.add(value);
-          onChanged();
-        } else {
-          giftListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public Builder addGiftList(
-          int index, com.kys.util.netty.proto.VipProto.VipLvUpGift value) {
-        if (giftListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureGiftListIsMutable();
-          giftList_.add(index, value);
-          onChanged();
-        } else {
-          giftListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public Builder addGiftList(
-          com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder builderForValue) {
-        if (giftListBuilder_ == null) {
-          ensureGiftListIsMutable();
-          giftList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          giftListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public Builder addGiftList(
-          int index, com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder builderForValue) {
-        if (giftListBuilder_ == null) {
-          ensureGiftListIsMutable();
-          giftList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          giftListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public Builder addAllGiftList(
-          java.lang.Iterable<? extends com.kys.util.netty.proto.VipProto.VipLvUpGift> values) {
-        if (giftListBuilder_ == null) {
-          ensureGiftListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, giftList_);
-          onChanged();
-        } else {
-          giftListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public Builder clearGiftList() {
-        if (giftListBuilder_ == null) {
-          giftList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
-          onChanged();
-        } else {
-          giftListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public Builder removeGiftList(int index) {
-        if (giftListBuilder_ == null) {
-          ensureGiftListIsMutable();
-          giftList_.remove(index);
-          onChanged();
-        } else {
-          giftListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder getGiftListBuilder(
-          int index) {
-        return getGiftListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder getGiftListOrBuilder(
-          int index) {
-        if (giftListBuilder_ == null) {
-          return giftList_.get(index);  } else {
-          return giftListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public java.util.List<? extends com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder> 
-           getGiftListOrBuilderList() {
-        if (giftListBuilder_ != null) {
-          return giftListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(giftList_);
-        }
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder addGiftListBuilder() {
-        return getGiftListFieldBuilder().addBuilder(
-            com.kys.util.netty.proto.VipProto.VipLvUpGift.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder addGiftListBuilder(
-          int index) {
-        return getGiftListFieldBuilder().addBuilder(
-            index, com.kys.util.netty.proto.VipProto.VipLvUpGift.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       ** 10个vip等级对应的奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.VipLvUpGift giftList = 5;</code>
-       */
-      public java.util.List<com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder> 
-           getGiftListBuilderList() {
-        return getGiftListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.kys.util.netty.proto.VipProto.VipLvUpGift, com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder, com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder> 
-          getGiftListFieldBuilder() {
-        if (giftListBuilder_ == null) {
-          giftListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.kys.util.netty.proto.VipProto.VipLvUpGift, com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder, com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder>(
-                  giftList_,
-                  ((bitField0_ & 0x00000010) == 0x00000010),
-                  getParentForChildren(),
-                  isClean());
-          giftList_ = null;
-        }
-        return giftListBuilder_;
-      }
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFieldsProto3(unknownFields);
-      }
-
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerGetVipInfo)
-    }
-
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerGetVipInfo)
-    private static final com.kys.util.netty.proto.VipProto.ServerGetVipInfo DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.ServerGetVipInfo();
-    }
-
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipInfo getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ServerGetVipInfo>
-        PARSER = new com.google.protobuf.AbstractParser<ServerGetVipInfo>() {
-      public ServerGetVipInfo parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ServerGetVipInfo(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<ServerGetVipInfo> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ServerGetVipInfo> getParserForType() {
-      return PARSER;
-    }
-
-    public com.kys.util.netty.proto.VipProto.ServerGetVipInfo getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface VipLvUpGiftOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.VipLvUpGift)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     ** vip等级 
-     * </pre>
-     *
-     * <code>int32 level = 1;</code>
-     */
-    int getLevel();
-
-    /**
-     * <pre>
-     ** 奖励对象集合 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
-     */
-    java.util.List<com.kys.util.netty.proto.VipProto.GiftInfo> 
-        getInfosList();
-    /**
-     * <pre>
-     ** 奖励对象集合 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
-     */
-    com.kys.util.netty.proto.VipProto.GiftInfo getInfos(int index);
-    /**
-     * <pre>
-     ** 奖励对象集合 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
-     */
-    int getInfosCount();
-    /**
-     * <pre>
-     ** 奖励对象集合 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
-     */
-    java.util.List<? extends com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder> 
-        getInfosOrBuilderList();
-    /**
-     * <pre>
-     ** 奖励对象集合 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
-     */
-    com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder getInfosOrBuilder(
-        int index);
-  }
-  /**
-   * <pre>
-   ** 当前vip等级对应的奖励集合 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.VipLvUpGift}
-   */
-  public  static final class VipLvUpGift extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.VipLvUpGift)
-      VipLvUpGiftOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use VipLvUpGift.newBuilder() to construct.
-    private VipLvUpGift(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private VipLvUpGift() {
-      level_ = 0;
-      infos_ = java.util.Collections.emptyList();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private VipLvUpGift(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownFieldProto3(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-
-              level_ = input.readInt32();
-              break;
-            }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                infos_ = new java.util.ArrayList<com.kys.util.netty.proto.VipProto.GiftInfo>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              infos_.add(
-                  input.readMessage(com.kys.util.netty.proto.VipProto.GiftInfo.parser(), extensionRegistry));
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
           infos_ = java.util.Collections.unmodifiableList(infos_);
         }
         this.unknownFields = unknownFields.build();
@@ -1752,81 +576,120 @@ public final class VipProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLvUpGift_descriptor;
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVip_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLvUpGift_fieldAccessorTable
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVip_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.VipProto.VipLvUpGift.class, com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder.class);
+              com.kys.util.netty.proto.VipProto.ServerGetVip.class, com.kys.util.netty.proto.VipProto.ServerGetVip.Builder.class);
     }
 
     private int bitField0_;
-    public static final int LEVEL_FIELD_NUMBER = 1;
-    private int level_;
+    public static final int LV_FIELD_NUMBER = 1;
+    private int lv_;
     /**
      * <pre>
-     ** vip等级 
+     ** 当前vip等级 
      * </pre>
      *
-     * <code>int32 level = 1;</code>
+     * <code>int32 lv = 1;</code>
      */
-    public int getLevel() {
-      return level_;
+    public int getLv() {
+      return lv_;
     }
 
-    public static final int INFOS_FIELD_NUMBER = 2;
-    private java.util.List<com.kys.util.netty.proto.VipProto.GiftInfo> infos_;
+    public static final int CURRENT_FIELD_NUMBER = 2;
+    private int current_;
     /**
      * <pre>
-     ** 奖励对象集合 
+     ** 当前经验值 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+     * <code>int32 current = 2;</code>
      */
-    public java.util.List<com.kys.util.netty.proto.VipProto.GiftInfo> getInfosList() {
+    public int getCurrent() {
+      return current_;
+    }
+
+    public static final int NEXT_FIELD_NUMBER = 3;
+    private int next_;
+    /**
+     * <pre>
+     ** 升级到下一级需要到达的经验值 
+     * </pre>
+     *
+     * <code>int32 next = 3;</code>
+     */
+    public int getNext() {
+      return next_;
+    }
+
+    public static final int STATE_FIELD_NUMBER = 4;
+    private int state_;
+    /**
+     * <pre>
+     ** 每日礼包状态，1表示不可领取，2表示可以领取，3表示已领取 
+     * </pre>
+     *
+     * <code>int32 state = 4;</code>
+     */
+    public int getState() {
+      return state_;
+    }
+
+    public static final int INFOS_FIELD_NUMBER = 5;
+    private java.util.List<com.kys.util.netty.proto.VipProto.VipLevelInfo> infos_;
+    /**
+     * <pre>
+     ** 所有vip等级的配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
+     */
+    public java.util.List<com.kys.util.netty.proto.VipProto.VipLevelInfo> getInfosList() {
       return infos_;
     }
     /**
      * <pre>
-     ** 奖励对象集合 
+     ** 所有vip等级的配置 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
      */
-    public java.util.List<? extends com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder> 
+    public java.util.List<? extends com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder> 
         getInfosOrBuilderList() {
       return infos_;
     }
     /**
      * <pre>
-     ** 奖励对象集合 
+     ** 所有vip等级的配置 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
      */
     public int getInfosCount() {
       return infos_.size();
     }
     /**
      * <pre>
-     ** 奖励对象集合 
+     ** 所有vip等级的配置 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
      */
-    public com.kys.util.netty.proto.VipProto.GiftInfo getInfos(int index) {
+    public com.kys.util.netty.proto.VipProto.VipLevelInfo getInfos(int index) {
       return infos_.get(index);
     }
     /**
      * <pre>
-     ** 奖励对象集合 
+     ** 所有vip等级的配置 
      * </pre>
      *
-     * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+     * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
      */
-    public com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder getInfosOrBuilder(
+    public com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder getInfosOrBuilder(
         int index) {
       return infos_.get(index);
     }
@@ -1843,11 +706,20 @@ public final class VipProto {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (level_ != 0) {
-        output.writeInt32(1, level_);
+      if (lv_ != 0) {
+        output.writeInt32(1, lv_);
+      }
+      if (current_ != 0) {
+        output.writeInt32(2, current_);
+      }
+      if (next_ != 0) {
+        output.writeInt32(3, next_);
+      }
+      if (state_ != 0) {
+        output.writeInt32(4, state_);
       }
       for (int i = 0; i < infos_.size(); i++) {
-        output.writeMessage(2, infos_.get(i));
+        output.writeMessage(5, infos_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -1857,13 +729,25 @@ public final class VipProto {
       if (size != -1) return size;
 
       size = 0;
-      if (level_ != 0) {
+      if (lv_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, level_);
+          .computeInt32Size(1, lv_);
+      }
+      if (current_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, current_);
+      }
+      if (next_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, next_);
+      }
+      if (state_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, state_);
       }
       for (int i = 0; i < infos_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, infos_.get(i));
+          .computeMessageSize(5, infos_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1875,14 +759,20 @@ public final class VipProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kys.util.netty.proto.VipProto.VipLvUpGift)) {
+      if (!(obj instanceof com.kys.util.netty.proto.VipProto.ServerGetVip)) {
         return super.equals(obj);
       }
-      com.kys.util.netty.proto.VipProto.VipLvUpGift other = (com.kys.util.netty.proto.VipProto.VipLvUpGift) obj;
+      com.kys.util.netty.proto.VipProto.ServerGetVip other = (com.kys.util.netty.proto.VipProto.ServerGetVip) obj;
 
       boolean result = true;
-      result = result && (getLevel()
-          == other.getLevel());
+      result = result && (getLv()
+          == other.getLv());
+      result = result && (getCurrent()
+          == other.getCurrent());
+      result = result && (getNext()
+          == other.getNext());
+      result = result && (getState()
+          == other.getState());
       result = result && getInfosList()
           .equals(other.getInfosList());
       result = result && unknownFields.equals(other.unknownFields);
@@ -1896,8 +786,14 @@ public final class VipProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + LV_FIELD_NUMBER;
+      hash = (53 * hash) + getLv();
+      hash = (37 * hash) + CURRENT_FIELD_NUMBER;
+      hash = (53 * hash) + getCurrent();
+      hash = (37 * hash) + NEXT_FIELD_NUMBER;
+      hash = (53 * hash) + getNext();
+      hash = (37 * hash) + STATE_FIELD_NUMBER;
+      hash = (53 * hash) + getState();
       if (getInfosCount() > 0) {
         hash = (37 * hash) + INFOS_FIELD_NUMBER;
         hash = (53 * hash) + getInfosList().hashCode();
@@ -1907,69 +803,69 @@ public final class VipProto {
       return hash;
     }
 
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(byte[] data)
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseDelimitedFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseDelimitedFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1981,7 +877,7 @@ public final class VipProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.VipLvUpGift prototype) {
+    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.ServerGetVip prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1996,29 +892,25 @@ public final class VipProto {
       return builder;
     }
     /**
-     * <pre>
-     ** 当前vip等级对应的奖励集合 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.VipLvUpGift}
+     * Protobuf type {@code com.kys.util.netty.proto.ServerGetVip}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.VipLvUpGift)
-        com.kys.util.netty.proto.VipProto.VipLvUpGiftOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerGetVip)
+        com.kys.util.netty.proto.VipProto.ServerGetVipOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLvUpGift_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVip_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLvUpGift_fieldAccessorTable
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVip_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.VipProto.VipLvUpGift.class, com.kys.util.netty.proto.VipProto.VipLvUpGift.Builder.class);
+                com.kys.util.netty.proto.VipProto.ServerGetVip.class, com.kys.util.netty.proto.VipProto.ServerGetVip.Builder.class);
       }
 
-      // Construct using com.kys.util.netty.proto.VipProto.VipLvUpGift.newBuilder()
+      // Construct using com.kys.util.netty.proto.VipProto.ServerGetVip.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2036,11 +928,17 @@ public final class VipProto {
       }
       public Builder clear() {
         super.clear();
-        level_ = 0;
+        lv_ = 0;
+
+        current_ = 0;
+
+        next_ = 0;
+
+        state_ = 0;
 
         if (infosBuilder_ == null) {
           infos_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000010);
         } else {
           infosBuilder_.clear();
         }
@@ -2049,30 +947,33 @@ public final class VipProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLvUpGift_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVip_descriptor;
       }
 
-      public com.kys.util.netty.proto.VipProto.VipLvUpGift getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.VipProto.VipLvUpGift.getDefaultInstance();
+      public com.kys.util.netty.proto.VipProto.ServerGetVip getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.VipProto.ServerGetVip.getDefaultInstance();
       }
 
-      public com.kys.util.netty.proto.VipProto.VipLvUpGift build() {
-        com.kys.util.netty.proto.VipProto.VipLvUpGift result = buildPartial();
+      public com.kys.util.netty.proto.VipProto.ServerGetVip build() {
+        com.kys.util.netty.proto.VipProto.ServerGetVip result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.kys.util.netty.proto.VipProto.VipLvUpGift buildPartial() {
-        com.kys.util.netty.proto.VipProto.VipLvUpGift result = new com.kys.util.netty.proto.VipProto.VipLvUpGift(this);
+      public com.kys.util.netty.proto.VipProto.ServerGetVip buildPartial() {
+        com.kys.util.netty.proto.VipProto.ServerGetVip result = new com.kys.util.netty.proto.VipProto.ServerGetVip(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
-        result.level_ = level_;
+        result.lv_ = lv_;
+        result.current_ = current_;
+        result.next_ = next_;
+        result.state_ = state_;
         if (infosBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          if (((bitField0_ & 0x00000010) == 0x00000010)) {
             infos_ = java.util.Collections.unmodifiableList(infos_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000010);
           }
           result.infos_ = infos_;
         } else {
@@ -2110,24 +1011,33 @@ public final class VipProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.VipProto.VipLvUpGift) {
-          return mergeFrom((com.kys.util.netty.proto.VipProto.VipLvUpGift)other);
+        if (other instanceof com.kys.util.netty.proto.VipProto.ServerGetVip) {
+          return mergeFrom((com.kys.util.netty.proto.VipProto.ServerGetVip)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.VipLvUpGift other) {
-        if (other == com.kys.util.netty.proto.VipProto.VipLvUpGift.getDefaultInstance()) return this;
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
+      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.ServerGetVip other) {
+        if (other == com.kys.util.netty.proto.VipProto.ServerGetVip.getDefaultInstance()) return this;
+        if (other.getLv() != 0) {
+          setLv(other.getLv());
+        }
+        if (other.getCurrent() != 0) {
+          setCurrent(other.getCurrent());
+        }
+        if (other.getNext() != 0) {
+          setNext(other.getNext());
+        }
+        if (other.getState() != 0) {
+          setState(other.getState());
         }
         if (infosBuilder_ == null) {
           if (!other.infos_.isEmpty()) {
             if (infos_.isEmpty()) {
               infos_ = other.infos_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000010);
             } else {
               ensureInfosIsMutable();
               infos_.addAll(other.infos_);
@@ -2140,7 +1050,7 @@ public final class VipProto {
               infosBuilder_.dispose();
               infosBuilder_ = null;
               infos_ = other.infos_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000010);
               infosBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getInfosFieldBuilder() : null;
@@ -2162,11 +1072,11 @@ public final class VipProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kys.util.netty.proto.VipProto.VipLvUpGift parsedMessage = null;
+        com.kys.util.netty.proto.VipProto.ServerGetVip parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.VipProto.VipLvUpGift) e.getUnfinishedMessage();
+          parsedMessage = (com.kys.util.netty.proto.VipProto.ServerGetVip) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2177,64 +1087,178 @@ public final class VipProto {
       }
       private int bitField0_;
 
-      private int level_ ;
+      private int lv_ ;
       /**
        * <pre>
-       ** vip等级 
+       ** 当前vip等级 
        * </pre>
        *
-       * <code>int32 level = 1;</code>
+       * <code>int32 lv = 1;</code>
        */
-      public int getLevel() {
-        return level_;
+      public int getLv() {
+        return lv_;
       }
       /**
        * <pre>
-       ** vip等级 
+       ** 当前vip等级 
        * </pre>
        *
-       * <code>int32 level = 1;</code>
+       * <code>int32 lv = 1;</code>
        */
-      public Builder setLevel(int value) {
+      public Builder setLv(int value) {
         
-        level_ = value;
+        lv_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** vip等级 
+       ** 当前vip等级 
        * </pre>
        *
-       * <code>int32 level = 1;</code>
+       * <code>int32 lv = 1;</code>
        */
-      public Builder clearLevel() {
+      public Builder clearLv() {
         
-        level_ = 0;
+        lv_ = 0;
         onChanged();
         return this;
       }
 
-      private java.util.List<com.kys.util.netty.proto.VipProto.GiftInfo> infos_ =
+      private int current_ ;
+      /**
+       * <pre>
+       ** 当前经验值 
+       * </pre>
+       *
+       * <code>int32 current = 2;</code>
+       */
+      public int getCurrent() {
+        return current_;
+      }
+      /**
+       * <pre>
+       ** 当前经验值 
+       * </pre>
+       *
+       * <code>int32 current = 2;</code>
+       */
+      public Builder setCurrent(int value) {
+        
+        current_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 当前经验值 
+       * </pre>
+       *
+       * <code>int32 current = 2;</code>
+       */
+      public Builder clearCurrent() {
+        
+        current_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int next_ ;
+      /**
+       * <pre>
+       ** 升级到下一级需要到达的经验值 
+       * </pre>
+       *
+       * <code>int32 next = 3;</code>
+       */
+      public int getNext() {
+        return next_;
+      }
+      /**
+       * <pre>
+       ** 升级到下一级需要到达的经验值 
+       * </pre>
+       *
+       * <code>int32 next = 3;</code>
+       */
+      public Builder setNext(int value) {
+        
+        next_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 升级到下一级需要到达的经验值 
+       * </pre>
+       *
+       * <code>int32 next = 3;</code>
+       */
+      public Builder clearNext() {
+        
+        next_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int state_ ;
+      /**
+       * <pre>
+       ** 每日礼包状态，1表示不可领取，2表示可以领取，3表示已领取 
+       * </pre>
+       *
+       * <code>int32 state = 4;</code>
+       */
+      public int getState() {
+        return state_;
+      }
+      /**
+       * <pre>
+       ** 每日礼包状态，1表示不可领取，2表示可以领取，3表示已领取 
+       * </pre>
+       *
+       * <code>int32 state = 4;</code>
+       */
+      public Builder setState(int value) {
+        
+        state_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 每日礼包状态，1表示不可领取，2表示可以领取，3表示已领取 
+       * </pre>
+       *
+       * <code>int32 state = 4;</code>
+       */
+      public Builder clearState() {
+        
+        state_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<com.kys.util.netty.proto.VipProto.VipLevelInfo> infos_ =
         java.util.Collections.emptyList();
       private void ensureInfosIsMutable() {
-        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          infos_ = new java.util.ArrayList<com.kys.util.netty.proto.VipProto.GiftInfo>(infos_);
-          bitField0_ |= 0x00000002;
+        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
+          infos_ = new java.util.ArrayList<com.kys.util.netty.proto.VipProto.VipLevelInfo>(infos_);
+          bitField0_ |= 0x00000010;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.kys.util.netty.proto.VipProto.GiftInfo, com.kys.util.netty.proto.VipProto.GiftInfo.Builder, com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder> infosBuilder_;
+          com.kys.util.netty.proto.VipProto.VipLevelInfo, com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder, com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder> infosBuilder_;
 
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
-      public java.util.List<com.kys.util.netty.proto.VipProto.GiftInfo> getInfosList() {
+      public java.util.List<com.kys.util.netty.proto.VipProto.VipLevelInfo> getInfosList() {
         if (infosBuilder_ == null) {
           return java.util.Collections.unmodifiableList(infos_);
         } else {
@@ -2243,10 +1267,10 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
       public int getInfosCount() {
         if (infosBuilder_ == null) {
@@ -2257,12 +1281,12 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
-      public com.kys.util.netty.proto.VipProto.GiftInfo getInfos(int index) {
+      public com.kys.util.netty.proto.VipProto.VipLevelInfo getInfos(int index) {
         if (infosBuilder_ == null) {
           return infos_.get(index);
         } else {
@@ -2271,13 +1295,13 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
       public Builder setInfos(
-          int index, com.kys.util.netty.proto.VipProto.GiftInfo value) {
+          int index, com.kys.util.netty.proto.VipProto.VipLevelInfo value) {
         if (infosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2292,13 +1316,13 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
       public Builder setInfos(
-          int index, com.kys.util.netty.proto.VipProto.GiftInfo.Builder builderForValue) {
+          int index, com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder builderForValue) {
         if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           infos_.set(index, builderForValue.build());
@@ -2310,12 +1334,12 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
-      public Builder addInfos(com.kys.util.netty.proto.VipProto.GiftInfo value) {
+      public Builder addInfos(com.kys.util.netty.proto.VipProto.VipLevelInfo value) {
         if (infosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2330,13 +1354,13 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
       public Builder addInfos(
-          int index, com.kys.util.netty.proto.VipProto.GiftInfo value) {
+          int index, com.kys.util.netty.proto.VipProto.VipLevelInfo value) {
         if (infosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2351,13 +1375,13 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
       public Builder addInfos(
-          com.kys.util.netty.proto.VipProto.GiftInfo.Builder builderForValue) {
+          com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder builderForValue) {
         if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           infos_.add(builderForValue.build());
@@ -2369,13 +1393,13 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
       public Builder addInfos(
-          int index, com.kys.util.netty.proto.VipProto.GiftInfo.Builder builderForValue) {
+          int index, com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder builderForValue) {
         if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           infos_.add(index, builderForValue.build());
@@ -2387,13 +1411,13 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
       public Builder addAllInfos(
-          java.lang.Iterable<? extends com.kys.util.netty.proto.VipProto.GiftInfo> values) {
+          java.lang.Iterable<? extends com.kys.util.netty.proto.VipProto.VipLevelInfo> values) {
         if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2406,15 +1430,15 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
       public Builder clearInfos() {
         if (infosBuilder_ == null) {
           infos_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000010);
           onChanged();
         } else {
           infosBuilder_.clear();
@@ -2423,10 +1447,10 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
       public Builder removeInfos(int index) {
         if (infosBuilder_ == null) {
@@ -2440,23 +1464,23 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
-      public com.kys.util.netty.proto.VipProto.GiftInfo.Builder getInfosBuilder(
+      public com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder getInfosBuilder(
           int index) {
         return getInfosFieldBuilder().getBuilder(index);
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
-      public com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder getInfosOrBuilder(
+      public com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder getInfosOrBuilder(
           int index) {
         if (infosBuilder_ == null) {
           return infos_.get(index);  } else {
@@ -2465,12 +1489,12 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
-      public java.util.List<? extends com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder> 
+      public java.util.List<? extends com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder> 
            getInfosOrBuilderList() {
         if (infosBuilder_ != null) {
           return infosBuilder_.getMessageOrBuilderList();
@@ -2480,46 +1504,46 @@ public final class VipProto {
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
-      public com.kys.util.netty.proto.VipProto.GiftInfo.Builder addInfosBuilder() {
+      public com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder addInfosBuilder() {
         return getInfosFieldBuilder().addBuilder(
-            com.kys.util.netty.proto.VipProto.GiftInfo.getDefaultInstance());
+            com.kys.util.netty.proto.VipProto.VipLevelInfo.getDefaultInstance());
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
-      public com.kys.util.netty.proto.VipProto.GiftInfo.Builder addInfosBuilder(
+      public com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder addInfosBuilder(
           int index) {
         return getInfosFieldBuilder().addBuilder(
-            index, com.kys.util.netty.proto.VipProto.GiftInfo.getDefaultInstance());
+            index, com.kys.util.netty.proto.VipProto.VipLevelInfo.getDefaultInstance());
       }
       /**
        * <pre>
-       ** 奖励对象集合 
+       ** 所有vip等级的配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.GiftInfo infos = 2;</code>
+       * <code>repeated .com.kys.util.netty.proto.VipLevelInfo infos = 5;</code>
        */
-      public java.util.List<com.kys.util.netty.proto.VipProto.GiftInfo.Builder> 
+      public java.util.List<com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder> 
            getInfosBuilderList() {
         return getInfosFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.kys.util.netty.proto.VipProto.GiftInfo, com.kys.util.netty.proto.VipProto.GiftInfo.Builder, com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder> 
+          com.kys.util.netty.proto.VipProto.VipLevelInfo, com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder, com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder> 
           getInfosFieldBuilder() {
         if (infosBuilder_ == null) {
           infosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.kys.util.netty.proto.VipProto.GiftInfo, com.kys.util.netty.proto.VipProto.GiftInfo.Builder, com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder>(
+              com.kys.util.netty.proto.VipProto.VipLevelInfo, com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder, com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder>(
                   infos_,
-                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  ((bitField0_ & 0x00000010) == 0x00000010),
                   getParentForChildren(),
                   isClean());
           infos_ = null;
@@ -2537,114 +1561,115 @@ public final class VipProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.VipLvUpGift)
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerGetVip)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.VipLvUpGift)
-    private static final com.kys.util.netty.proto.VipProto.VipLvUpGift DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerGetVip)
+    private static final com.kys.util.netty.proto.VipProto.ServerGetVip DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.VipLvUpGift();
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.ServerGetVip();
     }
 
-    public static com.kys.util.netty.proto.VipProto.VipLvUpGift getDefaultInstance() {
+    public static com.kys.util.netty.proto.VipProto.ServerGetVip getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<VipLvUpGift>
-        PARSER = new com.google.protobuf.AbstractParser<VipLvUpGift>() {
-      public VipLvUpGift parsePartialFrom(
+    private static final com.google.protobuf.Parser<ServerGetVip>
+        PARSER = new com.google.protobuf.AbstractParser<ServerGetVip>() {
+      public ServerGetVip parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new VipLvUpGift(input, extensionRegistry);
+          return new ServerGetVip(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<VipLvUpGift> parser() {
+    public static com.google.protobuf.Parser<ServerGetVip> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<VipLvUpGift> getParserForType() {
+    public com.google.protobuf.Parser<ServerGetVip> getParserForType() {
       return PARSER;
     }
 
-    public com.kys.util.netty.proto.VipProto.VipLvUpGift getDefaultInstanceForType() {
+    public com.kys.util.netty.proto.VipProto.ServerGetVip getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface GiftInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.GiftInfo)
+  public interface VipLevelInfoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.VipLevelInfo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
      * <pre>
-     ** id,客户端可用于查找图片 
+     ** vip等级 
      * </pre>
      *
-     * <code>int32 id = 1;</code>
+     * <code>int32 lv = 1;</code>
      */
-    int getId();
+    int getLv();
 
     /**
      * <pre>
-     ** 该类物品的数量 
+     ** 每日可领取的钻石 
      * </pre>
      *
-     * <code>int32 count = 2;</code>
+     * <code>int32 diamond = 2;</code>
      */
-    int getCount();
+    int getDiamond();
 
     /**
      * <pre>
-     ** 用于排序，从小到大 
+     ** 每日可领取的金币 
      * </pre>
      *
-     * <code>int32 index = 3;</code>
+     * <code>int32 gold = 3;</code>
      */
-    int getIndex();
+    int getGold();
 
     /**
      * <pre>
-     ** 名称 
+     ** 每日vip经验掉落 
      * </pre>
      *
-     * <code>string name = 4;</code>
+     * <code>int32 level = 4;</code>
      */
-    java.lang.String getName();
+    int getLevel();
+
     /**
      * <pre>
-     ** 名称 
+     ** 每日兑换次数限制 
      * </pre>
      *
-     * <code>string name = 4;</code>
+     * <code>int32 exchangeTimes = 5;</code>
      */
-    com.google.protobuf.ByteString
-        getNameBytes();
+    int getExchangeTimes();
   }
   /**
    * <pre>
-   ** vip等级一次性奖励对象 
+   ** vip等级配置 
    * </pre>
    *
-   * Protobuf type {@code com.kys.util.netty.proto.GiftInfo}
+   * Protobuf type {@code com.kys.util.netty.proto.VipLevelInfo}
    */
-  public  static final class GiftInfo extends
+  public  static final class VipLevelInfo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.GiftInfo)
-      GiftInfoOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.VipLevelInfo)
+      VipLevelInfoOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use GiftInfo.newBuilder() to construct.
-    private GiftInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use VipLevelInfo.newBuilder() to construct.
+    private VipLevelInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private GiftInfo() {
-      id_ = 0;
-      count_ = 0;
-      index_ = 0;
-      name_ = "";
+    private VipLevelInfo() {
+      lv_ = 0;
+      diamond_ = 0;
+      gold_ = 0;
+      level_ = 0;
+      exchangeTimes_ = 0;
     }
 
     @java.lang.Override
@@ -2652,7 +1677,7 @@ public final class VipProto {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private GiftInfo(
+    private VipLevelInfo(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2677,23 +1702,27 @@ public final class VipProto {
             }
             case 8: {
 
-              id_ = input.readInt32();
+              lv_ = input.readInt32();
               break;
             }
             case 16: {
 
-              count_ = input.readInt32();
+              diamond_ = input.readInt32();
               break;
             }
             case 24: {
 
-              index_ = input.readInt32();
+              gold_ = input.readInt32();
               break;
             }
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 32: {
 
-              name_ = s;
+              level_ = input.readInt32();
+              break;
+            }
+            case 40: {
+
+              exchangeTimes_ = input.readInt32();
               break;
             }
           }
@@ -2710,95 +1739,79 @@ public final class VipProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_GiftInfo_descriptor;
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLevelInfo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_GiftInfo_fieldAccessorTable
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLevelInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.VipProto.GiftInfo.class, com.kys.util.netty.proto.VipProto.GiftInfo.Builder.class);
+              com.kys.util.netty.proto.VipProto.VipLevelInfo.class, com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
+    public static final int LV_FIELD_NUMBER = 1;
+    private int lv_;
     /**
      * <pre>
-     ** id,客户端可用于查找图片 
+     ** vip等级 
      * </pre>
      *
-     * <code>int32 id = 1;</code>
+     * <code>int32 lv = 1;</code>
      */
-    public int getId() {
-      return id_;
+    public int getLv() {
+      return lv_;
     }
 
-    public static final int COUNT_FIELD_NUMBER = 2;
-    private int count_;
+    public static final int DIAMOND_FIELD_NUMBER = 2;
+    private int diamond_;
     /**
      * <pre>
-     ** 该类物品的数量 
+     ** 每日可领取的钻石 
      * </pre>
      *
-     * <code>int32 count = 2;</code>
+     * <code>int32 diamond = 2;</code>
      */
-    public int getCount() {
-      return count_;
+    public int getDiamond() {
+      return diamond_;
     }
 
-    public static final int INDEX_FIELD_NUMBER = 3;
-    private int index_;
+    public static final int GOLD_FIELD_NUMBER = 3;
+    private int gold_;
     /**
      * <pre>
-     ** 用于排序，从小到大 
+     ** 每日可领取的金币 
      * </pre>
      *
-     * <code>int32 index = 3;</code>
+     * <code>int32 gold = 3;</code>
      */
-    public int getIndex() {
-      return index_;
+    public int getGold() {
+      return gold_;
     }
 
-    public static final int NAME_FIELD_NUMBER = 4;
-    private volatile java.lang.Object name_;
+    public static final int LEVEL_FIELD_NUMBER = 4;
+    private int level_;
     /**
      * <pre>
-     ** 名称 
+     ** 每日vip经验掉落 
      * </pre>
      *
-     * <code>string name = 4;</code>
+     * <code>int32 level = 4;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        name_ = s;
-        return s;
-      }
+    public int getLevel() {
+      return level_;
     }
+
+    public static final int EXCHANGETIMES_FIELD_NUMBER = 5;
+    private int exchangeTimes_;
     /**
      * <pre>
-     ** 名称 
+     ** 每日兑换次数限制 
      * </pre>
      *
-     * <code>string name = 4;</code>
+     * <code>int32 exchangeTimes = 5;</code>
      */
-    public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        name_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public int getExchangeTimes() {
+      return exchangeTimes_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2813,17 +1826,20 @@ public final class VipProto {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeInt32(1, id_);
+      if (lv_ != 0) {
+        output.writeInt32(1, lv_);
       }
-      if (count_ != 0) {
-        output.writeInt32(2, count_);
+      if (diamond_ != 0) {
+        output.writeInt32(2, diamond_);
       }
-      if (index_ != 0) {
-        output.writeInt32(3, index_);
+      if (gold_ != 0) {
+        output.writeInt32(3, gold_);
       }
-      if (!getNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, name_);
+      if (level_ != 0) {
+        output.writeInt32(4, level_);
+      }
+      if (exchangeTimes_ != 0) {
+        output.writeInt32(5, exchangeTimes_);
       }
       unknownFields.writeTo(output);
     }
@@ -2833,20 +1849,25 @@ public final class VipProto {
       if (size != -1) return size;
 
       size = 0;
-      if (id_ != 0) {
+      if (lv_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, id_);
+          .computeInt32Size(1, lv_);
       }
-      if (count_ != 0) {
+      if (diamond_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, count_);
+          .computeInt32Size(2, diamond_);
       }
-      if (index_ != 0) {
+      if (gold_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, index_);
+          .computeInt32Size(3, gold_);
       }
-      if (!getNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, name_);
+      if (level_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, level_);
+      }
+      if (exchangeTimes_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, exchangeTimes_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2858,20 +1879,22 @@ public final class VipProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kys.util.netty.proto.VipProto.GiftInfo)) {
+      if (!(obj instanceof com.kys.util.netty.proto.VipProto.VipLevelInfo)) {
         return super.equals(obj);
       }
-      com.kys.util.netty.proto.VipProto.GiftInfo other = (com.kys.util.netty.proto.VipProto.GiftInfo) obj;
+      com.kys.util.netty.proto.VipProto.VipLevelInfo other = (com.kys.util.netty.proto.VipProto.VipLevelInfo) obj;
 
       boolean result = true;
-      result = result && (getId()
-          == other.getId());
-      result = result && (getCount()
-          == other.getCount());
-      result = result && (getIndex()
-          == other.getIndex());
-      result = result && getName()
-          .equals(other.getName());
+      result = result && (getLv()
+          == other.getLv());
+      result = result && (getDiamond()
+          == other.getDiamond());
+      result = result && (getGold()
+          == other.getGold());
+      result = result && (getLevel()
+          == other.getLevel());
+      result = result && (getExchangeTimes()
+          == other.getExchangeTimes());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -2883,82 +1906,84 @@ public final class VipProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
-      hash = (37 * hash) + COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getCount();
-      hash = (37 * hash) + INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getIndex();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
+      hash = (37 * hash) + LV_FIELD_NUMBER;
+      hash = (53 * hash) + getLv();
+      hash = (37 * hash) + DIAMOND_FIELD_NUMBER;
+      hash = (53 * hash) + getDiamond();
+      hash = (37 * hash) + GOLD_FIELD_NUMBER;
+      hash = (53 * hash) + getGold();
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + EXCHANGETIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getExchangeTimes();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(byte[] data)
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseDelimitedFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseDelimitedFrom(
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.GiftInfo parseFrom(
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2970,7 +1995,7 @@ public final class VipProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.GiftInfo prototype) {
+    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.VipLevelInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -2986,28 +2011,28 @@ public final class VipProto {
     }
     /**
      * <pre>
-     ** vip等级一次性奖励对象 
+     ** vip等级配置 
      * </pre>
      *
-     * Protobuf type {@code com.kys.util.netty.proto.GiftInfo}
+     * Protobuf type {@code com.kys.util.netty.proto.VipLevelInfo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.GiftInfo)
-        com.kys.util.netty.proto.VipProto.GiftInfoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.VipLevelInfo)
+        com.kys.util.netty.proto.VipProto.VipLevelInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_GiftInfo_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLevelInfo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_GiftInfo_fieldAccessorTable
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLevelInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.VipProto.GiftInfo.class, com.kys.util.netty.proto.VipProto.GiftInfo.Builder.class);
+                com.kys.util.netty.proto.VipProto.VipLevelInfo.class, com.kys.util.netty.proto.VipProto.VipLevelInfo.Builder.class);
       }
 
-      // Construct using com.kys.util.netty.proto.VipProto.GiftInfo.newBuilder()
+      // Construct using com.kys.util.netty.proto.VipProto.VipLevelInfo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3024,40 +2049,43 @@ public final class VipProto {
       }
       public Builder clear() {
         super.clear();
-        id_ = 0;
+        lv_ = 0;
 
-        count_ = 0;
+        diamond_ = 0;
 
-        index_ = 0;
+        gold_ = 0;
 
-        name_ = "";
+        level_ = 0;
+
+        exchangeTimes_ = 0;
 
         return this;
       }
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_GiftInfo_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_VipLevelInfo_descriptor;
       }
 
-      public com.kys.util.netty.proto.VipProto.GiftInfo getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.VipProto.GiftInfo.getDefaultInstance();
+      public com.kys.util.netty.proto.VipProto.VipLevelInfo getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.VipProto.VipLevelInfo.getDefaultInstance();
       }
 
-      public com.kys.util.netty.proto.VipProto.GiftInfo build() {
-        com.kys.util.netty.proto.VipProto.GiftInfo result = buildPartial();
+      public com.kys.util.netty.proto.VipProto.VipLevelInfo build() {
+        com.kys.util.netty.proto.VipProto.VipLevelInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.kys.util.netty.proto.VipProto.GiftInfo buildPartial() {
-        com.kys.util.netty.proto.VipProto.GiftInfo result = new com.kys.util.netty.proto.VipProto.GiftInfo(this);
-        result.id_ = id_;
-        result.count_ = count_;
-        result.index_ = index_;
-        result.name_ = name_;
+      public com.kys.util.netty.proto.VipProto.VipLevelInfo buildPartial() {
+        com.kys.util.netty.proto.VipProto.VipLevelInfo result = new com.kys.util.netty.proto.VipProto.VipLevelInfo(this);
+        result.lv_ = lv_;
+        result.diamond_ = diamond_;
+        result.gold_ = gold_;
+        result.level_ = level_;
+        result.exchangeTimes_ = exchangeTimes_;
         onBuilt();
         return result;
       }
@@ -3089,28 +2117,30 @@ public final class VipProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.VipProto.GiftInfo) {
-          return mergeFrom((com.kys.util.netty.proto.VipProto.GiftInfo)other);
+        if (other instanceof com.kys.util.netty.proto.VipProto.VipLevelInfo) {
+          return mergeFrom((com.kys.util.netty.proto.VipProto.VipLevelInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.GiftInfo other) {
-        if (other == com.kys.util.netty.proto.VipProto.GiftInfo.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
+      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.VipLevelInfo other) {
+        if (other == com.kys.util.netty.proto.VipProto.VipLevelInfo.getDefaultInstance()) return this;
+        if (other.getLv() != 0) {
+          setLv(other.getLv());
         }
-        if (other.getCount() != 0) {
-          setCount(other.getCount());
+        if (other.getDiamond() != 0) {
+          setDiamond(other.getDiamond());
         }
-        if (other.getIndex() != 0) {
-          setIndex(other.getIndex());
+        if (other.getGold() != 0) {
+          setGold(other.getGold());
         }
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          onChanged();
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
+        }
+        if (other.getExchangeTimes() != 0) {
+          setExchangeTimes(other.getExchangeTimes());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -3125,11 +2155,11 @@ public final class VipProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kys.util.netty.proto.VipProto.GiftInfo parsedMessage = null;
+        com.kys.util.netty.proto.VipProto.VipLevelInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.VipProto.GiftInfo) e.getUnfinishedMessage();
+          parsedMessage = (com.kys.util.netty.proto.VipProto.VipLevelInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3139,205 +2169,192 @@ public final class VipProto {
         return this;
       }
 
-      private int id_ ;
+      private int lv_ ;
       /**
        * <pre>
-       ** id,客户端可用于查找图片 
+       ** vip等级 
        * </pre>
        *
-       * <code>int32 id = 1;</code>
+       * <code>int32 lv = 1;</code>
        */
-      public int getId() {
-        return id_;
+      public int getLv() {
+        return lv_;
       }
       /**
        * <pre>
-       ** id,客户端可用于查找图片 
+       ** vip等级 
        * </pre>
        *
-       * <code>int32 id = 1;</code>
+       * <code>int32 lv = 1;</code>
        */
-      public Builder setId(int value) {
+      public Builder setLv(int value) {
         
-        id_ = value;
+        lv_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** id,客户端可用于查找图片 
+       ** vip等级 
        * </pre>
        *
-       * <code>int32 id = 1;</code>
+       * <code>int32 lv = 1;</code>
        */
-      public Builder clearId() {
+      public Builder clearLv() {
         
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int count_ ;
-      /**
-       * <pre>
-       ** 该类物品的数量 
-       * </pre>
-       *
-       * <code>int32 count = 2;</code>
-       */
-      public int getCount() {
-        return count_;
-      }
-      /**
-       * <pre>
-       ** 该类物品的数量 
-       * </pre>
-       *
-       * <code>int32 count = 2;</code>
-       */
-      public Builder setCount(int value) {
-        
-        count_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 该类物品的数量 
-       * </pre>
-       *
-       * <code>int32 count = 2;</code>
-       */
-      public Builder clearCount() {
-        
-        count_ = 0;
+        lv_ = 0;
         onChanged();
         return this;
       }
 
-      private int index_ ;
+      private int diamond_ ;
       /**
        * <pre>
-       ** 用于排序，从小到大 
+       ** 每日可领取的钻石 
        * </pre>
        *
-       * <code>int32 index = 3;</code>
+       * <code>int32 diamond = 2;</code>
        */
-      public int getIndex() {
-        return index_;
+      public int getDiamond() {
+        return diamond_;
       }
       /**
        * <pre>
-       ** 用于排序，从小到大 
+       ** 每日可领取的钻石 
        * </pre>
        *
-       * <code>int32 index = 3;</code>
+       * <code>int32 diamond = 2;</code>
        */
-      public Builder setIndex(int value) {
+      public Builder setDiamond(int value) {
         
-        index_ = value;
+        diamond_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 用于排序，从小到大 
+       ** 每日可领取的钻石 
        * </pre>
        *
-       * <code>int32 index = 3;</code>
+       * <code>int32 diamond = 2;</code>
        */
-      public Builder clearIndex() {
+      public Builder clearDiamond() {
         
-        index_ = 0;
+        diamond_ = 0;
         onChanged();
         return this;
       }
 
-      private java.lang.Object name_ = "";
+      private int gold_ ;
       /**
        * <pre>
-       ** 名称 
+       ** 每日可领取的金币 
        * </pre>
        *
-       * <code>string name = 4;</code>
+       * <code>int32 gold = 3;</code>
        */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          name_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getGold() {
+        return gold_;
       }
       /**
        * <pre>
-       ** 名称 
+       ** 每日可领取的金币 
        * </pre>
        *
-       * <code>string name = 4;</code>
+       * <code>int32 gold = 3;</code>
        */
-      public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          name_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 名称 
-       * </pre>
-       *
-       * <code>string name = 4;</code>
-       */
-      public Builder setName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        name_ = value;
+      public Builder setGold(int value) {
+        
+        gold_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 名称 
+       ** 每日可领取的金币 
        * </pre>
        *
-       * <code>string name = 4;</code>
+       * <code>int32 gold = 3;</code>
        */
-      public Builder clearName() {
+      public Builder clearGold() {
         
-        name_ = getDefaultInstance().getName();
+        gold_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <pre>
+       ** 每日vip经验掉落 
+       * </pre>
+       *
+       * <code>int32 level = 4;</code>
+       */
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <pre>
+       ** 每日vip经验掉落 
+       * </pre>
+       *
+       * <code>int32 level = 4;</code>
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 名称 
+       ** 每日vip经验掉落 
        * </pre>
        *
-       * <code>string name = 4;</code>
+       * <code>int32 level = 4;</code>
        */
-      public Builder setNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
+      public Builder clearLevel() {
         
-        name_ = value;
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int exchangeTimes_ ;
+      /**
+       * <pre>
+       ** 每日兑换次数限制 
+       * </pre>
+       *
+       * <code>int32 exchangeTimes = 5;</code>
+       */
+      public int getExchangeTimes() {
+        return exchangeTimes_;
+      }
+      /**
+       * <pre>
+       ** 每日兑换次数限制 
+       * </pre>
+       *
+       * <code>int32 exchangeTimes = 5;</code>
+       */
+      public Builder setExchangeTimes(int value) {
+        
+        exchangeTimes_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 每日兑换次数限制 
+       * </pre>
+       *
+       * <code>int32 exchangeTimes = 5;</code>
+       */
+      public Builder clearExchangeTimes() {
+        
+        exchangeTimes_ = 0;
         onChanged();
         return this;
       }
@@ -3352,65 +2369,65 @@ public final class VipProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.GiftInfo)
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.VipLevelInfo)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.GiftInfo)
-    private static final com.kys.util.netty.proto.VipProto.GiftInfo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.VipLevelInfo)
+    private static final com.kys.util.netty.proto.VipProto.VipLevelInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.GiftInfo();
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.VipLevelInfo();
     }
 
-    public static com.kys.util.netty.proto.VipProto.GiftInfo getDefaultInstance() {
+    public static com.kys.util.netty.proto.VipProto.VipLevelInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<GiftInfo>
-        PARSER = new com.google.protobuf.AbstractParser<GiftInfo>() {
-      public GiftInfo parsePartialFrom(
+    private static final com.google.protobuf.Parser<VipLevelInfo>
+        PARSER = new com.google.protobuf.AbstractParser<VipLevelInfo>() {
+      public VipLevelInfo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new GiftInfo(input, extensionRegistry);
+          return new VipLevelInfo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<GiftInfo> parser() {
+    public static com.google.protobuf.Parser<VipLevelInfo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<GiftInfo> getParserForType() {
+    public com.google.protobuf.Parser<VipLevelInfo> getParserForType() {
       return PARSER;
     }
 
-    public com.kys.util.netty.proto.VipProto.GiftInfo getDefaultInstanceForType() {
+    public com.kys.util.netty.proto.VipProto.VipLevelInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface ClientGetVipWeekOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientGetVipWeek)
+  public interface ClientGetDayGiftOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientGetDayGift)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
    * <pre>
-   ** 获取每周VIP礼包奖励 
+   ** 客户端请求领取每日礼包 
    * </pre>
    *
-   * Protobuf type {@code com.kys.util.netty.proto.ClientGetVipWeek}
+   * Protobuf type {@code com.kys.util.netty.proto.ClientGetDayGift}
    */
-  public  static final class ClientGetVipWeek extends
+  public  static final class ClientGetDayGift extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientGetVipWeek)
-      ClientGetVipWeekOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientGetDayGift)
+      ClientGetDayGiftOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use ClientGetVipWeek.newBuilder() to construct.
-    private ClientGetVipWeek(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use ClientGetDayGift.newBuilder() to construct.
+    private ClientGetDayGift(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private ClientGetVipWeek() {
+    private ClientGetDayGift() {
     }
 
     @java.lang.Override
@@ -3418,7 +2435,7 @@ public final class VipProto {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ClientGetVipWeek(
+    private ClientGetDayGift(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3454,14 +2471,14 @@ public final class VipProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipWeek_descriptor;
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetDayGift_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipWeek_fieldAccessorTable
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetDayGift_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.VipProto.ClientGetVipWeek.class, com.kys.util.netty.proto.VipProto.ClientGetVipWeek.Builder.class);
+              com.kys.util.netty.proto.VipProto.ClientGetDayGift.class, com.kys.util.netty.proto.VipProto.ClientGetDayGift.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -3494,10 +2511,10 @@ public final class VipProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kys.util.netty.proto.VipProto.ClientGetVipWeek)) {
+      if (!(obj instanceof com.kys.util.netty.proto.VipProto.ClientGetDayGift)) {
         return super.equals(obj);
       }
-      com.kys.util.netty.proto.VipProto.ClientGetVipWeek other = (com.kys.util.netty.proto.VipProto.ClientGetVipWeek) obj;
+      com.kys.util.netty.proto.VipProto.ClientGetDayGift other = (com.kys.util.netty.proto.VipProto.ClientGetDayGift) obj;
 
       boolean result = true;
       result = result && unknownFields.equals(other.unknownFields);
@@ -3516,69 +2533,69 @@ public final class VipProto {
       return hash;
     }
 
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(byte[] data)
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseDelimitedFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseDelimitedFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3590,7 +2607,7 @@ public final class VipProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.ClientGetVipWeek prototype) {
+    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.ClientGetDayGift prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -3606,28 +2623,28 @@ public final class VipProto {
     }
     /**
      * <pre>
-     ** 获取每周VIP礼包奖励 
+     ** 客户端请求领取每日礼包 
      * </pre>
      *
-     * Protobuf type {@code com.kys.util.netty.proto.ClientGetVipWeek}
+     * Protobuf type {@code com.kys.util.netty.proto.ClientGetDayGift}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientGetVipWeek)
-        com.kys.util.netty.proto.VipProto.ClientGetVipWeekOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientGetDayGift)
+        com.kys.util.netty.proto.VipProto.ClientGetDayGiftOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipWeek_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetDayGift_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipWeek_fieldAccessorTable
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetDayGift_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.VipProto.ClientGetVipWeek.class, com.kys.util.netty.proto.VipProto.ClientGetVipWeek.Builder.class);
+                com.kys.util.netty.proto.VipProto.ClientGetDayGift.class, com.kys.util.netty.proto.VipProto.ClientGetDayGift.Builder.class);
       }
 
-      // Construct using com.kys.util.netty.proto.VipProto.ClientGetVipWeek.newBuilder()
+      // Construct using com.kys.util.netty.proto.VipProto.ClientGetDayGift.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3649,23 +2666,23 @@ public final class VipProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetVipWeek_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ClientGetDayGift_descriptor;
       }
 
-      public com.kys.util.netty.proto.VipProto.ClientGetVipWeek getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.VipProto.ClientGetVipWeek.getDefaultInstance();
+      public com.kys.util.netty.proto.VipProto.ClientGetDayGift getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.VipProto.ClientGetDayGift.getDefaultInstance();
       }
 
-      public com.kys.util.netty.proto.VipProto.ClientGetVipWeek build() {
-        com.kys.util.netty.proto.VipProto.ClientGetVipWeek result = buildPartial();
+      public com.kys.util.netty.proto.VipProto.ClientGetDayGift build() {
+        com.kys.util.netty.proto.VipProto.ClientGetDayGift result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.kys.util.netty.proto.VipProto.ClientGetVipWeek buildPartial() {
-        com.kys.util.netty.proto.VipProto.ClientGetVipWeek result = new com.kys.util.netty.proto.VipProto.ClientGetVipWeek(this);
+      public com.kys.util.netty.proto.VipProto.ClientGetDayGift buildPartial() {
+        com.kys.util.netty.proto.VipProto.ClientGetDayGift result = new com.kys.util.netty.proto.VipProto.ClientGetDayGift(this);
         onBuilt();
         return result;
       }
@@ -3697,16 +2714,16 @@ public final class VipProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.VipProto.ClientGetVipWeek) {
-          return mergeFrom((com.kys.util.netty.proto.VipProto.ClientGetVipWeek)other);
+        if (other instanceof com.kys.util.netty.proto.VipProto.ClientGetDayGift) {
+          return mergeFrom((com.kys.util.netty.proto.VipProto.ClientGetDayGift)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.ClientGetVipWeek other) {
-        if (other == com.kys.util.netty.proto.VipProto.ClientGetVipWeek.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.ClientGetDayGift other) {
+        if (other == com.kys.util.netty.proto.VipProto.ClientGetDayGift.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -3720,11 +2737,11 @@ public final class VipProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kys.util.netty.proto.VipProto.ClientGetVipWeek parsedMessage = null;
+        com.kys.util.netty.proto.VipProto.ClientGetDayGift parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.VipProto.ClientGetVipWeek) e.getUnfinishedMessage();
+          parsedMessage = (com.kys.util.netty.proto.VipProto.ClientGetDayGift) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3744,65 +2761,65 @@ public final class VipProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientGetVipWeek)
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientGetDayGift)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientGetVipWeek)
-    private static final com.kys.util.netty.proto.VipProto.ClientGetVipWeek DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientGetDayGift)
+    private static final com.kys.util.netty.proto.VipProto.ClientGetDayGift DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.ClientGetVipWeek();
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.ClientGetDayGift();
     }
 
-    public static com.kys.util.netty.proto.VipProto.ClientGetVipWeek getDefaultInstance() {
+    public static com.kys.util.netty.proto.VipProto.ClientGetDayGift getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<ClientGetVipWeek>
-        PARSER = new com.google.protobuf.AbstractParser<ClientGetVipWeek>() {
-      public ClientGetVipWeek parsePartialFrom(
+    private static final com.google.protobuf.Parser<ClientGetDayGift>
+        PARSER = new com.google.protobuf.AbstractParser<ClientGetDayGift>() {
+      public ClientGetDayGift parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ClientGetVipWeek(input, extensionRegistry);
+          return new ClientGetDayGift(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<ClientGetVipWeek> parser() {
+    public static com.google.protobuf.Parser<ClientGetDayGift> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<ClientGetVipWeek> getParserForType() {
+    public com.google.protobuf.Parser<ClientGetDayGift> getParserForType() {
       return PARSER;
     }
 
-    public com.kys.util.netty.proto.VipProto.ClientGetVipWeek getDefaultInstanceForType() {
+    public com.kys.util.netty.proto.VipProto.ClientGetDayGift getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface ServerGetVipWeekOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerGetVipWeek)
+  public interface ServerGetDayGiftOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerGetDayGift)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
    * <pre>
-   ** 返回领取VIP每周礼包 
+   ** 服务器响应领取每日礼包 
    * </pre>
    *
-   * Protobuf type {@code com.kys.util.netty.proto.ServerGetVipWeek}
+   * Protobuf type {@code com.kys.util.netty.proto.ServerGetDayGift}
    */
-  public  static final class ServerGetVipWeek extends
+  public  static final class ServerGetDayGift extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerGetVipWeek)
-      ServerGetVipWeekOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerGetDayGift)
+      ServerGetDayGiftOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use ServerGetVipWeek.newBuilder() to construct.
-    private ServerGetVipWeek(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use ServerGetDayGift.newBuilder() to construct.
+    private ServerGetDayGift(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private ServerGetVipWeek() {
+    private ServerGetDayGift() {
     }
 
     @java.lang.Override
@@ -3810,7 +2827,7 @@ public final class VipProto {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ServerGetVipWeek(
+    private ServerGetDayGift(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3846,14 +2863,14 @@ public final class VipProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipWeek_descriptor;
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetDayGift_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipWeek_fieldAccessorTable
+      return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetDayGift_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.VipProto.ServerGetVipWeek.class, com.kys.util.netty.proto.VipProto.ServerGetVipWeek.Builder.class);
+              com.kys.util.netty.proto.VipProto.ServerGetDayGift.class, com.kys.util.netty.proto.VipProto.ServerGetDayGift.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -3886,10 +2903,10 @@ public final class VipProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kys.util.netty.proto.VipProto.ServerGetVipWeek)) {
+      if (!(obj instanceof com.kys.util.netty.proto.VipProto.ServerGetDayGift)) {
         return super.equals(obj);
       }
-      com.kys.util.netty.proto.VipProto.ServerGetVipWeek other = (com.kys.util.netty.proto.VipProto.ServerGetVipWeek) obj;
+      com.kys.util.netty.proto.VipProto.ServerGetDayGift other = (com.kys.util.netty.proto.VipProto.ServerGetDayGift) obj;
 
       boolean result = true;
       result = result && unknownFields.equals(other.unknownFields);
@@ -3908,69 +2925,69 @@ public final class VipProto {
       return hash;
     }
 
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(byte[] data)
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseDelimitedFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseDelimitedFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek parseFrom(
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3982,7 +2999,7 @@ public final class VipProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.ServerGetVipWeek prototype) {
+    public static Builder newBuilder(com.kys.util.netty.proto.VipProto.ServerGetDayGift prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -3998,28 +3015,28 @@ public final class VipProto {
     }
     /**
      * <pre>
-     ** 返回领取VIP每周礼包 
+     ** 服务器响应领取每日礼包 
      * </pre>
      *
-     * Protobuf type {@code com.kys.util.netty.proto.ServerGetVipWeek}
+     * Protobuf type {@code com.kys.util.netty.proto.ServerGetDayGift}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerGetVipWeek)
-        com.kys.util.netty.proto.VipProto.ServerGetVipWeekOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerGetDayGift)
+        com.kys.util.netty.proto.VipProto.ServerGetDayGiftOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipWeek_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetDayGift_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipWeek_fieldAccessorTable
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetDayGift_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.VipProto.ServerGetVipWeek.class, com.kys.util.netty.proto.VipProto.ServerGetVipWeek.Builder.class);
+                com.kys.util.netty.proto.VipProto.ServerGetDayGift.class, com.kys.util.netty.proto.VipProto.ServerGetDayGift.Builder.class);
       }
 
-      // Construct using com.kys.util.netty.proto.VipProto.ServerGetVipWeek.newBuilder()
+      // Construct using com.kys.util.netty.proto.VipProto.ServerGetDayGift.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4041,23 +3058,23 @@ public final class VipProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetVipWeek_descriptor;
+        return com.kys.util.netty.proto.VipProto.internal_static_com_kys_util_netty_proto_ServerGetDayGift_descriptor;
       }
 
-      public com.kys.util.netty.proto.VipProto.ServerGetVipWeek getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.VipProto.ServerGetVipWeek.getDefaultInstance();
+      public com.kys.util.netty.proto.VipProto.ServerGetDayGift getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.VipProto.ServerGetDayGift.getDefaultInstance();
       }
 
-      public com.kys.util.netty.proto.VipProto.ServerGetVipWeek build() {
-        com.kys.util.netty.proto.VipProto.ServerGetVipWeek result = buildPartial();
+      public com.kys.util.netty.proto.VipProto.ServerGetDayGift build() {
+        com.kys.util.netty.proto.VipProto.ServerGetDayGift result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.kys.util.netty.proto.VipProto.ServerGetVipWeek buildPartial() {
-        com.kys.util.netty.proto.VipProto.ServerGetVipWeek result = new com.kys.util.netty.proto.VipProto.ServerGetVipWeek(this);
+      public com.kys.util.netty.proto.VipProto.ServerGetDayGift buildPartial() {
+        com.kys.util.netty.proto.VipProto.ServerGetDayGift result = new com.kys.util.netty.proto.VipProto.ServerGetDayGift(this);
         onBuilt();
         return result;
       }
@@ -4089,16 +3106,16 @@ public final class VipProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.VipProto.ServerGetVipWeek) {
-          return mergeFrom((com.kys.util.netty.proto.VipProto.ServerGetVipWeek)other);
+        if (other instanceof com.kys.util.netty.proto.VipProto.ServerGetDayGift) {
+          return mergeFrom((com.kys.util.netty.proto.VipProto.ServerGetDayGift)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.ServerGetVipWeek other) {
-        if (other == com.kys.util.netty.proto.VipProto.ServerGetVipWeek.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.kys.util.netty.proto.VipProto.ServerGetDayGift other) {
+        if (other == com.kys.util.netty.proto.VipProto.ServerGetDayGift.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -4112,11 +3129,11 @@ public final class VipProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kys.util.netty.proto.VipProto.ServerGetVipWeek parsedMessage = null;
+        com.kys.util.netty.proto.VipProto.ServerGetDayGift parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.VipProto.ServerGetVipWeek) e.getUnfinishedMessage();
+          parsedMessage = (com.kys.util.netty.proto.VipProto.ServerGetDayGift) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4136,74 +3153,69 @@ public final class VipProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerGetVipWeek)
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerGetDayGift)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerGetVipWeek)
-    private static final com.kys.util.netty.proto.VipProto.ServerGetVipWeek DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerGetDayGift)
+    private static final com.kys.util.netty.proto.VipProto.ServerGetDayGift DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.ServerGetVipWeek();
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.VipProto.ServerGetDayGift();
     }
 
-    public static com.kys.util.netty.proto.VipProto.ServerGetVipWeek getDefaultInstance() {
+    public static com.kys.util.netty.proto.VipProto.ServerGetDayGift getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<ServerGetVipWeek>
-        PARSER = new com.google.protobuf.AbstractParser<ServerGetVipWeek>() {
-      public ServerGetVipWeek parsePartialFrom(
+    private static final com.google.protobuf.Parser<ServerGetDayGift>
+        PARSER = new com.google.protobuf.AbstractParser<ServerGetDayGift>() {
+      public ServerGetDayGift parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ServerGetVipWeek(input, extensionRegistry);
+          return new ServerGetDayGift(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<ServerGetVipWeek> parser() {
+    public static com.google.protobuf.Parser<ServerGetDayGift> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<ServerGetVipWeek> getParserForType() {
+    public com.google.protobuf.Parser<ServerGetDayGift> getParserForType() {
       return PARSER;
     }
 
-    public com.kys.util.netty.proto.VipProto.ServerGetVipWeek getDefaultInstanceForType() {
+    public com.kys.util.netty.proto.VipProto.ServerGetDayGift getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ClientGetVipInfo_descriptor;
+    internal_static_com_kys_util_netty_proto_ClientGetVip_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ClientGetVipInfo_fieldAccessorTable;
+      internal_static_com_kys_util_netty_proto_ClientGetVip_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ServerGetVipInfo_descriptor;
+    internal_static_com_kys_util_netty_proto_ServerGetVip_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ServerGetVipInfo_fieldAccessorTable;
+      internal_static_com_kys_util_netty_proto_ServerGetVip_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_VipLvUpGift_descriptor;
+    internal_static_com_kys_util_netty_proto_VipLevelInfo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_VipLvUpGift_fieldAccessorTable;
+      internal_static_com_kys_util_netty_proto_VipLevelInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_GiftInfo_descriptor;
+    internal_static_com_kys_util_netty_proto_ClientGetDayGift_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_GiftInfo_fieldAccessorTable;
+      internal_static_com_kys_util_netty_proto_ClientGetDayGift_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ClientGetVipWeek_descriptor;
+    internal_static_com_kys_util_netty_proto_ServerGetDayGift_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ClientGetVipWeek_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ServerGetVipWeek_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ServerGetVipWeek_fieldAccessorTable;
+      internal_static_com_kys_util_netty_proto_ServerGetDayGift_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -4214,16 +3226,14 @@ public final class VipProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\016vipProto.proto\022\030com.kys.util.netty.pro" +
-      "to\"\022\n\020ClientGetVipInfo\"\222\001\n\020ServerGetVipI" +
-      "nfo\022\r\n\005level\030\001 \001(\005\022\021\n\tselfMoney\030\002 \001(\005\022\021\n" +
-      "\tnextMoney\030\003 \001(\005\022\020\n\010weekGift\030\004 \001(\005\0227\n\010gi" +
-      "ftList\030\005 \003(\0132%.com.kys.util.netty.proto." +
-      "VipLvUpGift\"O\n\013VipLvUpGift\022\r\n\005level\030\001 \001(" +
-      "\005\0221\n\005infos\030\002 \003(\0132\".com.kys.util.netty.pr" +
-      "oto.GiftInfo\"B\n\010GiftInfo\022\n\n\002id\030\001 \001(\005\022\r\n\005" +
-      "count\030\002 \001(\005\022\r\n\005index\030\003 \001(\005\022\014\n\004name\030\004 \001(\t" +
-      "\"\022\n\020ClientGetVipWeek\"\022\n\020ServerGetVipWeek",
-      "b\006proto3"
+      "to\"\016\n\014ClientGetVip\"\177\n\014ServerGetVip\022\n\n\002lv" +
+      "\030\001 \001(\005\022\017\n\007current\030\002 \001(\005\022\014\n\004next\030\003 \001(\005\022\r\n" +
+      "\005state\030\004 \001(\005\0225\n\005infos\030\005 \003(\0132&.com.kys.ut" +
+      "il.netty.proto.VipLevelInfo\"_\n\014VipLevelI" +
+      "nfo\022\n\n\002lv\030\001 \001(\005\022\017\n\007diamond\030\002 \001(\005\022\014\n\004gold" +
+      "\030\003 \001(\005\022\r\n\005level\030\004 \001(\005\022\025\n\rexchangeTimes\030\005" +
+      " \001(\005\"\022\n\020ClientGetDayGift\"\022\n\020ServerGetDay" +
+      "Giftb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -4237,41 +3247,35 @@ public final class VipProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_com_kys_util_netty_proto_ClientGetVipInfo_descriptor =
+    internal_static_com_kys_util_netty_proto_ClientGetVip_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_com_kys_util_netty_proto_ClientGetVipInfo_fieldAccessorTable = new
+    internal_static_com_kys_util_netty_proto_ClientGetVip_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ClientGetVipInfo_descriptor,
+        internal_static_com_kys_util_netty_proto_ClientGetVip_descriptor,
         new java.lang.String[] { });
-    internal_static_com_kys_util_netty_proto_ServerGetVipInfo_descriptor =
+    internal_static_com_kys_util_netty_proto_ServerGetVip_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_com_kys_util_netty_proto_ServerGetVipInfo_fieldAccessorTable = new
+    internal_static_com_kys_util_netty_proto_ServerGetVip_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ServerGetVipInfo_descriptor,
-        new java.lang.String[] { "Level", "SelfMoney", "NextMoney", "WeekGift", "GiftList", });
-    internal_static_com_kys_util_netty_proto_VipLvUpGift_descriptor =
+        internal_static_com_kys_util_netty_proto_ServerGetVip_descriptor,
+        new java.lang.String[] { "Lv", "Current", "Next", "State", "Infos", });
+    internal_static_com_kys_util_netty_proto_VipLevelInfo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_com_kys_util_netty_proto_VipLvUpGift_fieldAccessorTable = new
+    internal_static_com_kys_util_netty_proto_VipLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_VipLvUpGift_descriptor,
-        new java.lang.String[] { "Level", "Infos", });
-    internal_static_com_kys_util_netty_proto_GiftInfo_descriptor =
+        internal_static_com_kys_util_netty_proto_VipLevelInfo_descriptor,
+        new java.lang.String[] { "Lv", "Diamond", "Gold", "Level", "ExchangeTimes", });
+    internal_static_com_kys_util_netty_proto_ClientGetDayGift_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_com_kys_util_netty_proto_GiftInfo_fieldAccessorTable = new
+    internal_static_com_kys_util_netty_proto_ClientGetDayGift_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_GiftInfo_descriptor,
-        new java.lang.String[] { "Id", "Count", "Index", "Name", });
-    internal_static_com_kys_util_netty_proto_ClientGetVipWeek_descriptor =
-      getDescriptor().getMessageTypes().get(4);
-    internal_static_com_kys_util_netty_proto_ClientGetVipWeek_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ClientGetVipWeek_descriptor,
+        internal_static_com_kys_util_netty_proto_ClientGetDayGift_descriptor,
         new java.lang.String[] { });
-    internal_static_com_kys_util_netty_proto_ServerGetVipWeek_descriptor =
-      getDescriptor().getMessageTypes().get(5);
-    internal_static_com_kys_util_netty_proto_ServerGetVipWeek_fieldAccessorTable = new
+    internal_static_com_kys_util_netty_proto_ServerGetDayGift_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_com_kys_util_netty_proto_ServerGetDayGift_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ServerGetVipWeek_descriptor,
+        internal_static_com_kys_util_netty_proto_ServerGetDayGift_descriptor,
         new java.lang.String[] { });
   }
 

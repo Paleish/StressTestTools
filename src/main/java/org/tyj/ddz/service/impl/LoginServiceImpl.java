@@ -25,7 +25,7 @@ public class LoginServiceImpl implements LoginService {
     @Resource
     private PlayerInfoMaper playerInfoMaper;
 
-    public LoginInfo findLoginInfoByToken(String token, com.kys.util.netty.proto.LoginProto.ClientLogin clientLogin) {
+    public LoginInfo findLoginInfoByToken(String token, com.kys.util.netty.proto.LoginProto.ClientNewLogin clientLogin) {
 
         LoginInfo loginInfo = loginInfoMapper.queryLoginInfoByToken(token);
         return loginInfo;

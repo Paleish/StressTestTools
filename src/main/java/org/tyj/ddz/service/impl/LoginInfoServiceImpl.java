@@ -23,7 +23,7 @@ public class LoginInfoServiceImpl implements LoginInfoService {
         return loginInfo;
     }
 
-    public void updateLoginInfo(com.kys.util.netty.proto.LoginProto.ClientLogin clientLogin, LoginInfo loginInfo) {
+    public void updateLoginInfo(com.kys.util.netty.proto.LoginProto.ClientNewLogin clientLogin, LoginInfo loginInfo) {
         loginInfo.setLoginTime(new Date());
         loginInfo.setDeviceId(UUID.randomUUID().toString().substring(0, 16));
         loginInfo.setDevicePlatform("ios");

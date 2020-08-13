@@ -5,7 +5,7 @@ import org.tyj.ddz.bean.PlayerInfo;
 
 public interface LoginService {
 
-    LoginInfo findLoginInfoByToken(String token, com.kys.util.netty.proto.LoginProto.ClientLogin clientLogin);
+    LoginInfo findLoginInfoByToken(String token, com.kys.util.netty.proto.LoginProto.ClientNewLogin clientLogin);
 
     PlayerInfo findPlayerInfoByUserId(int userid);
 

@@ -18,6 +18,8 @@ import org.springframework.stereotype.Component;
 import org.tyj.ddz.ai.AIManager;
 import org.tyj.util.ChannelAttributeUtil;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * 〈一句话功能简述〉<br>
  * 〈〉
@@ -28,6 +30,8 @@ import org.tyj.util.ChannelAttributeUtil;
  */
 @Component
 public class GameHandler extends AbsMessageHandler {
+    //用于统计玩家进入房间数
+    private static AtomicInteger countPlayer = new AtomicInteger(1);
 
     @Override
     public void handle(ChannelHandlerContext ctx, ProtoMsg.ServerResponse message) {
@@ -50,7 +54,7 @@ public class GameHandler extends AbsMessageHandler {
         ) {
             if (temp.getUserinfo().getPlayerId() == userId) {
                 AIManager.aiMap.get(userId).setSeatId(temp.getSeatID());
-                logger.info("player{}receive enterRoom message,seatId is {}", userId, temp.getSeatID());
+                logger.info("player{}receive enterRoom message,seatId is {},all match player num is :{}", userId, temp.getSeatID(), countPlayer.getAndIncrement());
             }
         }
     }

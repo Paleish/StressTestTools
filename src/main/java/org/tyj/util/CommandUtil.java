@@ -122,6 +122,10 @@ public class CommandUtil extends Thread {
                     aiManager.addNewMsg("skin", cmd[1]);
                 } else if ("lucky".equals(cmd[0])) {
                     aiManager.addNewMsg("lucky", null);
+                } else if ("revive".equals(cmd[0])) {
+                    aiManager.addNewMsg("revive", null);
+                } else if ("joinMatch".equals(cmd[0])) {
+                    aiManager.addNewMsg("joinMatch", null);
                 }
             }
         } catch (IOException e) {

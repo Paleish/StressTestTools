@@ -14,2815 +14,6 @@ public final class LoginProto {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface ClientLoginOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientLogin)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     ** 登录识别token 
-     * </pre>
-     *
-     * <code>string token = 1;</code>
-     */
-    java.lang.String getToken();
-    /**
-     * <pre>
-     ** 登录识别token 
-     * </pre>
-     *
-     * <code>string token = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getTokenBytes();
-
-    /**
-     * <pre>
-     ** 微信登录unionid 
-     * </pre>
-     *
-     * <code>string uid = 2;</code>
-     */
-    java.lang.String getUid();
-    /**
-     * <pre>
-     ** 微信登录unionid 
-     * </pre>
-     *
-     * <code>string uid = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getUidBytes();
-
-    /**
-     * <pre>
-     ** 微信登录iconurl 
-     * </pre>
-     *
-     * <code>string iconurl = 3;</code>
-     */
-    java.lang.String getIconurl();
-    /**
-     * <pre>
-     ** 微信登录iconurl 
-     * </pre>
-     *
-     * <code>string iconurl = 3;</code>
-     */
-    com.google.protobuf.ByteString
-        getIconurlBytes();
-
-    /**
-     * <pre>
-     ** 微信登录name 
-     * </pre>
-     *
-     * <code>string name = 4;</code>
-     */
-    java.lang.String getName();
-    /**
-     * <pre>
-     ** 微信登录name 
-     * </pre>
-     *
-     * <code>string name = 4;</code>
-     */
-    com.google.protobuf.ByteString
-        getNameBytes();
-
-    /**
-     * <pre>
-     ** 微信登录openid 
-     * </pre>
-     *
-     * <code>string openid = 5;</code>
-     */
-    java.lang.String getOpenid();
-    /**
-     * <pre>
-     ** 微信登录openid 
-     * </pre>
-     *
-     * <code>string openid = 5;</code>
-     */
-    com.google.protobuf.ByteString
-        getOpenidBytes();
-
-    /**
-     * <pre>
-     ** 登陆类型:0 token登录,1 微信登录 
-     * </pre>
-     *
-     * <code>string loginType = 6;</code>
-     */
-    java.lang.String getLoginType();
-    /**
-     * <pre>
-     ** 登陆类型:0 token登录,1 微信登录 
-     * </pre>
-     *
-     * <code>string loginType = 6;</code>
-     */
-    com.google.protobuf.ByteString
-        getLoginTypeBytes();
-
-    /**
-     * <pre>
-     ** 设备标示（唯一） 
-     * </pre>
-     *
-     * <code>string deviceId = 7;</code>
-     */
-    java.lang.String getDeviceId();
-    /**
-     * <pre>
-     ** 设备标示（唯一） 
-     * </pre>
-     *
-     * <code>string deviceId = 7;</code>
-     */
-    com.google.protobuf.ByteString
-        getDeviceIdBytes();
-
-    /**
-     * <pre>
-     ** 设备类型 
-     * </pre>
-     *
-     * <code>string devicePlatform = 8;</code>
-     */
-    java.lang.String getDevicePlatform();
-    /**
-     * <pre>
-     ** 设备类型 
-     * </pre>
-     *
-     * <code>string devicePlatform = 8;</code>
-     */
-    com.google.protobuf.ByteString
-        getDevicePlatformBytes();
-
-    /**
-     * <pre>
-     ** app版本 
-     * </pre>
-     *
-     * <code>string appVersion = 9;</code>
-     */
-    java.lang.String getAppVersion();
-    /**
-     * <pre>
-     ** app版本 
-     * </pre>
-     *
-     * <code>string appVersion = 9;</code>
-     */
-    com.google.protobuf.ByteString
-        getAppVersionBytes();
-
-    /**
-     * <pre>
-     ** 设备系统版本 
-     * </pre>
-     *
-     * <code>string osVersion = 10;</code>
-     */
-    java.lang.String getOsVersion();
-    /**
-     * <pre>
-     ** 设备系统版本 
-     * </pre>
-     *
-     * <code>string osVersion = 10;</code>
-     */
-    com.google.protobuf.ByteString
-        getOsVersionBytes();
-
-    /**
-     * <pre>
-     ** 设备系统：android、IOS 
-     * </pre>
-     *
-     * <code>string osPlatform = 11;</code>
-     */
-    java.lang.String getOsPlatform();
-    /**
-     * <pre>
-     ** 设备系统：android、IOS 
-     * </pre>
-     *
-     * <code>string osPlatform = 11;</code>
-     */
-    com.google.protobuf.ByteString
-        getOsPlatformBytes();
-
-    /**
-     * <pre>
-     ** 渠道号 
-     * </pre>
-     *
-     * <code>string channel = 12;</code>
-     */
-    java.lang.String getChannel();
-    /**
-     * <pre>
-     ** 渠道号 
-     * </pre>
-     *
-     * <code>string channel = 12;</code>
-     */
-    com.google.protobuf.ByteString
-        getChannelBytes();
-
-    /**
-     * <pre>
-     ** 上一级id 
-     * </pre>
-     *
-     * <code>string parentId = 13;</code>
-     */
-    java.lang.String getParentId();
-    /**
-     * <pre>
-     ** 上一级id 
-     * </pre>
-     *
-     * <code>string parentId = 13;</code>
-     */
-    com.google.protobuf.ByteString
-        getParentIdBytes();
-
-    /**
-     * <pre>
-     ** 性别 
-     * </pre>
-     *
-     * <code>int32 playerSex = 14;</code>
-     */
-    int getPlayerSex();
-
-    /**
-     * <pre>
-     ** 是否是重连
-     * </pre>
-     *
-     * <code>bool isReconnect = 15;</code>
-     */
-    boolean getIsReconnect();
-  }
-  /**
-   * <pre>
-   ** Client登录消息 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.ClientLogin}
-   */
-  public  static final class ClientLogin extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientLogin)
-      ClientLoginOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use ClientLogin.newBuilder() to construct.
-    private ClientLogin(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private ClientLogin() {
-      token_ = "";
-      uid_ = "";
-      iconurl_ = "";
-      name_ = "";
-      openid_ = "";
-      loginType_ = "";
-      deviceId_ = "";
-      devicePlatform_ = "";
-      appVersion_ = "";
-      osVersion_ = "";
-      osPlatform_ = "";
-      channel_ = "";
-      parentId_ = "";
-      playerSex_ = 0;
-      isReconnect_ = false;
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ClientLogin(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownFieldProto3(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              token_ = s;
-              break;
-            }
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              uid_ = s;
-              break;
-            }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              iconurl_ = s;
-              break;
-            }
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              name_ = s;
-              break;
-            }
-            case 42: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              openid_ = s;
-              break;
-            }
-            case 50: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              loginType_ = s;
-              break;
-            }
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              deviceId_ = s;
-              break;
-            }
-            case 66: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              devicePlatform_ = s;
-              break;
-            }
-            case 74: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              appVersion_ = s;
-              break;
-            }
-            case 82: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              osVersion_ = s;
-              break;
-            }
-            case 90: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              osPlatform_ = s;
-              break;
-            }
-            case 98: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              channel_ = s;
-              break;
-            }
-            case 106: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              parentId_ = s;
-              break;
-            }
-            case 112: {
-
-              playerSex_ = input.readInt32();
-              break;
-            }
-            case 120: {
-
-              isReconnect_ = input.readBool();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.kys.util.netty.proto.LoginProto.internal_static_com_kys_util_netty_proto_ClientLogin_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.LoginProto.internal_static_com_kys_util_netty_proto_ClientLogin_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.LoginProto.ClientLogin.class, com.kys.util.netty.proto.LoginProto.ClientLogin.Builder.class);
-    }
-
-    public static final int TOKEN_FIELD_NUMBER = 1;
-    private volatile java.lang.Object token_;
-    /**
-     * <pre>
-     ** 登录识别token 
-     * </pre>
-     *
-     * <code>string token = 1;</code>
-     */
-    public java.lang.String getToken() {
-      java.lang.Object ref = token_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        token_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 登录识别token 
-     * </pre>
-     *
-     * <code>string token = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getTokenBytes() {
-      java.lang.Object ref = token_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        token_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int UID_FIELD_NUMBER = 2;
-    private volatile java.lang.Object uid_;
-    /**
-     * <pre>
-     ** 微信登录unionid 
-     * </pre>
-     *
-     * <code>string uid = 2;</code>
-     */
-    public java.lang.String getUid() {
-      java.lang.Object ref = uid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        uid_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 微信登录unionid 
-     * </pre>
-     *
-     * <code>string uid = 2;</code>
-     */
-    public com.google.protobuf.ByteString
-        getUidBytes() {
-      java.lang.Object ref = uid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        uid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ICONURL_FIELD_NUMBER = 3;
-    private volatile java.lang.Object iconurl_;
-    /**
-     * <pre>
-     ** 微信登录iconurl 
-     * </pre>
-     *
-     * <code>string iconurl = 3;</code>
-     */
-    public java.lang.String getIconurl() {
-      java.lang.Object ref = iconurl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        iconurl_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 微信登录iconurl 
-     * </pre>
-     *
-     * <code>string iconurl = 3;</code>
-     */
-    public com.google.protobuf.ByteString
-        getIconurlBytes() {
-      java.lang.Object ref = iconurl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        iconurl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int NAME_FIELD_NUMBER = 4;
-    private volatile java.lang.Object name_;
-    /**
-     * <pre>
-     ** 微信登录name 
-     * </pre>
-     *
-     * <code>string name = 4;</code>
-     */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        name_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 微信登录name 
-     * </pre>
-     *
-     * <code>string name = 4;</code>
-     */
-    public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        name_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int OPENID_FIELD_NUMBER = 5;
-    private volatile java.lang.Object openid_;
-    /**
-     * <pre>
-     ** 微信登录openid 
-     * </pre>
-     *
-     * <code>string openid = 5;</code>
-     */
-    public java.lang.String getOpenid() {
-      java.lang.Object ref = openid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        openid_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 微信登录openid 
-     * </pre>
-     *
-     * <code>string openid = 5;</code>
-     */
-    public com.google.protobuf.ByteString
-        getOpenidBytes() {
-      java.lang.Object ref = openid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        openid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int LOGINTYPE_FIELD_NUMBER = 6;
-    private volatile java.lang.Object loginType_;
-    /**
-     * <pre>
-     ** 登陆类型:0 token登录,1 微信登录 
-     * </pre>
-     *
-     * <code>string loginType = 6;</code>
-     */
-    public java.lang.String getLoginType() {
-      java.lang.Object ref = loginType_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        loginType_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 登陆类型:0 token登录,1 微信登录 
-     * </pre>
-     *
-     * <code>string loginType = 6;</code>
-     */
-    public com.google.protobuf.ByteString
-        getLoginTypeBytes() {
-      java.lang.Object ref = loginType_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        loginType_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int DEVICEID_FIELD_NUMBER = 7;
-    private volatile java.lang.Object deviceId_;
-    /**
-     * <pre>
-     ** 设备标示（唯一） 
-     * </pre>
-     *
-     * <code>string deviceId = 7;</code>
-     */
-    public java.lang.String getDeviceId() {
-      java.lang.Object ref = deviceId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        deviceId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 设备标示（唯一） 
-     * </pre>
-     *
-     * <code>string deviceId = 7;</code>
-     */
-    public com.google.protobuf.ByteString
-        getDeviceIdBytes() {
-      java.lang.Object ref = deviceId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        deviceId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int DEVICEPLATFORM_FIELD_NUMBER = 8;
-    private volatile java.lang.Object devicePlatform_;
-    /**
-     * <pre>
-     ** 设备类型 
-     * </pre>
-     *
-     * <code>string devicePlatform = 8;</code>
-     */
-    public java.lang.String getDevicePlatform() {
-      java.lang.Object ref = devicePlatform_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        devicePlatform_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 设备类型 
-     * </pre>
-     *
-     * <code>string devicePlatform = 8;</code>
-     */
-    public com.google.protobuf.ByteString
-        getDevicePlatformBytes() {
-      java.lang.Object ref = devicePlatform_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        devicePlatform_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int APPVERSION_FIELD_NUMBER = 9;
-    private volatile java.lang.Object appVersion_;
-    /**
-     * <pre>
-     ** app版本 
-     * </pre>
-     *
-     * <code>string appVersion = 9;</code>
-     */
-    public java.lang.String getAppVersion() {
-      java.lang.Object ref = appVersion_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        appVersion_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** app版本 
-     * </pre>
-     *
-     * <code>string appVersion = 9;</code>
-     */
-    public com.google.protobuf.ByteString
-        getAppVersionBytes() {
-      java.lang.Object ref = appVersion_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        appVersion_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int OSVERSION_FIELD_NUMBER = 10;
-    private volatile java.lang.Object osVersion_;
-    /**
-     * <pre>
-     ** 设备系统版本 
-     * </pre>
-     *
-     * <code>string osVersion = 10;</code>
-     */
-    public java.lang.String getOsVersion() {
-      java.lang.Object ref = osVersion_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        osVersion_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 设备系统版本 
-     * </pre>
-     *
-     * <code>string osVersion = 10;</code>
-     */
-    public com.google.protobuf.ByteString
-        getOsVersionBytes() {
-      java.lang.Object ref = osVersion_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        osVersion_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int OSPLATFORM_FIELD_NUMBER = 11;
-    private volatile java.lang.Object osPlatform_;
-    /**
-     * <pre>
-     ** 设备系统：android、IOS 
-     * </pre>
-     *
-     * <code>string osPlatform = 11;</code>
-     */
-    public java.lang.String getOsPlatform() {
-      java.lang.Object ref = osPlatform_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        osPlatform_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 设备系统：android、IOS 
-     * </pre>
-     *
-     * <code>string osPlatform = 11;</code>
-     */
-    public com.google.protobuf.ByteString
-        getOsPlatformBytes() {
-      java.lang.Object ref = osPlatform_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        osPlatform_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CHANNEL_FIELD_NUMBER = 12;
-    private volatile java.lang.Object channel_;
-    /**
-     * <pre>
-     ** 渠道号 
-     * </pre>
-     *
-     * <code>string channel = 12;</code>
-     */
-    public java.lang.String getChannel() {
-      java.lang.Object ref = channel_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        channel_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 渠道号 
-     * </pre>
-     *
-     * <code>string channel = 12;</code>
-     */
-    public com.google.protobuf.ByteString
-        getChannelBytes() {
-      java.lang.Object ref = channel_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        channel_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int PARENTID_FIELD_NUMBER = 13;
-    private volatile java.lang.Object parentId_;
-    /**
-     * <pre>
-     ** 上一级id 
-     * </pre>
-     *
-     * <code>string parentId = 13;</code>
-     */
-    public java.lang.String getParentId() {
-      java.lang.Object ref = parentId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        parentId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 上一级id 
-     * </pre>
-     *
-     * <code>string parentId = 13;</code>
-     */
-    public com.google.protobuf.ByteString
-        getParentIdBytes() {
-      java.lang.Object ref = parentId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        parentId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int PLAYERSEX_FIELD_NUMBER = 14;
-    private int playerSex_;
-    /**
-     * <pre>
-     ** 性别 
-     * </pre>
-     *
-     * <code>int32 playerSex = 14;</code>
-     */
-    public int getPlayerSex() {
-      return playerSex_;
-    }
-
-    public static final int ISRECONNECT_FIELD_NUMBER = 15;
-    private boolean isReconnect_;
-    /**
-     * <pre>
-     ** 是否是重连
-     * </pre>
-     *
-     * <code>bool isReconnect = 15;</code>
-     */
-    public boolean getIsReconnect() {
-      return isReconnect_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!getTokenBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, token_);
-      }
-      if (!getUidBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, uid_);
-      }
-      if (!getIconurlBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, iconurl_);
-      }
-      if (!getNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, name_);
-      }
-      if (!getOpenidBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, openid_);
-      }
-      if (!getLoginTypeBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, loginType_);
-      }
-      if (!getDeviceIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, deviceId_);
-      }
-      if (!getDevicePlatformBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, devicePlatform_);
-      }
-      if (!getAppVersionBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, appVersion_);
-      }
-      if (!getOsVersionBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, osVersion_);
-      }
-      if (!getOsPlatformBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, osPlatform_);
-      }
-      if (!getChannelBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, channel_);
-      }
-      if (!getParentIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, parentId_);
-      }
-      if (playerSex_ != 0) {
-        output.writeInt32(14, playerSex_);
-      }
-      if (isReconnect_ != false) {
-        output.writeBool(15, isReconnect_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getTokenBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, token_);
-      }
-      if (!getUidBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, uid_);
-      }
-      if (!getIconurlBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, iconurl_);
-      }
-      if (!getNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, name_);
-      }
-      if (!getOpenidBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, openid_);
-      }
-      if (!getLoginTypeBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, loginType_);
-      }
-      if (!getDeviceIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, deviceId_);
-      }
-      if (!getDevicePlatformBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, devicePlatform_);
-      }
-      if (!getAppVersionBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, appVersion_);
-      }
-      if (!getOsVersionBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, osVersion_);
-      }
-      if (!getOsPlatformBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, osPlatform_);
-      }
-      if (!getChannelBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, channel_);
-      }
-      if (!getParentIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, parentId_);
-      }
-      if (playerSex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, playerSex_);
-      }
-      if (isReconnect_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isReconnect_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.kys.util.netty.proto.LoginProto.ClientLogin)) {
-        return super.equals(obj);
-      }
-      com.kys.util.netty.proto.LoginProto.ClientLogin other = (com.kys.util.netty.proto.LoginProto.ClientLogin) obj;
-
-      boolean result = true;
-      result = result && getToken()
-          .equals(other.getToken());
-      result = result && getUid()
-          .equals(other.getUid());
-      result = result && getIconurl()
-          .equals(other.getIconurl());
-      result = result && getName()
-          .equals(other.getName());
-      result = result && getOpenid()
-          .equals(other.getOpenid());
-      result = result && getLoginType()
-          .equals(other.getLoginType());
-      result = result && getDeviceId()
-          .equals(other.getDeviceId());
-      result = result && getDevicePlatform()
-          .equals(other.getDevicePlatform());
-      result = result && getAppVersion()
-          .equals(other.getAppVersion());
-      result = result && getOsVersion()
-          .equals(other.getOsVersion());
-      result = result && getOsPlatform()
-          .equals(other.getOsPlatform());
-      result = result && getChannel()
-          .equals(other.getChannel());
-      result = result && getParentId()
-          .equals(other.getParentId());
-      result = result && (getPlayerSex()
-          == other.getPlayerSex());
-      result = result && (getIsReconnect()
-          == other.getIsReconnect());
-      result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TOKEN_FIELD_NUMBER;
-      hash = (53 * hash) + getToken().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid().hashCode();
-      hash = (37 * hash) + ICONURL_FIELD_NUMBER;
-      hash = (53 * hash) + getIconurl().hashCode();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
-      hash = (37 * hash) + OPENID_FIELD_NUMBER;
-      hash = (53 * hash) + getOpenid().hashCode();
-      hash = (37 * hash) + LOGINTYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getLoginType().hashCode();
-      hash = (37 * hash) + DEVICEID_FIELD_NUMBER;
-      hash = (53 * hash) + getDeviceId().hashCode();
-      hash = (37 * hash) + DEVICEPLATFORM_FIELD_NUMBER;
-      hash = (53 * hash) + getDevicePlatform().hashCode();
-      hash = (37 * hash) + APPVERSION_FIELD_NUMBER;
-      hash = (53 * hash) + getAppVersion().hashCode();
-      hash = (37 * hash) + OSVERSION_FIELD_NUMBER;
-      hash = (53 * hash) + getOsVersion().hashCode();
-      hash = (37 * hash) + OSPLATFORM_FIELD_NUMBER;
-      hash = (53 * hash) + getOsPlatform().hashCode();
-      hash = (37 * hash) + CHANNEL_FIELD_NUMBER;
-      hash = (53 * hash) + getChannel().hashCode();
-      hash = (37 * hash) + PARENTID_FIELD_NUMBER;
-      hash = (53 * hash) + getParentId().hashCode();
-      hash = (37 * hash) + PLAYERSEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerSex();
-      hash = (37 * hash) + ISRECONNECT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsReconnect());
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.kys.util.netty.proto.LoginProto.ClientLogin prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * <pre>
-     ** Client登录消息 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.ClientLogin}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientLogin)
-        com.kys.util.netty.proto.LoginProto.ClientLoginOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.kys.util.netty.proto.LoginProto.internal_static_com_kys_util_netty_proto_ClientLogin_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.LoginProto.internal_static_com_kys_util_netty_proto_ClientLogin_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.LoginProto.ClientLogin.class, com.kys.util.netty.proto.LoginProto.ClientLogin.Builder.class);
-      }
-
-      // Construct using com.kys.util.netty.proto.LoginProto.ClientLogin.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        token_ = "";
-
-        uid_ = "";
-
-        iconurl_ = "";
-
-        name_ = "";
-
-        openid_ = "";
-
-        loginType_ = "";
-
-        deviceId_ = "";
-
-        devicePlatform_ = "";
-
-        appVersion_ = "";
-
-        osVersion_ = "";
-
-        osPlatform_ = "";
-
-        channel_ = "";
-
-        parentId_ = "";
-
-        playerSex_ = 0;
-
-        isReconnect_ = false;
-
-        return this;
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.kys.util.netty.proto.LoginProto.internal_static_com_kys_util_netty_proto_ClientLogin_descriptor;
-      }
-
-      public com.kys.util.netty.proto.LoginProto.ClientLogin getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.LoginProto.ClientLogin.getDefaultInstance();
-      }
-
-      public com.kys.util.netty.proto.LoginProto.ClientLogin build() {
-        com.kys.util.netty.proto.LoginProto.ClientLogin result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.kys.util.netty.proto.LoginProto.ClientLogin buildPartial() {
-        com.kys.util.netty.proto.LoginProto.ClientLogin result = new com.kys.util.netty.proto.LoginProto.ClientLogin(this);
-        result.token_ = token_;
-        result.uid_ = uid_;
-        result.iconurl_ = iconurl_;
-        result.name_ = name_;
-        result.openid_ = openid_;
-        result.loginType_ = loginType_;
-        result.deviceId_ = deviceId_;
-        result.devicePlatform_ = devicePlatform_;
-        result.appVersion_ = appVersion_;
-        result.osVersion_ = osVersion_;
-        result.osPlatform_ = osPlatform_;
-        result.channel_ = channel_;
-        result.parentId_ = parentId_;
-        result.playerSex_ = playerSex_;
-        result.isReconnect_ = isReconnect_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.LoginProto.ClientLogin) {
-          return mergeFrom((com.kys.util.netty.proto.LoginProto.ClientLogin)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.kys.util.netty.proto.LoginProto.ClientLogin other) {
-        if (other == com.kys.util.netty.proto.LoginProto.ClientLogin.getDefaultInstance()) return this;
-        if (!other.getToken().isEmpty()) {
-          token_ = other.token_;
-          onChanged();
-        }
-        if (!other.getUid().isEmpty()) {
-          uid_ = other.uid_;
-          onChanged();
-        }
-        if (!other.getIconurl().isEmpty()) {
-          iconurl_ = other.iconurl_;
-          onChanged();
-        }
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          onChanged();
-        }
-        if (!other.getOpenid().isEmpty()) {
-          openid_ = other.openid_;
-          onChanged();
-        }
-        if (!other.getLoginType().isEmpty()) {
-          loginType_ = other.loginType_;
-          onChanged();
-        }
-        if (!other.getDeviceId().isEmpty()) {
-          deviceId_ = other.deviceId_;
-          onChanged();
-        }
-        if (!other.getDevicePlatform().isEmpty()) {
-          devicePlatform_ = other.devicePlatform_;
-          onChanged();
-        }
-        if (!other.getAppVersion().isEmpty()) {
-          appVersion_ = other.appVersion_;
-          onChanged();
-        }
-        if (!other.getOsVersion().isEmpty()) {
-          osVersion_ = other.osVersion_;
-          onChanged();
-        }
-        if (!other.getOsPlatform().isEmpty()) {
-          osPlatform_ = other.osPlatform_;
-          onChanged();
-        }
-        if (!other.getChannel().isEmpty()) {
-          channel_ = other.channel_;
-          onChanged();
-        }
-        if (!other.getParentId().isEmpty()) {
-          parentId_ = other.parentId_;
-          onChanged();
-        }
-        if (other.getPlayerSex() != 0) {
-          setPlayerSex(other.getPlayerSex());
-        }
-        if (other.getIsReconnect() != false) {
-          setIsReconnect(other.getIsReconnect());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.kys.util.netty.proto.LoginProto.ClientLogin parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.LoginProto.ClientLogin) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private java.lang.Object token_ = "";
-      /**
-       * <pre>
-       ** 登录识别token 
-       * </pre>
-       *
-       * <code>string token = 1;</code>
-       */
-      public java.lang.String getToken() {
-        java.lang.Object ref = token_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          token_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 登录识别token 
-       * </pre>
-       *
-       * <code>string token = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getTokenBytes() {
-        java.lang.Object ref = token_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          token_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 登录识别token 
-       * </pre>
-       *
-       * <code>string token = 1;</code>
-       */
-      public Builder setToken(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        token_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 登录识别token 
-       * </pre>
-       *
-       * <code>string token = 1;</code>
-       */
-      public Builder clearToken() {
-        
-        token_ = getDefaultInstance().getToken();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 登录识别token 
-       * </pre>
-       *
-       * <code>string token = 1;</code>
-       */
-      public Builder setTokenBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        token_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object uid_ = "";
-      /**
-       * <pre>
-       ** 微信登录unionid 
-       * </pre>
-       *
-       * <code>string uid = 2;</code>
-       */
-      public java.lang.String getUid() {
-        java.lang.Object ref = uid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          uid_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 微信登录unionid 
-       * </pre>
-       *
-       * <code>string uid = 2;</code>
-       */
-      public com.google.protobuf.ByteString
-          getUidBytes() {
-        java.lang.Object ref = uid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          uid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 微信登录unionid 
-       * </pre>
-       *
-       * <code>string uid = 2;</code>
-       */
-      public Builder setUid(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 微信登录unionid 
-       * </pre>
-       *
-       * <code>string uid = 2;</code>
-       */
-      public Builder clearUid() {
-        
-        uid_ = getDefaultInstance().getUid();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 微信登录unionid 
-       * </pre>
-       *
-       * <code>string uid = 2;</code>
-       */
-      public Builder setUidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object iconurl_ = "";
-      /**
-       * <pre>
-       ** 微信登录iconurl 
-       * </pre>
-       *
-       * <code>string iconurl = 3;</code>
-       */
-      public java.lang.String getIconurl() {
-        java.lang.Object ref = iconurl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          iconurl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 微信登录iconurl 
-       * </pre>
-       *
-       * <code>string iconurl = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getIconurlBytes() {
-        java.lang.Object ref = iconurl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          iconurl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 微信登录iconurl 
-       * </pre>
-       *
-       * <code>string iconurl = 3;</code>
-       */
-      public Builder setIconurl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        iconurl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 微信登录iconurl 
-       * </pre>
-       *
-       * <code>string iconurl = 3;</code>
-       */
-      public Builder clearIconurl() {
-        
-        iconurl_ = getDefaultInstance().getIconurl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 微信登录iconurl 
-       * </pre>
-       *
-       * <code>string iconurl = 3;</code>
-       */
-      public Builder setIconurlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        iconurl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object name_ = "";
-      /**
-       * <pre>
-       ** 微信登录name 
-       * </pre>
-       *
-       * <code>string name = 4;</code>
-       */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          name_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 微信登录name 
-       * </pre>
-       *
-       * <code>string name = 4;</code>
-       */
-      public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          name_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 微信登录name 
-       * </pre>
-       *
-       * <code>string name = 4;</code>
-       */
-      public Builder setName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        name_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 微信登录name 
-       * </pre>
-       *
-       * <code>string name = 4;</code>
-       */
-      public Builder clearName() {
-        
-        name_ = getDefaultInstance().getName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 微信登录name 
-       * </pre>
-       *
-       * <code>string name = 4;</code>
-       */
-      public Builder setNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        name_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object openid_ = "";
-      /**
-       * <pre>
-       ** 微信登录openid 
-       * </pre>
-       *
-       * <code>string openid = 5;</code>
-       */
-      public java.lang.String getOpenid() {
-        java.lang.Object ref = openid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          openid_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 微信登录openid 
-       * </pre>
-       *
-       * <code>string openid = 5;</code>
-       */
-      public com.google.protobuf.ByteString
-          getOpenidBytes() {
-        java.lang.Object ref = openid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          openid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 微信登录openid 
-       * </pre>
-       *
-       * <code>string openid = 5;</code>
-       */
-      public Builder setOpenid(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        openid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 微信登录openid 
-       * </pre>
-       *
-       * <code>string openid = 5;</code>
-       */
-      public Builder clearOpenid() {
-        
-        openid_ = getDefaultInstance().getOpenid();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 微信登录openid 
-       * </pre>
-       *
-       * <code>string openid = 5;</code>
-       */
-      public Builder setOpenidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        openid_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object loginType_ = "";
-      /**
-       * <pre>
-       ** 登陆类型:0 token登录,1 微信登录 
-       * </pre>
-       *
-       * <code>string loginType = 6;</code>
-       */
-      public java.lang.String getLoginType() {
-        java.lang.Object ref = loginType_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          loginType_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 登陆类型:0 token登录,1 微信登录 
-       * </pre>
-       *
-       * <code>string loginType = 6;</code>
-       */
-      public com.google.protobuf.ByteString
-          getLoginTypeBytes() {
-        java.lang.Object ref = loginType_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          loginType_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 登陆类型:0 token登录,1 微信登录 
-       * </pre>
-       *
-       * <code>string loginType = 6;</code>
-       */
-      public Builder setLoginType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        loginType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 登陆类型:0 token登录,1 微信登录 
-       * </pre>
-       *
-       * <code>string loginType = 6;</code>
-       */
-      public Builder clearLoginType() {
-        
-        loginType_ = getDefaultInstance().getLoginType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 登陆类型:0 token登录,1 微信登录 
-       * </pre>
-       *
-       * <code>string loginType = 6;</code>
-       */
-      public Builder setLoginTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        loginType_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object deviceId_ = "";
-      /**
-       * <pre>
-       ** 设备标示（唯一） 
-       * </pre>
-       *
-       * <code>string deviceId = 7;</code>
-       */
-      public java.lang.String getDeviceId() {
-        java.lang.Object ref = deviceId_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          deviceId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 设备标示（唯一） 
-       * </pre>
-       *
-       * <code>string deviceId = 7;</code>
-       */
-      public com.google.protobuf.ByteString
-          getDeviceIdBytes() {
-        java.lang.Object ref = deviceId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          deviceId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 设备标示（唯一） 
-       * </pre>
-       *
-       * <code>string deviceId = 7;</code>
-       */
-      public Builder setDeviceId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        deviceId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 设备标示（唯一） 
-       * </pre>
-       *
-       * <code>string deviceId = 7;</code>
-       */
-      public Builder clearDeviceId() {
-        
-        deviceId_ = getDefaultInstance().getDeviceId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 设备标示（唯一） 
-       * </pre>
-       *
-       * <code>string deviceId = 7;</code>
-       */
-      public Builder setDeviceIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        deviceId_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object devicePlatform_ = "";
-      /**
-       * <pre>
-       ** 设备类型 
-       * </pre>
-       *
-       * <code>string devicePlatform = 8;</code>
-       */
-      public java.lang.String getDevicePlatform() {
-        java.lang.Object ref = devicePlatform_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          devicePlatform_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 设备类型 
-       * </pre>
-       *
-       * <code>string devicePlatform = 8;</code>
-       */
-      public com.google.protobuf.ByteString
-          getDevicePlatformBytes() {
-        java.lang.Object ref = devicePlatform_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          devicePlatform_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 设备类型 
-       * </pre>
-       *
-       * <code>string devicePlatform = 8;</code>
-       */
-      public Builder setDevicePlatform(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        devicePlatform_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 设备类型 
-       * </pre>
-       *
-       * <code>string devicePlatform = 8;</code>
-       */
-      public Builder clearDevicePlatform() {
-        
-        devicePlatform_ = getDefaultInstance().getDevicePlatform();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 设备类型 
-       * </pre>
-       *
-       * <code>string devicePlatform = 8;</code>
-       */
-      public Builder setDevicePlatformBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        devicePlatform_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object appVersion_ = "";
-      /**
-       * <pre>
-       ** app版本 
-       * </pre>
-       *
-       * <code>string appVersion = 9;</code>
-       */
-      public java.lang.String getAppVersion() {
-        java.lang.Object ref = appVersion_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          appVersion_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** app版本 
-       * </pre>
-       *
-       * <code>string appVersion = 9;</code>
-       */
-      public com.google.protobuf.ByteString
-          getAppVersionBytes() {
-        java.lang.Object ref = appVersion_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          appVersion_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** app版本 
-       * </pre>
-       *
-       * <code>string appVersion = 9;</code>
-       */
-      public Builder setAppVersion(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        appVersion_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** app版本 
-       * </pre>
-       *
-       * <code>string appVersion = 9;</code>
-       */
-      public Builder clearAppVersion() {
-        
-        appVersion_ = getDefaultInstance().getAppVersion();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** app版本 
-       * </pre>
-       *
-       * <code>string appVersion = 9;</code>
-       */
-      public Builder setAppVersionBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        appVersion_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object osVersion_ = "";
-      /**
-       * <pre>
-       ** 设备系统版本 
-       * </pre>
-       *
-       * <code>string osVersion = 10;</code>
-       */
-      public java.lang.String getOsVersion() {
-        java.lang.Object ref = osVersion_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          osVersion_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 设备系统版本 
-       * </pre>
-       *
-       * <code>string osVersion = 10;</code>
-       */
-      public com.google.protobuf.ByteString
-          getOsVersionBytes() {
-        java.lang.Object ref = osVersion_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          osVersion_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 设备系统版本 
-       * </pre>
-       *
-       * <code>string osVersion = 10;</code>
-       */
-      public Builder setOsVersion(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        osVersion_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 设备系统版本 
-       * </pre>
-       *
-       * <code>string osVersion = 10;</code>
-       */
-      public Builder clearOsVersion() {
-        
-        osVersion_ = getDefaultInstance().getOsVersion();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 设备系统版本 
-       * </pre>
-       *
-       * <code>string osVersion = 10;</code>
-       */
-      public Builder setOsVersionBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        osVersion_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object osPlatform_ = "";
-      /**
-       * <pre>
-       ** 设备系统：android、IOS 
-       * </pre>
-       *
-       * <code>string osPlatform = 11;</code>
-       */
-      public java.lang.String getOsPlatform() {
-        java.lang.Object ref = osPlatform_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          osPlatform_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 设备系统：android、IOS 
-       * </pre>
-       *
-       * <code>string osPlatform = 11;</code>
-       */
-      public com.google.protobuf.ByteString
-          getOsPlatformBytes() {
-        java.lang.Object ref = osPlatform_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          osPlatform_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 设备系统：android、IOS 
-       * </pre>
-       *
-       * <code>string osPlatform = 11;</code>
-       */
-      public Builder setOsPlatform(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        osPlatform_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 设备系统：android、IOS 
-       * </pre>
-       *
-       * <code>string osPlatform = 11;</code>
-       */
-      public Builder clearOsPlatform() {
-        
-        osPlatform_ = getDefaultInstance().getOsPlatform();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 设备系统：android、IOS 
-       * </pre>
-       *
-       * <code>string osPlatform = 11;</code>
-       */
-      public Builder setOsPlatformBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        osPlatform_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object channel_ = "";
-      /**
-       * <pre>
-       ** 渠道号 
-       * </pre>
-       *
-       * <code>string channel = 12;</code>
-       */
-      public java.lang.String getChannel() {
-        java.lang.Object ref = channel_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          channel_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 渠道号 
-       * </pre>
-       *
-       * <code>string channel = 12;</code>
-       */
-      public com.google.protobuf.ByteString
-          getChannelBytes() {
-        java.lang.Object ref = channel_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          channel_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 渠道号 
-       * </pre>
-       *
-       * <code>string channel = 12;</code>
-       */
-      public Builder setChannel(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        channel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 渠道号 
-       * </pre>
-       *
-       * <code>string channel = 12;</code>
-       */
-      public Builder clearChannel() {
-        
-        channel_ = getDefaultInstance().getChannel();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 渠道号 
-       * </pre>
-       *
-       * <code>string channel = 12;</code>
-       */
-      public Builder setChannelBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        channel_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object parentId_ = "";
-      /**
-       * <pre>
-       ** 上一级id 
-       * </pre>
-       *
-       * <code>string parentId = 13;</code>
-       */
-      public java.lang.String getParentId() {
-        java.lang.Object ref = parentId_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          parentId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 上一级id 
-       * </pre>
-       *
-       * <code>string parentId = 13;</code>
-       */
-      public com.google.protobuf.ByteString
-          getParentIdBytes() {
-        java.lang.Object ref = parentId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          parentId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 上一级id 
-       * </pre>
-       *
-       * <code>string parentId = 13;</code>
-       */
-      public Builder setParentId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        parentId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 上一级id 
-       * </pre>
-       *
-       * <code>string parentId = 13;</code>
-       */
-      public Builder clearParentId() {
-        
-        parentId_ = getDefaultInstance().getParentId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 上一级id 
-       * </pre>
-       *
-       * <code>string parentId = 13;</code>
-       */
-      public Builder setParentIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        parentId_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int playerSex_ ;
-      /**
-       * <pre>
-       ** 性别 
-       * </pre>
-       *
-       * <code>int32 playerSex = 14;</code>
-       */
-      public int getPlayerSex() {
-        return playerSex_;
-      }
-      /**
-       * <pre>
-       ** 性别 
-       * </pre>
-       *
-       * <code>int32 playerSex = 14;</code>
-       */
-      public Builder setPlayerSex(int value) {
-        
-        playerSex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 性别 
-       * </pre>
-       *
-       * <code>int32 playerSex = 14;</code>
-       */
-      public Builder clearPlayerSex() {
-        
-        playerSex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isReconnect_ ;
-      /**
-       * <pre>
-       ** 是否是重连
-       * </pre>
-       *
-       * <code>bool isReconnect = 15;</code>
-       */
-      public boolean getIsReconnect() {
-        return isReconnect_;
-      }
-      /**
-       * <pre>
-       ** 是否是重连
-       * </pre>
-       *
-       * <code>bool isReconnect = 15;</code>
-       */
-      public Builder setIsReconnect(boolean value) {
-        
-        isReconnect_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 是否是重连
-       * </pre>
-       *
-       * <code>bool isReconnect = 15;</code>
-       */
-      public Builder clearIsReconnect() {
-        
-        isReconnect_ = false;
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFieldsProto3(unknownFields);
-      }
-
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientLogin)
-    }
-
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientLogin)
-    private static final com.kys.util.netty.proto.LoginProto.ClientLogin DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.LoginProto.ClientLogin();
-    }
-
-    public static com.kys.util.netty.proto.LoginProto.ClientLogin getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ClientLogin>
-        PARSER = new com.google.protobuf.AbstractParser<ClientLogin>() {
-      public ClientLogin parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ClientLogin(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<ClientLogin> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ClientLogin> getParserForType() {
-      return PARSER;
-    }
-
-    public com.kys.util.netty.proto.LoginProto.ClientLogin getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
   public interface ClientReturnHallHeartBeatOrBuilder extends
       // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientReturnHallHeartBeat)
       com.google.protobuf.MessageOrBuilder {
@@ -4089,6 +1280,24 @@ public final class LoginProto {
      * <code>bool isH5NewUser = 8;</code>
      */
     boolean getIsH5NewUser();
+
+    /**
+     * <pre>
+     ** 是否是灰度用户 
+     * </pre>
+     *
+     * <code>bool isTester = 9;</code>
+     */
+    boolean getIsTester();
+
+    /**
+     * <pre>
+     ** 比赛DbId号,如果为0则不在比赛中 
+     * </pre>
+     *
+     * <code>int32 matchDbId = 10;</code>
+     */
+    int getMatchDbId();
   }
   /**
    * <pre>
@@ -4113,6 +1322,8 @@ public final class LoginProto {
       token_ = "";
       url_ = "";
       isH5NewUser_ = false;
+      isTester_ = false;
+      matchDbId_ = 0;
     }
 
     @java.lang.Override
@@ -4200,6 +1411,16 @@ public final class LoginProto {
             case 64: {
 
               isH5NewUser_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              isTester_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              matchDbId_ = input.readInt32();
               break;
             }
           }
@@ -4457,6 +1678,32 @@ public final class LoginProto {
       return isH5NewUser_;
     }
 
+    public static final int ISTESTER_FIELD_NUMBER = 9;
+    private boolean isTester_;
+    /**
+     * <pre>
+     ** 是否是灰度用户 
+     * </pre>
+     *
+     * <code>bool isTester = 9;</code>
+     */
+    public boolean getIsTester() {
+      return isTester_;
+    }
+
+    public static final int MATCHDBID_FIELD_NUMBER = 10;
+    private int matchDbId_;
+    /**
+     * <pre>
+     ** 比赛DbId号,如果为0则不在比赛中 
+     * </pre>
+     *
+     * <code>int32 matchDbId = 10;</code>
+     */
+    public int getMatchDbId() {
+      return matchDbId_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -4492,6 +1739,12 @@ public final class LoginProto {
       }
       if (isH5NewUser_ != false) {
         output.writeBool(8, isH5NewUser_);
+      }
+      if (isTester_ != false) {
+        output.writeBool(9, isTester_);
+      }
+      if (matchDbId_ != 0) {
+        output.writeInt32(10, matchDbId_);
       }
       unknownFields.writeTo(output);
     }
@@ -4529,6 +1782,14 @@ public final class LoginProto {
       if (isH5NewUser_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(8, isH5NewUser_);
+      }
+      if (isTester_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, isTester_);
+      }
+      if (matchDbId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, matchDbId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -4568,6 +1829,10 @@ public final class LoginProto {
       }
       result = result && (getIsH5NewUser()
           == other.getIsH5NewUser());
+      result = result && (getIsTester()
+          == other.getIsTester());
+      result = result && (getMatchDbId()
+          == other.getMatchDbId());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -4600,6 +1865,11 @@ public final class LoginProto {
       hash = (37 * hash) + ISH5NEWUSER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsH5NewUser());
+      hash = (37 * hash) + ISTESTER_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsTester());
+      hash = (37 * hash) + MATCHDBID_FIELD_NUMBER;
+      hash = (53 * hash) + getMatchDbId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -4757,6 +2027,10 @@ public final class LoginProto {
         }
         isH5NewUser_ = false;
 
+        isTester_ = false;
+
+        matchDbId_ = 0;
+
         return this;
       }
 
@@ -4795,6 +2069,8 @@ public final class LoginProto {
           result.config_ = configBuilder_.build();
         }
         result.isH5NewUser_ = isH5NewUser_;
+        result.isTester_ = isTester_;
+        result.matchDbId_ = matchDbId_;
         onBuilt();
         return result;
       }
@@ -4862,6 +2138,12 @@ public final class LoginProto {
         }
         if (other.getIsH5NewUser() != false) {
           setIsH5NewUser(other.getIsH5NewUser());
+        }
+        if (other.getIsTester() != false) {
+          setIsTester(other.getIsTester());
+        }
+        if (other.getMatchDbId() != 0) {
+          setMatchDbId(other.getMatchDbId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -5573,6 +2855,82 @@ public final class LoginProto {
       public Builder clearIsH5NewUser() {
         
         isH5NewUser_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isTester_ ;
+      /**
+       * <pre>
+       ** 是否是灰度用户 
+       * </pre>
+       *
+       * <code>bool isTester = 9;</code>
+       */
+      public boolean getIsTester() {
+        return isTester_;
+      }
+      /**
+       * <pre>
+       ** 是否是灰度用户 
+       * </pre>
+       *
+       * <code>bool isTester = 9;</code>
+       */
+      public Builder setIsTester(boolean value) {
+        
+        isTester_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 是否是灰度用户 
+       * </pre>
+       *
+       * <code>bool isTester = 9;</code>
+       */
+      public Builder clearIsTester() {
+        
+        isTester_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int matchDbId_ ;
+      /**
+       * <pre>
+       ** 比赛DbId号,如果为0则不在比赛中 
+       * </pre>
+       *
+       * <code>int32 matchDbId = 10;</code>
+       */
+      public int getMatchDbId() {
+        return matchDbId_;
+      }
+      /**
+       * <pre>
+       ** 比赛DbId号,如果为0则不在比赛中 
+       * </pre>
+       *
+       * <code>int32 matchDbId = 10;</code>
+       */
+      public Builder setMatchDbId(int value) {
+        
+        matchDbId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 比赛DbId号,如果为0则不在比赛中 
+       * </pre>
+       *
+       * <code>int32 matchDbId = 10;</code>
+       */
+      public Builder clearMatchDbId() {
+        
+        matchDbId_ = 0;
         onChanged();
         return this;
       }
@@ -9906,11 +7264,6 @@ public final class LoginProto {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ClientLogin_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ClientLogin_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_kys_util_netty_proto_ClientReturnHallHeartBeat_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -9950,34 +7303,28 @@ public final class LoginProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\020loginProto.proto\022\030com.kys.util.netty.p" +
-      "roto\032\017userProto.proto\032\017hallProto.proto\"\233" +
-      "\002\n\013ClientLogin\022\r\n\005token\030\001 \001(\t\022\013\n\003uid\030\002 \001" +
-      "(\t\022\017\n\007iconurl\030\003 \001(\t\022\014\n\004name\030\004 \001(\t\022\016\n\006ope" +
-      "nid\030\005 \001(\t\022\021\n\tloginType\030\006 \001(\t\022\020\n\010deviceId" +
-      "\030\007 \001(\t\022\026\n\016devicePlatform\030\010 \001(\t\022\022\n\nappVer" +
-      "sion\030\t \001(\t\022\021\n\tosVersion\030\n \001(\t\022\022\n\nosPlatf" +
-      "orm\030\013 \001(\t\022\017\n\007channel\030\014 \001(\t\022\020\n\010parentId\030\r" +
-      " \001(\t\022\021\n\tplayerSex\030\016 \001(\005\022\023\n\013isReconnect\030\017" +
-      " \001(\010\"0\n\031ClientReturnHallHeartBeat\022\023\n\013ser",
-      "viceTime\030\001 \001(\t\"0\n\031ClientReturnGameHeartB" +
-      "eat\022\023\n\013serviceTime\030\001 \001(\t\"\334\001\n\013ServerLogin" +
-      "\022\016\n\006userId\030\001 \001(\005\022\020\n\010userType\030\002 \001(\t\022\016\n\006ro" +
-      "omId\030\003 \001(\005\0224\n\010userInfo\030\004 \001(\0132\".com.kys.u" +
-      "til.netty.proto.UserInfo\022\r\n\005token\030\005 \001(\t\022" +
-      "\013\n\003url\030\006 \001(\t\0224\n\006config\030\007 \001(\0132$.com.kys.u" +
-      "til.netty.proto.RoomConfig\022\023\n\013isH5NewUse" +
-      "r\030\010 \001(\010\"=\n\027ServerSendHallHeartBeat\022\023\n\013se" +
-      "rviceTime\030\001 \001(\t\022\r\n\005delay\030\002 \001(\005\"=\n\027Server" +
-      "SendGameHeartBeat\022\023\n\013serviceTime\030\001 \001(\t\022\r",
-      "\n\005delay\030\002 \001(\005\"\262\002\n\016ClientNewLogin\022\r\n\005toke" +
-      "n\030\001 \001(\t\022\013\n\003uid\030\002 \001(\t\022\017\n\007iconurl\030\003 \001(\t\022\014\n" +
-      "\004name\030\004 \001(\t\022\016\n\006openid\030\005 \001(\t\022\021\n\tloginType" +
-      "\030\006 \001(\t\022\020\n\010deviceId\030\007 \001(\t\022\026\n\016devicePlatfo" +
-      "rm\030\010 \001(\t\022\022\n\nappVersion\030\t \001(\t\022\021\n\tosVersio" +
-      "n\030\n \001(\t\022\022\n\nosPlatform\030\013 \001(\t\022\017\n\007channel\030\014" +
-      " \001(\t\022\020\n\010parentId\030\r \001(\t\022\021\n\tplayerSex\030\016 \001(" +
-      "\005\022\023\n\013isReconnect\030\017 \001(\010\022\022\n\nresVersion\030\020 \001" +
-      "(\tb\006proto3"
+      "roto\032\017userProto.proto\032\017hallProto.proto\"0" +
+      "\n\031ClientReturnHallHeartBeat\022\023\n\013serviceTi" +
+      "me\030\001 \001(\t\"0\n\031ClientReturnGameHeartBeat\022\023\n" +
+      "\013serviceTime\030\001 \001(\t\"\201\002\n\013ServerLogin\022\016\n\006us" +
+      "erId\030\001 \001(\005\022\020\n\010userType\030\002 \001(\t\022\016\n\006roomId\030\003" +
+      " \001(\005\0224\n\010userInfo\030\004 \001(\0132\".com.kys.util.ne" +
+      "tty.proto.UserInfo\022\r\n\005token\030\005 \001(\t\022\013\n\003url" +
+      "\030\006 \001(\t\0224\n\006config\030\007 \001(\0132$.com.kys.util.ne" +
+      "tty.proto.RoomConfig\022\023\n\013isH5NewUser\030\010 \001(",
+      "\010\022\020\n\010isTester\030\t \001(\010\022\021\n\tmatchDbId\030\n \001(\005\"=" +
+      "\n\027ServerSendHallHeartBeat\022\023\n\013serviceTime" +
+      "\030\001 \001(\t\022\r\n\005delay\030\002 \001(\005\"=\n\027ServerSendGameH" +
+      "eartBeat\022\023\n\013serviceTime\030\001 \001(\t\022\r\n\005delay\030\002" +
+      " \001(\005\"\262\002\n\016ClientNewLogin\022\r\n\005token\030\001 \001(\t\022\013" +
+      "\n\003uid\030\002 \001(\t\022\017\n\007iconurl\030\003 \001(\t\022\014\n\004name\030\004 \001" +
+      "(\t\022\016\n\006openid\030\005 \001(\t\022\021\n\tloginType\030\006 \001(\t\022\020\n" +
+      "\010deviceId\030\007 \001(\t\022\026\n\016devicePlatform\030\010 \001(\t\022" +
+      "\022\n\nappVersion\030\t \001(\t\022\021\n\tosVersion\030\n \001(\t\022\022" +
+      "\n\nosPlatform\030\013 \001(\t\022\017\n\007channel\030\014 \001(\t\022\020\n\010p",
+      "arentId\030\r \001(\t\022\021\n\tplayerSex\030\016 \001(\005\022\023\n\013isRe" +
+      "connect\030\017 \001(\010\022\022\n\nresVersion\030\020 \001(\tb\006proto" +
+      "3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -9993,44 +7340,38 @@ public final class LoginProto {
           com.kys.util.netty.proto.UserProto.getDescriptor(),
           com.kys.util.netty.proto.HallProto.getDescriptor(),
         }, assigner);
-    internal_static_com_kys_util_netty_proto_ClientLogin_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_com_kys_util_netty_proto_ClientLogin_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ClientLogin_descriptor,
-        new java.lang.String[] { "Token", "Uid", "Iconurl", "Name", "Openid", "LoginType", "DeviceId", "DevicePlatform", "AppVersion", "OsVersion", "OsPlatform", "Channel", "ParentId", "PlayerSex", "IsReconnect", });
     internal_static_com_kys_util_netty_proto_ClientReturnHallHeartBeat_descriptor =
-      getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(0);
     internal_static_com_kys_util_netty_proto_ClientReturnHallHeartBeat_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ClientReturnHallHeartBeat_descriptor,
         new java.lang.String[] { "ServiceTime", });
     internal_static_com_kys_util_netty_proto_ClientReturnGameHeartBeat_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(1);
     internal_static_com_kys_util_netty_proto_ClientReturnGameHeartBeat_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ClientReturnGameHeartBeat_descriptor,
         new java.lang.String[] { "ServiceTime", });
     internal_static_com_kys_util_netty_proto_ServerLogin_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_com_kys_util_netty_proto_ServerLogin_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ServerLogin_descriptor,
-        new java.lang.String[] { "UserId", "UserType", "RoomId", "UserInfo", "Token", "Url", "Config", "IsH5NewUser", });
+        new java.lang.String[] { "UserId", "UserType", "RoomId", "UserInfo", "Token", "Url", "Config", "IsH5NewUser", "IsTester", "MatchDbId", });
     internal_static_com_kys_util_netty_proto_ServerSendHallHeartBeat_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_com_kys_util_netty_proto_ServerSendHallHeartBeat_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ServerSendHallHeartBeat_descriptor,
         new java.lang.String[] { "ServiceTime", "Delay", });
     internal_static_com_kys_util_netty_proto_ServerSendGameHeartBeat_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_com_kys_util_netty_proto_ServerSendGameHeartBeat_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ServerSendGameHeartBeat_descriptor,
         new java.lang.String[] { "ServiceTime", "Delay", });
     internal_static_com_kys_util_netty_proto_ClientNewLogin_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_com_kys_util_netty_proto_ClientNewLogin_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ClientNewLogin_descriptor,

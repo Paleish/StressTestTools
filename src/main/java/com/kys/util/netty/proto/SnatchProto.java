@@ -4375,7 +4375,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 自己的投入奖杯数 
+     ** 自己的投入红包数 
      * </pre>
      *
      * <code>int32 ownBet = 8;</code>
@@ -4681,7 +4681,7 @@ public final class SnatchProto {
     private int ownBet_;
     /**
      * <pre>
-     ** 自己的投入奖杯数 
+     ** 自己的投入红包数 
      * </pre>
      *
      * <code>int32 ownBet = 8;</code>
@@ -5526,7 +5526,7 @@ public final class SnatchProto {
       private int ownBet_ ;
       /**
        * <pre>
-       ** 自己的投入奖杯数 
+       ** 自己的投入红包数 
        * </pre>
        *
        * <code>int32 ownBet = 8;</code>
@@ -5536,7 +5536,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 自己的投入奖杯数 
+       ** 自己的投入红包数 
        * </pre>
        *
        * <code>int32 ownBet = 8;</code>
@@ -5549,7 +5549,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 自己的投入奖杯数 
+       ** 自己的投入红包数 
        * </pre>
        *
        * <code>int32 ownBet = 8;</code>
@@ -7386,7 +7386,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 下注后玩家剩余奖杯，单位分 ，客户端/100展示 
+     ** 下注后玩家剩余红包，单位分 ，客户端/100展示 
      * </pre>
      *
      * <code>int32 wincup = 1;</code>
@@ -7474,7 +7474,7 @@ public final class SnatchProto {
     private int wincup_;
     /**
      * <pre>
-     ** 下注后玩家剩余奖杯，单位分 ，客户端/100展示 
+     ** 下注后玩家剩余红包，单位分 ，客户端/100展示 
      * </pre>
      *
      * <code>int32 wincup = 1;</code>
@@ -7773,7 +7773,7 @@ public final class SnatchProto {
       private int wincup_ ;
       /**
        * <pre>
-       ** 下注后玩家剩余奖杯，单位分 ，客户端/100展示 
+       ** 下注后玩家剩余红包，单位分 ，客户端/100展示 
        * </pre>
        *
        * <code>int32 wincup = 1;</code>
@@ -7783,7 +7783,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 下注后玩家剩余奖杯，单位分 ，客户端/100展示 
+       ** 下注后玩家剩余红包，单位分 ，客户端/100展示 
        * </pre>
        *
        * <code>int32 wincup = 1;</code>
@@ -7796,7 +7796,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 下注后玩家剩余奖杯，单位分 ，客户端/100展示 
+       ** 下注后玩家剩余红包，单位分 ，客户端/100展示 
        * </pre>
        *
        * <code>int32 wincup = 1;</code>
@@ -9424,7 +9424,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 玩家投入奖杯数 
+     ** 玩家投入红包数 
      * </pre>
      *
      * <code>int32 betWincup = 10;</code>
@@ -9903,7 +9903,7 @@ public final class SnatchProto {
     private int betWincup_;
     /**
      * <pre>
-     ** 玩家投入奖杯数 
+     ** 玩家投入红包数 
      * </pre>
      *
      * <code>int32 betWincup = 10;</code>
@@ -11102,7 +11102,7 @@ public final class SnatchProto {
       private int betWincup_ ;
       /**
        * <pre>
-       ** 玩家投入奖杯数 
+       ** 玩家投入红包数 
        * </pre>
        *
        * <code>int32 betWincup = 10;</code>
@@ -11112,7 +11112,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 玩家投入奖杯数 
+       ** 玩家投入红包数 
        * </pre>
        *
        * <code>int32 betWincup = 10;</code>
@@ -11125,7 +11125,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 玩家投入奖杯数 
+       ** 玩家投入红包数 
        * </pre>
        *
        * <code>int32 betWincup = 10;</code>
@@ -22538,7 +22538,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 奖杯*100 
+     ** 红包*100 
      * </pre>
      *
      * <code>int32 wincup = 2;</code>
@@ -22645,7 +22645,7 @@ public final class SnatchProto {
     private int wincup_;
     /**
      * <pre>
-     ** 奖杯*100 
+     ** 红包*100 
      * </pre>
      *
      * <code>int32 wincup = 2;</code>
@@ -22999,7 +22999,7 @@ public final class SnatchProto {
       private int wincup_ ;
       /**
        * <pre>
-       ** 奖杯*100 
+       ** 红包*100 
        * </pre>
        *
        * <code>int32 wincup = 2;</code>
@@ -23009,7 +23009,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 奖杯*100 
+       ** 红包*100 
        * </pre>
        *
        * <code>int32 wincup = 2;</code>
@@ -23022,7 +23022,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 奖杯*100 
+       ** 红包*100 
        * </pre>
        *
        * <code>int32 wincup = 2;</code>
@@ -23088,7 +23088,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 抽取奖杯的索引 
+     ** 抽取红包的索引 
      * </pre>
      *
      * <code>int32 index = 1;</code>
@@ -23176,7 +23176,7 @@ public final class SnatchProto {
     private int index_;
     /**
      * <pre>
-     ** 抽取奖杯的索引 
+     ** 抽取红包的索引 
      * </pre>
      *
      * <code>int32 index = 1;</code>
@@ -23475,7 +23475,7 @@ public final class SnatchProto {
       private int index_ ;
       /**
        * <pre>
-       ** 抽取奖杯的索引 
+       ** 抽取红包的索引 
        * </pre>
        *
        * <code>int32 index = 1;</code>
@@ -23485,7 +23485,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 抽取奖杯的索引 
+       ** 抽取红包的索引 
        * </pre>
        *
        * <code>int32 index = 1;</code>
@@ -23498,7 +23498,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 抽取奖杯的索引 
+       ** 抽取红包的索引 
        * </pre>
        *
        * <code>int32 index = 1;</code>
@@ -23573,7 +23573,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 抽取的奖杯*100 
+     ** 抽取的红包*100 
      * </pre>
      *
      * <code>int32 wincup = 2;</code>
@@ -23600,7 +23600,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 玩家身上的奖杯 
+     ** 玩家身上的红包 
      * </pre>
      *
      * <code>int32 ownCup = 5;</code>
@@ -23813,7 +23813,7 @@ public final class SnatchProto {
     private int wincup_;
     /**
      * <pre>
-     ** 抽取的奖杯*100 
+     ** 抽取的红包*100 
      * </pre>
      *
      * <code>int32 wincup = 2;</code>
@@ -23852,7 +23852,7 @@ public final class SnatchProto {
     private int ownCup_;
     /**
      * <pre>
-     ** 玩家身上的奖杯 
+     ** 玩家身上的红包 
      * </pre>
      *
      * <code>int32 ownCup = 5;</code>
@@ -24431,7 +24431,7 @@ public final class SnatchProto {
       private int wincup_ ;
       /**
        * <pre>
-       ** 抽取的奖杯*100 
+       ** 抽取的红包*100 
        * </pre>
        *
        * <code>int32 wincup = 2;</code>
@@ -24441,7 +24441,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 抽取的奖杯*100 
+       ** 抽取的红包*100 
        * </pre>
        *
        * <code>int32 wincup = 2;</code>
@@ -24454,7 +24454,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 抽取的奖杯*100 
+       ** 抽取的红包*100 
        * </pre>
        *
        * <code>int32 wincup = 2;</code>
@@ -24545,7 +24545,7 @@ public final class SnatchProto {
       private int ownCup_ ;
       /**
        * <pre>
-       ** 玩家身上的奖杯 
+       ** 玩家身上的红包 
        * </pre>
        *
        * <code>int32 ownCup = 5;</code>
@@ -24555,7 +24555,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 玩家身上的奖杯 
+       ** 玩家身上的红包 
        * </pre>
        *
        * <code>int32 ownCup = 5;</code>
@@ -24568,7 +24568,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 玩家身上的奖杯 
+       ** 玩家身上的红包 
        * </pre>
        *
        * <code>int32 ownCup = 5;</code>
@@ -28133,7 +28133,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 抽到奖杯数量 
+     ** 抽到红包数量 
      * </pre>
      *
      * <code>int32 wincup = 3;</code>
@@ -28281,7 +28281,7 @@ public final class SnatchProto {
     private int wincup_;
     /**
      * <pre>
-     ** 抽到奖杯数量 
+     ** 抽到红包数量 
      * </pre>
      *
      * <code>int32 wincup = 3;</code>
@@ -28725,7 +28725,7 @@ public final class SnatchProto {
       private int wincup_ ;
       /**
        * <pre>
-       ** 抽到奖杯数量 
+       ** 抽到红包数量 
        * </pre>
        *
        * <code>int32 wincup = 3;</code>
@@ -28735,7 +28735,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 抽到奖杯数量 
+       ** 抽到红包数量 
        * </pre>
        *
        * <code>int32 wincup = 3;</code>
@@ -28748,7 +28748,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 抽到奖杯数量 
+       ** 抽到红包数量 
        * </pre>
        *
        * <code>int32 wincup = 3;</code>
@@ -31821,19 +31821,10 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 中奖id 
+     ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
      * </pre>
      *
-     * <code>int32 id = 1;</code>
-     */
-    int getId();
-
-    /**
-     * <pre>
-     ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
-     * </pre>
-     *
-     * <code>int32 type = 2;</code>
+     * <code>int32 type = 1;</code>
      */
     int getType();
 
@@ -31842,7 +31833,7 @@ public final class SnatchProto {
      ** 中奖数量 
      * </pre>
      *
-     * <code>int32 count = 3;</code>
+     * <code>int32 count = 2;</code>
      */
     int getCount();
 
@@ -31851,7 +31842,7 @@ public final class SnatchProto {
      ** 中奖者名称 
      * </pre>
      *
-     * <code>string playerName = 4;</code>
+     * <code>string playerName = 3;</code>
      */
     java.lang.String getPlayerName();
     /**
@@ -31859,7 +31850,7 @@ public final class SnatchProto {
      ** 中奖者名称 
      * </pre>
      *
-     * <code>string playerName = 4;</code>
+     * <code>string playerName = 3;</code>
      */
     com.google.protobuf.ByteString
         getPlayerNameBytes();
@@ -31881,7 +31872,6 @@ public final class SnatchProto {
       super(builder);
     }
     private DDInfo() {
-      id_ = 0;
       type_ = 0;
       count_ = 0;
       playerName_ = "";
@@ -31917,20 +31907,15 @@ public final class SnatchProto {
             }
             case 8: {
 
-              id_ = input.readInt32();
+              type_ = input.readInt32();
               break;
             }
             case 16: {
 
-              type_ = input.readInt32();
-              break;
-            }
-            case 24: {
-
               count_ = input.readInt32();
               break;
             }
-            case 34: {
+            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               playerName_ = s;
@@ -31960,53 +31945,40 @@ public final class SnatchProto {
               com.kys.util.netty.proto.SnatchProto.DDInfo.class, com.kys.util.netty.proto.SnatchProto.DDInfo.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
-    /**
-     * <pre>
-     ** 中奖id 
-     * </pre>
-     *
-     * <code>int32 id = 1;</code>
-     */
-    public int getId() {
-      return id_;
-    }
-
-    public static final int TYPE_FIELD_NUMBER = 2;
+    public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
     /**
      * <pre>
-     ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
+     ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
      * </pre>
      *
-     * <code>int32 type = 2;</code>
+     * <code>int32 type = 1;</code>
      */
     public int getType() {
       return type_;
     }
 
-    public static final int COUNT_FIELD_NUMBER = 3;
+    public static final int COUNT_FIELD_NUMBER = 2;
     private int count_;
     /**
      * <pre>
      ** 中奖数量 
      * </pre>
      *
-     * <code>int32 count = 3;</code>
+     * <code>int32 count = 2;</code>
      */
     public int getCount() {
       return count_;
     }
 
-    public static final int PLAYERNAME_FIELD_NUMBER = 4;
+    public static final int PLAYERNAME_FIELD_NUMBER = 3;
     private volatile java.lang.Object playerName_;
     /**
      * <pre>
      ** 中奖者名称 
      * </pre>
      *
-     * <code>string playerName = 4;</code>
+     * <code>string playerName = 3;</code>
      */
     public java.lang.String getPlayerName() {
       java.lang.Object ref = playerName_;
@@ -32025,7 +31997,7 @@ public final class SnatchProto {
      ** 中奖者名称 
      * </pre>
      *
-     * <code>string playerName = 4;</code>
+     * <code>string playerName = 3;</code>
      */
     public com.google.protobuf.ByteString
         getPlayerNameBytes() {
@@ -32053,17 +32025,14 @@ public final class SnatchProto {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeInt32(1, id_);
-      }
       if (type_ != 0) {
-        output.writeInt32(2, type_);
+        output.writeInt32(1, type_);
       }
       if (count_ != 0) {
-        output.writeInt32(3, count_);
+        output.writeInt32(2, count_);
       }
       if (!getPlayerNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, playerName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, playerName_);
       }
       unknownFields.writeTo(output);
     }
@@ -32073,20 +32042,16 @@ public final class SnatchProto {
       if (size != -1) return size;
 
       size = 0;
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, id_);
-      }
       if (type_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, type_);
+          .computeInt32Size(1, type_);
       }
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, count_);
+          .computeInt32Size(2, count_);
       }
       if (!getPlayerNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, playerName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, playerName_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -32104,8 +32069,6 @@ public final class SnatchProto {
       com.kys.util.netty.proto.SnatchProto.DDInfo other = (com.kys.util.netty.proto.SnatchProto.DDInfo) obj;
 
       boolean result = true;
-      result = result && (getId()
-          == other.getId());
       result = result && (getType()
           == other.getType());
       result = result && (getCount()
@@ -32123,8 +32086,6 @@ public final class SnatchProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getType();
       hash = (37 * hash) + COUNT_FIELD_NUMBER;
@@ -32264,8 +32225,6 @@ public final class SnatchProto {
       }
       public Builder clear() {
         super.clear();
-        id_ = 0;
-
         type_ = 0;
 
         count_ = 0;
@@ -32294,7 +32253,6 @@ public final class SnatchProto {
 
       public com.kys.util.netty.proto.SnatchProto.DDInfo buildPartial() {
         com.kys.util.netty.proto.SnatchProto.DDInfo result = new com.kys.util.netty.proto.SnatchProto.DDInfo(this);
-        result.id_ = id_;
         result.type_ = type_;
         result.count_ = count_;
         result.playerName_ = playerName_;
@@ -32339,9 +32297,6 @@ public final class SnatchProto {
 
       public Builder mergeFrom(com.kys.util.netty.proto.SnatchProto.DDInfo other) {
         if (other == com.kys.util.netty.proto.SnatchProto.DDInfo.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
         if (other.getType() != 0) {
           setType(other.getType());
         }
@@ -32379,61 +32334,23 @@ public final class SnatchProto {
         return this;
       }
 
-      private int id_ ;
-      /**
-       * <pre>
-       ** 中奖id 
-       * </pre>
-       *
-       * <code>int32 id = 1;</code>
-       */
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <pre>
-       ** 中奖id 
-       * </pre>
-       *
-       * <code>int32 id = 1;</code>
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 中奖id 
-       * </pre>
-       *
-       * <code>int32 id = 1;</code>
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int type_ ;
       /**
        * <pre>
-       ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
+       ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
        * </pre>
        *
-       * <code>int32 type = 2;</code>
+       * <code>int32 type = 1;</code>
        */
       public int getType() {
         return type_;
       }
       /**
        * <pre>
-       ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
+       ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
        * </pre>
        *
-       * <code>int32 type = 2;</code>
+       * <code>int32 type = 1;</code>
        */
       public Builder setType(int value) {
         
@@ -32443,10 +32360,10 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
+       ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
        * </pre>
        *
-       * <code>int32 type = 2;</code>
+       * <code>int32 type = 1;</code>
        */
       public Builder clearType() {
         
@@ -32461,7 +32378,7 @@ public final class SnatchProto {
        ** 中奖数量 
        * </pre>
        *
-       * <code>int32 count = 3;</code>
+       * <code>int32 count = 2;</code>
        */
       public int getCount() {
         return count_;
@@ -32471,7 +32388,7 @@ public final class SnatchProto {
        ** 中奖数量 
        * </pre>
        *
-       * <code>int32 count = 3;</code>
+       * <code>int32 count = 2;</code>
        */
       public Builder setCount(int value) {
         
@@ -32484,7 +32401,7 @@ public final class SnatchProto {
        ** 中奖数量 
        * </pre>
        *
-       * <code>int32 count = 3;</code>
+       * <code>int32 count = 2;</code>
        */
       public Builder clearCount() {
         
@@ -32499,7 +32416,7 @@ public final class SnatchProto {
        ** 中奖者名称 
        * </pre>
        *
-       * <code>string playerName = 4;</code>
+       * <code>string playerName = 3;</code>
        */
       public java.lang.String getPlayerName() {
         java.lang.Object ref = playerName_;
@@ -32518,7 +32435,7 @@ public final class SnatchProto {
        ** 中奖者名称 
        * </pre>
        *
-       * <code>string playerName = 4;</code>
+       * <code>string playerName = 3;</code>
        */
       public com.google.protobuf.ByteString
           getPlayerNameBytes() {
@@ -32538,7 +32455,7 @@ public final class SnatchProto {
        ** 中奖者名称 
        * </pre>
        *
-       * <code>string playerName = 4;</code>
+       * <code>string playerName = 3;</code>
        */
       public Builder setPlayerName(
           java.lang.String value) {
@@ -32555,7 +32472,7 @@ public final class SnatchProto {
        ** 中奖者名称 
        * </pre>
        *
-       * <code>string playerName = 4;</code>
+       * <code>string playerName = 3;</code>
        */
       public Builder clearPlayerName() {
         
@@ -32568,7 +32485,7 @@ public final class SnatchProto {
        ** 中奖者名称 
        * </pre>
        *
-       * <code>string playerName = 4;</code>
+       * <code>string playerName = 3;</code>
        */
       public Builder setPlayerNameBytes(
           com.google.protobuf.ByteString value) {
@@ -32645,7 +32562,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
+     ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
      * </pre>
      *
      * <code>int32 type = 2;</code>
@@ -32767,7 +32684,7 @@ public final class SnatchProto {
     private int type_;
     /**
      * <pre>
-     ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
+     ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
      * </pre>
      *
      * <code>int32 type = 2;</code>
@@ -33151,7 +33068,7 @@ public final class SnatchProto {
       private int type_ ;
       /**
        * <pre>
-       ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
+       ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
        * </pre>
        *
        * <code>int32 type = 2;</code>
@@ -33161,7 +33078,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
+       ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
        * </pre>
        *
        * <code>int32 type = 2;</code>
@@ -33174,7 +33091,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 奖励类型:奖励类型:1.金豆,2钻石,3奖杯,13记牌器卡,16奖杯暴击卡,18夺宝卡 
+       ** 奖励类型:奖励类型:1.金豆,2钻石,3红包,13记牌器卡,16红包暴击卡,18夺宝卡 
        * </pre>
        *
        * <code>int32 type = 2;</code>
@@ -33781,7 +33698,7 @@ public final class SnatchProto {
 
     /**
      * <pre>
-     ** 玩家身上的奖杯*100 
+     ** 玩家身上的红包*100 
      * </pre>
      *
      * <code>int32 ownCup = 4;</code>
@@ -33992,7 +33909,7 @@ public final class SnatchProto {
     private int ownCup_;
     /**
      * <pre>
-     ** 玩家身上的奖杯*100 
+     ** 玩家身上的红包*100 
      * </pre>
      *
      * <code>int32 ownCup = 4;</code>
@@ -34570,7 +34487,7 @@ public final class SnatchProto {
       private int ownCup_ ;
       /**
        * <pre>
-       ** 玩家身上的奖杯*100 
+       ** 玩家身上的红包*100 
        * </pre>
        *
        * <code>int32 ownCup = 4;</code>
@@ -34580,7 +34497,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 玩家身上的奖杯*100 
+       ** 玩家身上的红包*100 
        * </pre>
        *
        * <code>int32 ownCup = 4;</code>
@@ -34593,7 +34510,7 @@ public final class SnatchProto {
       }
       /**
        * <pre>
-       ** 玩家身上的奖杯*100 
+       ** 玩家身上的红包*100 
        * </pre>
        *
        * <code>int32 ownCup = 4;</code>
@@ -36879,16 +36796,16 @@ public final class SnatchProto {
       "\001\n\014ServerOpenDD\022\014\n\004left\030\001 \001(\005\0222\n\007dDPrize",
       "\030\002 \003(\0132!.com.kys.util.netty.proto.DDPriz" +
       "e\022/\n\005infos\030\003 \003(\0132 .com.kys.util.netty.pr" +
-      "oto.DDInfo\"E\n\006DDInfo\022\n\n\002id\030\001 \001(\005\022\014\n\004type" +
-      "\030\002 \001(\005\022\r\n\005count\030\003 \001(\005\022\022\n\nplayerName\030\004 \001(" +
-      "\t\"5\n\007DDPrize\022\r\n\005index\030\001 \001(\005\022\014\n\004type\030\002 \001(" +
-      "\005\022\r\n\005count\030\003 \001(\005\"\037\n\017ClientDDLottery\022\014\n\004t" +
-      "ype\030\001 \001(\005\"n\n\017ServerDDLottery\022\016\n\006status\030\001" +
-      " \001(\005\022\014\n\004gold\030\002 \001(\005\022\017\n\007diamond\030\003 \001(\005\022\016\n\006o" +
-      "wnCup\030\004 \001(\005\022\014\n\004left\030\005 \001(\005\022\016\n\006indexs\030\006 \003(" +
-      "\005\"\016\n\014ClientExitDD\"\016\n\014ServerExitDD\"\n\n\010B_D",
-      "DOver\"<\n\010B_DDInfo\0220\n\006dDInfo\030\001 \001(\0132 .com." +
-      "kys.util.netty.proto.DDInfob\006proto3"
+      "oto.DDInfo\"9\n\006DDInfo\022\014\n\004type\030\001 \001(\005\022\r\n\005co" +
+      "unt\030\002 \001(\005\022\022\n\nplayerName\030\003 \001(\t\"5\n\007DDPrize" +
+      "\022\r\n\005index\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\022\r\n\005count\030\003" +
+      " \001(\005\"\037\n\017ClientDDLottery\022\014\n\004type\030\001 \001(\005\"n\n" +
+      "\017ServerDDLottery\022\016\n\006status\030\001 \001(\005\022\014\n\004gold" +
+      "\030\002 \001(\005\022\017\n\007diamond\030\003 \001(\005\022\016\n\006ownCup\030\004 \001(\005\022" +
+      "\014\n\004left\030\005 \001(\005\022\016\n\006indexs\030\006 \003(\005\"\016\n\014ClientE" +
+      "xitDD\"\016\n\014ServerExitDD\"\n\n\010B_DDOver\"<\n\010B_D",
+      "DInfo\0220\n\006dDInfo\030\001 \001(\0132 .com.kys.util.net" +
+      "ty.proto.DDInfob\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -37147,7 +37064,7 @@ public final class SnatchProto {
     internal_static_com_kys_util_netty_proto_DDInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_DDInfo_descriptor,
-        new java.lang.String[] { "Id", "Type", "Count", "PlayerName", });
+        new java.lang.String[] { "Type", "Count", "PlayerName", });
     internal_static_com_kys_util_netty_proto_DDPrize_descriptor =
       getDescriptor().getMessageTypes().get(41);
     internal_static_com_kys_util_netty_proto_DDPrize_fieldAccessorTable = new

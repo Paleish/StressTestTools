@@ -775,21 +775,12 @@ public final class GameProto {
 
     /**
      * <pre>
-     ** 参与的游戏场收货币类型，1金豆，2钻石。 
+     ** 是否是连续游戏 
      * </pre>
      *
-     * <code>int32 chipType = 2;</code>
+     * <code>bool isContinue = 2;</code>
      */
-    int getChipType();
-
-    /**
-     * <pre>
-     ** 游戏模式（1经典玩法，2不洗牌，3癞子玩法） 
-     * </pre>
-     *
-     * <code>int32 mode = 3;</code>
-     */
-    int getMode();
+    boolean getIsContinue();
   }
   /**
    * <pre>
@@ -809,8 +800,7 @@ public final class GameProto {
     }
     private ClientQuickJoin() {
       chipLevel_ = 0;
-      chipType_ = 0;
-      mode_ = 0;
+      isContinue_ = false;
     }
 
     @java.lang.Override
@@ -848,12 +838,7 @@ public final class GameProto {
             }
             case 16: {
 
-              chipType_ = input.readInt32();
-              break;
-            }
-            case 24: {
-
-              mode_ = input.readInt32();
+              isContinue_ = input.readBool();
               break;
             }
           }
@@ -893,30 +878,17 @@ public final class GameProto {
       return chipLevel_;
     }
 
-    public static final int CHIPTYPE_FIELD_NUMBER = 2;
-    private int chipType_;
+    public static final int ISCONTINUE_FIELD_NUMBER = 2;
+    private boolean isContinue_;
     /**
      * <pre>
-     ** 参与的游戏场收货币类型，1金豆，2钻石。 
+     ** 是否是连续游戏 
      * </pre>
      *
-     * <code>int32 chipType = 2;</code>
+     * <code>bool isContinue = 2;</code>
      */
-    public int getChipType() {
-      return chipType_;
-    }
-
-    public static final int MODE_FIELD_NUMBER = 3;
-    private int mode_;
-    /**
-     * <pre>
-     ** 游戏模式（1经典玩法，2不洗牌，3癞子玩法） 
-     * </pre>
-     *
-     * <code>int32 mode = 3;</code>
-     */
-    public int getMode() {
-      return mode_;
+    public boolean getIsContinue() {
+      return isContinue_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -934,11 +906,8 @@ public final class GameProto {
       if (chipLevel_ != 0) {
         output.writeInt32(1, chipLevel_);
       }
-      if (chipType_ != 0) {
-        output.writeInt32(2, chipType_);
-      }
-      if (mode_ != 0) {
-        output.writeInt32(3, mode_);
+      if (isContinue_ != false) {
+        output.writeBool(2, isContinue_);
       }
       unknownFields.writeTo(output);
     }
@@ -952,13 +921,9 @@ public final class GameProto {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, chipLevel_);
       }
-      if (chipType_ != 0) {
+      if (isContinue_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, chipType_);
-      }
-      if (mode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, mode_);
+          .computeBoolSize(2, isContinue_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -978,10 +943,8 @@ public final class GameProto {
       boolean result = true;
       result = result && (getChipLevel()
           == other.getChipLevel());
-      result = result && (getChipType()
-          == other.getChipType());
-      result = result && (getMode()
-          == other.getMode());
+      result = result && (getIsContinue()
+          == other.getIsContinue());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -995,10 +958,9 @@ public final class GameProto {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CHIPLEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getChipLevel();
-      hash = (37 * hash) + CHIPTYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getChipType();
-      hash = (37 * hash) + MODE_FIELD_NUMBER;
-      hash = (53 * hash) + getMode();
+      hash = (37 * hash) + ISCONTINUE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsContinue());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1134,9 +1096,7 @@ public final class GameProto {
         super.clear();
         chipLevel_ = 0;
 
-        chipType_ = 0;
-
-        mode_ = 0;
+        isContinue_ = false;
 
         return this;
       }
@@ -1161,8 +1121,7 @@ public final class GameProto {
       public com.kys.util.netty.proto.GameProto.ClientQuickJoin buildPartial() {
         com.kys.util.netty.proto.GameProto.ClientQuickJoin result = new com.kys.util.netty.proto.GameProto.ClientQuickJoin(this);
         result.chipLevel_ = chipLevel_;
-        result.chipType_ = chipType_;
-        result.mode_ = mode_;
+        result.isContinue_ = isContinue_;
         onBuilt();
         return result;
       }
@@ -1207,11 +1166,8 @@ public final class GameProto {
         if (other.getChipLevel() != 0) {
           setChipLevel(other.getChipLevel());
         }
-        if (other.getChipType() != 0) {
-          setChipType(other.getChipType());
-        }
-        if (other.getMode() != 0) {
-          setMode(other.getMode());
+        if (other.getIsContinue() != false) {
+          setIsContinue(other.getIsContinue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1278,78 +1234,40 @@ public final class GameProto {
         return this;
       }
 
-      private int chipType_ ;
+      private boolean isContinue_ ;
       /**
        * <pre>
-       ** 参与的游戏场收货币类型，1金豆，2钻石。 
+       ** 是否是连续游戏 
        * </pre>
        *
-       * <code>int32 chipType = 2;</code>
+       * <code>bool isContinue = 2;</code>
        */
-      public int getChipType() {
-        return chipType_;
+      public boolean getIsContinue() {
+        return isContinue_;
       }
       /**
        * <pre>
-       ** 参与的游戏场收货币类型，1金豆，2钻石。 
+       ** 是否是连续游戏 
        * </pre>
        *
-       * <code>int32 chipType = 2;</code>
+       * <code>bool isContinue = 2;</code>
        */
-      public Builder setChipType(int value) {
+      public Builder setIsContinue(boolean value) {
         
-        chipType_ = value;
+        isContinue_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 参与的游戏场收货币类型，1金豆，2钻石。 
+       ** 是否是连续游戏 
        * </pre>
        *
-       * <code>int32 chipType = 2;</code>
+       * <code>bool isContinue = 2;</code>
        */
-      public Builder clearChipType() {
+      public Builder clearIsContinue() {
         
-        chipType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mode_ ;
-      /**
-       * <pre>
-       ** 游戏模式（1经典玩法，2不洗牌，3癞子玩法） 
-       * </pre>
-       *
-       * <code>int32 mode = 3;</code>
-       */
-      public int getMode() {
-        return mode_;
-      }
-      /**
-       * <pre>
-       ** 游戏模式（1经典玩法，2不洗牌，3癞子玩法） 
-       * </pre>
-       *
-       * <code>int32 mode = 3;</code>
-       */
-      public Builder setMode(int value) {
-        
-        mode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 游戏模式（1经典玩法，2不洗牌，3癞子玩法） 
-       * </pre>
-       *
-       * <code>int32 mode = 3;</code>
-       */
-      public Builder clearMode() {
-        
-        mode_ = 0;
+        isContinue_ = false;
         onChanged();
         return this;
       }
@@ -24412,80 +24330,80 @@ public final class GameProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\017gameProto.proto\022\030com.kys.util.netty.pr" +
-      "oto\032\017userProto.proto\"D\n\017ClientQuickJoin\022" +
-      "\021\n\tchipLevel\030\001 \001(\005\022\020\n\010chipType\030\002 \001(\005\022\014\n\004" +
-      "mode\030\003 \001(\005\"\022\n\020ClientCancleJoin\"0\n\017Client" +
-      "EnterRoom\022\016\n\006roomId\030\001 \001(\005\022\r\n\005token\030\002 \001(\t" +
-      "\"#\n\rClientDoCatch\022\022\n\ncatchScore\030\001 \001(\005\" \n" +
-      "\017ClientPlayCards\022\r\n\005cards\030\001 \003(\005\"#\n\021Clien" +
-      "tRecoverGame\022\016\n\006roomId\030\001 \001(\005\" \n\016ClientAu" +
-      "toPlay\022\016\n\006status\030\001 \001(\005\"\021\n\017ClientLeaveRoo" +
-      "m\"\022\n\020ClientQueryIndex\"!\n\020ServerQueryInde",
-      "x\022\r\n\005index\030\001 \001(\005\"9\n\017ServerQuickJoin\022\020\n\010w" +
-      "aitTime\030\001 \001(\005\022\024\n\014recordRemind\030\002 \001(\010\"\022\n\020S" +
-      "erverCancleJoin\"\212\001\n\017ServerEnterRoom\022\r\n\005i" +
-      "ndex\030\001 \001(\005\022>\n\nplayerInfo\030\002 \003(\0132*.com.kys" +
-      ".util.netty.proto.PlayerInfoInGame\022\025\n\rba" +
-      "sePointType\030\004 \001(\005\022\021\n\tbasePoint\030\005 \001(\005\"\177\n\020" +
-      "PlayerInfoInGame\0224\n\010userinfo\030\001 \001(\0132\".com" +
-      ".kys.util.netty.proto.UserInfo\022\016\n\006seatID" +
-      "\030\002 \001(\005\022\020\n\010goldBuff\030\003 \001(\005\022\023\n\013diamondBuff\030" +
-      "\004 \001(\005\"\020\n\016ServerAutoPlay\";\n\nB_AutoPlay\022\016\n",
-      "\006seatId\030\001 \001(\005\022\016\n\006status\030\002 \001(\005\022\r\n\005index\030\003" +
-      " \001(\005\"E\n\013B_GameStart\022\023\n\013reStartTime\030\001 \001(\005" +
-      "\022\022\n\nhandsCards\030\002 \003(\005\022\r\n\005index\030\003 \001(\005\"\017\n\rS" +
-      "erverDoCatch\"\021\n\017ServerPlayCards\"\021\n\017Serve" +
-      "rLeaveRoom\"*\n\013B_RoomIdUrl\022\016\n\006roomId\030\001 \001(" +
-      "\005\022\013\n\003url\030\002 \001(\t\"p\n\tB_DoCatch\022\025\n\rdoCatchSe" +
-      "atId\030\001 \001(\005\022\025\n\rhascatchScore\030\002 \001(\005\022\022\n\nsys" +
-      "temTime\030\003 \001(\t\022\022\n\nexpireTime\030\004 \001(\t\022\r\n\005ind" +
-      "ex\030\005 \001(\005\"V\n\rB_CatchResult\022\023\n\013catchSeatId" +
-      "\030\001 \001(\005\022\022\n\ncatchScore\030\002 \001(\005\022\r\n\005ratio\030\003 \001(",
-      "\005\022\r\n\005index\030\004 \001(\005\"X\n\017B_SendDiZhuCard\022\023\n\013d" +
-      "izhuSeatId\030\001 \001(\005\022\r\n\005ratio\030\002 \001(\005\022\022\n\ndizhu" +
-      "Cards\030\003 \003(\005\022\r\n\005index\030\004 \001(\005\"q\n\014B_NextPlay" +
-      "er\022\026\n\016nextPlaySeatId\030\001 \001(\005\022\022\n\nsystemTime" +
-      "\030\002 \001(\t\022\022\n\nexpireTime\030\003 \001(\t\022\022\n\nisNewRound" +
-      "\030\004 \001(\010\022\r\n\005index\030\005 \001(\005\"w\n\013B_PlayCards\022\024\n\014" +
-      "doPlaySeatId\030\001 \001(\005\022\r\n\005cards\030\002 \003(\005\022\020\n\010car" +
-      "dType\030\003 \001(\005\022\r\n\005ratio\030\004 \001(\005\022\023\n\013remainCard" +
-      "s\030\005 \001(\005\022\r\n\005index\030\006 \001(\005\"\352\002\n\021ServerRecover" +
-      "Game\022\033\n\023currentPlayerSeatId\030\001 \001(\005\022\023\n\013diz",
-      "huSeatId\030\002 \001(\005\022\r\n\005ratio\030\003 \001(\005\022\022\n\ndizhuCa" +
-      "rds\030\004 \003(\005\022\022\n\nhandsCards\030\005 \003(\005\022\022\n\nsystemT" +
-      "ime\030\006 \001(\t\022\022\n\nexpireTime\030\007 \001(\t\022\r\n\005index\030\010" +
-      " \001(\005\022?\n\nplayerInfo\030\t \003(\0132+.com.kys.util." +
-      "netty.proto.RecoverPlayerInfo\022:\n\tgameSta" +
-      "te\030\n \001(\0162\'.com.kys.util.netty.proto.Game" +
-      "StateEnum\022\020\n\010bigCards\030\013 \003(\005\022\020\n\010bigScore\030" +
-      "\014 \001(\005\022\024\n\014historyCards\030\r \003(\005\"\177\n\021RecoverPl" +
-      "ayerInfo\022\016\n\006seatID\030\001 \001(\005\022\023\n\013remainCards\030" +
-      "\002 \001(\005\022\021\n\tlastCards\030\003 \003(\005\022\016\n\006isAuto\030\004 \001(\010",
-      "\022\016\n\006isPlay\030\005 \001(\010\022\022\n\ncatchPoint\030\006 \001(\005\"\217\001\n" +
-      "\014B_GameSettle\022\022\n\nisContinue\030\001 \001(\005\0227\n\007pSe" +
-      "ttle\030\002 \003(\0132&.com.kys.util.netty.proto.Pl" +
-      "ayerSettle\022\024\n\014springStatus\030\003 \001(\005\022\r\n\005inde" +
-      "x\030\004 \001(\005\022\r\n\005ratio\030\005 \001(\005\"\267\001\n\014PlayerSettle\022" +
-      "\016\n\006seatId\030\001 \001(\005\022\023\n\013scoreChange\030\002 \001(\005\022\021\n\t" +
-      "scoreType\030\003 \001(\005\022\017\n\007allChip\030\004 \001(\005\022\022\n\nallD" +
-      "iamond\030\005 \001(\005\022\023\n\013remainCards\030\006 \003(\005\0225\n\006sta" +
-      "tes\030\007 \003(\0162%.com.kys.util.netty.proto.Pla" +
-      "yerState\"\027\n\025ClientRetryReturnGame\"4\n\025Ser",
-      "verRetryReturnGame\022\013\n\003url\030\001 \001(\t\022\016\n\006roomI" +
-      "d\030\002 \001(\005*X\n\013PlayerState\022\010\n\004None\020\000\022\013\n\007Mian" +
-      "Pei\020\001\022\t\n\005GuaJi\020\002\022\r\n\tShangXian\020\003\022\014\n\010FengD" +
-      "ing\020\004\022\n\n\006PoChan\020\005*n\n\rGameStateEnum\022\t\n\005En" +
-      "ter\020\000\022\010\n\004Join\020\001\022\t\n\005Start\020\002\022\t\n\005Catch\020\003\022\n\n" +
-      "\006Reveal\020\004\022\r\n\tPlayCards\020\005\022\n\n\006Settle\020\006\022\013\n\007" +
-      "ReStart\020\007*\303\002\n\014CardTypeEnum\022\n\n\006cgZERO\020\000\022\024" +
-      "\n\007cgERROR\020\377\377\377\377\377\377\377\377\377\001\022\014\n\010cgSINGLE\020\001\022\014\n\010cg" +
-      "DOUBLE\020\002\022\013\n\007cgTHREE\020\003\022\024\n\020cgTHREE_TAKE_ON" +
-      "E\020\004\022\024\n\020cgTHREE_TAKE_TWO\020\005\022\021\n\rcgSINGLE_LI",
-      "NE\020\006\022\021\n\rcgDOUBLE_LINE\020\007\022\020\n\014cgTHREE_LINE\020" +
-      "\010\022\031\n\025cgTHREE_TAKE_ONE_LINE\020\t\022\031\n\025cgTHREE_" +
-      "TAKE_TWO_LINE\020\n\022\026\n\022cgFOUR_TAKE_SINGLE\020\013\022" +
-      "\024\n\020cgFOUR_TAKE_PAIR\020\014\022\017\n\013cgBOMB_CARD\020\r\022\017" +
-      "\n\013cgKING_CARD\020\016b\006proto3"
+      "oto\032\017userProto.proto\"8\n\017ClientQuickJoin\022" +
+      "\021\n\tchipLevel\030\001 \001(\005\022\022\n\nisContinue\030\002 \001(\010\"\022" +
+      "\n\020ClientCancleJoin\"0\n\017ClientEnterRoom\022\016\n" +
+      "\006roomId\030\001 \001(\005\022\r\n\005token\030\002 \001(\t\"#\n\rClientDo" +
+      "Catch\022\022\n\ncatchScore\030\001 \001(\005\" \n\017ClientPlayC" +
+      "ards\022\r\n\005cards\030\001 \003(\005\"#\n\021ClientRecoverGame" +
+      "\022\016\n\006roomId\030\001 \001(\005\" \n\016ClientAutoPlay\022\016\n\006st" +
+      "atus\030\001 \001(\005\"\021\n\017ClientLeaveRoom\"\022\n\020ClientQ" +
+      "ueryIndex\"!\n\020ServerQueryIndex\022\r\n\005index\030\001",
+      " \001(\005\"9\n\017ServerQuickJoin\022\020\n\010waitTime\030\001 \001(" +
+      "\005\022\024\n\014recordRemind\030\002 \001(\010\"\022\n\020ServerCancleJ" +
+      "oin\"\212\001\n\017ServerEnterRoom\022\r\n\005index\030\001 \001(\005\022>" +
+      "\n\nplayerInfo\030\002 \003(\0132*.com.kys.util.netty." +
+      "proto.PlayerInfoInGame\022\025\n\rbasePointType\030" +
+      "\004 \001(\005\022\021\n\tbasePoint\030\005 \001(\005\"\177\n\020PlayerInfoIn" +
+      "Game\0224\n\010userinfo\030\001 \001(\0132\".com.kys.util.ne" +
+      "tty.proto.UserInfo\022\016\n\006seatID\030\002 \001(\005\022\020\n\010go" +
+      "ldBuff\030\003 \001(\005\022\023\n\013diamondBuff\030\004 \001(\005\"\020\n\016Ser" +
+      "verAutoPlay\";\n\nB_AutoPlay\022\016\n\006seatId\030\001 \001(",
+      "\005\022\016\n\006status\030\002 \001(\005\022\r\n\005index\030\003 \001(\005\"E\n\013B_Ga" +
+      "meStart\022\023\n\013reStartTime\030\001 \001(\005\022\022\n\nhandsCar" +
+      "ds\030\002 \003(\005\022\r\n\005index\030\003 \001(\005\"\017\n\rServerDoCatch" +
+      "\"\021\n\017ServerPlayCards\"\021\n\017ServerLeaveRoom\"*" +
+      "\n\013B_RoomIdUrl\022\016\n\006roomId\030\001 \001(\005\022\013\n\003url\030\002 \001" +
+      "(\t\"p\n\tB_DoCatch\022\025\n\rdoCatchSeatId\030\001 \001(\005\022\025" +
+      "\n\rhascatchScore\030\002 \001(\005\022\022\n\nsystemTime\030\003 \001(" +
+      "\t\022\022\n\nexpireTime\030\004 \001(\t\022\r\n\005index\030\005 \001(\005\"V\n\r" +
+      "B_CatchResult\022\023\n\013catchSeatId\030\001 \001(\005\022\022\n\nca" +
+      "tchScore\030\002 \001(\005\022\r\n\005ratio\030\003 \001(\005\022\r\n\005index\030\004",
+      " \001(\005\"X\n\017B_SendDiZhuCard\022\023\n\013dizhuSeatId\030\001" +
+      " \001(\005\022\r\n\005ratio\030\002 \001(\005\022\022\n\ndizhuCards\030\003 \003(\005\022" +
+      "\r\n\005index\030\004 \001(\005\"q\n\014B_NextPlayer\022\026\n\016nextPl" +
+      "aySeatId\030\001 \001(\005\022\022\n\nsystemTime\030\002 \001(\t\022\022\n\nex" +
+      "pireTime\030\003 \001(\t\022\022\n\nisNewRound\030\004 \001(\010\022\r\n\005in" +
+      "dex\030\005 \001(\005\"w\n\013B_PlayCards\022\024\n\014doPlaySeatId" +
+      "\030\001 \001(\005\022\r\n\005cards\030\002 \003(\005\022\020\n\010cardType\030\003 \001(\005\022" +
+      "\r\n\005ratio\030\004 \001(\005\022\023\n\013remainCards\030\005 \001(\005\022\r\n\005i" +
+      "ndex\030\006 \001(\005\"\352\002\n\021ServerRecoverGame\022\033\n\023curr" +
+      "entPlayerSeatId\030\001 \001(\005\022\023\n\013dizhuSeatId\030\002 \001",
+      "(\005\022\r\n\005ratio\030\003 \001(\005\022\022\n\ndizhuCards\030\004 \003(\005\022\022\n" +
+      "\nhandsCards\030\005 \003(\005\022\022\n\nsystemTime\030\006 \001(\t\022\022\n" +
+      "\nexpireTime\030\007 \001(\t\022\r\n\005index\030\010 \001(\005\022?\n\nplay" +
+      "erInfo\030\t \003(\0132+.com.kys.util.netty.proto." +
+      "RecoverPlayerInfo\022:\n\tgameState\030\n \001(\0162\'.c" +
+      "om.kys.util.netty.proto.GameStateEnum\022\020\n" +
+      "\010bigCards\030\013 \003(\005\022\020\n\010bigScore\030\014 \001(\005\022\024\n\014his" +
+      "toryCards\030\r \003(\005\"\177\n\021RecoverPlayerInfo\022\016\n\006" +
+      "seatID\030\001 \001(\005\022\023\n\013remainCards\030\002 \001(\005\022\021\n\tlas" +
+      "tCards\030\003 \003(\005\022\016\n\006isAuto\030\004 \001(\010\022\016\n\006isPlay\030\005",
+      " \001(\010\022\022\n\ncatchPoint\030\006 \001(\005\"\217\001\n\014B_GameSettl" +
+      "e\022\022\n\nisContinue\030\001 \001(\005\0227\n\007pSettle\030\002 \003(\0132&" +
+      ".com.kys.util.netty.proto.PlayerSettle\022\024" +
+      "\n\014springStatus\030\003 \001(\005\022\r\n\005index\030\004 \001(\005\022\r\n\005r" +
+      "atio\030\005 \001(\005\"\267\001\n\014PlayerSettle\022\016\n\006seatId\030\001 " +
+      "\001(\005\022\023\n\013scoreChange\030\002 \001(\005\022\021\n\tscoreType\030\003 " +
+      "\001(\005\022\017\n\007allChip\030\004 \001(\005\022\022\n\nallDiamond\030\005 \001(\005" +
+      "\022\023\n\013remainCards\030\006 \003(\005\0225\n\006states\030\007 \003(\0162%." +
+      "com.kys.util.netty.proto.PlayerState\"\027\n\025" +
+      "ClientRetryReturnGame\"4\n\025ServerRetryRetu",
+      "rnGame\022\013\n\003url\030\001 \001(\t\022\016\n\006roomId\030\002 \001(\005*X\n\013P" +
+      "layerState\022\010\n\004None\020\000\022\013\n\007MianPei\020\001\022\t\n\005Gua" +
+      "Ji\020\002\022\r\n\tShangXian\020\003\022\014\n\010FengDing\020\004\022\n\n\006PoC" +
+      "han\020\005*n\n\rGameStateEnum\022\t\n\005Enter\020\000\022\010\n\004Joi" +
+      "n\020\001\022\t\n\005Start\020\002\022\t\n\005Catch\020\003\022\n\n\006Reveal\020\004\022\r\n" +
+      "\tPlayCards\020\005\022\n\n\006Settle\020\006\022\013\n\007ReStart\020\007*\303\002" +
+      "\n\014CardTypeEnum\022\n\n\006cgZERO\020\000\022\024\n\007cgERROR\020\377\377" +
+      "\377\377\377\377\377\377\377\001\022\014\n\010cgSINGLE\020\001\022\014\n\010cgDOUBLE\020\002\022\013\n\007" +
+      "cgTHREE\020\003\022\024\n\020cgTHREE_TAKE_ONE\020\004\022\024\n\020cgTHR" +
+      "EE_TAKE_TWO\020\005\022\021\n\rcgSINGLE_LINE\020\006\022\021\n\rcgDO",
+      "UBLE_LINE\020\007\022\020\n\014cgTHREE_LINE\020\010\022\031\n\025cgTHREE" +
+      "_TAKE_ONE_LINE\020\t\022\031\n\025cgTHREE_TAKE_TWO_LIN" +
+      "E\020\n\022\026\n\022cgFOUR_TAKE_SINGLE\020\013\022\024\n\020cgFOUR_TA" +
+      "KE_PAIR\020\014\022\017\n\013cgBOMB_CARD\020\r\022\017\n\013cgKING_CAR" +
+      "D\020\016b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -24505,7 +24423,7 @@ public final class GameProto {
     internal_static_com_kys_util_netty_proto_ClientQuickJoin_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ClientQuickJoin_descriptor,
-        new java.lang.String[] { "ChipLevel", "ChipType", "Mode", });
+        new java.lang.String[] { "ChipLevel", "IsContinue", });
     internal_static_com_kys_util_netty_proto_ClientCancleJoin_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_com_kys_util_netty_proto_ClientCancleJoin_fieldAccessorTable = new

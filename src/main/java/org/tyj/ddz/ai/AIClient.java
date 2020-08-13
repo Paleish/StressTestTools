@@ -19,12 +19,15 @@ import org.springframework.stereotype.Component;
 import org.tyj.constant.AIModeEnum;
 import org.tyj.ddz.bean.LoginInfo;
 import org.tyj.ddz.bean.PlayerInfo;
+import org.tyj.ddz.match.MatchRequester;
 import org.tyj.ddz.sender.LuckyTimeSender;
+import org.tyj.ddz.sender.ReviveSender;
 import org.tyj.ddz.service.LoginService;
 import org.tyj.util.ChannelUtil;
 import org.tyj.web.MessageSender;
 
 import javax.annotation.Resource;
+import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -52,6 +55,10 @@ public class AIClient extends Thread {
 
     @Resource
     private LuckyTimeSender luckyTimeSender;
+    @Resource
+    private ReviveSender reviveSender;
+    @Resource
+    private MatchRequester matchRequester;
 
     private ConcurrentHashMap<Long, AIMessage> msgMap = new ConcurrentHashMap<>();
 
@@ -154,14 +161,14 @@ public class AIClient extends Thread {
                             case "item":
                                 itemFunction(am.getArgs());
                                 break;
-                            case "vip":
-                                vipFunction(am.getArgs());
-                                break;
-                            case "skin":
-                                skinFunction(am.getArgs());
-                                break;
                             case "lucky":
                                 luckyTimeSender.sendLuckyTimeQuery(userId);
+                                break;
+                            case "revive":
+                                reviveSender.queryReviveInfo(userId);
+                                break;
+                            case "joinMatch":
+                                matchRequester.requestMatchList(userId);
                                 break;
                             default:
                                 break;
@@ -184,48 +191,6 @@ public class AIClient extends Thread {
                     e.printStackTrace();
                 }
             }
-        }
-    }
-
-    private void skinFunction(String args) {
-        logger.info("皮肤接口");
-        switch (args) {
-            case "info"://skin;info
-                logger.info("调用查看玩家皮肤接口");
-                ProtoMsg.ClientRequest.Builder crBuilder = ProtoMsg.ClientRequest.newBuilder();
-                MessageSender.sendSingleSuccessMsg(ChannelUtil.getHallChannel(userId), crBuilder, ProtoMsg.MessageTypeEnum.clientGetSkinInfo);
-                break;
-            case "equip"://skin;equip
-                logger.info("装备玩家皮肤");
-                ProtoMsg.ClientRequest.Builder crBuilder1 = ProtoMsg.ClientRequest.newBuilder();
-                UserProto.ClientEquipSkin.Builder equipBuilder = UserProto.ClientEquipSkin.newBuilder();
-                equipBuilder.setSkin(UserProto.SkinEnum.Lottery_Skin);
-                crBuilder1.setClientEquipSkin(equipBuilder);
-                MessageSender.sendSingleSuccessMsg(ChannelUtil.getHallChannel(userId), crBuilder1, ProtoMsg.MessageTypeEnum.clientEquipSkin);
-            default:
-                break;
-        }
-    }
-
-    private void vipFunction(String args) {
-        logger.info("VIP接口");
-        switch (args) {
-            case "mainInfo"://vip;mainInfo
-                logger.info("调用查看VIP主界面接口");
-                VipProto.ClientGetVipInfo.Builder builder = VipProto.ClientGetVipInfo.newBuilder();
-                ProtoMsg.ClientRequest.Builder crBuilder = ProtoMsg.ClientRequest.newBuilder();
-                crBuilder.setClientGetVipInfo(builder);
-                MessageSender.sendSingleSuccessMsg(ChannelUtil.getHallChannel(userId), crBuilder, ProtoMsg.MessageTypeEnum.clientGetVipInfo);
-                break;
-            case "week"://vip;week
-                logger.info("调用领取VIP每周奖励接口");
-                VipProto.ClientGetVipWeek.Builder builder1 = VipProto.ClientGetVipWeek.newBuilder();
-                ProtoMsg.ClientRequest.Builder crBuilder1 = ProtoMsg.ClientRequest.newBuilder();
-                crBuilder1.setClientGetVipWeek(builder1);
-                MessageSender.sendSingleSuccessMsg(ChannelUtil.getHallChannel(userId), crBuilder1, ProtoMsg.MessageTypeEnum.clientGetVipWeek);
-                break;
-            default:
-                break;
         }
     }
 
@@ -419,7 +384,6 @@ public class AIClient extends Thread {
     private void AIExcWinCup(String itemId) {
         logger.info("玩家{}发送兑换奖杯请求！", userId);
         StoreProto.ClientConvertGoods.Builder ccg = StoreProto.ClientConvertGoods.newBuilder();
-        ccg.setOrderSource(1);
         ccg.setId(Integer.parseInt(itemId));
         ProtoMsg.ClientRequest.Builder cr = ProtoMsg.ClientRequest.newBuilder();
         cr.setClientConvertGoods(ccg);
@@ -427,20 +391,20 @@ public class AIClient extends Thread {
     }
 
     private void AIWinCup(String lv) {
-        logger.info("玩家{}发送抽奖杯请求！", userId);
-        //构造请求
-        ProtoMsg.ClientRequest.Builder cr = ProtoMsg.ClientRequest.newBuilder();
-        HallProto.ClientDrawWinCup.Builder cdwc = HallProto.ClientDrawWinCup.newBuilder();
-        cdwc.setRoomConfigId(Integer.parseInt(lv));
-        cr.setClientDrawWinCup(cdwc);
-        MessageSender.sendSingleSuccessMsg(ChannelUtil.getHallChannel(userId), cr, ProtoMsg.MessageTypeEnum.clientDrawWinCup);
+//        logger.info("玩家{}发送抽奖杯请求！", userId);
+//        //构造请求
+//        ProtoMsg.ClientRequest.Builder cr = ProtoMsg.ClientRequest.newBuilder();
+//        HallProto.ClientDrawWinCup.Builder cdwc = HallProto.ClientDrawWinCup.newBuilder();
+//        cdwc.setRoomConfigId(Integer.parseInt(lv));
+//        cr.setClientDrawWinCup(cdwc);
+//        MessageSender.sendSingleSuccessMsg(ChannelUtil.getHallChannel(userId), cr, ProtoMsg.MessageTypeEnum.clientDrawWinCup);
     }
 
     private void AILogin() {
         logger.info("玩家{}，发送登录请求!", userId);
         //构建登录请求
         com.kys.util.netty.proto.ProtoMsg.ClientRequest.Builder cr = com.kys.util.netty.proto.ProtoMsg.ClientRequest.newBuilder();
-        com.kys.util.netty.proto.LoginProto.ClientLogin.Builder clb = com.kys.util.netty.proto.LoginProto.ClientLogin.newBuilder();
+        com.kys.util.netty.proto.LoginProto.ClientNewLogin.Builder clb = com.kys.util.netty.proto.LoginProto.ClientNewLogin.newBuilder();
         clb.setToken(login.getToken());
         this.token = login.getToken();
         clb.setAppVersion("");
@@ -448,8 +412,8 @@ public class AIClient extends Thread {
         clb.setDeviceId(login.getDeviceId());
         clb.setDevicePlatform(login.getDevicePlatform());
         clb.setLoginType("weChat");
-        cr.setClientLogin(clb);
-        MessageSender.sendSingleSuccessMsg(ChannelUtil.getHallChannel(userId), cr, com.kys.util.netty.proto.ProtoMsg.MessageTypeEnum.clientLogin);
+        cr.setClientNewLogin(clb);
+        MessageSender.sendSingleSuccessMsg(ChannelUtil.getHallChannel(userId), cr, com.kys.util.netty.proto.ProtoMsg.MessageTypeEnum.clientNewLogin);
     }
 
     public void AIJoin() {
@@ -457,8 +421,9 @@ public class AIClient extends Thread {
         logger.info("玩家{},发送加入房间请求!", userId);
         com.kys.util.netty.proto.GameProto.ClientQuickJoin.Builder cqj = com.kys.util.netty.proto.GameProto.ClientQuickJoin.newBuilder();
         // 参与匹配的等级,范围为1-3，11-13
-        cqj.setChipLevel(3);
-        cqj.setMode(1);
+        Random rd = new Random();
+        //cqj.setChipLevel(rd.nextInt(3) * 10 + rd.nextInt(2) + 1);
+        cqj.setChipLevel(31);
         com.kys.util.netty.proto.ProtoMsg.ClientRequest.Builder cr = com.kys.util.netty.proto.ProtoMsg.ClientRequest.newBuilder();
         cr.setClientQuickJoin(cqj);
         MessageSender.sendSingleSuccessMsg(ChannelUtil.getHallChannel(userId), cr, com.kys.util.netty.proto.ProtoMsg.MessageTypeEnum.clientQuickJoin);

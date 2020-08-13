@@ -14,27 +14,27 @@ public final class SignProto {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface ClientMonthSignInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientMonthSignInfo)
+  public interface ClientSignStateOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientSignState)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
    * <pre>
-   ** 客户端请求月签信息 
+   ** 客户端请求签到状态 
    * </pre>
    *
-   * Protobuf type {@code com.kys.util.netty.proto.ClientMonthSignInfo}
+   * Protobuf type {@code com.kys.util.netty.proto.ClientSignState}
    */
-  public  static final class ClientMonthSignInfo extends
+  public  static final class ClientSignState extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientMonthSignInfo)
-      ClientMonthSignInfoOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientSignState)
+      ClientSignStateOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use ClientMonthSignInfo.newBuilder() to construct.
-    private ClientMonthSignInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use ClientSignState.newBuilder() to construct.
+    private ClientSignState(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private ClientMonthSignInfo() {
+    private ClientSignState() {
     }
 
     @java.lang.Override
@@ -42,7 +42,7 @@ public final class SignProto {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ClientMonthSignInfo(
+    private ClientSignState(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -78,14 +78,14 @@ public final class SignProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_descriptor;
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignState_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_fieldAccessorTable
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.SignProto.ClientMonthSignInfo.class, com.kys.util.netty.proto.SignProto.ClientMonthSignInfo.Builder.class);
+              com.kys.util.netty.proto.SignProto.ClientSignState.class, com.kys.util.netty.proto.SignProto.ClientSignState.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -118,10 +118,10 @@ public final class SignProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ClientMonthSignInfo)) {
+      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ClientSignState)) {
         return super.equals(obj);
       }
-      com.kys.util.netty.proto.SignProto.ClientMonthSignInfo other = (com.kys.util.netty.proto.SignProto.ClientMonthSignInfo) obj;
+      com.kys.util.netty.proto.SignProto.ClientSignState other = (com.kys.util.netty.proto.SignProto.ClientSignState) obj;
 
       boolean result = true;
       result = result && unknownFields.equals(other.unknownFields);
@@ -140,69 +140,69 @@ public final class SignProto {
       return hash;
     }
 
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(byte[] data)
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseDelimitedFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseDelimitedFrom(
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ClientSignState parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -214,7 +214,7 @@ public final class SignProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ClientMonthSignInfo prototype) {
+    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ClientSignState prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -230,28 +230,28 @@ public final class SignProto {
     }
     /**
      * <pre>
-     ** 客户端请求月签信息 
+     ** 客户端请求签到状态 
      * </pre>
      *
-     * Protobuf type {@code com.kys.util.netty.proto.ClientMonthSignInfo}
+     * Protobuf type {@code com.kys.util.netty.proto.ClientSignState}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientMonthSignInfo)
-        com.kys.util.netty.proto.SignProto.ClientMonthSignInfoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientSignState)
+        com.kys.util.netty.proto.SignProto.ClientSignStateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_descriptor;
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignState_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_fieldAccessorTable
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignState_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.SignProto.ClientMonthSignInfo.class, com.kys.util.netty.proto.SignProto.ClientMonthSignInfo.Builder.class);
+                com.kys.util.netty.proto.SignProto.ClientSignState.class, com.kys.util.netty.proto.SignProto.ClientSignState.Builder.class);
       }
 
-      // Construct using com.kys.util.netty.proto.SignProto.ClientMonthSignInfo.newBuilder()
+      // Construct using com.kys.util.netty.proto.SignProto.ClientSignState.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -273,23 +273,23 @@ public final class SignProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_descriptor;
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignState_descriptor;
       }
 
-      public com.kys.util.netty.proto.SignProto.ClientMonthSignInfo getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.SignProto.ClientMonthSignInfo.getDefaultInstance();
+      public com.kys.util.netty.proto.SignProto.ClientSignState getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.SignProto.ClientSignState.getDefaultInstance();
       }
 
-      public com.kys.util.netty.proto.SignProto.ClientMonthSignInfo build() {
-        com.kys.util.netty.proto.SignProto.ClientMonthSignInfo result = buildPartial();
+      public com.kys.util.netty.proto.SignProto.ClientSignState build() {
+        com.kys.util.netty.proto.SignProto.ClientSignState result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.kys.util.netty.proto.SignProto.ClientMonthSignInfo buildPartial() {
-        com.kys.util.netty.proto.SignProto.ClientMonthSignInfo result = new com.kys.util.netty.proto.SignProto.ClientMonthSignInfo(this);
+      public com.kys.util.netty.proto.SignProto.ClientSignState buildPartial() {
+        com.kys.util.netty.proto.SignProto.ClientSignState result = new com.kys.util.netty.proto.SignProto.ClientSignState(this);
         onBuilt();
         return result;
       }
@@ -321,16 +321,16 @@ public final class SignProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.SignProto.ClientMonthSignInfo) {
-          return mergeFrom((com.kys.util.netty.proto.SignProto.ClientMonthSignInfo)other);
+        if (other instanceof com.kys.util.netty.proto.SignProto.ClientSignState) {
+          return mergeFrom((com.kys.util.netty.proto.SignProto.ClientSignState)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ClientMonthSignInfo other) {
-        if (other == com.kys.util.netty.proto.SignProto.ClientMonthSignInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ClientSignState other) {
+        if (other == com.kys.util.netty.proto.SignProto.ClientSignState.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -344,11 +344,11 @@ public final class SignProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kys.util.netty.proto.SignProto.ClientMonthSignInfo parsedMessage = null;
+        com.kys.util.netty.proto.SignProto.ClientSignState parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.SignProto.ClientMonthSignInfo) e.getUnfinishedMessage();
+          parsedMessage = (com.kys.util.netty.proto.SignProto.ClientSignState) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -368,214 +368,75 @@ public final class SignProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientMonthSignInfo)
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientSignState)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientMonthSignInfo)
-    private static final com.kys.util.netty.proto.SignProto.ClientMonthSignInfo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientSignState)
+    private static final com.kys.util.netty.proto.SignProto.ClientSignState DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ClientMonthSignInfo();
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ClientSignState();
     }
 
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSignInfo getDefaultInstance() {
+    public static com.kys.util.netty.proto.SignProto.ClientSignState getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<ClientMonthSignInfo>
-        PARSER = new com.google.protobuf.AbstractParser<ClientMonthSignInfo>() {
-      public ClientMonthSignInfo parsePartialFrom(
+    private static final com.google.protobuf.Parser<ClientSignState>
+        PARSER = new com.google.protobuf.AbstractParser<ClientSignState>() {
+      public ClientSignState parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ClientMonthSignInfo(input, extensionRegistry);
+          return new ClientSignState(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<ClientMonthSignInfo> parser() {
+    public static com.google.protobuf.Parser<ClientSignState> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<ClientMonthSignInfo> getParserForType() {
+    public com.google.protobuf.Parser<ClientSignState> getParserForType() {
       return PARSER;
     }
 
-    public com.kys.util.netty.proto.SignProto.ClientMonthSignInfo getDefaultInstanceForType() {
+    public com.kys.util.netty.proto.SignProto.ClientSignState getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface ServerMonthSignInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerMonthSignInfo)
+  public interface ServerSignStateOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerSignState)
       com.google.protobuf.MessageOrBuilder {
 
     /**
      * <pre>
-     ** 累计签到次数 
+     ** 签到状态:1已签到 2未签到 3不再签到(累计天数大于10天)  
      * </pre>
      *
-     * <code>int32 signTimes = 1;</code>
+     * <code>int32 signState = 1;</code>
      */
-    int getSignTimes();
-
-    /**
-     * <pre>
-     ** 可补签次数 
-     * </pre>
-     *
-     * <code>int32 reSign = 2;</code>
-     */
-    int getReSign();
-
-    /**
-     * <pre>
-     ** 补签价格 
-     * </pre>
-     *
-     * <code>int32 reSignPrice = 3;</code>
-     */
-    int getReSignPrice();
-
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    java.util.List<com.kys.util.netty.proto.SignProto.SignDayInfo> 
-        getSignDayInfoList();
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    com.kys.util.netty.proto.SignProto.SignDayInfo getSignDayInfo(int index);
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    int getSignDayInfoCount();
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    java.util.List<? extends com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder> 
-        getSignDayInfoOrBuilderList();
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder getSignDayInfoOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    java.util.List<com.kys.util.netty.proto.SignProto.TSReward> 
-        getTSRewardList();
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    com.kys.util.netty.proto.SignProto.TSReward getTSReward(int index);
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    int getTSRewardCount();
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    java.util.List<? extends com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> 
-        getTSRewardOrBuilderList();
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    com.kys.util.netty.proto.SignProto.TSRewardOrBuilder getTSRewardOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     ** 当前日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string nowDate = 6;</code>
-     */
-    java.lang.String getNowDate();
-    /**
-     * <pre>
-     ** 当前日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string nowDate = 6;</code>
-     */
-    com.google.protobuf.ByteString
-        getNowDateBytes();
-
-    /**
-     * <pre>
-     ** 下一个阶段奖励的vip最低等级 
-     * </pre>
-     *
-     * <code>int32 nextLvMin = 7;</code>
-     */
-    int getNextLvMin();
+    int getSignState();
   }
   /**
    * <pre>
-   ** 服务端返回月签信息 
+   ** 服务端返回签到状态 
    * </pre>
    *
-   * Protobuf type {@code com.kys.util.netty.proto.ServerMonthSignInfo}
+   * Protobuf type {@code com.kys.util.netty.proto.ServerSignState}
    */
-  public  static final class ServerMonthSignInfo extends
+  public  static final class ServerSignState extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerMonthSignInfo)
-      ServerMonthSignInfoOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerSignState)
+      ServerSignStateOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use ServerMonthSignInfo.newBuilder() to construct.
-    private ServerMonthSignInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use ServerSignState.newBuilder() to construct.
+    private ServerSignState(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private ServerMonthSignInfo() {
-      signTimes_ = 0;
-      reSign_ = 0;
-      reSignPrice_ = 0;
-      signDayInfo_ = java.util.Collections.emptyList();
-      tSReward_ = java.util.Collections.emptyList();
-      nowDate_ = "";
-      nextLvMin_ = 0;
+    private ServerSignState() {
+      signState_ = 0;
     }
 
     @java.lang.Override
@@ -583,7 +444,7 @@ public final class SignProto {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ServerMonthSignInfo(
+    private ServerSignState(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -608,46 +469,7 @@ public final class SignProto {
             }
             case 8: {
 
-              signTimes_ = input.readInt32();
-              break;
-            }
-            case 16: {
-
-              reSign_ = input.readInt32();
-              break;
-            }
-            case 24: {
-
-              reSignPrice_ = input.readInt32();
-              break;
-            }
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
-                signDayInfo_ = new java.util.ArrayList<com.kys.util.netty.proto.SignProto.SignDayInfo>();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              signDayInfo_.add(
-                  input.readMessage(com.kys.util.netty.proto.SignProto.SignDayInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
-                tSReward_ = new java.util.ArrayList<com.kys.util.netty.proto.SignProto.TSReward>();
-                mutable_bitField0_ |= 0x00000010;
-              }
-              tSReward_.add(
-                  input.readMessage(com.kys.util.netty.proto.SignProto.TSReward.parser(), extensionRegistry));
-              break;
-            }
-            case 50: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              nowDate_ = s;
-              break;
-            }
-            case 56: {
-
-              nextLvMin_ = input.readInt32();
+              signState_ = input.readInt32();
               break;
             }
           }
@@ -658,231 +480,33 @@ public final class SignProto {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
-          signDayInfo_ = java.util.Collections.unmodifiableList(signDayInfo_);
-        }
-        if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
-          tSReward_ = java.util.Collections.unmodifiableList(tSReward_);
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_descriptor;
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignState_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_fieldAccessorTable
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.SignProto.ServerMonthSignInfo.class, com.kys.util.netty.proto.SignProto.ServerMonthSignInfo.Builder.class);
+              com.kys.util.netty.proto.SignProto.ServerSignState.class, com.kys.util.netty.proto.SignProto.ServerSignState.Builder.class);
     }
 
-    private int bitField0_;
-    public static final int SIGNTIMES_FIELD_NUMBER = 1;
-    private int signTimes_;
+    public static final int SIGNSTATE_FIELD_NUMBER = 1;
+    private int signState_;
     /**
      * <pre>
-     ** 累计签到次数 
+     ** 签到状态:1已签到 2未签到 3不再签到(累计天数大于10天)  
      * </pre>
      *
-     * <code>int32 signTimes = 1;</code>
+     * <code>int32 signState = 1;</code>
      */
-    public int getSignTimes() {
-      return signTimes_;
-    }
-
-    public static final int RESIGN_FIELD_NUMBER = 2;
-    private int reSign_;
-    /**
-     * <pre>
-     ** 可补签次数 
-     * </pre>
-     *
-     * <code>int32 reSign = 2;</code>
-     */
-    public int getReSign() {
-      return reSign_;
-    }
-
-    public static final int RESIGNPRICE_FIELD_NUMBER = 3;
-    private int reSignPrice_;
-    /**
-     * <pre>
-     ** 补签价格 
-     * </pre>
-     *
-     * <code>int32 reSignPrice = 3;</code>
-     */
-    public int getReSignPrice() {
-      return reSignPrice_;
-    }
-
-    public static final int SIGNDAYINFO_FIELD_NUMBER = 4;
-    private java.util.List<com.kys.util.netty.proto.SignProto.SignDayInfo> signDayInfo_;
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    public java.util.List<com.kys.util.netty.proto.SignProto.SignDayInfo> getSignDayInfoList() {
-      return signDayInfo_;
-    }
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    public java.util.List<? extends com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder> 
-        getSignDayInfoOrBuilderList() {
-      return signDayInfo_;
-    }
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    public int getSignDayInfoCount() {
-      return signDayInfo_.size();
-    }
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    public com.kys.util.netty.proto.SignProto.SignDayInfo getSignDayInfo(int index) {
-      return signDayInfo_.get(index);
-    }
-    /**
-     * <pre>
-     ** 一个月签到信息 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
-     */
-    public com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder getSignDayInfoOrBuilder(
-        int index) {
-      return signDayInfo_.get(index);
-    }
-
-    public static final int TSREWARD_FIELD_NUMBER = 5;
-    private java.util.List<com.kys.util.netty.proto.SignProto.TSReward> tSReward_;
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    public java.util.List<com.kys.util.netty.proto.SignProto.TSReward> getTSRewardList() {
-      return tSReward_;
-    }
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    public java.util.List<? extends com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> 
-        getTSRewardOrBuilderList() {
-      return tSReward_;
-    }
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    public int getTSRewardCount() {
-      return tSReward_.size();
-    }
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    public com.kys.util.netty.proto.SignProto.TSReward getTSReward(int index) {
-      return tSReward_.get(index);
-    }
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-     */
-    public com.kys.util.netty.proto.SignProto.TSRewardOrBuilder getTSRewardOrBuilder(
-        int index) {
-      return tSReward_.get(index);
-    }
-
-    public static final int NOWDATE_FIELD_NUMBER = 6;
-    private volatile java.lang.Object nowDate_;
-    /**
-     * <pre>
-     ** 当前日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string nowDate = 6;</code>
-     */
-    public java.lang.String getNowDate() {
-      java.lang.Object ref = nowDate_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        nowDate_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 当前日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string nowDate = 6;</code>
-     */
-    public com.google.protobuf.ByteString
-        getNowDateBytes() {
-      java.lang.Object ref = nowDate_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        nowDate_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int NEXTLVMIN_FIELD_NUMBER = 7;
-    private int nextLvMin_;
-    /**
-     * <pre>
-     ** 下一个阶段奖励的vip最低等级 
-     * </pre>
-     *
-     * <code>int32 nextLvMin = 7;</code>
-     */
-    public int getNextLvMin() {
-      return nextLvMin_;
+    public int getSignState() {
+      return signState_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -897,26 +521,8 @@ public final class SignProto {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (signTimes_ != 0) {
-        output.writeInt32(1, signTimes_);
-      }
-      if (reSign_ != 0) {
-        output.writeInt32(2, reSign_);
-      }
-      if (reSignPrice_ != 0) {
-        output.writeInt32(3, reSignPrice_);
-      }
-      for (int i = 0; i < signDayInfo_.size(); i++) {
-        output.writeMessage(4, signDayInfo_.get(i));
-      }
-      for (int i = 0; i < tSReward_.size(); i++) {
-        output.writeMessage(5, tSReward_.get(i));
-      }
-      if (!getNowDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, nowDate_);
-      }
-      if (nextLvMin_ != 0) {
-        output.writeInt32(7, nextLvMin_);
+      if (signState_ != 0) {
+        output.writeInt32(1, signState_);
       }
       unknownFields.writeTo(output);
     }
@@ -926,32 +532,9 @@ public final class SignProto {
       if (size != -1) return size;
 
       size = 0;
-      if (signTimes_ != 0) {
+      if (signState_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, signTimes_);
-      }
-      if (reSign_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, reSign_);
-      }
-      if (reSignPrice_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, reSignPrice_);
-      }
-      for (int i = 0; i < signDayInfo_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, signDayInfo_.get(i));
-      }
-      for (int i = 0; i < tSReward_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, tSReward_.get(i));
-      }
-      if (!getNowDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, nowDate_);
-      }
-      if (nextLvMin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, nextLvMin_);
+          .computeInt32Size(1, signState_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -963,26 +546,14 @@ public final class SignProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ServerMonthSignInfo)) {
+      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ServerSignState)) {
         return super.equals(obj);
       }
-      com.kys.util.netty.proto.SignProto.ServerMonthSignInfo other = (com.kys.util.netty.proto.SignProto.ServerMonthSignInfo) obj;
+      com.kys.util.netty.proto.SignProto.ServerSignState other = (com.kys.util.netty.proto.SignProto.ServerSignState) obj;
 
       boolean result = true;
-      result = result && (getSignTimes()
-          == other.getSignTimes());
-      result = result && (getReSign()
-          == other.getReSign());
-      result = result && (getReSignPrice()
-          == other.getReSignPrice());
-      result = result && getSignDayInfoList()
-          .equals(other.getSignDayInfoList());
-      result = result && getTSRewardList()
-          .equals(other.getTSRewardList());
-      result = result && getNowDate()
-          .equals(other.getNowDate());
-      result = result && (getNextLvMin()
-          == other.getNextLvMin());
+      result = result && (getSignState()
+          == other.getSignState());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -994,92 +565,76 @@ public final class SignProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SIGNTIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getSignTimes();
-      hash = (37 * hash) + RESIGN_FIELD_NUMBER;
-      hash = (53 * hash) + getReSign();
-      hash = (37 * hash) + RESIGNPRICE_FIELD_NUMBER;
-      hash = (53 * hash) + getReSignPrice();
-      if (getSignDayInfoCount() > 0) {
-        hash = (37 * hash) + SIGNDAYINFO_FIELD_NUMBER;
-        hash = (53 * hash) + getSignDayInfoList().hashCode();
-      }
-      if (getTSRewardCount() > 0) {
-        hash = (37 * hash) + TSREWARD_FIELD_NUMBER;
-        hash = (53 * hash) + getTSRewardList().hashCode();
-      }
-      hash = (37 * hash) + NOWDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getNowDate().hashCode();
-      hash = (37 * hash) + NEXTLVMIN_FIELD_NUMBER;
-      hash = (53 * hash) + getNextLvMin();
+      hash = (37 * hash) + SIGNSTATE_FIELD_NUMBER;
+      hash = (53 * hash) + getSignState();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(byte[] data)
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseDelimitedFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseDelimitedFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignState parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1091,7 +646,7 @@ public final class SignProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ServerMonthSignInfo prototype) {
+    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ServerSignState prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1107,28 +662,1061 @@ public final class SignProto {
     }
     /**
      * <pre>
-     ** 服务端返回月签信息 
+     ** 服务端返回签到状态 
      * </pre>
      *
-     * Protobuf type {@code com.kys.util.netty.proto.ServerMonthSignInfo}
+     * Protobuf type {@code com.kys.util.netty.proto.ServerSignState}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerMonthSignInfo)
-        com.kys.util.netty.proto.SignProto.ServerMonthSignInfoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerSignState)
+        com.kys.util.netty.proto.SignProto.ServerSignStateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_descriptor;
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignState_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_fieldAccessorTable
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignState_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.SignProto.ServerMonthSignInfo.class, com.kys.util.netty.proto.SignProto.ServerMonthSignInfo.Builder.class);
+                com.kys.util.netty.proto.SignProto.ServerSignState.class, com.kys.util.netty.proto.SignProto.ServerSignState.Builder.class);
       }
 
-      // Construct using com.kys.util.netty.proto.SignProto.ServerMonthSignInfo.newBuilder()
+      // Construct using com.kys.util.netty.proto.SignProto.ServerSignState.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        signState_ = 0;
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignState_descriptor;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ServerSignState getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.SignProto.ServerSignState.getDefaultInstance();
+      }
+
+      public com.kys.util.netty.proto.SignProto.ServerSignState build() {
+        com.kys.util.netty.proto.SignProto.ServerSignState result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ServerSignState buildPartial() {
+        com.kys.util.netty.proto.SignProto.ServerSignState result = new com.kys.util.netty.proto.SignProto.ServerSignState(this);
+        result.signState_ = signState_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.kys.util.netty.proto.SignProto.ServerSignState) {
+          return mergeFrom((com.kys.util.netty.proto.SignProto.ServerSignState)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ServerSignState other) {
+        if (other == com.kys.util.netty.proto.SignProto.ServerSignState.getDefaultInstance()) return this;
+        if (other.getSignState() != 0) {
+          setSignState(other.getSignState());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.kys.util.netty.proto.SignProto.ServerSignState parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.kys.util.netty.proto.SignProto.ServerSignState) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int signState_ ;
+      /**
+       * <pre>
+       ** 签到状态:1已签到 2未签到 3不再签到(累计天数大于10天)  
+       * </pre>
+       *
+       * <code>int32 signState = 1;</code>
+       */
+      public int getSignState() {
+        return signState_;
+      }
+      /**
+       * <pre>
+       ** 签到状态:1已签到 2未签到 3不再签到(累计天数大于10天)  
+       * </pre>
+       *
+       * <code>int32 signState = 1;</code>
+       */
+      public Builder setSignState(int value) {
+        
+        signState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 签到状态:1已签到 2未签到 3不再签到(累计天数大于10天)  
+       * </pre>
+       *
+       * <code>int32 signState = 1;</code>
+       */
+      public Builder clearSignState() {
+        
+        signState_ = 0;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerSignState)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerSignState)
+    private static final com.kys.util.netty.proto.SignProto.ServerSignState DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ServerSignState();
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ServerSignState getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ServerSignState>
+        PARSER = new com.google.protobuf.AbstractParser<ServerSignState>() {
+      public ServerSignState parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new ServerSignState(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ServerSignState> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ServerSignState> getParserForType() {
+      return PARSER;
+    }
+
+    public com.kys.util.netty.proto.SignProto.ServerSignState getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ClientSignInfoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientSignInfo)
+      com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * <pre>
+   ** 客户端请求签到信息 
+   * </pre>
+   *
+   * Protobuf type {@code com.kys.util.netty.proto.ClientSignInfo}
+   */
+  public  static final class ClientSignInfo extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientSignInfo)
+      ClientSignInfoOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ClientSignInfo.newBuilder() to construct.
+    private ClientSignInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ClientSignInfo() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ClientSignInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.kys.util.netty.proto.SignProto.ClientSignInfo.class, com.kys.util.netty.proto.SignProto.ClientSignInfo.Builder.class);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ClientSignInfo)) {
+        return super.equals(obj);
+      }
+      com.kys.util.netty.proto.SignProto.ClientSignInfo other = (com.kys.util.netty.proto.SignProto.ClientSignInfo) obj;
+
+      boolean result = true;
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ClientSignInfo prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     ** 客户端请求签到信息 
+     * </pre>
+     *
+     * Protobuf type {@code com.kys.util.netty.proto.ClientSignInfo}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientSignInfo)
+        com.kys.util.netty.proto.SignProto.ClientSignInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.kys.util.netty.proto.SignProto.ClientSignInfo.class, com.kys.util.netty.proto.SignProto.ClientSignInfo.Builder.class);
+      }
+
+      // Construct using com.kys.util.netty.proto.SignProto.ClientSignInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignInfo_descriptor;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ClientSignInfo getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.SignProto.ClientSignInfo.getDefaultInstance();
+      }
+
+      public com.kys.util.netty.proto.SignProto.ClientSignInfo build() {
+        com.kys.util.netty.proto.SignProto.ClientSignInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ClientSignInfo buildPartial() {
+        com.kys.util.netty.proto.SignProto.ClientSignInfo result = new com.kys.util.netty.proto.SignProto.ClientSignInfo(this);
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.kys.util.netty.proto.SignProto.ClientSignInfo) {
+          return mergeFrom((com.kys.util.netty.proto.SignProto.ClientSignInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ClientSignInfo other) {
+        if (other == com.kys.util.netty.proto.SignProto.ClientSignInfo.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.kys.util.netty.proto.SignProto.ClientSignInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.kys.util.netty.proto.SignProto.ClientSignInfo) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientSignInfo)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientSignInfo)
+    private static final com.kys.util.netty.proto.SignProto.ClientSignInfo DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ClientSignInfo();
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ClientSignInfo getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ClientSignInfo>
+        PARSER = new com.google.protobuf.AbstractParser<ClientSignInfo>() {
+      public ClientSignInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new ClientSignInfo(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ClientSignInfo> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ClientSignInfo> getParserForType() {
+      return PARSER;
+    }
+
+    public com.kys.util.netty.proto.SignProto.ClientSignInfo getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ServerSignInfoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerSignInfo)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     ** 累计签到天数 
+     * </pre>
+     *
+     * <code>int32 signDays = 1;</code>
+     */
+    int getSignDays();
+
+    /**
+     * <pre>
+     ** 今天是否签到:1签到2未签到  
+     * </pre>
+     *
+     * <code>int32 signupToday = 2;</code>
+     */
+    int getSignupToday();
+
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    java.util.List<com.kys.util.netty.proto.SignProto.SignDayInfo> 
+        getSignDayInfoList();
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    com.kys.util.netty.proto.SignProto.SignDayInfo getSignDayInfo(int index);
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    int getSignDayInfoCount();
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    java.util.List<? extends com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder> 
+        getSignDayInfoOrBuilderList();
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder getSignDayInfoOrBuilder(
+        int index);
+  }
+  /**
+   * <pre>
+   ** 服务端返回签到信息 
+   * </pre>
+   *
+   * Protobuf type {@code com.kys.util.netty.proto.ServerSignInfo}
+   */
+  public  static final class ServerSignInfo extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerSignInfo)
+      ServerSignInfoOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ServerSignInfo.newBuilder() to construct.
+    private ServerSignInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ServerSignInfo() {
+      signDays_ = 0;
+      signupToday_ = 0;
+      signDayInfo_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ServerSignInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              signDays_ = input.readInt32();
+              break;
+            }
+            case 16: {
+
+              signupToday_ = input.readInt32();
+              break;
+            }
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                signDayInfo_ = new java.util.ArrayList<com.kys.util.netty.proto.SignProto.SignDayInfo>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              signDayInfo_.add(
+                  input.readMessage(com.kys.util.netty.proto.SignProto.SignDayInfo.parser(), extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+          signDayInfo_ = java.util.Collections.unmodifiableList(signDayInfo_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.kys.util.netty.proto.SignProto.ServerSignInfo.class, com.kys.util.netty.proto.SignProto.ServerSignInfo.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int SIGNDAYS_FIELD_NUMBER = 1;
+    private int signDays_;
+    /**
+     * <pre>
+     ** 累计签到天数 
+     * </pre>
+     *
+     * <code>int32 signDays = 1;</code>
+     */
+    public int getSignDays() {
+      return signDays_;
+    }
+
+    public static final int SIGNUPTODAY_FIELD_NUMBER = 2;
+    private int signupToday_;
+    /**
+     * <pre>
+     ** 今天是否签到:1签到2未签到  
+     * </pre>
+     *
+     * <code>int32 signupToday = 2;</code>
+     */
+    public int getSignupToday() {
+      return signupToday_;
+    }
+
+    public static final int SIGNDAYINFO_FIELD_NUMBER = 3;
+    private java.util.List<com.kys.util.netty.proto.SignProto.SignDayInfo> signDayInfo_;
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    public java.util.List<com.kys.util.netty.proto.SignProto.SignDayInfo> getSignDayInfoList() {
+      return signDayInfo_;
+    }
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    public java.util.List<? extends com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder> 
+        getSignDayInfoOrBuilderList() {
+      return signDayInfo_;
+    }
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    public int getSignDayInfoCount() {
+      return signDayInfo_.size();
+    }
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    public com.kys.util.netty.proto.SignProto.SignDayInfo getSignDayInfo(int index) {
+      return signDayInfo_.get(index);
+    }
+    /**
+     * <pre>
+     ** 签到奖励配置 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
+     */
+    public com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder getSignDayInfoOrBuilder(
+        int index) {
+      return signDayInfo_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (signDays_ != 0) {
+        output.writeInt32(1, signDays_);
+      }
+      if (signupToday_ != 0) {
+        output.writeInt32(2, signupToday_);
+      }
+      for (int i = 0; i < signDayInfo_.size(); i++) {
+        output.writeMessage(3, signDayInfo_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (signDays_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, signDays_);
+      }
+      if (signupToday_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, signupToday_);
+      }
+      for (int i = 0; i < signDayInfo_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, signDayInfo_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ServerSignInfo)) {
+        return super.equals(obj);
+      }
+      com.kys.util.netty.proto.SignProto.ServerSignInfo other = (com.kys.util.netty.proto.SignProto.ServerSignInfo) obj;
+
+      boolean result = true;
+      result = result && (getSignDays()
+          == other.getSignDays());
+      result = result && (getSignupToday()
+          == other.getSignupToday());
+      result = result && getSignDayInfoList()
+          .equals(other.getSignDayInfoList());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SIGNDAYS_FIELD_NUMBER;
+      hash = (53 * hash) + getSignDays();
+      hash = (37 * hash) + SIGNUPTODAY_FIELD_NUMBER;
+      hash = (53 * hash) + getSignupToday();
+      if (getSignDayInfoCount() > 0) {
+        hash = (37 * hash) + SIGNDAYINFO_FIELD_NUMBER;
+        hash = (53 * hash) + getSignDayInfoList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ServerSignInfo prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     ** 服务端返回签到信息 
+     * </pre>
+     *
+     * Protobuf type {@code com.kys.util.netty.proto.ServerSignInfo}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerSignInfo)
+        com.kys.util.netty.proto.SignProto.ServerSignInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.kys.util.netty.proto.SignProto.ServerSignInfo.class, com.kys.util.netty.proto.SignProto.ServerSignInfo.Builder.class);
+      }
+
+      // Construct using com.kys.util.netty.proto.SignProto.ServerSignInfo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1142,80 +1730,55 @@ public final class SignProto {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getSignDayInfoFieldBuilder();
-          getTSRewardFieldBuilder();
         }
       }
       public Builder clear() {
         super.clear();
-        signTimes_ = 0;
+        signDays_ = 0;
 
-        reSign_ = 0;
-
-        reSignPrice_ = 0;
+        signupToday_ = 0;
 
         if (signDayInfoBuilder_ == null) {
           signDayInfo_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
           signDayInfoBuilder_.clear();
         }
-        if (tSRewardBuilder_ == null) {
-          tSReward_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
-        } else {
-          tSRewardBuilder_.clear();
-        }
-        nowDate_ = "";
-
-        nextLvMin_ = 0;
-
         return this;
       }
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_descriptor;
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignInfo_descriptor;
       }
 
-      public com.kys.util.netty.proto.SignProto.ServerMonthSignInfo getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.SignProto.ServerMonthSignInfo.getDefaultInstance();
+      public com.kys.util.netty.proto.SignProto.ServerSignInfo getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.SignProto.ServerSignInfo.getDefaultInstance();
       }
 
-      public com.kys.util.netty.proto.SignProto.ServerMonthSignInfo build() {
-        com.kys.util.netty.proto.SignProto.ServerMonthSignInfo result = buildPartial();
+      public com.kys.util.netty.proto.SignProto.ServerSignInfo build() {
+        com.kys.util.netty.proto.SignProto.ServerSignInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.kys.util.netty.proto.SignProto.ServerMonthSignInfo buildPartial() {
-        com.kys.util.netty.proto.SignProto.ServerMonthSignInfo result = new com.kys.util.netty.proto.SignProto.ServerMonthSignInfo(this);
+      public com.kys.util.netty.proto.SignProto.ServerSignInfo buildPartial() {
+        com.kys.util.netty.proto.SignProto.ServerSignInfo result = new com.kys.util.netty.proto.SignProto.ServerSignInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
-        result.signTimes_ = signTimes_;
-        result.reSign_ = reSign_;
-        result.reSignPrice_ = reSignPrice_;
+        result.signDays_ = signDays_;
+        result.signupToday_ = signupToday_;
         if (signDayInfoBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          if (((bitField0_ & 0x00000004) == 0x00000004)) {
             signDayInfo_ = java.util.Collections.unmodifiableList(signDayInfo_);
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.signDayInfo_ = signDayInfo_;
         } else {
           result.signDayInfo_ = signDayInfoBuilder_.build();
         }
-        if (tSRewardBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) == 0x00000010)) {
-            tSReward_ = java.util.Collections.unmodifiableList(tSReward_);
-            bitField0_ = (bitField0_ & ~0x00000010);
-          }
-          result.tSReward_ = tSReward_;
-        } else {
-          result.tSReward_ = tSRewardBuilder_.build();
-        }
-        result.nowDate_ = nowDate_;
-        result.nextLvMin_ = nextLvMin_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1248,30 +1811,27 @@ public final class SignProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.SignProto.ServerMonthSignInfo) {
-          return mergeFrom((com.kys.util.netty.proto.SignProto.ServerMonthSignInfo)other);
+        if (other instanceof com.kys.util.netty.proto.SignProto.ServerSignInfo) {
+          return mergeFrom((com.kys.util.netty.proto.SignProto.ServerSignInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ServerMonthSignInfo other) {
-        if (other == com.kys.util.netty.proto.SignProto.ServerMonthSignInfo.getDefaultInstance()) return this;
-        if (other.getSignTimes() != 0) {
-          setSignTimes(other.getSignTimes());
+      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ServerSignInfo other) {
+        if (other == com.kys.util.netty.proto.SignProto.ServerSignInfo.getDefaultInstance()) return this;
+        if (other.getSignDays() != 0) {
+          setSignDays(other.getSignDays());
         }
-        if (other.getReSign() != 0) {
-          setReSign(other.getReSign());
-        }
-        if (other.getReSignPrice() != 0) {
-          setReSignPrice(other.getReSignPrice());
+        if (other.getSignupToday() != 0) {
+          setSignupToday(other.getSignupToday());
         }
         if (signDayInfoBuilder_ == null) {
           if (!other.signDayInfo_.isEmpty()) {
             if (signDayInfo_.isEmpty()) {
               signDayInfo_ = other.signDayInfo_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensureSignDayInfoIsMutable();
               signDayInfo_.addAll(other.signDayInfo_);
@@ -1284,7 +1844,7 @@ public final class SignProto {
               signDayInfoBuilder_.dispose();
               signDayInfoBuilder_ = null;
               signDayInfo_ = other.signDayInfo_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000004);
               signDayInfoBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSignDayInfoFieldBuilder() : null;
@@ -1292,39 +1852,6 @@ public final class SignProto {
               signDayInfoBuilder_.addAllMessages(other.signDayInfo_);
             }
           }
-        }
-        if (tSRewardBuilder_ == null) {
-          if (!other.tSReward_.isEmpty()) {
-            if (tSReward_.isEmpty()) {
-              tSReward_ = other.tSReward_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-            } else {
-              ensureTSRewardIsMutable();
-              tSReward_.addAll(other.tSReward_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.tSReward_.isEmpty()) {
-            if (tSRewardBuilder_.isEmpty()) {
-              tSRewardBuilder_.dispose();
-              tSRewardBuilder_ = null;
-              tSReward_ = other.tSReward_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-              tSRewardBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getTSRewardFieldBuilder() : null;
-            } else {
-              tSRewardBuilder_.addAllMessages(other.tSReward_);
-            }
-          }
-        }
-        if (!other.getNowDate().isEmpty()) {
-          nowDate_ = other.nowDate_;
-          onChanged();
-        }
-        if (other.getNextLvMin() != 0) {
-          setNextLvMin(other.getNextLvMin());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1339,11 +1866,11 @@ public final class SignProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kys.util.netty.proto.SignProto.ServerMonthSignInfo parsedMessage = null;
+        com.kys.util.netty.proto.SignProto.ServerSignInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.SignProto.ServerMonthSignInfo) e.getUnfinishedMessage();
+          parsedMessage = (com.kys.util.netty.proto.SignProto.ServerSignInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1354,116 +1881,78 @@ public final class SignProto {
       }
       private int bitField0_;
 
-      private int signTimes_ ;
+      private int signDays_ ;
       /**
        * <pre>
-       ** 累计签到次数 
+       ** 累计签到天数 
        * </pre>
        *
-       * <code>int32 signTimes = 1;</code>
+       * <code>int32 signDays = 1;</code>
        */
-      public int getSignTimes() {
-        return signTimes_;
+      public int getSignDays() {
+        return signDays_;
       }
       /**
        * <pre>
-       ** 累计签到次数 
+       ** 累计签到天数 
        * </pre>
        *
-       * <code>int32 signTimes = 1;</code>
+       * <code>int32 signDays = 1;</code>
        */
-      public Builder setSignTimes(int value) {
+      public Builder setSignDays(int value) {
         
-        signTimes_ = value;
+        signDays_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 累计签到次数 
+       ** 累计签到天数 
        * </pre>
        *
-       * <code>int32 signTimes = 1;</code>
+       * <code>int32 signDays = 1;</code>
        */
-      public Builder clearSignTimes() {
+      public Builder clearSignDays() {
         
-        signTimes_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int reSign_ ;
-      /**
-       * <pre>
-       ** 可补签次数 
-       * </pre>
-       *
-       * <code>int32 reSign = 2;</code>
-       */
-      public int getReSign() {
-        return reSign_;
-      }
-      /**
-       * <pre>
-       ** 可补签次数 
-       * </pre>
-       *
-       * <code>int32 reSign = 2;</code>
-       */
-      public Builder setReSign(int value) {
-        
-        reSign_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 可补签次数 
-       * </pre>
-       *
-       * <code>int32 reSign = 2;</code>
-       */
-      public Builder clearReSign() {
-        
-        reSign_ = 0;
+        signDays_ = 0;
         onChanged();
         return this;
       }
 
-      private int reSignPrice_ ;
+      private int signupToday_ ;
       /**
        * <pre>
-       ** 补签价格 
+       ** 今天是否签到:1签到2未签到  
        * </pre>
        *
-       * <code>int32 reSignPrice = 3;</code>
+       * <code>int32 signupToday = 2;</code>
        */
-      public int getReSignPrice() {
-        return reSignPrice_;
+      public int getSignupToday() {
+        return signupToday_;
       }
       /**
        * <pre>
-       ** 补签价格 
+       ** 今天是否签到:1签到2未签到  
        * </pre>
        *
-       * <code>int32 reSignPrice = 3;</code>
+       * <code>int32 signupToday = 2;</code>
        */
-      public Builder setReSignPrice(int value) {
+      public Builder setSignupToday(int value) {
         
-        reSignPrice_ = value;
+        signupToday_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 补签价格 
+       ** 今天是否签到:1签到2未签到  
        * </pre>
        *
-       * <code>int32 reSignPrice = 3;</code>
+       * <code>int32 signupToday = 2;</code>
        */
-      public Builder clearReSignPrice() {
+      public Builder clearSignupToday() {
         
-        reSignPrice_ = 0;
+        signupToday_ = 0;
         onChanged();
         return this;
       }
@@ -1471,9 +1960,9 @@ public final class SignProto {
       private java.util.List<com.kys.util.netty.proto.SignProto.SignDayInfo> signDayInfo_ =
         java.util.Collections.emptyList();
       private void ensureSignDayInfoIsMutable() {
-        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
           signDayInfo_ = new java.util.ArrayList<com.kys.util.netty.proto.SignProto.SignDayInfo>(signDayInfo_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000004;
          }
       }
 
@@ -1482,10 +1971,10 @@ public final class SignProto {
 
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public java.util.List<com.kys.util.netty.proto.SignProto.SignDayInfo> getSignDayInfoList() {
         if (signDayInfoBuilder_ == null) {
@@ -1496,10 +1985,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public int getSignDayInfoCount() {
         if (signDayInfoBuilder_ == null) {
@@ -1510,10 +1999,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public com.kys.util.netty.proto.SignProto.SignDayInfo getSignDayInfo(int index) {
         if (signDayInfoBuilder_ == null) {
@@ -1524,10 +2013,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public Builder setSignDayInfo(
           int index, com.kys.util.netty.proto.SignProto.SignDayInfo value) {
@@ -1545,10 +2034,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public Builder setSignDayInfo(
           int index, com.kys.util.netty.proto.SignProto.SignDayInfo.Builder builderForValue) {
@@ -1563,10 +2052,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public Builder addSignDayInfo(com.kys.util.netty.proto.SignProto.SignDayInfo value) {
         if (signDayInfoBuilder_ == null) {
@@ -1583,10 +2072,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public Builder addSignDayInfo(
           int index, com.kys.util.netty.proto.SignProto.SignDayInfo value) {
@@ -1604,10 +2093,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public Builder addSignDayInfo(
           com.kys.util.netty.proto.SignProto.SignDayInfo.Builder builderForValue) {
@@ -1622,10 +2111,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public Builder addSignDayInfo(
           int index, com.kys.util.netty.proto.SignProto.SignDayInfo.Builder builderForValue) {
@@ -1640,10 +2129,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public Builder addAllSignDayInfo(
           java.lang.Iterable<? extends com.kys.util.netty.proto.SignProto.SignDayInfo> values) {
@@ -1659,15 +2148,15 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public Builder clearSignDayInfo() {
         if (signDayInfoBuilder_ == null) {
           signDayInfo_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
           signDayInfoBuilder_.clear();
@@ -1676,10 +2165,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public Builder removeSignDayInfo(int index) {
         if (signDayInfoBuilder_ == null) {
@@ -1693,10 +2182,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public com.kys.util.netty.proto.SignProto.SignDayInfo.Builder getSignDayInfoBuilder(
           int index) {
@@ -1704,10 +2193,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder getSignDayInfoOrBuilder(
           int index) {
@@ -1718,10 +2207,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public java.util.List<? extends com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder> 
            getSignDayInfoOrBuilderList() {
@@ -1733,10 +2222,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public com.kys.util.netty.proto.SignProto.SignDayInfo.Builder addSignDayInfoBuilder() {
         return getSignDayInfoFieldBuilder().addBuilder(
@@ -1744,10 +2233,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public com.kys.util.netty.proto.SignProto.SignDayInfo.Builder addSignDayInfoBuilder(
           int index) {
@@ -1756,10 +2245,10 @@ public final class SignProto {
       }
       /**
        * <pre>
-       ** 一个月签到信息 
+       ** 签到奖励配置 
        * </pre>
        *
-       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 4;</code>
+       * <code>repeated .com.kys.util.netty.proto.SignDayInfo signDayInfo = 3;</code>
        */
       public java.util.List<com.kys.util.netty.proto.SignProto.SignDayInfo.Builder> 
            getSignDayInfoBuilderList() {
@@ -1772,451 +2261,12 @@ public final class SignProto {
           signDayInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               com.kys.util.netty.proto.SignProto.SignDayInfo, com.kys.util.netty.proto.SignProto.SignDayInfo.Builder, com.kys.util.netty.proto.SignProto.SignDayInfoOrBuilder>(
                   signDayInfo_,
-                  ((bitField0_ & 0x00000008) == 0x00000008),
+                  ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
                   isClean());
           signDayInfo_ = null;
         }
         return signDayInfoBuilder_;
-      }
-
-      private java.util.List<com.kys.util.netty.proto.SignProto.TSReward> tSReward_ =
-        java.util.Collections.emptyList();
-      private void ensureTSRewardIsMutable() {
-        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
-          tSReward_ = new java.util.ArrayList<com.kys.util.netty.proto.SignProto.TSReward>(tSReward_);
-          bitField0_ |= 0x00000010;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.kys.util.netty.proto.SignProto.TSReward, com.kys.util.netty.proto.SignProto.TSReward.Builder, com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> tSRewardBuilder_;
-
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public java.util.List<com.kys.util.netty.proto.SignProto.TSReward> getTSRewardList() {
-        if (tSRewardBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(tSReward_);
-        } else {
-          return tSRewardBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public int getTSRewardCount() {
-        if (tSRewardBuilder_ == null) {
-          return tSReward_.size();
-        } else {
-          return tSRewardBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public com.kys.util.netty.proto.SignProto.TSReward getTSReward(int index) {
-        if (tSRewardBuilder_ == null) {
-          return tSReward_.get(index);
-        } else {
-          return tSRewardBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public Builder setTSReward(
-          int index, com.kys.util.netty.proto.SignProto.TSReward value) {
-        if (tSRewardBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTSRewardIsMutable();
-          tSReward_.set(index, value);
-          onChanged();
-        } else {
-          tSRewardBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public Builder setTSReward(
-          int index, com.kys.util.netty.proto.SignProto.TSReward.Builder builderForValue) {
-        if (tSRewardBuilder_ == null) {
-          ensureTSRewardIsMutable();
-          tSReward_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          tSRewardBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public Builder addTSReward(com.kys.util.netty.proto.SignProto.TSReward value) {
-        if (tSRewardBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTSRewardIsMutable();
-          tSReward_.add(value);
-          onChanged();
-        } else {
-          tSRewardBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public Builder addTSReward(
-          int index, com.kys.util.netty.proto.SignProto.TSReward value) {
-        if (tSRewardBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTSRewardIsMutable();
-          tSReward_.add(index, value);
-          onChanged();
-        } else {
-          tSRewardBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public Builder addTSReward(
-          com.kys.util.netty.proto.SignProto.TSReward.Builder builderForValue) {
-        if (tSRewardBuilder_ == null) {
-          ensureTSRewardIsMutable();
-          tSReward_.add(builderForValue.build());
-          onChanged();
-        } else {
-          tSRewardBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public Builder addTSReward(
-          int index, com.kys.util.netty.proto.SignProto.TSReward.Builder builderForValue) {
-        if (tSRewardBuilder_ == null) {
-          ensureTSRewardIsMutable();
-          tSReward_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          tSRewardBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public Builder addAllTSReward(
-          java.lang.Iterable<? extends com.kys.util.netty.proto.SignProto.TSReward> values) {
-        if (tSRewardBuilder_ == null) {
-          ensureTSRewardIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, tSReward_);
-          onChanged();
-        } else {
-          tSRewardBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public Builder clearTSReward() {
-        if (tSRewardBuilder_ == null) {
-          tSReward_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
-          onChanged();
-        } else {
-          tSRewardBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public Builder removeTSReward(int index) {
-        if (tSRewardBuilder_ == null) {
-          ensureTSRewardIsMutable();
-          tSReward_.remove(index);
-          onChanged();
-        } else {
-          tSRewardBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public com.kys.util.netty.proto.SignProto.TSReward.Builder getTSRewardBuilder(
-          int index) {
-        return getTSRewardFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public com.kys.util.netty.proto.SignProto.TSRewardOrBuilder getTSRewardOrBuilder(
-          int index) {
-        if (tSRewardBuilder_ == null) {
-          return tSReward_.get(index);  } else {
-          return tSRewardBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public java.util.List<? extends com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> 
-           getTSRewardOrBuilderList() {
-        if (tSRewardBuilder_ != null) {
-          return tSRewardBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(tSReward_);
-        }
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public com.kys.util.netty.proto.SignProto.TSReward.Builder addTSRewardBuilder() {
-        return getTSRewardFieldBuilder().addBuilder(
-            com.kys.util.netty.proto.SignProto.TSReward.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public com.kys.util.netty.proto.SignProto.TSReward.Builder addTSRewardBuilder(
-          int index) {
-        return getTSRewardFieldBuilder().addBuilder(
-            index, com.kys.util.netty.proto.SignProto.TSReward.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       ** 连续签到奖励 
-       * </pre>
-       *
-       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
-       */
-      public java.util.List<com.kys.util.netty.proto.SignProto.TSReward.Builder> 
-           getTSRewardBuilderList() {
-        return getTSRewardFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.kys.util.netty.proto.SignProto.TSReward, com.kys.util.netty.proto.SignProto.TSReward.Builder, com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> 
-          getTSRewardFieldBuilder() {
-        if (tSRewardBuilder_ == null) {
-          tSRewardBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.kys.util.netty.proto.SignProto.TSReward, com.kys.util.netty.proto.SignProto.TSReward.Builder, com.kys.util.netty.proto.SignProto.TSRewardOrBuilder>(
-                  tSReward_,
-                  ((bitField0_ & 0x00000010) == 0x00000010),
-                  getParentForChildren(),
-                  isClean());
-          tSReward_ = null;
-        }
-        return tSRewardBuilder_;
-      }
-
-      private java.lang.Object nowDate_ = "";
-      /**
-       * <pre>
-       ** 当前日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string nowDate = 6;</code>
-       */
-      public java.lang.String getNowDate() {
-        java.lang.Object ref = nowDate_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          nowDate_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 当前日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string nowDate = 6;</code>
-       */
-      public com.google.protobuf.ByteString
-          getNowDateBytes() {
-        java.lang.Object ref = nowDate_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          nowDate_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 当前日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string nowDate = 6;</code>
-       */
-      public Builder setNowDate(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        nowDate_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 当前日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string nowDate = 6;</code>
-       */
-      public Builder clearNowDate() {
-        
-        nowDate_ = getDefaultInstance().getNowDate();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 当前日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string nowDate = 6;</code>
-       */
-      public Builder setNowDateBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        nowDate_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int nextLvMin_ ;
-      /**
-       * <pre>
-       ** 下一个阶段奖励的vip最低等级 
-       * </pre>
-       *
-       * <code>int32 nextLvMin = 7;</code>
-       */
-      public int getNextLvMin() {
-        return nextLvMin_;
-      }
-      /**
-       * <pre>
-       ** 下一个阶段奖励的vip最低等级 
-       * </pre>
-       *
-       * <code>int32 nextLvMin = 7;</code>
-       */
-      public Builder setNextLvMin(int value) {
-        
-        nextLvMin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 下一个阶段奖励的vip最低等级 
-       * </pre>
-       *
-       * <code>int32 nextLvMin = 7;</code>
-       */
-      public Builder clearNextLvMin() {
-        
-        nextLvMin_ = 0;
-        onChanged();
-        return this;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -2229,39 +2279,39 @@ public final class SignProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerMonthSignInfo)
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerSignInfo)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerMonthSignInfo)
-    private static final com.kys.util.netty.proto.SignProto.ServerMonthSignInfo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerSignInfo)
+    private static final com.kys.util.netty.proto.SignProto.ServerSignInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ServerMonthSignInfo();
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ServerSignInfo();
     }
 
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSignInfo getDefaultInstance() {
+    public static com.kys.util.netty.proto.SignProto.ServerSignInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<ServerMonthSignInfo>
-        PARSER = new com.google.protobuf.AbstractParser<ServerMonthSignInfo>() {
-      public ServerMonthSignInfo parsePartialFrom(
+    private static final com.google.protobuf.Parser<ServerSignInfo>
+        PARSER = new com.google.protobuf.AbstractParser<ServerSignInfo>() {
+      public ServerSignInfo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ServerMonthSignInfo(input, extensionRegistry);
+          return new ServerSignInfo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<ServerMonthSignInfo> parser() {
+    public static com.google.protobuf.Parser<ServerSignInfo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<ServerMonthSignInfo> getParserForType() {
+    public com.google.protobuf.Parser<ServerSignInfo> getParserForType() {
       return PARSER;
     }
 
-    public com.kys.util.netty.proto.SignProto.ServerMonthSignInfo getDefaultInstanceForType() {
+    public com.kys.util.netty.proto.SignProto.ServerSignInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2273,48 +2323,21 @@ public final class SignProto {
 
     /**
      * <pre>
-     ** 哪一天:2020/01/01 
+     ** 签到奖励类型: 0金豆 1钻石 
      * </pre>
      *
-     * <code>string date = 1;</code>
+     * <code>int32 awardType = 1;</code>
      */
-    java.lang.String getDate();
-    /**
-     * <pre>
-     ** 哪一天:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getDateBytes();
+    int getAwardType();
 
     /**
      * <pre>
-     ** 签到状态:0未签,1已签 2可暴击 
+     ** 签到奖励 
      * </pre>
      *
-     * <code>int32 signStatus = 2;</code>
+     * <code>int32 award = 2;</code>
      */
-    int getSignStatus();
-
-    /**
-     * <pre>
-     ** 签到金豆数 
-     * </pre>
-     *
-     * <code>int32 goldcoin = 3;</code>
-     */
-    int getGoldcoin();
-
-    /**
-     * <pre>
-     ** 是否可以暴击,1可以,其他不可以 
-     * </pre>
-     *
-     * <code>int32 isCrit = 4;</code>
-     */
-    int getIsCrit();
+    int getAward();
   }
   /**
    * <pre>
@@ -2333,10 +2356,8 @@ public final class SignProto {
       super(builder);
     }
     private SignDayInfo() {
-      date_ = "";
-      signStatus_ = 0;
-      goldcoin_ = 0;
-      isCrit_ = 0;
+      awardType_ = 0;
+      award_ = 0;
     }
 
     @java.lang.Override
@@ -2367,25 +2388,14 @@ public final class SignProto {
               }
               break;
             }
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 8: {
 
-              date_ = s;
+              awardType_ = input.readInt32();
               break;
             }
             case 16: {
 
-              signStatus_ = input.readInt32();
-              break;
-            }
-            case 24: {
-
-              goldcoin_ = input.readInt32();
-              break;
-            }
-            case 32: {
-
-              isCrit_ = input.readInt32();
+              award_ = input.readInt32();
               break;
             }
           }
@@ -2412,85 +2422,30 @@ public final class SignProto {
               com.kys.util.netty.proto.SignProto.SignDayInfo.class, com.kys.util.netty.proto.SignProto.SignDayInfo.Builder.class);
     }
 
-    public static final int DATE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object date_;
+    public static final int AWARDTYPE_FIELD_NUMBER = 1;
+    private int awardType_;
     /**
      * <pre>
-     ** 哪一天:2020/01/01 
+     ** 签到奖励类型: 0金豆 1钻石 
      * </pre>
      *
-     * <code>string date = 1;</code>
+     * <code>int32 awardType = 1;</code>
      */
-    public java.lang.String getDate() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        date_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 哪一天:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getDateBytes() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        date_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public int getAwardType() {
+      return awardType_;
     }
 
-    public static final int SIGNSTATUS_FIELD_NUMBER = 2;
-    private int signStatus_;
+    public static final int AWARD_FIELD_NUMBER = 2;
+    private int award_;
     /**
      * <pre>
-     ** 签到状态:0未签,1已签 2可暴击 
+     ** 签到奖励 
      * </pre>
      *
-     * <code>int32 signStatus = 2;</code>
+     * <code>int32 award = 2;</code>
      */
-    public int getSignStatus() {
-      return signStatus_;
-    }
-
-    public static final int GOLDCOIN_FIELD_NUMBER = 3;
-    private int goldcoin_;
-    /**
-     * <pre>
-     ** 签到金豆数 
-     * </pre>
-     *
-     * <code>int32 goldcoin = 3;</code>
-     */
-    public int getGoldcoin() {
-      return goldcoin_;
-    }
-
-    public static final int ISCRIT_FIELD_NUMBER = 4;
-    private int isCrit_;
-    /**
-     * <pre>
-     ** 是否可以暴击,1可以,其他不可以 
-     * </pre>
-     *
-     * <code>int32 isCrit = 4;</code>
-     */
-    public int getIsCrit() {
-      return isCrit_;
+    public int getAward() {
+      return award_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2505,17 +2460,11 @@ public final class SignProto {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, date_);
+      if (awardType_ != 0) {
+        output.writeInt32(1, awardType_);
       }
-      if (signStatus_ != 0) {
-        output.writeInt32(2, signStatus_);
-      }
-      if (goldcoin_ != 0) {
-        output.writeInt32(3, goldcoin_);
-      }
-      if (isCrit_ != 0) {
-        output.writeInt32(4, isCrit_);
+      if (award_ != 0) {
+        output.writeInt32(2, award_);
       }
       unknownFields.writeTo(output);
     }
@@ -2525,20 +2474,13 @@ public final class SignProto {
       if (size != -1) return size;
 
       size = 0;
-      if (!getDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, date_);
-      }
-      if (signStatus_ != 0) {
+      if (awardType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, signStatus_);
+          .computeInt32Size(1, awardType_);
       }
-      if (goldcoin_ != 0) {
+      if (award_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, goldcoin_);
-      }
-      if (isCrit_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, isCrit_);
+          .computeInt32Size(2, award_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2556,14 +2498,10 @@ public final class SignProto {
       com.kys.util.netty.proto.SignProto.SignDayInfo other = (com.kys.util.netty.proto.SignProto.SignDayInfo) obj;
 
       boolean result = true;
-      result = result && getDate()
-          .equals(other.getDate());
-      result = result && (getSignStatus()
-          == other.getSignStatus());
-      result = result && (getGoldcoin()
-          == other.getGoldcoin());
-      result = result && (getIsCrit()
-          == other.getIsCrit());
+      result = result && (getAwardType()
+          == other.getAwardType());
+      result = result && (getAward()
+          == other.getAward());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -2575,14 +2513,10 @@ public final class SignProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DATE_FIELD_NUMBER;
-      hash = (53 * hash) + getDate().hashCode();
-      hash = (37 * hash) + SIGNSTATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getSignStatus();
-      hash = (37 * hash) + GOLDCOIN_FIELD_NUMBER;
-      hash = (53 * hash) + getGoldcoin();
-      hash = (37 * hash) + ISCRIT_FIELD_NUMBER;
-      hash = (53 * hash) + getIsCrit();
+      hash = (37 * hash) + AWARDTYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getAwardType();
+      hash = (37 * hash) + AWARD_FIELD_NUMBER;
+      hash = (53 * hash) + getAward();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2716,13 +2650,9 @@ public final class SignProto {
       }
       public Builder clear() {
         super.clear();
-        date_ = "";
+        awardType_ = 0;
 
-        signStatus_ = 0;
-
-        goldcoin_ = 0;
-
-        isCrit_ = 0;
+        award_ = 0;
 
         return this;
       }
@@ -2746,10 +2676,8 @@ public final class SignProto {
 
       public com.kys.util.netty.proto.SignProto.SignDayInfo buildPartial() {
         com.kys.util.netty.proto.SignProto.SignDayInfo result = new com.kys.util.netty.proto.SignProto.SignDayInfo(this);
-        result.date_ = date_;
-        result.signStatus_ = signStatus_;
-        result.goldcoin_ = goldcoin_;
-        result.isCrit_ = isCrit_;
+        result.awardType_ = awardType_;
+        result.award_ = award_;
         onBuilt();
         return result;
       }
@@ -2791,18 +2719,11 @@ public final class SignProto {
 
       public Builder mergeFrom(com.kys.util.netty.proto.SignProto.SignDayInfo other) {
         if (other == com.kys.util.netty.proto.SignProto.SignDayInfo.getDefaultInstance()) return this;
-        if (!other.getDate().isEmpty()) {
-          date_ = other.date_;
-          onChanged();
+        if (other.getAwardType() != 0) {
+          setAwardType(other.getAwardType());
         }
-        if (other.getSignStatus() != 0) {
-          setSignStatus(other.getSignStatus());
-        }
-        if (other.getGoldcoin() != 0) {
-          setGoldcoin(other.getGoldcoin());
-        }
-        if (other.getIsCrit() != 0) {
-          setIsCrit(other.getIsCrit());
+        if (other.getAward() != 0) {
+          setAward(other.getAward());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2831,205 +2752,78 @@ public final class SignProto {
         return this;
       }
 
-      private java.lang.Object date_ = "";
+      private int awardType_ ;
       /**
        * <pre>
-       ** 哪一天:2020/01/01 
+       ** 签到奖励类型: 0金豆 1钻石 
        * </pre>
        *
-       * <code>string date = 1;</code>
+       * <code>int32 awardType = 1;</code>
        */
-      public java.lang.String getDate() {
-        java.lang.Object ref = date_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          date_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getAwardType() {
+        return awardType_;
       }
       /**
        * <pre>
-       ** 哪一天:2020/01/01 
+       ** 签到奖励类型: 0金豆 1钻石 
        * </pre>
        *
-       * <code>string date = 1;</code>
+       * <code>int32 awardType = 1;</code>
        */
-      public com.google.protobuf.ByteString
-          getDateBytes() {
-        java.lang.Object ref = date_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          date_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 哪一天:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDate(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        date_ = value;
+      public Builder setAwardType(int value) {
+        
+        awardType_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 哪一天:2020/01/01 
+       ** 签到奖励类型: 0金豆 1钻石 
        * </pre>
        *
-       * <code>string date = 1;</code>
+       * <code>int32 awardType = 1;</code>
        */
-      public Builder clearDate() {
+      public Builder clearAwardType() {
         
-        date_ = getDefaultInstance().getDate();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 哪一天:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDateBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        date_ = value;
+        awardType_ = 0;
         onChanged();
         return this;
       }
 
-      private int signStatus_ ;
+      private int award_ ;
       /**
        * <pre>
-       ** 签到状态:0未签,1已签 2可暴击 
+       ** 签到奖励 
        * </pre>
        *
-       * <code>int32 signStatus = 2;</code>
+       * <code>int32 award = 2;</code>
        */
-      public int getSignStatus() {
-        return signStatus_;
+      public int getAward() {
+        return award_;
       }
       /**
        * <pre>
-       ** 签到状态:0未签,1已签 2可暴击 
+       ** 签到奖励 
        * </pre>
        *
-       * <code>int32 signStatus = 2;</code>
+       * <code>int32 award = 2;</code>
        */
-      public Builder setSignStatus(int value) {
+      public Builder setAward(int value) {
         
-        signStatus_ = value;
+        award_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 签到状态:0未签,1已签 2可暴击 
+       ** 签到奖励 
        * </pre>
        *
-       * <code>int32 signStatus = 2;</code>
+       * <code>int32 award = 2;</code>
        */
-      public Builder clearSignStatus() {
+      public Builder clearAward() {
         
-        signStatus_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int goldcoin_ ;
-      /**
-       * <pre>
-       ** 签到金豆数 
-       * </pre>
-       *
-       * <code>int32 goldcoin = 3;</code>
-       */
-      public int getGoldcoin() {
-        return goldcoin_;
-      }
-      /**
-       * <pre>
-       ** 签到金豆数 
-       * </pre>
-       *
-       * <code>int32 goldcoin = 3;</code>
-       */
-      public Builder setGoldcoin(int value) {
-        
-        goldcoin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 签到金豆数 
-       * </pre>
-       *
-       * <code>int32 goldcoin = 3;</code>
-       */
-      public Builder clearGoldcoin() {
-        
-        goldcoin_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int isCrit_ ;
-      /**
-       * <pre>
-       ** 是否可以暴击,1可以,其他不可以 
-       * </pre>
-       *
-       * <code>int32 isCrit = 4;</code>
-       */
-      public int getIsCrit() {
-        return isCrit_;
-      }
-      /**
-       * <pre>
-       ** 是否可以暴击,1可以,其他不可以 
-       * </pre>
-       *
-       * <code>int32 isCrit = 4;</code>
-       */
-      public Builder setIsCrit(int value) {
-        
-        isCrit_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 是否可以暴击,1可以,其他不可以 
-       * </pre>
-       *
-       * <code>int32 isCrit = 4;</code>
-       */
-      public Builder clearIsCrit() {
-        
-        isCrit_ = 0;
+        award_ = 0;
         onChanged();
         return this;
       }
@@ -3082,77 +2876,27 @@ public final class SignProto {
 
   }
 
-  public interface TSRewardOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.TSReward)
+  public interface ClientSignAwardOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientSignAward)
       com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     ** id 
-     * </pre>
-     *
-     * <code>int32 id = 1;</code>
-     */
-    int getId();
-
-    /**
-     * <pre>
-     ** 累计签到次数的要求 
-     * </pre>
-     *
-     * <code>int32 timesRequire = 2;</code>
-     */
-    int getTimesRequire();
-
-    /**
-     * <pre>
-     ** 奖励幸运抽奖次数 
-     * </pre>
-     *
-     * <code>int32 luckTimes = 3;</code>
-     */
-    int getLuckTimes();
-
-    /**
-     * <pre>
-     ** 是否已经领取:0未领取,1已领取 
-     * </pre>
-     *
-     * <code>int32 status = 4;</code>
-     */
-    int getStatus();
-
-    /**
-     * <pre>
-     ** 下一阶段奖励幸运抽奖次数 
-     * </pre>
-     *
-     * <code>int32 nextLuckTimes = 5;</code>
-     */
-    int getNextLuckTimes();
   }
   /**
    * <pre>
-   ** 连续签到奖励 
+   ** 客户端请求签到奖励 
    * </pre>
    *
-   * Protobuf type {@code com.kys.util.netty.proto.TSReward}
+   * Protobuf type {@code com.kys.util.netty.proto.ClientSignAward}
    */
-  public  static final class TSReward extends
+  public  static final class ClientSignAward extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.TSReward)
-      TSRewardOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientSignAward)
+      ClientSignAwardOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use TSReward.newBuilder() to construct.
-    private TSReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use ClientSignAward.newBuilder() to construct.
+    private ClientSignAward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private TSReward() {
-      id_ = 0;
-      timesRequire_ = 0;
-      luckTimes_ = 0;
-      status_ = 0;
-      nextLuckTimes_ = 0;
+    private ClientSignAward() {
     }
 
     @java.lang.Override
@@ -3160,7 +2904,429 @@ public final class SignProto {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private TSReward(
+    private ClientSignAward(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignAward_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignAward_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.kys.util.netty.proto.SignProto.ClientSignAward.class, com.kys.util.netty.proto.SignProto.ClientSignAward.Builder.class);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ClientSignAward)) {
+        return super.equals(obj);
+      }
+      com.kys.util.netty.proto.SignProto.ClientSignAward other = (com.kys.util.netty.proto.SignProto.ClientSignAward) obj;
+
+      boolean result = true;
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ClientSignAward prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     ** 客户端请求签到奖励 
+     * </pre>
+     *
+     * Protobuf type {@code com.kys.util.netty.proto.ClientSignAward}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientSignAward)
+        com.kys.util.netty.proto.SignProto.ClientSignAwardOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignAward_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignAward_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.kys.util.netty.proto.SignProto.ClientSignAward.class, com.kys.util.netty.proto.SignProto.ClientSignAward.Builder.class);
+      }
+
+      // Construct using com.kys.util.netty.proto.SignProto.ClientSignAward.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientSignAward_descriptor;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ClientSignAward getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.SignProto.ClientSignAward.getDefaultInstance();
+      }
+
+      public com.kys.util.netty.proto.SignProto.ClientSignAward build() {
+        com.kys.util.netty.proto.SignProto.ClientSignAward result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ClientSignAward buildPartial() {
+        com.kys.util.netty.proto.SignProto.ClientSignAward result = new com.kys.util.netty.proto.SignProto.ClientSignAward(this);
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.kys.util.netty.proto.SignProto.ClientSignAward) {
+          return mergeFrom((com.kys.util.netty.proto.SignProto.ClientSignAward)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ClientSignAward other) {
+        if (other == com.kys.util.netty.proto.SignProto.ClientSignAward.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.kys.util.netty.proto.SignProto.ClientSignAward parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.kys.util.netty.proto.SignProto.ClientSignAward) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientSignAward)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientSignAward)
+    private static final com.kys.util.netty.proto.SignProto.ClientSignAward DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ClientSignAward();
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ClientSignAward getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ClientSignAward>
+        PARSER = new com.google.protobuf.AbstractParser<ClientSignAward>() {
+      public ClientSignAward parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new ClientSignAward(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ClientSignAward> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ClientSignAward> getParserForType() {
+      return PARSER;
+    }
+
+    public com.kys.util.netty.proto.SignProto.ClientSignAward getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ServerSignAwardOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerSignAward)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     ** 签到后的金币数 
+     * </pre>
+     *
+     * <code>int32 goldcoin = 1;</code>
+     */
+    int getGoldcoin();
+
+    /**
+     * <pre>
+     ** 签到后的钻石数量 
+     * </pre>
+     *
+     * <code>int32 diamond = 2;</code>
+     */
+    int getDiamond();
+
+    /**
+     * <pre>
+     ** 累计签到天数 
+     * </pre>
+     *
+     * <code>int32 signDays = 3;</code>
+     */
+    int getSignDays();
+  }
+  /**
+   * <pre>
+   ** 服务器返回签到奖励 
+   * </pre>
+   *
+   * Protobuf type {@code com.kys.util.netty.proto.ServerSignAward}
+   */
+  public  static final class ServerSignAward extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerSignAward)
+      ServerSignAwardOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ServerSignAward.newBuilder() to construct.
+    private ServerSignAward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ServerSignAward() {
+      goldcoin_ = 0;
+      diamond_ = 0;
+      signDays_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ServerSignAward(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3185,1509 +3351,17 @@ public final class SignProto {
             }
             case 8: {
 
-              id_ = input.readInt32();
-              break;
-            }
-            case 16: {
-
-              timesRequire_ = input.readInt32();
-              break;
-            }
-            case 24: {
-
-              luckTimes_ = input.readInt32();
-              break;
-            }
-            case 32: {
-
-              status_ = input.readInt32();
-              break;
-            }
-            case 40: {
-
-              nextLuckTimes_ = input.readInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.SignProto.TSReward.class, com.kys.util.netty.proto.SignProto.TSReward.Builder.class);
-    }
-
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
-    /**
-     * <pre>
-     ** id 
-     * </pre>
-     *
-     * <code>int32 id = 1;</code>
-     */
-    public int getId() {
-      return id_;
-    }
-
-    public static final int TIMESREQUIRE_FIELD_NUMBER = 2;
-    private int timesRequire_;
-    /**
-     * <pre>
-     ** 累计签到次数的要求 
-     * </pre>
-     *
-     * <code>int32 timesRequire = 2;</code>
-     */
-    public int getTimesRequire() {
-      return timesRequire_;
-    }
-
-    public static final int LUCKTIMES_FIELD_NUMBER = 3;
-    private int luckTimes_;
-    /**
-     * <pre>
-     ** 奖励幸运抽奖次数 
-     * </pre>
-     *
-     * <code>int32 luckTimes = 3;</code>
-     */
-    public int getLuckTimes() {
-      return luckTimes_;
-    }
-
-    public static final int STATUS_FIELD_NUMBER = 4;
-    private int status_;
-    /**
-     * <pre>
-     ** 是否已经领取:0未领取,1已领取 
-     * </pre>
-     *
-     * <code>int32 status = 4;</code>
-     */
-    public int getStatus() {
-      return status_;
-    }
-
-    public static final int NEXTLUCKTIMES_FIELD_NUMBER = 5;
-    private int nextLuckTimes_;
-    /**
-     * <pre>
-     ** 下一阶段奖励幸运抽奖次数 
-     * </pre>
-     *
-     * <code>int32 nextLuckTimes = 5;</code>
-     */
-    public int getNextLuckTimes() {
-      return nextLuckTimes_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeInt32(1, id_);
-      }
-      if (timesRequire_ != 0) {
-        output.writeInt32(2, timesRequire_);
-      }
-      if (luckTimes_ != 0) {
-        output.writeInt32(3, luckTimes_);
-      }
-      if (status_ != 0) {
-        output.writeInt32(4, status_);
-      }
-      if (nextLuckTimes_ != 0) {
-        output.writeInt32(5, nextLuckTimes_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, id_);
-      }
-      if (timesRequire_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, timesRequire_);
-      }
-      if (luckTimes_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, luckTimes_);
-      }
-      if (status_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, status_);
-      }
-      if (nextLuckTimes_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, nextLuckTimes_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.kys.util.netty.proto.SignProto.TSReward)) {
-        return super.equals(obj);
-      }
-      com.kys.util.netty.proto.SignProto.TSReward other = (com.kys.util.netty.proto.SignProto.TSReward) obj;
-
-      boolean result = true;
-      result = result && (getId()
-          == other.getId());
-      result = result && (getTimesRequire()
-          == other.getTimesRequire());
-      result = result && (getLuckTimes()
-          == other.getLuckTimes());
-      result = result && (getStatus()
-          == other.getStatus());
-      result = result && (getNextLuckTimes()
-          == other.getNextLuckTimes());
-      result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
-      hash = (37 * hash) + TIMESREQUIRE_FIELD_NUMBER;
-      hash = (53 * hash) + getTimesRequire();
-      hash = (37 * hash) + LUCKTIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getLuckTimes();
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus();
-      hash = (37 * hash) + NEXTLUCKTIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getNextLuckTimes();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.TSReward prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * <pre>
-     ** 连续签到奖励 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.TSReward}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.TSReward)
-        com.kys.util.netty.proto.SignProto.TSRewardOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.SignProto.TSReward.class, com.kys.util.netty.proto.SignProto.TSReward.Builder.class);
-      }
-
-      // Construct using com.kys.util.netty.proto.SignProto.TSReward.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        id_ = 0;
-
-        timesRequire_ = 0;
-
-        luckTimes_ = 0;
-
-        status_ = 0;
-
-        nextLuckTimes_ = 0;
-
-        return this;
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_descriptor;
-      }
-
-      public com.kys.util.netty.proto.SignProto.TSReward getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.SignProto.TSReward.getDefaultInstance();
-      }
-
-      public com.kys.util.netty.proto.SignProto.TSReward build() {
-        com.kys.util.netty.proto.SignProto.TSReward result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.kys.util.netty.proto.SignProto.TSReward buildPartial() {
-        com.kys.util.netty.proto.SignProto.TSReward result = new com.kys.util.netty.proto.SignProto.TSReward(this);
-        result.id_ = id_;
-        result.timesRequire_ = timesRequire_;
-        result.luckTimes_ = luckTimes_;
-        result.status_ = status_;
-        result.nextLuckTimes_ = nextLuckTimes_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.SignProto.TSReward) {
-          return mergeFrom((com.kys.util.netty.proto.SignProto.TSReward)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.TSReward other) {
-        if (other == com.kys.util.netty.proto.SignProto.TSReward.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
-        if (other.getTimesRequire() != 0) {
-          setTimesRequire(other.getTimesRequire());
-        }
-        if (other.getLuckTimes() != 0) {
-          setLuckTimes(other.getLuckTimes());
-        }
-        if (other.getStatus() != 0) {
-          setStatus(other.getStatus());
-        }
-        if (other.getNextLuckTimes() != 0) {
-          setNextLuckTimes(other.getNextLuckTimes());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.kys.util.netty.proto.SignProto.TSReward parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.SignProto.TSReward) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private int id_ ;
-      /**
-       * <pre>
-       ** id 
-       * </pre>
-       *
-       * <code>int32 id = 1;</code>
-       */
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <pre>
-       ** id 
-       * </pre>
-       *
-       * <code>int32 id = 1;</code>
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** id 
-       * </pre>
-       *
-       * <code>int32 id = 1;</code>
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int timesRequire_ ;
-      /**
-       * <pre>
-       ** 累计签到次数的要求 
-       * </pre>
-       *
-       * <code>int32 timesRequire = 2;</code>
-       */
-      public int getTimesRequire() {
-        return timesRequire_;
-      }
-      /**
-       * <pre>
-       ** 累计签到次数的要求 
-       * </pre>
-       *
-       * <code>int32 timesRequire = 2;</code>
-       */
-      public Builder setTimesRequire(int value) {
-        
-        timesRequire_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 累计签到次数的要求 
-       * </pre>
-       *
-       * <code>int32 timesRequire = 2;</code>
-       */
-      public Builder clearTimesRequire() {
-        
-        timesRequire_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int luckTimes_ ;
-      /**
-       * <pre>
-       ** 奖励幸运抽奖次数 
-       * </pre>
-       *
-       * <code>int32 luckTimes = 3;</code>
-       */
-      public int getLuckTimes() {
-        return luckTimes_;
-      }
-      /**
-       * <pre>
-       ** 奖励幸运抽奖次数 
-       * </pre>
-       *
-       * <code>int32 luckTimes = 3;</code>
-       */
-      public Builder setLuckTimes(int value) {
-        
-        luckTimes_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 奖励幸运抽奖次数 
-       * </pre>
-       *
-       * <code>int32 luckTimes = 3;</code>
-       */
-      public Builder clearLuckTimes() {
-        
-        luckTimes_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int status_ ;
-      /**
-       * <pre>
-       ** 是否已经领取:0未领取,1已领取 
-       * </pre>
-       *
-       * <code>int32 status = 4;</code>
-       */
-      public int getStatus() {
-        return status_;
-      }
-      /**
-       * <pre>
-       ** 是否已经领取:0未领取,1已领取 
-       * </pre>
-       *
-       * <code>int32 status = 4;</code>
-       */
-      public Builder setStatus(int value) {
-        
-        status_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 是否已经领取:0未领取,1已领取 
-       * </pre>
-       *
-       * <code>int32 status = 4;</code>
-       */
-      public Builder clearStatus() {
-        
-        status_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nextLuckTimes_ ;
-      /**
-       * <pre>
-       ** 下一阶段奖励幸运抽奖次数 
-       * </pre>
-       *
-       * <code>int32 nextLuckTimes = 5;</code>
-       */
-      public int getNextLuckTimes() {
-        return nextLuckTimes_;
-      }
-      /**
-       * <pre>
-       ** 下一阶段奖励幸运抽奖次数 
-       * </pre>
-       *
-       * <code>int32 nextLuckTimes = 5;</code>
-       */
-      public Builder setNextLuckTimes(int value) {
-        
-        nextLuckTimes_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 下一阶段奖励幸运抽奖次数 
-       * </pre>
-       *
-       * <code>int32 nextLuckTimes = 5;</code>
-       */
-      public Builder clearNextLuckTimes() {
-        
-        nextLuckTimes_ = 0;
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFieldsProto3(unknownFields);
-      }
-
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.TSReward)
-    }
-
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.TSReward)
-    private static final com.kys.util.netty.proto.SignProto.TSReward DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.TSReward();
-    }
-
-    public static com.kys.util.netty.proto.SignProto.TSReward getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<TSReward>
-        PARSER = new com.google.protobuf.AbstractParser<TSReward>() {
-      public TSReward parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-          return new TSReward(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<TSReward> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<TSReward> getParserForType() {
-      return PARSER;
-    }
-
-    public com.kys.util.netty.proto.SignProto.TSReward getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface ClientMonthSignOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientMonthSign)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     ** 日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    java.lang.String getDate();
-    /**
-     * <pre>
-     ** 日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getDateBytes();
-
-    /**
-     * <pre>
-     ** 补签方式,1.钻石,2补签卡 
-     * </pre>
-     *
-     * <code>int32 reSignType = 2;</code>
-     */
-    int getReSignType();
-  }
-  /**
-   * <pre>
-   ** 客户端请求(新)月签到 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.ClientMonthSign}
-   */
-  public  static final class ClientMonthSign extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientMonthSign)
-      ClientMonthSignOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use ClientMonthSign.newBuilder() to construct.
-    private ClientMonthSign(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private ClientMonthSign() {
-      date_ = "";
-      reSignType_ = 0;
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ClientMonthSign(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownFieldProto3(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              date_ = s;
-              break;
-            }
-            case 16: {
-
-              reSignType_ = input.readInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSign_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSign_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.SignProto.ClientMonthSign.class, com.kys.util.netty.proto.SignProto.ClientMonthSign.Builder.class);
-    }
-
-    public static final int DATE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object date_;
-    /**
-     * <pre>
-     ** 日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    public java.lang.String getDate() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        date_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getDateBytes() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        date_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int RESIGNTYPE_FIELD_NUMBER = 2;
-    private int reSignType_;
-    /**
-     * <pre>
-     ** 补签方式,1.钻石,2补签卡 
-     * </pre>
-     *
-     * <code>int32 reSignType = 2;</code>
-     */
-    public int getReSignType() {
-      return reSignType_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!getDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, date_);
-      }
-      if (reSignType_ != 0) {
-        output.writeInt32(2, reSignType_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, date_);
-      }
-      if (reSignType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, reSignType_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ClientMonthSign)) {
-        return super.equals(obj);
-      }
-      com.kys.util.netty.proto.SignProto.ClientMonthSign other = (com.kys.util.netty.proto.SignProto.ClientMonthSign) obj;
-
-      boolean result = true;
-      result = result && getDate()
-          .equals(other.getDate());
-      result = result && (getReSignType()
-          == other.getReSignType());
-      result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DATE_FIELD_NUMBER;
-      hash = (53 * hash) + getDate().hashCode();
-      hash = (37 * hash) + RESIGNTYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getReSignType();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ClientMonthSign prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * <pre>
-     ** 客户端请求(新)月签到 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.ClientMonthSign}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientMonthSign)
-        com.kys.util.netty.proto.SignProto.ClientMonthSignOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSign_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSign_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.SignProto.ClientMonthSign.class, com.kys.util.netty.proto.SignProto.ClientMonthSign.Builder.class);
-      }
-
-      // Construct using com.kys.util.netty.proto.SignProto.ClientMonthSign.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        date_ = "";
-
-        reSignType_ = 0;
-
-        return this;
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientMonthSign_descriptor;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ClientMonthSign getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.SignProto.ClientMonthSign.getDefaultInstance();
-      }
-
-      public com.kys.util.netty.proto.SignProto.ClientMonthSign build() {
-        com.kys.util.netty.proto.SignProto.ClientMonthSign result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ClientMonthSign buildPartial() {
-        com.kys.util.netty.proto.SignProto.ClientMonthSign result = new com.kys.util.netty.proto.SignProto.ClientMonthSign(this);
-        result.date_ = date_;
-        result.reSignType_ = reSignType_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.SignProto.ClientMonthSign) {
-          return mergeFrom((com.kys.util.netty.proto.SignProto.ClientMonthSign)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ClientMonthSign other) {
-        if (other == com.kys.util.netty.proto.SignProto.ClientMonthSign.getDefaultInstance()) return this;
-        if (!other.getDate().isEmpty()) {
-          date_ = other.date_;
-          onChanged();
-        }
-        if (other.getReSignType() != 0) {
-          setReSignType(other.getReSignType());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.kys.util.netty.proto.SignProto.ClientMonthSign parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.SignProto.ClientMonthSign) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private java.lang.Object date_ = "";
-      /**
-       * <pre>
-       ** 日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public java.lang.String getDate() {
-        java.lang.Object ref = date_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          date_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getDateBytes() {
-        java.lang.Object ref = date_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          date_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDate(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        date_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder clearDate() {
-        
-        date_ = getDefaultInstance().getDate();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDateBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        date_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int reSignType_ ;
-      /**
-       * <pre>
-       ** 补签方式,1.钻石,2补签卡 
-       * </pre>
-       *
-       * <code>int32 reSignType = 2;</code>
-       */
-      public int getReSignType() {
-        return reSignType_;
-      }
-      /**
-       * <pre>
-       ** 补签方式,1.钻石,2补签卡 
-       * </pre>
-       *
-       * <code>int32 reSignType = 2;</code>
-       */
-      public Builder setReSignType(int value) {
-        
-        reSignType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 补签方式,1.钻石,2补签卡 
-       * </pre>
-       *
-       * <code>int32 reSignType = 2;</code>
-       */
-      public Builder clearReSignType() {
-        
-        reSignType_ = 0;
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFieldsProto3(unknownFields);
-      }
-
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientMonthSign)
-    }
-
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientMonthSign)
-    private static final com.kys.util.netty.proto.SignProto.ClientMonthSign DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ClientMonthSign();
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ClientMonthSign getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ClientMonthSign>
-        PARSER = new com.google.protobuf.AbstractParser<ClientMonthSign>() {
-      public ClientMonthSign parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ClientMonthSign(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<ClientMonthSign> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ClientMonthSign> getParserForType() {
-      return PARSER;
-    }
-
-    public com.kys.util.netty.proto.SignProto.ClientMonthSign getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface ServerMonthSignOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerMonthSign)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     ** 签到日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    java.lang.String getDate();
-    /**
-     * <pre>
-     ** 签到日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getDateBytes();
-
-    /**
-     * <pre>
-     ** 返回下次补签价格 
-     * </pre>
-     *
-     * <code>int32 reSignPrice = 2;</code>
-     */
-    int getReSignPrice();
-
-    /**
-     * <pre>
-     ** 签到后的金币数 
-     * </pre>
-     *
-     * <code>int32 goldcoin = 3;</code>
-     */
-    int getGoldcoin();
-
-    /**
-     * <pre>
-     ** 签到后的钻石数量 
-     * </pre>
-     *
-     * <code>int32 diamond = 4;</code>
-     */
-    int getDiamond();
-
-    /**
-     * <pre>
-     ** 获得的幸运抽奖次数 
-     * </pre>
-     *
-     * <code>int32 luckTimes = 5;</code>
-     */
-    int getLuckTimes();
-
-    /**
-     * <pre>
-     ** 签到状态:1已签到,2已暴击 
-     * </pre>
-     *
-     * <code>int32 status = 6;</code>
-     */
-    int getStatus();
-  }
-  /**
-   * <pre>
-   ** 服务器返回(新)月签到:未签到0-&gt;已签到1-&gt;已暴击2 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.ServerMonthSign}
-   */
-  public  static final class ServerMonthSign extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerMonthSign)
-      ServerMonthSignOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use ServerMonthSign.newBuilder() to construct.
-    private ServerMonthSign(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private ServerMonthSign() {
-      date_ = "";
-      reSignPrice_ = 0;
-      goldcoin_ = 0;
-      diamond_ = 0;
-      luckTimes_ = 0;
-      status_ = 0;
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ServerMonthSign(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownFieldProto3(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              date_ = s;
-              break;
-            }
-            case 16: {
-
-              reSignPrice_ = input.readInt32();
-              break;
-            }
-            case 24: {
-
               goldcoin_ = input.readInt32();
               break;
             }
-            case 32: {
+            case 16: {
 
               diamond_ = input.readInt32();
               break;
             }
-            case 40: {
+            case 24: {
 
-              luckTimes_ = input.readInt32();
-              break;
-            }
-            case 48: {
-
-              status_ = input.readInt32();
+              signDays_ = input.readInt32();
               break;
             }
           }
@@ -4704,121 +3378,53 @@ public final class SignProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSign_descriptor;
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignAward_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSign_fieldAccessorTable
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignAward_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.SignProto.ServerMonthSign.class, com.kys.util.netty.proto.SignProto.ServerMonthSign.Builder.class);
+              com.kys.util.netty.proto.SignProto.ServerSignAward.class, com.kys.util.netty.proto.SignProto.ServerSignAward.Builder.class);
     }
 
-    public static final int DATE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object date_;
-    /**
-     * <pre>
-     ** 签到日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    public java.lang.String getDate() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        date_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 签到日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getDateBytes() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        date_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int RESIGNPRICE_FIELD_NUMBER = 2;
-    private int reSignPrice_;
-    /**
-     * <pre>
-     ** 返回下次补签价格 
-     * </pre>
-     *
-     * <code>int32 reSignPrice = 2;</code>
-     */
-    public int getReSignPrice() {
-      return reSignPrice_;
-    }
-
-    public static final int GOLDCOIN_FIELD_NUMBER = 3;
+    public static final int GOLDCOIN_FIELD_NUMBER = 1;
     private int goldcoin_;
     /**
      * <pre>
      ** 签到后的金币数 
      * </pre>
      *
-     * <code>int32 goldcoin = 3;</code>
+     * <code>int32 goldcoin = 1;</code>
      */
     public int getGoldcoin() {
       return goldcoin_;
     }
 
-    public static final int DIAMOND_FIELD_NUMBER = 4;
+    public static final int DIAMOND_FIELD_NUMBER = 2;
     private int diamond_;
     /**
      * <pre>
      ** 签到后的钻石数量 
      * </pre>
      *
-     * <code>int32 diamond = 4;</code>
+     * <code>int32 diamond = 2;</code>
      */
     public int getDiamond() {
       return diamond_;
     }
 
-    public static final int LUCKTIMES_FIELD_NUMBER = 5;
-    private int luckTimes_;
+    public static final int SIGNDAYS_FIELD_NUMBER = 3;
+    private int signDays_;
     /**
      * <pre>
-     ** 获得的幸运抽奖次数 
+     ** 累计签到天数 
      * </pre>
      *
-     * <code>int32 luckTimes = 5;</code>
+     * <code>int32 signDays = 3;</code>
      */
-    public int getLuckTimes() {
-      return luckTimes_;
-    }
-
-    public static final int STATUS_FIELD_NUMBER = 6;
-    private int status_;
-    /**
-     * <pre>
-     ** 签到状态:1已签到,2已暴击 
-     * </pre>
-     *
-     * <code>int32 status = 6;</code>
-     */
-    public int getStatus() {
-      return status_;
+    public int getSignDays() {
+      return signDays_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -4833,23 +3439,14 @@ public final class SignProto {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, date_);
-      }
-      if (reSignPrice_ != 0) {
-        output.writeInt32(2, reSignPrice_);
-      }
       if (goldcoin_ != 0) {
-        output.writeInt32(3, goldcoin_);
+        output.writeInt32(1, goldcoin_);
       }
       if (diamond_ != 0) {
-        output.writeInt32(4, diamond_);
+        output.writeInt32(2, diamond_);
       }
-      if (luckTimes_ != 0) {
-        output.writeInt32(5, luckTimes_);
-      }
-      if (status_ != 0) {
-        output.writeInt32(6, status_);
+      if (signDays_ != 0) {
+        output.writeInt32(3, signDays_);
       }
       unknownFields.writeTo(output);
     }
@@ -4859,28 +3456,17 @@ public final class SignProto {
       if (size != -1) return size;
 
       size = 0;
-      if (!getDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, date_);
-      }
-      if (reSignPrice_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, reSignPrice_);
-      }
       if (goldcoin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, goldcoin_);
+          .computeInt32Size(1, goldcoin_);
       }
       if (diamond_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, diamond_);
+          .computeInt32Size(2, diamond_);
       }
-      if (luckTimes_ != 0) {
+      if (signDays_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, luckTimes_);
-      }
-      if (status_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, status_);
+          .computeInt32Size(3, signDays_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -4892,24 +3478,18 @@ public final class SignProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ServerMonthSign)) {
+      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ServerSignAward)) {
         return super.equals(obj);
       }
-      com.kys.util.netty.proto.SignProto.ServerMonthSign other = (com.kys.util.netty.proto.SignProto.ServerMonthSign) obj;
+      com.kys.util.netty.proto.SignProto.ServerSignAward other = (com.kys.util.netty.proto.SignProto.ServerSignAward) obj;
 
       boolean result = true;
-      result = result && getDate()
-          .equals(other.getDate());
-      result = result && (getReSignPrice()
-          == other.getReSignPrice());
       result = result && (getGoldcoin()
           == other.getGoldcoin());
       result = result && (getDiamond()
           == other.getDiamond());
-      result = result && (getLuckTimes()
-          == other.getLuckTimes());
-      result = result && (getStatus()
-          == other.getStatus());
+      result = result && (getSignDays()
+          == other.getSignDays());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -4921,86 +3501,80 @@ public final class SignProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DATE_FIELD_NUMBER;
-      hash = (53 * hash) + getDate().hashCode();
-      hash = (37 * hash) + RESIGNPRICE_FIELD_NUMBER;
-      hash = (53 * hash) + getReSignPrice();
       hash = (37 * hash) + GOLDCOIN_FIELD_NUMBER;
       hash = (53 * hash) + getGoldcoin();
       hash = (37 * hash) + DIAMOND_FIELD_NUMBER;
       hash = (53 * hash) + getDiamond();
-      hash = (37 * hash) + LUCKTIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getLuckTimes();
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus();
+      hash = (37 * hash) + SIGNDAYS_FIELD_NUMBER;
+      hash = (53 * hash) + getSignDays();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(byte[] data)
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseDelimitedFrom(java.io.InputStream input)
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseDelimitedFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign parseFrom(
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5012,7 +3586,7 @@ public final class SignProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ServerMonthSign prototype) {
+    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ServerSignAward prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -5028,28 +3602,28 @@ public final class SignProto {
     }
     /**
      * <pre>
-     ** 服务器返回(新)月签到:未签到0-&gt;已签到1-&gt;已暴击2 
+     ** 服务器返回签到奖励 
      * </pre>
      *
-     * Protobuf type {@code com.kys.util.netty.proto.ServerMonthSign}
+     * Protobuf type {@code com.kys.util.netty.proto.ServerSignAward}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerMonthSign)
-        com.kys.util.netty.proto.SignProto.ServerMonthSignOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerSignAward)
+        com.kys.util.netty.proto.SignProto.ServerSignAwardOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSign_descriptor;
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignAward_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSign_fieldAccessorTable
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignAward_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.SignProto.ServerMonthSign.class, com.kys.util.netty.proto.SignProto.ServerMonthSign.Builder.class);
+                com.kys.util.netty.proto.SignProto.ServerSignAward.class, com.kys.util.netty.proto.SignProto.ServerSignAward.Builder.class);
       }
 
-      // Construct using com.kys.util.netty.proto.SignProto.ServerMonthSign.newBuilder()
+      // Construct using com.kys.util.netty.proto.SignProto.ServerSignAward.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -5066,46 +3640,37 @@ public final class SignProto {
       }
       public Builder clear() {
         super.clear();
-        date_ = "";
-
-        reSignPrice_ = 0;
-
         goldcoin_ = 0;
 
         diamond_ = 0;
 
-        luckTimes_ = 0;
-
-        status_ = 0;
+        signDays_ = 0;
 
         return this;
       }
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerMonthSign_descriptor;
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerSignAward_descriptor;
       }
 
-      public com.kys.util.netty.proto.SignProto.ServerMonthSign getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.SignProto.ServerMonthSign.getDefaultInstance();
+      public com.kys.util.netty.proto.SignProto.ServerSignAward getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.SignProto.ServerSignAward.getDefaultInstance();
       }
 
-      public com.kys.util.netty.proto.SignProto.ServerMonthSign build() {
-        com.kys.util.netty.proto.SignProto.ServerMonthSign result = buildPartial();
+      public com.kys.util.netty.proto.SignProto.ServerSignAward build() {
+        com.kys.util.netty.proto.SignProto.ServerSignAward result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.kys.util.netty.proto.SignProto.ServerMonthSign buildPartial() {
-        com.kys.util.netty.proto.SignProto.ServerMonthSign result = new com.kys.util.netty.proto.SignProto.ServerMonthSign(this);
-        result.date_ = date_;
-        result.reSignPrice_ = reSignPrice_;
+      public com.kys.util.netty.proto.SignProto.ServerSignAward buildPartial() {
+        com.kys.util.netty.proto.SignProto.ServerSignAward result = new com.kys.util.netty.proto.SignProto.ServerSignAward(this);
         result.goldcoin_ = goldcoin_;
         result.diamond_ = diamond_;
-        result.luckTimes_ = luckTimes_;
-        result.status_ = status_;
+        result.signDays_ = signDays_;
         onBuilt();
         return result;
       }
@@ -5137,34 +3702,24 @@ public final class SignProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.SignProto.ServerMonthSign) {
-          return mergeFrom((com.kys.util.netty.proto.SignProto.ServerMonthSign)other);
+        if (other instanceof com.kys.util.netty.proto.SignProto.ServerSignAward) {
+          return mergeFrom((com.kys.util.netty.proto.SignProto.ServerSignAward)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ServerMonthSign other) {
-        if (other == com.kys.util.netty.proto.SignProto.ServerMonthSign.getDefaultInstance()) return this;
-        if (!other.getDate().isEmpty()) {
-          date_ = other.date_;
-          onChanged();
-        }
-        if (other.getReSignPrice() != 0) {
-          setReSignPrice(other.getReSignPrice());
-        }
+      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ServerSignAward other) {
+        if (other == com.kys.util.netty.proto.SignProto.ServerSignAward.getDefaultInstance()) return this;
         if (other.getGoldcoin() != 0) {
           setGoldcoin(other.getGoldcoin());
         }
         if (other.getDiamond() != 0) {
           setDiamond(other.getDiamond());
         }
-        if (other.getLuckTimes() != 0) {
-          setLuckTimes(other.getLuckTimes());
-        }
-        if (other.getStatus() != 0) {
-          setStatus(other.getStatus());
+        if (other.getSignDays() != 0) {
+          setSignDays(other.getSignDays());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -5179,144 +3734,17 @@ public final class SignProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kys.util.netty.proto.SignProto.ServerMonthSign parsedMessage = null;
+        com.kys.util.netty.proto.SignProto.ServerSignAward parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.SignProto.ServerMonthSign) e.getUnfinishedMessage();
+          parsedMessage = (com.kys.util.netty.proto.SignProto.ServerSignAward) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private java.lang.Object date_ = "";
-      /**
-       * <pre>
-       ** 签到日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public java.lang.String getDate() {
-        java.lang.Object ref = date_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          date_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 签到日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getDateBytes() {
-        java.lang.Object ref = date_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          date_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 签到日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDate(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        date_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 签到日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder clearDate() {
-        
-        date_ = getDefaultInstance().getDate();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 签到日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDateBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        date_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int reSignPrice_ ;
-      /**
-       * <pre>
-       ** 返回下次补签价格 
-       * </pre>
-       *
-       * <code>int32 reSignPrice = 2;</code>
-       */
-      public int getReSignPrice() {
-        return reSignPrice_;
-      }
-      /**
-       * <pre>
-       ** 返回下次补签价格 
-       * </pre>
-       *
-       * <code>int32 reSignPrice = 2;</code>
-       */
-      public Builder setReSignPrice(int value) {
-        
-        reSignPrice_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 返回下次补签价格 
-       * </pre>
-       *
-       * <code>int32 reSignPrice = 2;</code>
-       */
-      public Builder clearReSignPrice() {
-        
-        reSignPrice_ = 0;
-        onChanged();
         return this;
       }
 
@@ -5326,7 +3754,7 @@ public final class SignProto {
        ** 签到后的金币数 
        * </pre>
        *
-       * <code>int32 goldcoin = 3;</code>
+       * <code>int32 goldcoin = 1;</code>
        */
       public int getGoldcoin() {
         return goldcoin_;
@@ -5336,7 +3764,7 @@ public final class SignProto {
        ** 签到后的金币数 
        * </pre>
        *
-       * <code>int32 goldcoin = 3;</code>
+       * <code>int32 goldcoin = 1;</code>
        */
       public Builder setGoldcoin(int value) {
         
@@ -5349,7 +3777,7 @@ public final class SignProto {
        ** 签到后的金币数 
        * </pre>
        *
-       * <code>int32 goldcoin = 3;</code>
+       * <code>int32 goldcoin = 1;</code>
        */
       public Builder clearGoldcoin() {
         
@@ -5364,7 +3792,7 @@ public final class SignProto {
        ** 签到后的钻石数量 
        * </pre>
        *
-       * <code>int32 diamond = 4;</code>
+       * <code>int32 diamond = 2;</code>
        */
       public int getDiamond() {
         return diamond_;
@@ -5374,7 +3802,7 @@ public final class SignProto {
        ** 签到后的钻石数量 
        * </pre>
        *
-       * <code>int32 diamond = 4;</code>
+       * <code>int32 diamond = 2;</code>
        */
       public Builder setDiamond(int value) {
         
@@ -5387,7 +3815,7 @@ public final class SignProto {
        ** 签到后的钻石数量 
        * </pre>
        *
-       * <code>int32 diamond = 4;</code>
+       * <code>int32 diamond = 2;</code>
        */
       public Builder clearDiamond() {
         
@@ -5396,78 +3824,40 @@ public final class SignProto {
         return this;
       }
 
-      private int luckTimes_ ;
+      private int signDays_ ;
       /**
        * <pre>
-       ** 获得的幸运抽奖次数 
+       ** 累计签到天数 
        * </pre>
        *
-       * <code>int32 luckTimes = 5;</code>
+       * <code>int32 signDays = 3;</code>
        */
-      public int getLuckTimes() {
-        return luckTimes_;
+      public int getSignDays() {
+        return signDays_;
       }
       /**
        * <pre>
-       ** 获得的幸运抽奖次数 
+       ** 累计签到天数 
        * </pre>
        *
-       * <code>int32 luckTimes = 5;</code>
+       * <code>int32 signDays = 3;</code>
        */
-      public Builder setLuckTimes(int value) {
+      public Builder setSignDays(int value) {
         
-        luckTimes_ = value;
+        signDays_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 获得的幸运抽奖次数 
+       ** 累计签到天数 
        * </pre>
        *
-       * <code>int32 luckTimes = 5;</code>
+       * <code>int32 signDays = 3;</code>
        */
-      public Builder clearLuckTimes() {
+      public Builder clearSignDays() {
         
-        luckTimes_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int status_ ;
-      /**
-       * <pre>
-       ** 签到状态:1已签到,2已暴击 
-       * </pre>
-       *
-       * <code>int32 status = 6;</code>
-       */
-      public int getStatus() {
-        return status_;
-      }
-      /**
-       * <pre>
-       ** 签到状态:1已签到,2已暴击 
-       * </pre>
-       *
-       * <code>int32 status = 6;</code>
-       */
-      public Builder setStatus(int value) {
-        
-        status_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 签到状态:1已签到,2已暴击 
-       * </pre>
-       *
-       * <code>int32 status = 6;</code>
-       */
-      public Builder clearStatus() {
-        
-        status_ = 0;
+        signDays_ = 0;
         onChanged();
         return this;
       }
@@ -5482,1420 +3872,39 @@ public final class SignProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerMonthSign)
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerSignAward)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerMonthSign)
-    private static final com.kys.util.netty.proto.SignProto.ServerMonthSign DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerSignAward)
+    private static final com.kys.util.netty.proto.SignProto.ServerSignAward DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ServerMonthSign();
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ServerSignAward();
     }
 
-    public static com.kys.util.netty.proto.SignProto.ServerMonthSign getDefaultInstance() {
+    public static com.kys.util.netty.proto.SignProto.ServerSignAward getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<ServerMonthSign>
-        PARSER = new com.google.protobuf.AbstractParser<ServerMonthSign>() {
-      public ServerMonthSign parsePartialFrom(
+    private static final com.google.protobuf.Parser<ServerSignAward>
+        PARSER = new com.google.protobuf.AbstractParser<ServerSignAward>() {
+      public ServerSignAward parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ServerMonthSign(input, extensionRegistry);
+          return new ServerSignAward(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<ServerMonthSign> parser() {
+    public static com.google.protobuf.Parser<ServerSignAward> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<ServerMonthSign> getParserForType() {
+    public com.google.protobuf.Parser<ServerSignAward> getParserForType() {
       return PARSER;
     }
 
-    public com.kys.util.netty.proto.SignProto.ServerMonthSign getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface ClientGetCritRewardOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientGetCritReward)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     ** 获取的日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    java.lang.String getDate();
-    /**
-     * <pre>
-     ** 获取的日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getDateBytes();
-  }
-  /**
-   * <pre>
-   ** 客户端获取暴击奖励 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.ClientGetCritReward}
-   */
-  public  static final class ClientGetCritReward extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientGetCritReward)
-      ClientGetCritRewardOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use ClientGetCritReward.newBuilder() to construct.
-    private ClientGetCritReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private ClientGetCritReward() {
-      date_ = "";
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ClientGetCritReward(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownFieldProto3(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              date_ = s;
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetCritReward_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetCritReward_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.SignProto.ClientGetCritReward.class, com.kys.util.netty.proto.SignProto.ClientGetCritReward.Builder.class);
-    }
-
-    public static final int DATE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object date_;
-    /**
-     * <pre>
-     ** 获取的日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    public java.lang.String getDate() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        date_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 获取的日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getDateBytes() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        date_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!getDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, date_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, date_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ClientGetCritReward)) {
-        return super.equals(obj);
-      }
-      com.kys.util.netty.proto.SignProto.ClientGetCritReward other = (com.kys.util.netty.proto.SignProto.ClientGetCritReward) obj;
-
-      boolean result = true;
-      result = result && getDate()
-          .equals(other.getDate());
-      result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DATE_FIELD_NUMBER;
-      hash = (53 * hash) + getDate().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ClientGetCritReward prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * <pre>
-     ** 客户端获取暴击奖励 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.ClientGetCritReward}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientGetCritReward)
-        com.kys.util.netty.proto.SignProto.ClientGetCritRewardOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetCritReward_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetCritReward_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.SignProto.ClientGetCritReward.class, com.kys.util.netty.proto.SignProto.ClientGetCritReward.Builder.class);
-      }
-
-      // Construct using com.kys.util.netty.proto.SignProto.ClientGetCritReward.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        date_ = "";
-
-        return this;
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetCritReward_descriptor;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ClientGetCritReward getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.SignProto.ClientGetCritReward.getDefaultInstance();
-      }
-
-      public com.kys.util.netty.proto.SignProto.ClientGetCritReward build() {
-        com.kys.util.netty.proto.SignProto.ClientGetCritReward result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ClientGetCritReward buildPartial() {
-        com.kys.util.netty.proto.SignProto.ClientGetCritReward result = new com.kys.util.netty.proto.SignProto.ClientGetCritReward(this);
-        result.date_ = date_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.SignProto.ClientGetCritReward) {
-          return mergeFrom((com.kys.util.netty.proto.SignProto.ClientGetCritReward)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ClientGetCritReward other) {
-        if (other == com.kys.util.netty.proto.SignProto.ClientGetCritReward.getDefaultInstance()) return this;
-        if (!other.getDate().isEmpty()) {
-          date_ = other.date_;
-          onChanged();
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.kys.util.netty.proto.SignProto.ClientGetCritReward parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.SignProto.ClientGetCritReward) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private java.lang.Object date_ = "";
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public java.lang.String getDate() {
-        java.lang.Object ref = date_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          date_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getDateBytes() {
-        java.lang.Object ref = date_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          date_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDate(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        date_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder clearDate() {
-        
-        date_ = getDefaultInstance().getDate();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDateBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        date_ = value;
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFieldsProto3(unknownFields);
-      }
-
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientGetCritReward)
-    }
-
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientGetCritReward)
-    private static final com.kys.util.netty.proto.SignProto.ClientGetCritReward DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ClientGetCritReward();
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ClientGetCritReward getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ClientGetCritReward>
-        PARSER = new com.google.protobuf.AbstractParser<ClientGetCritReward>() {
-      public ClientGetCritReward parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ClientGetCritReward(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<ClientGetCritReward> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ClientGetCritReward> getParserForType() {
-      return PARSER;
-    }
-
-    public com.kys.util.netty.proto.SignProto.ClientGetCritReward getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface ServerGetCritRewardOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerGetCritReward)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     ** 获取的日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    java.lang.String getDate();
-    /**
-     * <pre>
-     ** 获取的日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getDateBytes();
-
-    /**
-     * <pre>
-     ** 暴击后的金币数 
-     * </pre>
-     *
-     * <code>int32 goldcoin = 2;</code>
-     */
-    int getGoldcoin();
-
-    /**
-     * <pre>
-     ** 暴击倍率*100 
-     * </pre>
-     *
-     * <code>int32 critMultiple = 3;</code>
-     */
-    int getCritMultiple();
-
-    /**
-     * <pre>
-     ** 暴击后的改变值 
-     * </pre>
-     *
-     * <code>int32 change = 4;</code>
-     */
-    int getChange();
-  }
-  /**
-   * <pre>
-   ** 服务器返回获取暴击奖励 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.ServerGetCritReward}
-   */
-  public  static final class ServerGetCritReward extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerGetCritReward)
-      ServerGetCritRewardOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use ServerGetCritReward.newBuilder() to construct.
-    private ServerGetCritReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private ServerGetCritReward() {
-      date_ = "";
-      goldcoin_ = 0;
-      critMultiple_ = 0;
-      change_ = 0;
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ServerGetCritReward(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownFieldProto3(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              date_ = s;
-              break;
-            }
-            case 16: {
-
-              goldcoin_ = input.readInt32();
-              break;
-            }
-            case 24: {
-
-              critMultiple_ = input.readInt32();
-              break;
-            }
-            case 32: {
-
-              change_ = input.readInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetCritReward_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetCritReward_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.SignProto.ServerGetCritReward.class, com.kys.util.netty.proto.SignProto.ServerGetCritReward.Builder.class);
-    }
-
-    public static final int DATE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object date_;
-    /**
-     * <pre>
-     ** 获取的日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    public java.lang.String getDate() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        date_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     ** 获取的日期:2020/01/01 
-     * </pre>
-     *
-     * <code>string date = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getDateBytes() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        date_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int GOLDCOIN_FIELD_NUMBER = 2;
-    private int goldcoin_;
-    /**
-     * <pre>
-     ** 暴击后的金币数 
-     * </pre>
-     *
-     * <code>int32 goldcoin = 2;</code>
-     */
-    public int getGoldcoin() {
-      return goldcoin_;
-    }
-
-    public static final int CRITMULTIPLE_FIELD_NUMBER = 3;
-    private int critMultiple_;
-    /**
-     * <pre>
-     ** 暴击倍率*100 
-     * </pre>
-     *
-     * <code>int32 critMultiple = 3;</code>
-     */
-    public int getCritMultiple() {
-      return critMultiple_;
-    }
-
-    public static final int CHANGE_FIELD_NUMBER = 4;
-    private int change_;
-    /**
-     * <pre>
-     ** 暴击后的改变值 
-     * </pre>
-     *
-     * <code>int32 change = 4;</code>
-     */
-    public int getChange() {
-      return change_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!getDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, date_);
-      }
-      if (goldcoin_ != 0) {
-        output.writeInt32(2, goldcoin_);
-      }
-      if (critMultiple_ != 0) {
-        output.writeInt32(3, critMultiple_);
-      }
-      if (change_ != 0) {
-        output.writeInt32(4, change_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, date_);
-      }
-      if (goldcoin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, goldcoin_);
-      }
-      if (critMultiple_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, critMultiple_);
-      }
-      if (change_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, change_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ServerGetCritReward)) {
-        return super.equals(obj);
-      }
-      com.kys.util.netty.proto.SignProto.ServerGetCritReward other = (com.kys.util.netty.proto.SignProto.ServerGetCritReward) obj;
-
-      boolean result = true;
-      result = result && getDate()
-          .equals(other.getDate());
-      result = result && (getGoldcoin()
-          == other.getGoldcoin());
-      result = result && (getCritMultiple()
-          == other.getCritMultiple());
-      result = result && (getChange()
-          == other.getChange());
-      result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DATE_FIELD_NUMBER;
-      hash = (53 * hash) + getDate().hashCode();
-      hash = (37 * hash) + GOLDCOIN_FIELD_NUMBER;
-      hash = (53 * hash) + getGoldcoin();
-      hash = (37 * hash) + CRITMULTIPLE_FIELD_NUMBER;
-      hash = (53 * hash) + getCritMultiple();
-      hash = (37 * hash) + CHANGE_FIELD_NUMBER;
-      hash = (53 * hash) + getChange();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ServerGetCritReward prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * <pre>
-     ** 服务器返回获取暴击奖励 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.ServerGetCritReward}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerGetCritReward)
-        com.kys.util.netty.proto.SignProto.ServerGetCritRewardOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetCritReward_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetCritReward_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.SignProto.ServerGetCritReward.class, com.kys.util.netty.proto.SignProto.ServerGetCritReward.Builder.class);
-      }
-
-      // Construct using com.kys.util.netty.proto.SignProto.ServerGetCritReward.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        date_ = "";
-
-        goldcoin_ = 0;
-
-        critMultiple_ = 0;
-
-        change_ = 0;
-
-        return this;
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetCritReward_descriptor;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ServerGetCritReward getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.SignProto.ServerGetCritReward.getDefaultInstance();
-      }
-
-      public com.kys.util.netty.proto.SignProto.ServerGetCritReward build() {
-        com.kys.util.netty.proto.SignProto.ServerGetCritReward result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ServerGetCritReward buildPartial() {
-        com.kys.util.netty.proto.SignProto.ServerGetCritReward result = new com.kys.util.netty.proto.SignProto.ServerGetCritReward(this);
-        result.date_ = date_;
-        result.goldcoin_ = goldcoin_;
-        result.critMultiple_ = critMultiple_;
-        result.change_ = change_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.SignProto.ServerGetCritReward) {
-          return mergeFrom((com.kys.util.netty.proto.SignProto.ServerGetCritReward)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ServerGetCritReward other) {
-        if (other == com.kys.util.netty.proto.SignProto.ServerGetCritReward.getDefaultInstance()) return this;
-        if (!other.getDate().isEmpty()) {
-          date_ = other.date_;
-          onChanged();
-        }
-        if (other.getGoldcoin() != 0) {
-          setGoldcoin(other.getGoldcoin());
-        }
-        if (other.getCritMultiple() != 0) {
-          setCritMultiple(other.getCritMultiple());
-        }
-        if (other.getChange() != 0) {
-          setChange(other.getChange());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.kys.util.netty.proto.SignProto.ServerGetCritReward parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.SignProto.ServerGetCritReward) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private java.lang.Object date_ = "";
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public java.lang.String getDate() {
-        java.lang.Object ref = date_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          date_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getDateBytes() {
-        java.lang.Object ref = date_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          date_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDate(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        date_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder clearDate() {
-        
-        date_ = getDefaultInstance().getDate();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 获取的日期:2020/01/01 
-       * </pre>
-       *
-       * <code>string date = 1;</code>
-       */
-      public Builder setDateBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        date_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int goldcoin_ ;
-      /**
-       * <pre>
-       ** 暴击后的金币数 
-       * </pre>
-       *
-       * <code>int32 goldcoin = 2;</code>
-       */
-      public int getGoldcoin() {
-        return goldcoin_;
-      }
-      /**
-       * <pre>
-       ** 暴击后的金币数 
-       * </pre>
-       *
-       * <code>int32 goldcoin = 2;</code>
-       */
-      public Builder setGoldcoin(int value) {
-        
-        goldcoin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 暴击后的金币数 
-       * </pre>
-       *
-       * <code>int32 goldcoin = 2;</code>
-       */
-      public Builder clearGoldcoin() {
-        
-        goldcoin_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int critMultiple_ ;
-      /**
-       * <pre>
-       ** 暴击倍率*100 
-       * </pre>
-       *
-       * <code>int32 critMultiple = 3;</code>
-       */
-      public int getCritMultiple() {
-        return critMultiple_;
-      }
-      /**
-       * <pre>
-       ** 暴击倍率*100 
-       * </pre>
-       *
-       * <code>int32 critMultiple = 3;</code>
-       */
-      public Builder setCritMultiple(int value) {
-        
-        critMultiple_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 暴击倍率*100 
-       * </pre>
-       *
-       * <code>int32 critMultiple = 3;</code>
-       */
-      public Builder clearCritMultiple() {
-        
-        critMultiple_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int change_ ;
-      /**
-       * <pre>
-       ** 暴击后的改变值 
-       * </pre>
-       *
-       * <code>int32 change = 4;</code>
-       */
-      public int getChange() {
-        return change_;
-      }
-      /**
-       * <pre>
-       ** 暴击后的改变值 
-       * </pre>
-       *
-       * <code>int32 change = 4;</code>
-       */
-      public Builder setChange(int value) {
-        
-        change_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 暴击后的改变值 
-       * </pre>
-       *
-       * <code>int32 change = 4;</code>
-       */
-      public Builder clearChange() {
-        
-        change_ = 0;
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFieldsProto3(unknownFields);
-      }
-
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerGetCritReward)
-    }
-
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerGetCritReward)
-    private static final com.kys.util.netty.proto.SignProto.ServerGetCritReward DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ServerGetCritReward();
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ServerGetCritReward getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ServerGetCritReward>
-        PARSER = new com.google.protobuf.AbstractParser<ServerGetCritReward>() {
-      public ServerGetCritReward parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ServerGetCritReward(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<ServerGetCritReward> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ServerGetCritReward> getParserForType() {
-      return PARSER;
-    }
-
-    public com.kys.util.netty.proto.SignProto.ServerGetCritReward getDefaultInstanceForType() {
+    public com.kys.util.netty.proto.SignProto.ServerSignAward getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8018,958 +5027,6 @@ public final class SignProto {
 
   }
 
-  public interface ClientGetTSRewardOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientGetTSReward)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     ** 奖励id 
-     * </pre>
-     *
-     * <code>int32 id = 1;</code>
-     */
-    int getId();
-  }
-  /**
-   * <pre>
-   ** 客户端获取累计签到奖励 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.ClientGetTSReward}
-   */
-  public  static final class ClientGetTSReward extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientGetTSReward)
-      ClientGetTSRewardOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use ClientGetTSReward.newBuilder() to construct.
-    private ClientGetTSReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private ClientGetTSReward() {
-      id_ = 0;
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ClientGetTSReward(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownFieldProto3(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-
-              id_ = input.readInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.SignProto.ClientGetTSReward.class, com.kys.util.netty.proto.SignProto.ClientGetTSReward.Builder.class);
-    }
-
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
-    /**
-     * <pre>
-     ** 奖励id 
-     * </pre>
-     *
-     * <code>int32 id = 1;</code>
-     */
-    public int getId() {
-      return id_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeInt32(1, id_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, id_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ClientGetTSReward)) {
-        return super.equals(obj);
-      }
-      com.kys.util.netty.proto.SignProto.ClientGetTSReward other = (com.kys.util.netty.proto.SignProto.ClientGetTSReward) obj;
-
-      boolean result = true;
-      result = result && (getId()
-          == other.getId());
-      result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ClientGetTSReward prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * <pre>
-     ** 客户端获取累计签到奖励 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.ClientGetTSReward}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientGetTSReward)
-        com.kys.util.netty.proto.SignProto.ClientGetTSRewardOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.SignProto.ClientGetTSReward.class, com.kys.util.netty.proto.SignProto.ClientGetTSReward.Builder.class);
-      }
-
-      // Construct using com.kys.util.netty.proto.SignProto.ClientGetTSReward.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        id_ = 0;
-
-        return this;
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ClientGetTSReward getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.SignProto.ClientGetTSReward.getDefaultInstance();
-      }
-
-      public com.kys.util.netty.proto.SignProto.ClientGetTSReward build() {
-        com.kys.util.netty.proto.SignProto.ClientGetTSReward result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ClientGetTSReward buildPartial() {
-        com.kys.util.netty.proto.SignProto.ClientGetTSReward result = new com.kys.util.netty.proto.SignProto.ClientGetTSReward(this);
-        result.id_ = id_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.SignProto.ClientGetTSReward) {
-          return mergeFrom((com.kys.util.netty.proto.SignProto.ClientGetTSReward)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ClientGetTSReward other) {
-        if (other == com.kys.util.netty.proto.SignProto.ClientGetTSReward.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.kys.util.netty.proto.SignProto.ClientGetTSReward parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.SignProto.ClientGetTSReward) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private int id_ ;
-      /**
-       * <pre>
-       ** 奖励id 
-       * </pre>
-       *
-       * <code>int32 id = 1;</code>
-       */
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <pre>
-       ** 奖励id 
-       * </pre>
-       *
-       * <code>int32 id = 1;</code>
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 奖励id 
-       * </pre>
-       *
-       * <code>int32 id = 1;</code>
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFieldsProto3(unknownFields);
-      }
-
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientGetTSReward)
-    }
-
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientGetTSReward)
-    private static final com.kys.util.netty.proto.SignProto.ClientGetTSReward DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ClientGetTSReward();
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ClientGetTSReward>
-        PARSER = new com.google.protobuf.AbstractParser<ClientGetTSReward>() {
-      public ClientGetTSReward parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ClientGetTSReward(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<ClientGetTSReward> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ClientGetTSReward> getParserForType() {
-      return PARSER;
-    }
-
-    public com.kys.util.netty.proto.SignProto.ClientGetTSReward getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface ServerGetTSRewardOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerGetTSReward)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     ** 玩家用的幸运抽奖次数 
-     * </pre>
-     *
-     * <code>int32 luckTimes = 1;</code>
-     */
-    int getLuckTimes();
-  }
-  /**
-   * <pre>
-   ** 服务器返回获取累计签到奖励 
-   * </pre>
-   *
-   * Protobuf type {@code com.kys.util.netty.proto.ServerGetTSReward}
-   */
-  public  static final class ServerGetTSReward extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerGetTSReward)
-      ServerGetTSRewardOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use ServerGetTSReward.newBuilder() to construct.
-    private ServerGetTSReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private ServerGetTSReward() {
-      luckTimes_ = 0;
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ServerGetTSReward(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownFieldProto3(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-
-              luckTimes_ = input.readInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.kys.util.netty.proto.SignProto.ServerGetTSReward.class, com.kys.util.netty.proto.SignProto.ServerGetTSReward.Builder.class);
-    }
-
-    public static final int LUCKTIMES_FIELD_NUMBER = 1;
-    private int luckTimes_;
-    /**
-     * <pre>
-     ** 玩家用的幸运抽奖次数 
-     * </pre>
-     *
-     * <code>int32 luckTimes = 1;</code>
-     */
-    public int getLuckTimes() {
-      return luckTimes_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (luckTimes_ != 0) {
-        output.writeInt32(1, luckTimes_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (luckTimes_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, luckTimes_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ServerGetTSReward)) {
-        return super.equals(obj);
-      }
-      com.kys.util.netty.proto.SignProto.ServerGetTSReward other = (com.kys.util.netty.proto.SignProto.ServerGetTSReward) obj;
-
-      boolean result = true;
-      result = result && (getLuckTimes()
-          == other.getLuckTimes());
-      result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LUCKTIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getLuckTimes();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ServerGetTSReward prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * <pre>
-     ** 服务器返回获取累计签到奖励 
-     * </pre>
-     *
-     * Protobuf type {@code com.kys.util.netty.proto.ServerGetTSReward}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerGetTSReward)
-        com.kys.util.netty.proto.SignProto.ServerGetTSRewardOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.kys.util.netty.proto.SignProto.ServerGetTSReward.class, com.kys.util.netty.proto.SignProto.ServerGetTSReward.Builder.class);
-      }
-
-      // Construct using com.kys.util.netty.proto.SignProto.ServerGetTSReward.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        luckTimes_ = 0;
-
-        return this;
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ServerGetTSReward getDefaultInstanceForType() {
-        return com.kys.util.netty.proto.SignProto.ServerGetTSReward.getDefaultInstance();
-      }
-
-      public com.kys.util.netty.proto.SignProto.ServerGetTSReward build() {
-        com.kys.util.netty.proto.SignProto.ServerGetTSReward result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.kys.util.netty.proto.SignProto.ServerGetTSReward buildPartial() {
-        com.kys.util.netty.proto.SignProto.ServerGetTSReward result = new com.kys.util.netty.proto.SignProto.ServerGetTSReward(this);
-        result.luckTimes_ = luckTimes_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kys.util.netty.proto.SignProto.ServerGetTSReward) {
-          return mergeFrom((com.kys.util.netty.proto.SignProto.ServerGetTSReward)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ServerGetTSReward other) {
-        if (other == com.kys.util.netty.proto.SignProto.ServerGetTSReward.getDefaultInstance()) return this;
-        if (other.getLuckTimes() != 0) {
-          setLuckTimes(other.getLuckTimes());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.kys.util.netty.proto.SignProto.ServerGetTSReward parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kys.util.netty.proto.SignProto.ServerGetTSReward) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private int luckTimes_ ;
-      /**
-       * <pre>
-       ** 玩家用的幸运抽奖次数 
-       * </pre>
-       *
-       * <code>int32 luckTimes = 1;</code>
-       */
-      public int getLuckTimes() {
-        return luckTimes_;
-      }
-      /**
-       * <pre>
-       ** 玩家用的幸运抽奖次数 
-       * </pre>
-       *
-       * <code>int32 luckTimes = 1;</code>
-       */
-      public Builder setLuckTimes(int value) {
-        
-        luckTimes_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       ** 玩家用的幸运抽奖次数 
-       * </pre>
-       *
-       * <code>int32 luckTimes = 1;</code>
-       */
-      public Builder clearLuckTimes() {
-        
-        luckTimes_ = 0;
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFieldsProto3(unknownFields);
-      }
-
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerGetTSReward)
-    }
-
-    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerGetTSReward)
-    private static final com.kys.util.netty.proto.SignProto.ServerGetTSReward DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ServerGetTSReward();
-    }
-
-    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ServerGetTSReward>
-        PARSER = new com.google.protobuf.AbstractParser<ServerGetTSReward>() {
-      public ServerGetTSReward parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ServerGetTSReward(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<ServerGetTSReward> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ServerGetTSReward> getParserForType() {
-      return PARSER;
-    }
-
-    public com.kys.util.netty.proto.SignProto.ServerGetTSReward getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
   public interface ClientGetLuckInfoOrBuilder extends
       // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientGetLuckInfo)
       com.google.protobuf.MessageOrBuilder {
@@ -9418,6 +5475,68 @@ public final class SignProto {
      * <code>int32 luckTimes = 2;</code>
      */
     int getLuckTimes();
+
+    /**
+     * <pre>
+     ** 活跃度 
+     * </pre>
+     *
+     * <code>int32 active = 3;</code>
+     */
+    int getActive();
+
+    /**
+     * <pre>
+     ** 下一阶段奖励vip等级 
+     * </pre>
+     *
+     * <code>int32 nextLv = 4;</code>
+     */
+    int getNextLv();
+
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    java.util.List<com.kys.util.netty.proto.SignProto.TSReward> 
+        getTSRewardList();
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    com.kys.util.netty.proto.SignProto.TSReward getTSReward(int index);
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    int getTSRewardCount();
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    java.util.List<? extends com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> 
+        getTSRewardOrBuilderList();
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    com.kys.util.netty.proto.SignProto.TSRewardOrBuilder getTSRewardOrBuilder(
+        int index);
   }
   /**
    * <pre>
@@ -9438,6 +5557,9 @@ public final class SignProto {
     private ServerGetLuckInfo() {
       luckInfo_ = java.util.Collections.emptyList();
       luckTimes_ = 0;
+      active_ = 0;
+      nextLv_ = 0;
+      tSReward_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -9482,6 +5604,25 @@ public final class SignProto {
               luckTimes_ = input.readInt32();
               break;
             }
+            case 24: {
+
+              active_ = input.readInt32();
+              break;
+            }
+            case 32: {
+
+              nextLv_ = input.readInt32();
+              break;
+            }
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+                tSReward_ = new java.util.ArrayList<com.kys.util.netty.proto.SignProto.TSReward>();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              tSReward_.add(
+                  input.readMessage(com.kys.util.netty.proto.SignProto.TSReward.parser(), extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -9492,6 +5633,9 @@ public final class SignProto {
       } finally {
         if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
           luckInfo_ = java.util.Collections.unmodifiableList(luckInfo_);
+        }
+        if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+          tSReward_ = java.util.Collections.unmodifiableList(tSReward_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -9578,6 +5722,87 @@ public final class SignProto {
       return luckTimes_;
     }
 
+    public static final int ACTIVE_FIELD_NUMBER = 3;
+    private int active_;
+    /**
+     * <pre>
+     ** 活跃度 
+     * </pre>
+     *
+     * <code>int32 active = 3;</code>
+     */
+    public int getActive() {
+      return active_;
+    }
+
+    public static final int NEXTLV_FIELD_NUMBER = 4;
+    private int nextLv_;
+    /**
+     * <pre>
+     ** 下一阶段奖励vip等级 
+     * </pre>
+     *
+     * <code>int32 nextLv = 4;</code>
+     */
+    public int getNextLv() {
+      return nextLv_;
+    }
+
+    public static final int TSREWARD_FIELD_NUMBER = 5;
+    private java.util.List<com.kys.util.netty.proto.SignProto.TSReward> tSReward_;
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    public java.util.List<com.kys.util.netty.proto.SignProto.TSReward> getTSRewardList() {
+      return tSReward_;
+    }
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    public java.util.List<? extends com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> 
+        getTSRewardOrBuilderList() {
+      return tSReward_;
+    }
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    public int getTSRewardCount() {
+      return tSReward_.size();
+    }
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    public com.kys.util.netty.proto.SignProto.TSReward getTSReward(int index) {
+      return tSReward_.get(index);
+    }
+    /**
+     * <pre>
+     ** 活跃奖励 
+     * </pre>
+     *
+     * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+     */
+    public com.kys.util.netty.proto.SignProto.TSRewardOrBuilder getTSRewardOrBuilder(
+        int index) {
+      return tSReward_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -9596,6 +5821,15 @@ public final class SignProto {
       if (luckTimes_ != 0) {
         output.writeInt32(2, luckTimes_);
       }
+      if (active_ != 0) {
+        output.writeInt32(3, active_);
+      }
+      if (nextLv_ != 0) {
+        output.writeInt32(4, nextLv_);
+      }
+      for (int i = 0; i < tSReward_.size(); i++) {
+        output.writeMessage(5, tSReward_.get(i));
+      }
       unknownFields.writeTo(output);
     }
 
@@ -9611,6 +5845,18 @@ public final class SignProto {
       if (luckTimes_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, luckTimes_);
+      }
+      if (active_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, active_);
+      }
+      if (nextLv_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, nextLv_);
+      }
+      for (int i = 0; i < tSReward_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, tSReward_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -9632,6 +5878,12 @@ public final class SignProto {
           .equals(other.getLuckInfoList());
       result = result && (getLuckTimes()
           == other.getLuckTimes());
+      result = result && (getActive()
+          == other.getActive());
+      result = result && (getNextLv()
+          == other.getNextLv());
+      result = result && getTSRewardList()
+          .equals(other.getTSRewardList());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -9649,6 +5901,14 @@ public final class SignProto {
       }
       hash = (37 * hash) + LUCKTIMES_FIELD_NUMBER;
       hash = (53 * hash) + getLuckTimes();
+      hash = (37 * hash) + ACTIVE_FIELD_NUMBER;
+      hash = (53 * hash) + getActive();
+      hash = (37 * hash) + NEXTLV_FIELD_NUMBER;
+      hash = (53 * hash) + getNextLv();
+      if (getTSRewardCount() > 0) {
+        hash = (37 * hash) + TSREWARD_FIELD_NUMBER;
+        hash = (53 * hash) + getTSRewardList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -9779,6 +6039,7 @@ public final class SignProto {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getLuckInfoFieldBuilder();
+          getTSRewardFieldBuilder();
         }
       }
       public Builder clear() {
@@ -9791,6 +6052,16 @@ public final class SignProto {
         }
         luckTimes_ = 0;
 
+        active_ = 0;
+
+        nextLv_ = 0;
+
+        if (tSRewardBuilder_ == null) {
+          tSReward_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        } else {
+          tSRewardBuilder_.clear();
+        }
         return this;
       }
 
@@ -9825,6 +6096,17 @@ public final class SignProto {
           result.luckInfo_ = luckInfoBuilder_.build();
         }
         result.luckTimes_ = luckTimes_;
+        result.active_ = active_;
+        result.nextLv_ = nextLv_;
+        if (tSRewardBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) == 0x00000010)) {
+            tSReward_ = java.util.Collections.unmodifiableList(tSReward_);
+            bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.tSReward_ = tSReward_;
+        } else {
+          result.tSReward_ = tSRewardBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -9895,6 +6177,38 @@ public final class SignProto {
         }
         if (other.getLuckTimes() != 0) {
           setLuckTimes(other.getLuckTimes());
+        }
+        if (other.getActive() != 0) {
+          setActive(other.getActive());
+        }
+        if (other.getNextLv() != 0) {
+          setNextLv(other.getNextLv());
+        }
+        if (tSRewardBuilder_ == null) {
+          if (!other.tSReward_.isEmpty()) {
+            if (tSReward_.isEmpty()) {
+              tSReward_ = other.tSReward_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+            } else {
+              ensureTSRewardIsMutable();
+              tSReward_.addAll(other.tSReward_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.tSReward_.isEmpty()) {
+            if (tSRewardBuilder_.isEmpty()) {
+              tSRewardBuilder_.dispose();
+              tSRewardBuilder_ = null;
+              tSReward_ = other.tSReward_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              tSRewardBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getTSRewardFieldBuilder() : null;
+            } else {
+              tSRewardBuilder_.addAllMessages(other.tSReward_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -10272,6 +6586,394 @@ public final class SignProto {
         luckTimes_ = 0;
         onChanged();
         return this;
+      }
+
+      private int active_ ;
+      /**
+       * <pre>
+       ** 活跃度 
+       * </pre>
+       *
+       * <code>int32 active = 3;</code>
+       */
+      public int getActive() {
+        return active_;
+      }
+      /**
+       * <pre>
+       ** 活跃度 
+       * </pre>
+       *
+       * <code>int32 active = 3;</code>
+       */
+      public Builder setActive(int value) {
+        
+        active_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃度 
+       * </pre>
+       *
+       * <code>int32 active = 3;</code>
+       */
+      public Builder clearActive() {
+        
+        active_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nextLv_ ;
+      /**
+       * <pre>
+       ** 下一阶段奖励vip等级 
+       * </pre>
+       *
+       * <code>int32 nextLv = 4;</code>
+       */
+      public int getNextLv() {
+        return nextLv_;
+      }
+      /**
+       * <pre>
+       ** 下一阶段奖励vip等级 
+       * </pre>
+       *
+       * <code>int32 nextLv = 4;</code>
+       */
+      public Builder setNextLv(int value) {
+        
+        nextLv_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 下一阶段奖励vip等级 
+       * </pre>
+       *
+       * <code>int32 nextLv = 4;</code>
+       */
+      public Builder clearNextLv() {
+        
+        nextLv_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<com.kys.util.netty.proto.SignProto.TSReward> tSReward_ =
+        java.util.Collections.emptyList();
+      private void ensureTSRewardIsMutable() {
+        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
+          tSReward_ = new java.util.ArrayList<com.kys.util.netty.proto.SignProto.TSReward>(tSReward_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.kys.util.netty.proto.SignProto.TSReward, com.kys.util.netty.proto.SignProto.TSReward.Builder, com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> tSRewardBuilder_;
+
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public java.util.List<com.kys.util.netty.proto.SignProto.TSReward> getTSRewardList() {
+        if (tSRewardBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(tSReward_);
+        } else {
+          return tSRewardBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public int getTSRewardCount() {
+        if (tSRewardBuilder_ == null) {
+          return tSReward_.size();
+        } else {
+          return tSRewardBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public com.kys.util.netty.proto.SignProto.TSReward getTSReward(int index) {
+        if (tSRewardBuilder_ == null) {
+          return tSReward_.get(index);
+        } else {
+          return tSRewardBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public Builder setTSReward(
+          int index, com.kys.util.netty.proto.SignProto.TSReward value) {
+        if (tSRewardBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureTSRewardIsMutable();
+          tSReward_.set(index, value);
+          onChanged();
+        } else {
+          tSRewardBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public Builder setTSReward(
+          int index, com.kys.util.netty.proto.SignProto.TSReward.Builder builderForValue) {
+        if (tSRewardBuilder_ == null) {
+          ensureTSRewardIsMutable();
+          tSReward_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          tSRewardBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public Builder addTSReward(com.kys.util.netty.proto.SignProto.TSReward value) {
+        if (tSRewardBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureTSRewardIsMutable();
+          tSReward_.add(value);
+          onChanged();
+        } else {
+          tSRewardBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public Builder addTSReward(
+          int index, com.kys.util.netty.proto.SignProto.TSReward value) {
+        if (tSRewardBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureTSRewardIsMutable();
+          tSReward_.add(index, value);
+          onChanged();
+        } else {
+          tSRewardBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public Builder addTSReward(
+          com.kys.util.netty.proto.SignProto.TSReward.Builder builderForValue) {
+        if (tSRewardBuilder_ == null) {
+          ensureTSRewardIsMutable();
+          tSReward_.add(builderForValue.build());
+          onChanged();
+        } else {
+          tSRewardBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public Builder addTSReward(
+          int index, com.kys.util.netty.proto.SignProto.TSReward.Builder builderForValue) {
+        if (tSRewardBuilder_ == null) {
+          ensureTSRewardIsMutable();
+          tSReward_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          tSRewardBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public Builder addAllTSReward(
+          java.lang.Iterable<? extends com.kys.util.netty.proto.SignProto.TSReward> values) {
+        if (tSRewardBuilder_ == null) {
+          ensureTSRewardIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, tSReward_);
+          onChanged();
+        } else {
+          tSRewardBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public Builder clearTSReward() {
+        if (tSRewardBuilder_ == null) {
+          tSReward_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          tSRewardBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public Builder removeTSReward(int index) {
+        if (tSRewardBuilder_ == null) {
+          ensureTSRewardIsMutable();
+          tSReward_.remove(index);
+          onChanged();
+        } else {
+          tSRewardBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public com.kys.util.netty.proto.SignProto.TSReward.Builder getTSRewardBuilder(
+          int index) {
+        return getTSRewardFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public com.kys.util.netty.proto.SignProto.TSRewardOrBuilder getTSRewardOrBuilder(
+          int index) {
+        if (tSRewardBuilder_ == null) {
+          return tSReward_.get(index);  } else {
+          return tSRewardBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public java.util.List<? extends com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> 
+           getTSRewardOrBuilderList() {
+        if (tSRewardBuilder_ != null) {
+          return tSRewardBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(tSReward_);
+        }
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public com.kys.util.netty.proto.SignProto.TSReward.Builder addTSRewardBuilder() {
+        return getTSRewardFieldBuilder().addBuilder(
+            com.kys.util.netty.proto.SignProto.TSReward.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public com.kys.util.netty.proto.SignProto.TSReward.Builder addTSRewardBuilder(
+          int index) {
+        return getTSRewardFieldBuilder().addBuilder(
+            index, com.kys.util.netty.proto.SignProto.TSReward.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       ** 活跃奖励 
+       * </pre>
+       *
+       * <code>repeated .com.kys.util.netty.proto.TSReward tSReward = 5;</code>
+       */
+      public java.util.List<com.kys.util.netty.proto.SignProto.TSReward.Builder> 
+           getTSRewardBuilderList() {
+        return getTSRewardFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.kys.util.netty.proto.SignProto.TSReward, com.kys.util.netty.proto.SignProto.TSReward.Builder, com.kys.util.netty.proto.SignProto.TSRewardOrBuilder> 
+          getTSRewardFieldBuilder() {
+        if (tSRewardBuilder_ == null) {
+          tSRewardBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.kys.util.netty.proto.SignProto.TSReward, com.kys.util.netty.proto.SignProto.TSReward.Builder, com.kys.util.netty.proto.SignProto.TSRewardOrBuilder>(
+                  tSReward_,
+                  ((bitField0_ & 0x00000010) == 0x00000010),
+                  getParentForChildren(),
+                  isClean());
+          tSReward_ = null;
+        }
+        return tSRewardBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -10881,46 +7583,1801 @@ public final class SignProto {
 
   }
 
+  public interface TSRewardOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.TSReward)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     ** id 
+     * </pre>
+     *
+     * <code>int32 id = 1;</code>
+     */
+    int getId();
+
+    /**
+     * <pre>
+     ** 活跃值的要求 
+     * </pre>
+     *
+     * <code>int32 activeRequire = 2;</code>
+     */
+    int getActiveRequire();
+
+    /**
+     * <pre>
+     ** 奖励幸运抽奖次数 
+     * </pre>
+     *
+     * <code>int32 luckTimes = 3;</code>
+     */
+    int getLuckTimes();
+
+    /**
+     * <pre>
+     ** 是否已经领取:0未领取,1已领取 
+     * </pre>
+     *
+     * <code>int32 status = 4;</code>
+     */
+    int getStatus();
+
+    /**
+     * <pre>
+     ** 下一阶段奖励幸运抽奖次数 
+     * </pre>
+     *
+     * <code>int32 nextLuckTimes = 5;</code>
+     */
+    int getNextLuckTimes();
+  }
+  /**
+   * <pre>
+   ** 累计活跃值奖励 
+   * </pre>
+   *
+   * Protobuf type {@code com.kys.util.netty.proto.TSReward}
+   */
+  public  static final class TSReward extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.TSReward)
+      TSRewardOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use TSReward.newBuilder() to construct.
+    private TSReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private TSReward() {
+      id_ = 0;
+      activeRequire_ = 0;
+      luckTimes_ = 0;
+      status_ = 0;
+      nextLuckTimes_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private TSReward(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              id_ = input.readInt32();
+              break;
+            }
+            case 16: {
+
+              activeRequire_ = input.readInt32();
+              break;
+            }
+            case 24: {
+
+              luckTimes_ = input.readInt32();
+              break;
+            }
+            case 32: {
+
+              status_ = input.readInt32();
+              break;
+            }
+            case 40: {
+
+              nextLuckTimes_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.kys.util.netty.proto.SignProto.TSReward.class, com.kys.util.netty.proto.SignProto.TSReward.Builder.class);
+    }
+
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
+    /**
+     * <pre>
+     ** id 
+     * </pre>
+     *
+     * <code>int32 id = 1;</code>
+     */
+    public int getId() {
+      return id_;
+    }
+
+    public static final int ACTIVEREQUIRE_FIELD_NUMBER = 2;
+    private int activeRequire_;
+    /**
+     * <pre>
+     ** 活跃值的要求 
+     * </pre>
+     *
+     * <code>int32 activeRequire = 2;</code>
+     */
+    public int getActiveRequire() {
+      return activeRequire_;
+    }
+
+    public static final int LUCKTIMES_FIELD_NUMBER = 3;
+    private int luckTimes_;
+    /**
+     * <pre>
+     ** 奖励幸运抽奖次数 
+     * </pre>
+     *
+     * <code>int32 luckTimes = 3;</code>
+     */
+    public int getLuckTimes() {
+      return luckTimes_;
+    }
+
+    public static final int STATUS_FIELD_NUMBER = 4;
+    private int status_;
+    /**
+     * <pre>
+     ** 是否已经领取:0未领取,1已领取 
+     * </pre>
+     *
+     * <code>int32 status = 4;</code>
+     */
+    public int getStatus() {
+      return status_;
+    }
+
+    public static final int NEXTLUCKTIMES_FIELD_NUMBER = 5;
+    private int nextLuckTimes_;
+    /**
+     * <pre>
+     ** 下一阶段奖励幸运抽奖次数 
+     * </pre>
+     *
+     * <code>int32 nextLuckTimes = 5;</code>
+     */
+    public int getNextLuckTimes() {
+      return nextLuckTimes_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (id_ != 0) {
+        output.writeInt32(1, id_);
+      }
+      if (activeRequire_ != 0) {
+        output.writeInt32(2, activeRequire_);
+      }
+      if (luckTimes_ != 0) {
+        output.writeInt32(3, luckTimes_);
+      }
+      if (status_ != 0) {
+        output.writeInt32(4, status_);
+      }
+      if (nextLuckTimes_ != 0) {
+        output.writeInt32(5, nextLuckTimes_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, id_);
+      }
+      if (activeRequire_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, activeRequire_);
+      }
+      if (luckTimes_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, luckTimes_);
+      }
+      if (status_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, status_);
+      }
+      if (nextLuckTimes_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, nextLuckTimes_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.kys.util.netty.proto.SignProto.TSReward)) {
+        return super.equals(obj);
+      }
+      com.kys.util.netty.proto.SignProto.TSReward other = (com.kys.util.netty.proto.SignProto.TSReward) obj;
+
+      boolean result = true;
+      result = result && (getId()
+          == other.getId());
+      result = result && (getActiveRequire()
+          == other.getActiveRequire());
+      result = result && (getLuckTimes()
+          == other.getLuckTimes());
+      result = result && (getStatus()
+          == other.getStatus());
+      result = result && (getNextLuckTimes()
+          == other.getNextLuckTimes());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
+      hash = (37 * hash) + ACTIVEREQUIRE_FIELD_NUMBER;
+      hash = (53 * hash) + getActiveRequire();
+      hash = (37 * hash) + LUCKTIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getLuckTimes();
+      hash = (37 * hash) + STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + getStatus();
+      hash = (37 * hash) + NEXTLUCKTIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getNextLuckTimes();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.TSReward parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.TSReward prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     ** 累计活跃值奖励 
+     * </pre>
+     *
+     * Protobuf type {@code com.kys.util.netty.proto.TSReward}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.TSReward)
+        com.kys.util.netty.proto.SignProto.TSRewardOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.kys.util.netty.proto.SignProto.TSReward.class, com.kys.util.netty.proto.SignProto.TSReward.Builder.class);
+      }
+
+      // Construct using com.kys.util.netty.proto.SignProto.TSReward.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        id_ = 0;
+
+        activeRequire_ = 0;
+
+        luckTimes_ = 0;
+
+        status_ = 0;
+
+        nextLuckTimes_ = 0;
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_TSReward_descriptor;
+      }
+
+      public com.kys.util.netty.proto.SignProto.TSReward getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.SignProto.TSReward.getDefaultInstance();
+      }
+
+      public com.kys.util.netty.proto.SignProto.TSReward build() {
+        com.kys.util.netty.proto.SignProto.TSReward result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.kys.util.netty.proto.SignProto.TSReward buildPartial() {
+        com.kys.util.netty.proto.SignProto.TSReward result = new com.kys.util.netty.proto.SignProto.TSReward(this);
+        result.id_ = id_;
+        result.activeRequire_ = activeRequire_;
+        result.luckTimes_ = luckTimes_;
+        result.status_ = status_;
+        result.nextLuckTimes_ = nextLuckTimes_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.kys.util.netty.proto.SignProto.TSReward) {
+          return mergeFrom((com.kys.util.netty.proto.SignProto.TSReward)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.TSReward other) {
+        if (other == com.kys.util.netty.proto.SignProto.TSReward.getDefaultInstance()) return this;
+        if (other.getId() != 0) {
+          setId(other.getId());
+        }
+        if (other.getActiveRequire() != 0) {
+          setActiveRequire(other.getActiveRequire());
+        }
+        if (other.getLuckTimes() != 0) {
+          setLuckTimes(other.getLuckTimes());
+        }
+        if (other.getStatus() != 0) {
+          setStatus(other.getStatus());
+        }
+        if (other.getNextLuckTimes() != 0) {
+          setNextLuckTimes(other.getNextLuckTimes());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.kys.util.netty.proto.SignProto.TSReward parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.kys.util.netty.proto.SignProto.TSReward) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <pre>
+       ** id 
+       * </pre>
+       *
+       * <code>int32 id = 1;</code>
+       */
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <pre>
+       ** id 
+       * </pre>
+       *
+       * <code>int32 id = 1;</code>
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** id 
+       * </pre>
+       *
+       * <code>int32 id = 1;</code>
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int activeRequire_ ;
+      /**
+       * <pre>
+       ** 活跃值的要求 
+       * </pre>
+       *
+       * <code>int32 activeRequire = 2;</code>
+       */
+      public int getActiveRequire() {
+        return activeRequire_;
+      }
+      /**
+       * <pre>
+       ** 活跃值的要求 
+       * </pre>
+       *
+       * <code>int32 activeRequire = 2;</code>
+       */
+      public Builder setActiveRequire(int value) {
+        
+        activeRequire_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 活跃值的要求 
+       * </pre>
+       *
+       * <code>int32 activeRequire = 2;</code>
+       */
+      public Builder clearActiveRequire() {
+        
+        activeRequire_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int luckTimes_ ;
+      /**
+       * <pre>
+       ** 奖励幸运抽奖次数 
+       * </pre>
+       *
+       * <code>int32 luckTimes = 3;</code>
+       */
+      public int getLuckTimes() {
+        return luckTimes_;
+      }
+      /**
+       * <pre>
+       ** 奖励幸运抽奖次数 
+       * </pre>
+       *
+       * <code>int32 luckTimes = 3;</code>
+       */
+      public Builder setLuckTimes(int value) {
+        
+        luckTimes_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 奖励幸运抽奖次数 
+       * </pre>
+       *
+       * <code>int32 luckTimes = 3;</code>
+       */
+      public Builder clearLuckTimes() {
+        
+        luckTimes_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int status_ ;
+      /**
+       * <pre>
+       ** 是否已经领取:0未领取,1已领取 
+       * </pre>
+       *
+       * <code>int32 status = 4;</code>
+       */
+      public int getStatus() {
+        return status_;
+      }
+      /**
+       * <pre>
+       ** 是否已经领取:0未领取,1已领取 
+       * </pre>
+       *
+       * <code>int32 status = 4;</code>
+       */
+      public Builder setStatus(int value) {
+        
+        status_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 是否已经领取:0未领取,1已领取 
+       * </pre>
+       *
+       * <code>int32 status = 4;</code>
+       */
+      public Builder clearStatus() {
+        
+        status_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nextLuckTimes_ ;
+      /**
+       * <pre>
+       ** 下一阶段奖励幸运抽奖次数 
+       * </pre>
+       *
+       * <code>int32 nextLuckTimes = 5;</code>
+       */
+      public int getNextLuckTimes() {
+        return nextLuckTimes_;
+      }
+      /**
+       * <pre>
+       ** 下一阶段奖励幸运抽奖次数 
+       * </pre>
+       *
+       * <code>int32 nextLuckTimes = 5;</code>
+       */
+      public Builder setNextLuckTimes(int value) {
+        
+        nextLuckTimes_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 下一阶段奖励幸运抽奖次数 
+       * </pre>
+       *
+       * <code>int32 nextLuckTimes = 5;</code>
+       */
+      public Builder clearNextLuckTimes() {
+        
+        nextLuckTimes_ = 0;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.TSReward)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.TSReward)
+    private static final com.kys.util.netty.proto.SignProto.TSReward DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.TSReward();
+    }
+
+    public static com.kys.util.netty.proto.SignProto.TSReward getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TSReward>
+        PARSER = new com.google.protobuf.AbstractParser<TSReward>() {
+      public TSReward parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new TSReward(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<TSReward> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TSReward> getParserForType() {
+      return PARSER;
+    }
+
+    public com.kys.util.netty.proto.SignProto.TSReward getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ClientGetTSRewardOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ClientGetTSReward)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     ** 奖励id 
+     * </pre>
+     *
+     * <code>int32 id = 1;</code>
+     */
+    int getId();
+  }
+  /**
+   * <pre>
+   ** 客户端获取累计活跃值奖励 
+   * </pre>
+   *
+   * Protobuf type {@code com.kys.util.netty.proto.ClientGetTSReward}
+   */
+  public  static final class ClientGetTSReward extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ClientGetTSReward)
+      ClientGetTSRewardOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ClientGetTSReward.newBuilder() to construct.
+    private ClientGetTSReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ClientGetTSReward() {
+      id_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ClientGetTSReward(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              id_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.kys.util.netty.proto.SignProto.ClientGetTSReward.class, com.kys.util.netty.proto.SignProto.ClientGetTSReward.Builder.class);
+    }
+
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
+    /**
+     * <pre>
+     ** 奖励id 
+     * </pre>
+     *
+     * <code>int32 id = 1;</code>
+     */
+    public int getId() {
+      return id_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (id_ != 0) {
+        output.writeInt32(1, id_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, id_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ClientGetTSReward)) {
+        return super.equals(obj);
+      }
+      com.kys.util.netty.proto.SignProto.ClientGetTSReward other = (com.kys.util.netty.proto.SignProto.ClientGetTSReward) obj;
+
+      boolean result = true;
+      result = result && (getId()
+          == other.getId());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ClientGetTSReward prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     ** 客户端获取累计活跃值奖励 
+     * </pre>
+     *
+     * Protobuf type {@code com.kys.util.netty.proto.ClientGetTSReward}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ClientGetTSReward)
+        com.kys.util.netty.proto.SignProto.ClientGetTSRewardOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.kys.util.netty.proto.SignProto.ClientGetTSReward.class, com.kys.util.netty.proto.SignProto.ClientGetTSReward.Builder.class);
+      }
+
+      // Construct using com.kys.util.netty.proto.SignProto.ClientGetTSReward.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        id_ = 0;
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ClientGetTSReward getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.SignProto.ClientGetTSReward.getDefaultInstance();
+      }
+
+      public com.kys.util.netty.proto.SignProto.ClientGetTSReward build() {
+        com.kys.util.netty.proto.SignProto.ClientGetTSReward result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ClientGetTSReward buildPartial() {
+        com.kys.util.netty.proto.SignProto.ClientGetTSReward result = new com.kys.util.netty.proto.SignProto.ClientGetTSReward(this);
+        result.id_ = id_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.kys.util.netty.proto.SignProto.ClientGetTSReward) {
+          return mergeFrom((com.kys.util.netty.proto.SignProto.ClientGetTSReward)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ClientGetTSReward other) {
+        if (other == com.kys.util.netty.proto.SignProto.ClientGetTSReward.getDefaultInstance()) return this;
+        if (other.getId() != 0) {
+          setId(other.getId());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.kys.util.netty.proto.SignProto.ClientGetTSReward parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.kys.util.netty.proto.SignProto.ClientGetTSReward) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <pre>
+       ** 奖励id 
+       * </pre>
+       *
+       * <code>int32 id = 1;</code>
+       */
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <pre>
+       ** 奖励id 
+       * </pre>
+       *
+       * <code>int32 id = 1;</code>
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 奖励id 
+       * </pre>
+       *
+       * <code>int32 id = 1;</code>
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ClientGetTSReward)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ClientGetTSReward)
+    private static final com.kys.util.netty.proto.SignProto.ClientGetTSReward DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ClientGetTSReward();
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ClientGetTSReward getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ClientGetTSReward>
+        PARSER = new com.google.protobuf.AbstractParser<ClientGetTSReward>() {
+      public ClientGetTSReward parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new ClientGetTSReward(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ClientGetTSReward> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ClientGetTSReward> getParserForType() {
+      return PARSER;
+    }
+
+    public com.kys.util.netty.proto.SignProto.ClientGetTSReward getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ServerGetTSRewardOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kys.util.netty.proto.ServerGetTSReward)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     ** 玩家用的幸运抽奖次数 
+     * </pre>
+     *
+     * <code>int32 luckTimes = 1;</code>
+     */
+    int getLuckTimes();
+  }
+  /**
+   * <pre>
+   ** 服务器返回获取累计活跃值奖励 
+   * </pre>
+   *
+   * Protobuf type {@code com.kys.util.netty.proto.ServerGetTSReward}
+   */
+  public  static final class ServerGetTSReward extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.kys.util.netty.proto.ServerGetTSReward)
+      ServerGetTSRewardOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ServerGetTSReward.newBuilder() to construct.
+    private ServerGetTSReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ServerGetTSReward() {
+      luckTimes_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ServerGetTSReward(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              luckTimes_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.kys.util.netty.proto.SignProto.ServerGetTSReward.class, com.kys.util.netty.proto.SignProto.ServerGetTSReward.Builder.class);
+    }
+
+    public static final int LUCKTIMES_FIELD_NUMBER = 1;
+    private int luckTimes_;
+    /**
+     * <pre>
+     ** 玩家用的幸运抽奖次数 
+     * </pre>
+     *
+     * <code>int32 luckTimes = 1;</code>
+     */
+    public int getLuckTimes() {
+      return luckTimes_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (luckTimes_ != 0) {
+        output.writeInt32(1, luckTimes_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (luckTimes_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, luckTimes_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.kys.util.netty.proto.SignProto.ServerGetTSReward)) {
+        return super.equals(obj);
+      }
+      com.kys.util.netty.proto.SignProto.ServerGetTSReward other = (com.kys.util.netty.proto.SignProto.ServerGetTSReward) obj;
+
+      boolean result = true;
+      result = result && (getLuckTimes()
+          == other.getLuckTimes());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LUCKTIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getLuckTimes();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.kys.util.netty.proto.SignProto.ServerGetTSReward prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     ** 服务器返回获取累计活跃值奖励 
+     * </pre>
+     *
+     * Protobuf type {@code com.kys.util.netty.proto.ServerGetTSReward}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.kys.util.netty.proto.ServerGetTSReward)
+        com.kys.util.netty.proto.SignProto.ServerGetTSRewardOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.kys.util.netty.proto.SignProto.ServerGetTSReward.class, com.kys.util.netty.proto.SignProto.ServerGetTSReward.Builder.class);
+      }
+
+      // Construct using com.kys.util.netty.proto.SignProto.ServerGetTSReward.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        luckTimes_ = 0;
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.kys.util.netty.proto.SignProto.internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ServerGetTSReward getDefaultInstanceForType() {
+        return com.kys.util.netty.proto.SignProto.ServerGetTSReward.getDefaultInstance();
+      }
+
+      public com.kys.util.netty.proto.SignProto.ServerGetTSReward build() {
+        com.kys.util.netty.proto.SignProto.ServerGetTSReward result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.kys.util.netty.proto.SignProto.ServerGetTSReward buildPartial() {
+        com.kys.util.netty.proto.SignProto.ServerGetTSReward result = new com.kys.util.netty.proto.SignProto.ServerGetTSReward(this);
+        result.luckTimes_ = luckTimes_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.kys.util.netty.proto.SignProto.ServerGetTSReward) {
+          return mergeFrom((com.kys.util.netty.proto.SignProto.ServerGetTSReward)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.kys.util.netty.proto.SignProto.ServerGetTSReward other) {
+        if (other == com.kys.util.netty.proto.SignProto.ServerGetTSReward.getDefaultInstance()) return this;
+        if (other.getLuckTimes() != 0) {
+          setLuckTimes(other.getLuckTimes());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.kys.util.netty.proto.SignProto.ServerGetTSReward parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.kys.util.netty.proto.SignProto.ServerGetTSReward) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int luckTimes_ ;
+      /**
+       * <pre>
+       ** 玩家用的幸运抽奖次数 
+       * </pre>
+       *
+       * <code>int32 luckTimes = 1;</code>
+       */
+      public int getLuckTimes() {
+        return luckTimes_;
+      }
+      /**
+       * <pre>
+       ** 玩家用的幸运抽奖次数 
+       * </pre>
+       *
+       * <code>int32 luckTimes = 1;</code>
+       */
+      public Builder setLuckTimes(int value) {
+        
+        luckTimes_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 玩家用的幸运抽奖次数 
+       * </pre>
+       *
+       * <code>int32 luckTimes = 1;</code>
+       */
+      public Builder clearLuckTimes() {
+        
+        luckTimes_ = 0;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.kys.util.netty.proto.ServerGetTSReward)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.kys.util.netty.proto.ServerGetTSReward)
+    private static final com.kys.util.netty.proto.SignProto.ServerGetTSReward DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.kys.util.netty.proto.SignProto.ServerGetTSReward();
+    }
+
+    public static com.kys.util.netty.proto.SignProto.ServerGetTSReward getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ServerGetTSReward>
+        PARSER = new com.google.protobuf.AbstractParser<ServerGetTSReward>() {
+      public ServerGetTSReward parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new ServerGetTSReward(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ServerGetTSReward> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ServerGetTSReward> getParserForType() {
+      return PARSER;
+    }
+
+    public com.kys.util.netty.proto.SignProto.ServerGetTSReward getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_descriptor;
+    internal_static_com_kys_util_netty_proto_ClientSignState_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_fieldAccessorTable;
+      internal_static_com_kys_util_netty_proto_ClientSignState_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_descriptor;
+    internal_static_com_kys_util_netty_proto_ServerSignState_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_fieldAccessorTable;
+      internal_static_com_kys_util_netty_proto_ServerSignState_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_kys_util_netty_proto_ClientSignInfo_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_kys_util_netty_proto_ClientSignInfo_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_kys_util_netty_proto_ServerSignInfo_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_kys_util_netty_proto_ServerSignInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_kys_util_netty_proto_SignDayInfo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_kys_util_netty_proto_SignDayInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_TSReward_descriptor;
+    internal_static_com_kys_util_netty_proto_ClientSignAward_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_TSReward_fieldAccessorTable;
+      internal_static_com_kys_util_netty_proto_ClientSignAward_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ClientMonthSign_descriptor;
+    internal_static_com_kys_util_netty_proto_ServerSignAward_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ClientMonthSign_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ServerMonthSign_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ServerMonthSign_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ClientGetCritReward_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ClientGetCritReward_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ServerGetCritReward_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ServerGetCritReward_fieldAccessorTable;
+      internal_static_com_kys_util_netty_proto_ServerSignAward_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_kys_util_netty_proto_ClientLTLottery_descriptor;
   private static final 
@@ -10931,16 +9388,6 @@ public final class SignProto {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_kys_util_netty_proto_ServerLTLottery_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ClientGetTSReward_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kys_util_netty_proto_ServerGetTSReward_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_kys_util_netty_proto_ClientGetLuckInfo_descriptor;
   private static final 
@@ -10956,6 +9403,21 @@ public final class SignProto {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_kys_util_netty_proto_LuckInfo_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_kys_util_netty_proto_TSReward_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_kys_util_netty_proto_TSReward_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_kys_util_netty_proto_ClientGetTSReward_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_kys_util_netty_proto_ServerGetTSReward_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -10966,34 +9428,28 @@ public final class SignProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\017signProto.proto\022\030com.kys.util.netty.pr" +
-      "oto\"\025\n\023ClientMonthSignInfo\"\343\001\n\023ServerMon" +
-      "thSignInfo\022\021\n\tsignTimes\030\001 \001(\005\022\016\n\006reSign\030" +
-      "\002 \001(\005\022\023\n\013reSignPrice\030\003 \001(\005\022:\n\013signDayInf" +
-      "o\030\004 \003(\0132%.com.kys.util.netty.proto.SignD" +
-      "ayInfo\0224\n\010tSReward\030\005 \003(\0132\".com.kys.util." +
-      "netty.proto.TSReward\022\017\n\007nowDate\030\006 \001(\t\022\021\n" +
-      "\tnextLvMin\030\007 \001(\005\"Q\n\013SignDayInfo\022\014\n\004date\030" +
-      "\001 \001(\t\022\022\n\nsignStatus\030\002 \001(\005\022\020\n\010goldcoin\030\003 " +
-      "\001(\005\022\016\n\006isCrit\030\004 \001(\005\"f\n\010TSReward\022\n\n\002id\030\001 ",
-      "\001(\005\022\024\n\014timesRequire\030\002 \001(\005\022\021\n\tluckTimes\030\003" +
-      " \001(\005\022\016\n\006status\030\004 \001(\005\022\025\n\rnextLuckTimes\030\005 " +
-      "\001(\005\"3\n\017ClientMonthSign\022\014\n\004date\030\001 \001(\t\022\022\n\n" +
-      "reSignType\030\002 \001(\005\"z\n\017ServerMonthSign\022\014\n\004d" +
-      "ate\030\001 \001(\t\022\023\n\013reSignPrice\030\002 \001(\005\022\020\n\010goldco" +
-      "in\030\003 \001(\005\022\017\n\007diamond\030\004 \001(\005\022\021\n\tluckTimes\030\005" +
-      " \001(\005\022\016\n\006status\030\006 \001(\005\"#\n\023ClientGetCritRew" +
-      "ard\022\014\n\004date\030\001 \001(\t\"[\n\023ServerGetCritReward" +
-      "\022\014\n\004date\030\001 \001(\t\022\020\n\010goldcoin\030\002 \001(\005\022\024\n\014crit" +
-      "Multiple\030\003 \001(\005\022\016\n\006change\030\004 \001(\005\"\021\n\017Client",
-      "LTLottery\"R\n\017ServerLTLottery\022\r\n\005index\030\001 " +
-      "\001(\005\022\r\n\005count\030\002 \001(\005\022\021\n\tluckTimes\030\003 \001(\005\022\016\n" +
-      "\006propId\030\004 \001(\005\"\037\n\021ClientGetTSReward\022\n\n\002id" +
-      "\030\001 \001(\005\"&\n\021ServerGetTSReward\022\021\n\tluckTimes" +
-      "\030\001 \001(\005\"\023\n\021ClientGetLuckInfo\"\\\n\021ServerGet" +
-      "LuckInfo\0224\n\010luckInfo\030\001 \003(\0132\".com.kys.uti" +
-      "l.netty.proto.LuckInfo\022\021\n\tluckTimes\030\002 \001(" +
-      "\005\")\n\010LuckInfo\022\r\n\005index\030\001 \001(\005\022\016\n\006propId\030\002" +
-      " \001(\005b\006proto3"
+      "oto\"\021\n\017ClientSignState\"$\n\017ServerSignStat" +
+      "e\022\021\n\tsignState\030\001 \001(\005\"\020\n\016ClientSignInfo\"s" +
+      "\n\016ServerSignInfo\022\020\n\010signDays\030\001 \001(\005\022\023\n\013si" +
+      "gnupToday\030\002 \001(\005\022:\n\013signDayInfo\030\003 \003(\0132%.c" +
+      "om.kys.util.netty.proto.SignDayInfo\"/\n\013S" +
+      "ignDayInfo\022\021\n\tawardType\030\001 \001(\005\022\r\n\005award\030\002" +
+      " \001(\005\"\021\n\017ClientSignAward\"F\n\017ServerSignAwa" +
+      "rd\022\020\n\010goldcoin\030\001 \001(\005\022\017\n\007diamond\030\002 \001(\005\022\020\n" +
+      "\010signDays\030\003 \001(\005\"\021\n\017ClientLTLottery\"R\n\017Se",
+      "rverLTLottery\022\r\n\005index\030\001 \001(\005\022\r\n\005count\030\002 " +
+      "\001(\005\022\021\n\tluckTimes\030\003 \001(\005\022\016\n\006propId\030\004 \001(\005\"\023" +
+      "\n\021ClientGetLuckInfo\"\262\001\n\021ServerGetLuckInf" +
+      "o\0224\n\010luckInfo\030\001 \003(\0132\".com.kys.util.netty" +
+      ".proto.LuckInfo\022\021\n\tluckTimes\030\002 \001(\005\022\016\n\006ac" +
+      "tive\030\003 \001(\005\022\016\n\006nextLv\030\004 \001(\005\0224\n\010tSReward\030\005" +
+      " \003(\0132\".com.kys.util.netty.proto.TSReward" +
+      "\")\n\010LuckInfo\022\r\n\005index\030\001 \001(\005\022\016\n\006propId\030\002 " +
+      "\001(\005\"g\n\010TSReward\022\n\n\002id\030\001 \001(\005\022\025\n\ractiveReq" +
+      "uire\030\002 \001(\005\022\021\n\tluckTimes\030\003 \001(\005\022\016\n\006status\030",
+      "\004 \001(\005\022\025\n\rnextLuckTimes\030\005 \001(\005\"\037\n\021ClientGe" +
+      "tTSReward\022\n\n\002id\030\001 \001(\005\"&\n\021ServerGetTSRewa" +
+      "rd\022\021\n\tluckTimes\030\001 \001(\005b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -11007,96 +9463,96 @@ public final class SignProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_descriptor =
+    internal_static_com_kys_util_netty_proto_ClientSignState_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_fieldAccessorTable = new
+    internal_static_com_kys_util_netty_proto_ClientSignState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ClientMonthSignInfo_descriptor,
+        internal_static_com_kys_util_netty_proto_ClientSignState_descriptor,
         new java.lang.String[] { });
-    internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_descriptor =
+    internal_static_com_kys_util_netty_proto_ServerSignState_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_fieldAccessorTable = new
+    internal_static_com_kys_util_netty_proto_ServerSignState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ServerMonthSignInfo_descriptor,
-        new java.lang.String[] { "SignTimes", "ReSign", "ReSignPrice", "SignDayInfo", "TSReward", "NowDate", "NextLvMin", });
-    internal_static_com_kys_util_netty_proto_SignDayInfo_descriptor =
+        internal_static_com_kys_util_netty_proto_ServerSignState_descriptor,
+        new java.lang.String[] { "SignState", });
+    internal_static_com_kys_util_netty_proto_ClientSignInfo_descriptor =
       getDescriptor().getMessageTypes().get(2);
+    internal_static_com_kys_util_netty_proto_ClientSignInfo_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_kys_util_netty_proto_ClientSignInfo_descriptor,
+        new java.lang.String[] { });
+    internal_static_com_kys_util_netty_proto_ServerSignInfo_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_com_kys_util_netty_proto_ServerSignInfo_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_kys_util_netty_proto_ServerSignInfo_descriptor,
+        new java.lang.String[] { "SignDays", "SignupToday", "SignDayInfo", });
+    internal_static_com_kys_util_netty_proto_SignDayInfo_descriptor =
+      getDescriptor().getMessageTypes().get(4);
     internal_static_com_kys_util_netty_proto_SignDayInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_SignDayInfo_descriptor,
-        new java.lang.String[] { "Date", "SignStatus", "Goldcoin", "IsCrit", });
-    internal_static_com_kys_util_netty_proto_TSReward_descriptor =
-      getDescriptor().getMessageTypes().get(3);
-    internal_static_com_kys_util_netty_proto_TSReward_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_TSReward_descriptor,
-        new java.lang.String[] { "Id", "TimesRequire", "LuckTimes", "Status", "NextLuckTimes", });
-    internal_static_com_kys_util_netty_proto_ClientMonthSign_descriptor =
-      getDescriptor().getMessageTypes().get(4);
-    internal_static_com_kys_util_netty_proto_ClientMonthSign_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ClientMonthSign_descriptor,
-        new java.lang.String[] { "Date", "ReSignType", });
-    internal_static_com_kys_util_netty_proto_ServerMonthSign_descriptor =
+        new java.lang.String[] { "AwardType", "Award", });
+    internal_static_com_kys_util_netty_proto_ClientSignAward_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_com_kys_util_netty_proto_ServerMonthSign_fieldAccessorTable = new
+    internal_static_com_kys_util_netty_proto_ClientSignAward_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ServerMonthSign_descriptor,
-        new java.lang.String[] { "Date", "ReSignPrice", "Goldcoin", "Diamond", "LuckTimes", "Status", });
-    internal_static_com_kys_util_netty_proto_ClientGetCritReward_descriptor =
+        internal_static_com_kys_util_netty_proto_ClientSignAward_descriptor,
+        new java.lang.String[] { });
+    internal_static_com_kys_util_netty_proto_ServerSignAward_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_com_kys_util_netty_proto_ClientGetCritReward_fieldAccessorTable = new
+    internal_static_com_kys_util_netty_proto_ServerSignAward_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ClientGetCritReward_descriptor,
-        new java.lang.String[] { "Date", });
-    internal_static_com_kys_util_netty_proto_ServerGetCritReward_descriptor =
-      getDescriptor().getMessageTypes().get(7);
-    internal_static_com_kys_util_netty_proto_ServerGetCritReward_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ServerGetCritReward_descriptor,
-        new java.lang.String[] { "Date", "Goldcoin", "CritMultiple", "Change", });
+        internal_static_com_kys_util_netty_proto_ServerSignAward_descriptor,
+        new java.lang.String[] { "Goldcoin", "Diamond", "SignDays", });
     internal_static_com_kys_util_netty_proto_ClientLTLottery_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_com_kys_util_netty_proto_ClientLTLottery_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ClientLTLottery_descriptor,
         new java.lang.String[] { });
     internal_static_com_kys_util_netty_proto_ServerLTLottery_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_com_kys_util_netty_proto_ServerLTLottery_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ServerLTLottery_descriptor,
         new java.lang.String[] { "Index", "Count", "LuckTimes", "PropId", });
-    internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor =
-      getDescriptor().getMessageTypes().get(10);
-    internal_static_com_kys_util_netty_proto_ClientGetTSReward_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor,
-        new java.lang.String[] { "Id", });
-    internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor =
-      getDescriptor().getMessageTypes().get(11);
-    internal_static_com_kys_util_netty_proto_ServerGetTSReward_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor,
-        new java.lang.String[] { "LuckTimes", });
     internal_static_com_kys_util_netty_proto_ClientGetLuckInfo_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_com_kys_util_netty_proto_ClientGetLuckInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ClientGetLuckInfo_descriptor,
         new java.lang.String[] { });
     internal_static_com_kys_util_netty_proto_ServerGetLuckInfo_descriptor =
-      getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_com_kys_util_netty_proto_ServerGetLuckInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_ServerGetLuckInfo_descriptor,
-        new java.lang.String[] { "LuckInfo", "LuckTimes", });
+        new java.lang.String[] { "LuckInfo", "LuckTimes", "Active", "NextLv", "TSReward", });
     internal_static_com_kys_util_netty_proto_LuckInfo_descriptor =
-      getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_com_kys_util_netty_proto_LuckInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_kys_util_netty_proto_LuckInfo_descriptor,
         new java.lang.String[] { "Index", "PropId", });
+    internal_static_com_kys_util_netty_proto_TSReward_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_com_kys_util_netty_proto_TSReward_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_kys_util_netty_proto_TSReward_descriptor,
+        new java.lang.String[] { "Id", "ActiveRequire", "LuckTimes", "Status", "NextLuckTimes", });
+    internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor =
+      getDescriptor().getMessageTypes().get(13);
+    internal_static_com_kys_util_netty_proto_ClientGetTSReward_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_kys_util_netty_proto_ClientGetTSReward_descriptor,
+        new java.lang.String[] { "Id", });
+    internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor =
+      getDescriptor().getMessageTypes().get(14);
+    internal_static_com_kys_util_netty_proto_ServerGetTSReward_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_kys_util_netty_proto_ServerGetTSReward_descriptor,
+        new java.lang.String[] { "LuckTimes", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

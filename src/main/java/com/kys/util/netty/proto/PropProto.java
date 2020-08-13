@@ -65,7 +65,7 @@ public final class PropProto {
     Gold_High_Deductible_Card(15),
     /**
      * <pre>
-     ** 奖杯暴击卡 
+     ** 红包暴击卡 
      * </pre>
      *
      * <code>Cup_Crit_Card = 16;</code>
@@ -87,6 +87,14 @@ public final class PropProto {
      * <code>Snatch_Treasure_Card = 18;</code>
      */
     Snatch_Treasure_Card(18),
+    /**
+     * <pre>
+     ** 钻石复活卡 
+     * </pre>
+     *
+     * <code>Diamond_Revive_Card = 19;</code>
+     */
+    Diamond_Revive_Card(19),
     /**
      * <pre>
      ** 月卡 
@@ -176,7 +184,7 @@ public final class PropProto {
     public static final int Gold_High_Deductible_Card_VALUE = 15;
     /**
      * <pre>
-     ** 奖杯暴击卡 
+     ** 红包暴击卡 
      * </pre>
      *
      * <code>Cup_Crit_Card = 16;</code>
@@ -198,6 +206,14 @@ public final class PropProto {
      * <code>Snatch_Treasure_Card = 18;</code>
      */
     public static final int Snatch_Treasure_Card_VALUE = 18;
+    /**
+     * <pre>
+     ** 钻石复活卡 
+     * </pre>
+     *
+     * <code>Diamond_Revive_Card = 19;</code>
+     */
+    public static final int Diamond_Revive_Card_VALUE = 19;
     /**
      * <pre>
      ** 月卡 
@@ -267,6 +283,7 @@ public final class PropProto {
         case 16: return Cup_Crit_Card;
         case 17: return Re_Sign_Card;
         case 18: return Snatch_Treasure_Card;
+        case 19: return Diamond_Revive_Card;
         case 1005: return Month_Card;
         case 1006: return Diam_High_Revive_Card;
         case 1007: return Gold_High_Revive_Card;
@@ -2986,7 +3003,7 @@ public final class PropProto {
 
     /**
      * <pre>
-     ** 该道具使用后改变的值的最终值,奖杯*100来传 
+     ** 该道具使用后改变的值的最终值,红包*100来传 
      * </pre>
      *
      * <code>int32 value = 2;</code>
@@ -2995,7 +3012,7 @@ public final class PropProto {
 
     /**
      * <pre>
-     ** 使用变化值,奖杯*100来传 
+     ** 使用变化值,红包*100来传 
      * </pre>
      *
      * <code>int32 change = 3;</code>
@@ -3135,7 +3152,7 @@ public final class PropProto {
     private int value_;
     /**
      * <pre>
-     ** 该道具使用后改变的值的最终值,奖杯*100来传 
+     ** 该道具使用后改变的值的最终值,红包*100来传 
      * </pre>
      *
      * <code>int32 value = 2;</code>
@@ -3148,7 +3165,7 @@ public final class PropProto {
     private int change_;
     /**
      * <pre>
-     ** 使用变化值,奖杯*100来传 
+     ** 使用变化值,红包*100来传 
      * </pre>
      *
      * <code>int32 change = 3;</code>
@@ -3574,7 +3591,7 @@ public final class PropProto {
       private int value_ ;
       /**
        * <pre>
-       ** 该道具使用后改变的值的最终值,奖杯*100来传 
+       ** 该道具使用后改变的值的最终值,红包*100来传 
        * </pre>
        *
        * <code>int32 value = 2;</code>
@@ -3584,7 +3601,7 @@ public final class PropProto {
       }
       /**
        * <pre>
-       ** 该道具使用后改变的值的最终值,奖杯*100来传 
+       ** 该道具使用后改变的值的最终值,红包*100来传 
        * </pre>
        *
        * <code>int32 value = 2;</code>
@@ -3597,7 +3614,7 @@ public final class PropProto {
       }
       /**
        * <pre>
-       ** 该道具使用后改变的值的最终值,奖杯*100来传 
+       ** 该道具使用后改变的值的最终值,红包*100来传 
        * </pre>
        *
        * <code>int32 value = 2;</code>
@@ -3612,7 +3629,7 @@ public final class PropProto {
       private int change_ ;
       /**
        * <pre>
-       ** 使用变化值,奖杯*100来传 
+       ** 使用变化值,红包*100来传 
        * </pre>
        *
        * <code>int32 change = 3;</code>
@@ -3622,7 +3639,7 @@ public final class PropProto {
       }
       /**
        * <pre>
-       ** 使用变化值,奖杯*100来传 
+       ** 使用变化值,红包*100来传 
        * </pre>
        *
        * <code>int32 change = 3;</code>
@@ -3635,7 +3652,7 @@ public final class PropProto {
       }
       /**
        * <pre>
-       ** 使用变化值,奖杯*100来传 
+       ** 使用变化值,红包*100来传 
        * </pre>
        *
        * <code>int32 change = 3;</code>
@@ -4961,15 +4978,16 @@ public final class PropProto {
       "change\030\003 \001(\005\022\014\n\004crit\030\004 \001(\005\"H\n\024ClientQuer" +
       "yPropCount\0220\n\004type\030\001 \001(\0162\".com.kys.util.",
       "netty.proto.PropType\"&\n\024ServerQueryPropC" +
-      "ount\022\016\n\006idList\030\001 \003(\t*\276\002\n\010PropType\022\t\n\005Bla" +
+      "ount\022\016\n\006idList\030\001 \003(\t*\327\002\n\010PropType\022\t\n\005Bla" +
       "nk\020\000\022\r\n\tDiam_Card\020\013\022\r\n\tGold_Card\020\014\022\017\n\013Re" +
       "cord_Card\020\r\022\035\n\031Diam_High_Deductible_Card" +
       "\020\016\022\035\n\031Gold_High_Deductible_Card\020\017\022\021\n\rCup" +
       "_Crit_Card\020\020\022\020\n\014Re_Sign_Card\020\021\022\030\n\024Snatch" +
-      "_Treasure_Card\020\022\022\017\n\nMonth_Card\020\355\007\022\032\n\025Dia" +
-      "m_High_Revive_Card\020\356\007\022\032\n\025Gold_High_Reviv" +
-      "e_Card\020\357\007\022\032\n\025Store_6_Discount_Card\020\363\007\022\026\n" +
-      "\021Store_2_Rate_Card\020\364\007b\006proto3"
+      "_Treasure_Card\020\022\022\027\n\023Diamond_Revive_Card\020" +
+      "\023\022\017\n\nMonth_Card\020\355\007\022\032\n\025Diam_High_Revive_C" +
+      "ard\020\356\007\022\032\n\025Gold_High_Revive_Card\020\357\007\022\032\n\025St" +
+      "ore_6_Discount_Card\020\363\007\022\026\n\021Store_2_Rate_C",
+      "ard\020\364\007b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

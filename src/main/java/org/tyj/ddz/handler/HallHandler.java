@@ -32,7 +32,7 @@ public class HallHandler extends AbsMessageHandler {
         int methodId = message.getMethodId();
         ProtoMsg.MessageTypeEnum funcId = ProtoMsg.MessageTypeEnum.forNumber(methodId);
         switch (funcId) {
-            case serverDrawWinCup:
+            case serverNewDrawWinCup:
                 serverDraw(ctx, message);
             default:
                 break;
@@ -41,7 +41,7 @@ public class HallHandler extends AbsMessageHandler {
 
     private void serverDraw(ChannelHandlerContext ctx, ProtoMsg.ServerResponse message) {
         int userId = ChannelAttributeUtil.getPlayerId(ctx.channel());
-        HallProto.ServerDrawWinCup sdwc = message.getServerDrawWinCup();
+        HallProto.ServerNewDrawWinCup sdwc = message.getServerNewDrawWinCup();
         logger.info("player{}lottery{},now win cup is{}，remain lottery times is {}", userId, sdwc.getDrawWinCup(), sdwc.getPlayerWinCup(), sdwc.getLeftCount());
     }
 
