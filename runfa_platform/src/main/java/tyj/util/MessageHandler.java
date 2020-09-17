@@ -7,7 +7,7 @@ public interface MessageHandler {
 
     void handle(ChannelHandlerContext ctx, PbGate.S2C message);
 
-    String getName();
+    int getName();
 
     /**
      * ture 逻辑独立于当前io线程

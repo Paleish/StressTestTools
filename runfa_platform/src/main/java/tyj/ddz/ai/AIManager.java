@@ -70,8 +70,7 @@ public class AIManager {
             JSONObject object = JSON.parseObject(result);
             String url = object.getString("url");
             String token = object.getString("token");
-            //
-            addNewMsg(AICommand.LOGIN, url, token);
+            addNewMsg(AICommand.INIT_WS, url, token);
         }
         logger.info("AI init finished！");
     }

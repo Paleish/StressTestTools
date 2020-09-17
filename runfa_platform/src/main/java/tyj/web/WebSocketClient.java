@@ -26,6 +26,7 @@ import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.websocketx.WebSocketClientHandshakerFactory;
 import io.netty.handler.codec.http.websocketx.WebSocketVersion;
 import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketClientCompressionHandler;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.URI;
@@ -37,6 +38,7 @@ public class WebSocketClient implements Runnable {
         return channel;
     }
 
+    @Getter
     private Channel channel;
     private String url;
     private String token;
@@ -49,7 +51,7 @@ public class WebSocketClient implements Runnable {
     public void run() {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
-            URI uri = new URI(url);
+            URI uri = new URI(url + "/" + token);
             WebSocketClientHandler handler = new WebSocketClientHandler(WebSocketClientHandshakerFactory
                     .newHandshaker(uri, WebSocketVersion.V13, null, true, new DefaultHttpHeaders()));
             Bootstrap b = new Bootstrap();
@@ -65,12 +67,6 @@ public class WebSocketClient implements Runnable {
             handler.handshakeFuture().sync();
             if (cf.isSuccess()) {
                 channel = cf.channel();
-                if (null != channel) {
-                    //设置上uid等属性
-//                    ChannelAttributeUtil.setPlayerId(channel, userId);
-//                    ChannelUtil.setHallChannel(userId, channel);
-//                    log.info("AI{}connect hall success！", userId);
-                }
                 channel.closeFuture().sync();
             }
         } catch (Exception e) {

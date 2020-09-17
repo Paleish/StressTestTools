@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 public class MessageHandlerUtil {
     private static final Logger logger = LoggerFactory.getLogger(MessageHandlerUtil.class.getName());
 
-    private static Map<String, MessageHandler> handlers = new HashMap<>();
+    private static Map<Integer, MessageHandler> handlers = new HashMap<>();
     private static ThreadPoolExecutor service;
 
     static {
@@ -34,7 +34,7 @@ public class MessageHandlerUtil {
     }
 
     public static void handle(final ChannelHandlerContext ctx, final PbGate.S2C message) {
-        final MessageHandler handler = handlers.get(message.getSid() + "_" + message.getCid());
+        final MessageHandler handler = handlers.get(message.getSid());
         service.execute(() -> handler.handle(ctx, message));
     }
 
@@ -46,7 +46,7 @@ public class MessageHandlerUtil {
         handlers.put(handler.getName(), handler);
     }
 
-    public static void putMessageHandler(String handlerId, MessageHandler handler) {
+    public static void putMessageHandler(int handlerId, MessageHandler handler) {
         handlers.put(handlerId, handler);
     }
 

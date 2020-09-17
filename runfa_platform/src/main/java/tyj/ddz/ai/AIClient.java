@@ -10,13 +10,20 @@
  */
 package tyj.ddz.ai;
 
+import com.kys.pb.HallBase;
+import com.kys.pb.HallCli;
+import com.kys.pb.PbGate;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import tyj.constant.AIModeEnum;
 import tyj.ddz.bean.PlayerInfo;
+import tyj.util.shedule.ScheduledThreadPoolUtil;
+import tyj.web.MessageSender;
 import tyj.web.WebSocketClient;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * 〈一句话功能简述〉<br>
@@ -31,13 +38,6 @@ import tyj.web.WebSocketClient;
 @Component("AIClient")
 @Slf4j
 public class AIClient extends Thread {
-//
-//    @Resource
-//    private LuckyTimeSender luckyTimeSender;
-//    @Resource
-//    private ReviveSender reviveSender;
-//    @Resource
-//    private MatchRequester matchRequester;
 
     private AIModeEnum aiMode;
     private int userId;
@@ -58,15 +58,26 @@ public class AIClient extends Thread {
 
     public void run() {
         switch (command) {
-            case LOGIN:
-                login();
+            case INIT_WS:
+                initWebSocket();
                 break;
         }
     }
 
-    private void login() {
+    private void initWebSocket() {
         WebSocketClient client = new WebSocketClient(commandArgs[0], commandArgs[1]);
-        client.run();
+        ScheduledThreadPoolUtil.getInstance().addRun(client, 0, TimeUnit.MICROSECONDS);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //发送登陆请求
+        HallCli.C_Login.Builder loginBuilder = HallCli.C_Login.newBuilder();
+        loginBuilder.setChannel("kys_test");
+        loginBuilder.setIsReconnect(false);
+        loginBuilder.setToken(commandArgs[1]);
+        MessageSender.sendSingleSuccessMsg(client.getChannel(), PbGate.ServiceType.PLATFORM_VALUE, HallBase.MSG.Login_VALUE, loginBuilder.build().toByteString());
     }
 
 

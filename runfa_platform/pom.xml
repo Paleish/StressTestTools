@@ -60,13 +60,6 @@
     </dependencies>
 
     <profiles>
-        <!-- 230 -->
-        <profile>
-            <id>230</id>
-            <properties>
-                <env>230</env>
-            </properties>
-        </profile>
         <!-- 开发环境 -->
         <profile>
             <id>dev</id>
@@ -115,5 +108,17 @@
                 </configuration>
             </plugin>
         </plugins>
+        <filters> <!-- 指定使用的 filter -->
+            <filter>src/main/filters/config-${env}.properties</filter>
+        </filters>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
 </project>
