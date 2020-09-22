@@ -12,6 +12,7 @@ package tyj.util.shedule;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -24,6 +25,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @create 2019/6/25
  * @since 1.0.0
  */
+@Component
 public class RejectPolicy implements RejectedExecutionHandler {
 
     private static final Logger logger = LoggerFactory.getLogger(RejectPolicy.class);

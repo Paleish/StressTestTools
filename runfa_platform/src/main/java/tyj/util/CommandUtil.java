@@ -12,11 +12,11 @@ package tyj.util;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import tyj.ddz.ai.AICommand;
 import tyj.ddz.ai.AIManager;
 
 import javax.annotation.Resource;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.SocketException;
 
@@ -52,49 +52,20 @@ public class CommandUtil extends Thread {
                 if (msg == null) {
                     break;
                 } else if ("init".equals(cmd[0])) {
-                    aiManager.InitAndLogin(cmd[1]);
+                    int ainum = Integer.parseInt(cmd[1]);
+                    log.info("init ai num is ->{}", ainum);
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    for (int index = 0; index < ainum; index++
+                    ) {
+                        aiManager.InitAndLogin(index);
+                    }
+                } else if ("join".equals(cmd[0])) {
+                    aiManager.addNewMsg(AICommand.JOIN_LANDLORD, cmd[1]);
                 }
-//                else if ("join".equals(cmd[0])) {
-//                    aiManager.addNewMsg("join", null);
-//                    AIAsync.randomSwitch = 2;
-//                    AIAsync.sleepTime = 3000;
-//                } else if ("getAnnounce".equals(cmd[0])) {//
-//                    aiManager.addNewMsg("getAnnounce", cmd[0]);
-//                } else if ("wincup".equals(cmd[0])) {//
-//                    aiManager.addNewMsg("wincup", cmd[1]);
-//                } else if ("exc".equals(cmd[0])) {//默认18
-//                    aiManager.addNewMsg("exc", cmd[1]);
-//                } else if ("sh".equals(cmd[0])) {
-//                    setEmojiName(cmd[1]);//测试往数据库插入带emoji的头像
-//                } else if ("gh".equals(cmd[0])) {
-//                    getEmojiName(cmd[1]);
-//                } else if ("create".equals(cmd[0])) {
-//                    createNewAI(cmd[1]);
-//                } else if ("ip".equals(cmd[0])) {//查看测试工具所在环境ip的方法
-//                    getIp();
-//                } else if ("getRank".equals(cmd[0])) {
-//                    aiManager.addNewMsg("getRank", null);
-//                } else if ("getHistoryRank".equals(cmd[0])) {
-//                    aiManager.addNewMsg("getHistoryRank", null);
-//                } else if ("getHead".equals(cmd[0])) {
-//                    aiManager.addNewMsg("getHead", null);
-//                } else if ("equipHead".equals(cmd[0])) {
-//                    aiManager.addNewMsg("equipHead", null);
-//                } else if ("snatch".equals(cmd[0])) {
-//                    aiManager.addNewMsg("snatch", cmd[1]);
-//                } else if ("item".equals(cmd[0])) {
-//                    aiManager.addNewMsg("item", cmd[1]);
-//                } else if ("vip".equals(cmd[0])) {
-//                    aiManager.addNewMsg("vip", cmd[1]);
-//                } else if ("skin".equals(cmd[0])) {
-//                    aiManager.addNewMsg("skin", cmd[1]);
-//                } else if ("lucky".equals(cmd[0])) {
-//                    aiManager.addNewMsg("lucky", null);
-//                } else if ("revive".equals(cmd[0])) {
-//                    aiManager.addNewMsg("revive", null);
-//                } else if ("joinMatch".equals(cmd[0])) {
-//                    aiManager.addNewMsg("joinMatch", null);
-//                }
             }
         } catch (Exception e) {
             log.info("consolo receive order err!", e);

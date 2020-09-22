@@ -2,8 +2,7 @@ package tyj.util;
 
 import com.kys.pb.PbGate;
 import io.netty.channel.ChannelHandlerContext;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.Assert;
 
 import java.util.HashMap;
@@ -21,8 +20,8 @@ import java.util.concurrent.TimeUnit;
  * @Author:
  * @Date:
  */
+@Slf4j
 public class MessageHandlerUtil {
-    private static final Logger logger = LoggerFactory.getLogger(MessageHandlerUtil.class.getName());
 
     private static Map<Integer, MessageHandler> handlers = new HashMap<>();
     private static ThreadPoolExecutor service;
@@ -42,7 +41,7 @@ public class MessageHandlerUtil {
         Assert.notNull(handler.getName(), "name Name cannot be empty");
         Assert.isNull(handlers.get(handler.getName()), "MessageHandler[" + handler.getName() + "] is existing !");
 
-        logger.trace(" 注册 messageHandler [" + handler.getName() + "] > " + handler);
+        log.trace(" 注册 messageHandler [" + handler.getName() + "] > " + handler);
         handlers.put(handler.getName(), handler);
     }
 
