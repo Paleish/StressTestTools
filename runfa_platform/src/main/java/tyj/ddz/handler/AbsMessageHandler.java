@@ -17,12 +17,10 @@ import tyj.util.MessageHandlerUtil;
  */
 public abstract class AbsMessageHandler implements MessageHandler, InitializingBean {
 
-    protected Logger logger;
     public static String ACTION_NAME = "actionName";
 
     public AbsMessageHandler() {
         super();
-        logger = LoggerFactory.getLogger(getClass().getName());
     }
 
     @Override

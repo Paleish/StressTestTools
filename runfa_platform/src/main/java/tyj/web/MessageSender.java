@@ -1,6 +1,7 @@
 package tyj.web;
 
 import com.google.protobuf.ByteString;
+import com.kys.pb.HallBase;
 import com.kys.pb.PbGate;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.UnpooledByteBufAllocator;
@@ -30,7 +31,11 @@ public class MessageSender {
             PbGate.C2S.Builder msg = PbGate.C2S.newBuilder();
             msg.setSid(sid);
             msg.setCid(cid);
-            msg.setSequence(1);
+            if (sid == PbGate.ServiceType.PLATFORM_VALUE && cid == HallBase.MSG.Login_VALUE) {
+                msg.setSequence(1);
+            } else {
+                msg.setSequence(2);
+            }
             msg.setBody(bs);
             ByteBuf b = UnpooledByteBufAllocator.DEFAULT.buffer();
             // 写入消息

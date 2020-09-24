@@ -12,9 +12,8 @@ package tyj.ddz.ai;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.kys.pb.HallBase;
-import com.kys.pb.HallCli;
-import com.kys.pb.PbGate;
+import com.kys.pb.*;
+import io.netty.channel.Channel;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.bro.util.HttpSendUtil;
@@ -51,6 +50,7 @@ public class AIClient extends Thread {
     private boolean isLogin = false;
     private int autoJoinCount = 0;
     private boolean isStart = false;
+    private Channel channel;
 
     private AICommand command;
     private String[] commandArgs;
@@ -76,7 +76,10 @@ public class AIClient extends Thread {
     private void joinLandLord() {
         //发送加入游戏请求
         log.info("发送加入房间请求!");
-
+        LandlordCli.C_QuickJoin.Builder builder = LandlordCli.C_QuickJoin.newBuilder();
+        builder.setChipLevel(1);
+        builder.setIsContinue(true);
+        MessageSender.sendSingleSuccessMsg(channel, PbGate.ServiceType.LANDLORD_VALUE, LandlordBase.MSG.QuickJoin_VALUE, builder.build().toByteString());
     }
 
     public void initWebSocket() {
@@ -88,7 +91,7 @@ public class AIClient extends Thread {
         WebSocketClient client = new WebSocketClient(url, token);
         ScheduledThreadPoolUtil.getInstance().addRun(client, 0, TimeUnit.MICROSECONDS);
         try {
-            Thread.sleep(12500);
+            Thread.sleep(30000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -98,5 +101,7 @@ public class AIClient extends Thread {
         loginBuilder.setIsReconnect(false);
         loginBuilder.setToken(token);
         MessageSender.sendSingleSuccessMsg(client.getChannel(), PbGate.ServiceType.PLATFORM_VALUE, HallBase.MSG.Login_VALUE, loginBuilder.build().toByteString());
+
+        channel = client.getChannel();
     }
 }
