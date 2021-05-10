@@ -65,6 +65,8 @@ public class CommandUtil extends Thread {
                     }
                 } else if ("join".equals(cmd[0])) {
                     aiManager.addNewMsg(AICommand.JOIN_LANDLORD, cmd[1]);
+                } else if ("join_GF".equals(cmd[0])) {
+                    aiManager.addNewMsg(AICommand.JOIN_GF);
                 }
             }
         } catch (Exception e) {

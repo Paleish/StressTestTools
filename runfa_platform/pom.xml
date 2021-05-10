@@ -87,7 +87,7 @@
     </profiles>
 
     <build>
-        <finalName>srv-user-service</finalName>
+        <finalName>platform-test-tools</finalName>
         <directory>../press_pac/</directory>
         <plugins>
             <plugin>

@@ -39,7 +39,7 @@ public class AIManager {
      */
     @Async
     public void InitAndLogin(int index) {
-        log.info("start init ai!");
+        log.info("start init ai{}!", index);
         AIClient ai = (AIClient) PressInstrumentApplication.getContext().getBean("AIClient");
         ai.setAiMode(Initializer.AI_MODE);
         aiMap.put(index, ai);

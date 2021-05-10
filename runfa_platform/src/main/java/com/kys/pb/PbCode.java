@@ -16,7 +16,7 @@ public final class PbCode {
   }
   /**
    * <pre>
-   ** 服务类型 
+   ** 服务器返回码 
    * </pre>
    *
    * Protobuf enum {@code pb.ResultCode}
@@ -271,6 +271,14 @@ public final class PbCode {
      * <code>errExchangeExhaust = 515;</code>
      */
     errExchangeExhaust(515),
+    /**
+     * <pre>
+     ** 兑换话费,京东卡金额超限 
+     * </pre>
+     *
+     * <code>errChargeOrJdCard = 516;</code>
+     */
+    errChargeOrJdCard(516),
     /**
      * <pre>
      ** 加入房间错误码 
@@ -599,6 +607,14 @@ public final class PbCode {
      * <code>errSnatchRequireAddrDetail = 1406;</code>
      */
     errSnatchRequireAddrDetail(1406),
+    /**
+     * <pre>
+     ** 夺宝投入最少为100 
+     * </pre>
+     *
+     * <code>errSnatchRequire = 1407;</code>
+     */
+    errSnatchRequire(1407),
     /**
      * <pre>
      ** 钻石宝箱接口错误 
@@ -1087,6 +1103,78 @@ public final class PbCode {
      * <code>errRankShareAwardHasGet = 2701;</code>
      */
     errRankShareAwardHasGet(2701),
+    /**
+     * <pre>
+     ** 成就奖励领取错误 
+     * </pre>
+     *
+     * <code>errGetAchievementAward = 2801;</code>
+     */
+    errGetAchievementAward(2801),
+    /**
+     * <pre>
+     ** 活动已过期 
+     * </pre>
+     *
+     * <code>errActivityExpire = 2901;</code>
+     */
+    errActivityExpire(2901),
+    /**
+     * <pre>
+     ** 实物商城领取次数超限 
+     * </pre>
+     *
+     * <code>errPhysicalStoreLimit = 2902;</code>
+     */
+    errPhysicalStoreLimit(2902),
+    /**
+     * <pre>
+     ** 活动积分不足 
+     * </pre>
+     *
+     * <code>errScoreNotEnough = 3001;</code>
+     */
+    errScoreNotEnough(3001),
+    /**
+     * <pre>
+     ** 请在第7天来领取 
+     * </pre>
+     *
+     * <code>errAdvanceReceive = 3002;</code>
+     */
+    errAdvanceReceive(3002),
+    /**
+     * <pre>
+     ** 兑换次数超限 
+     * </pre>
+     *
+     * <code>errConvertLimit = 3003;</code>
+     */
+    errConvertLimit(3003),
+    /**
+     * <pre>
+     ** 奖励已经领取 
+     * </pre>
+     *
+     * <code>errHaveGetAward = 3004;</code>
+     */
+    errHaveGetAward(3004),
+    /**
+     * <pre>
+     ** 拉取数字已达上限 
+     * </pre>
+     *
+     * <code>errPullMax = 3005;</code>
+     */
+    errPullMax(3005),
+    /**
+     * <pre>
+     ** 玩家进入场次货币不足 
+     * </pre>
+     *
+     * <code>errGoldenNotEnough = 3101;</code>
+     */
+    errGoldenNotEnough(3101),
     UNRECOGNIZED(-1),
     ;
 
@@ -1338,6 +1426,14 @@ public final class PbCode {
      * <code>errExchangeExhaust = 515;</code>
      */
     public static final int errExchangeExhaust_VALUE = 515;
+    /**
+     * <pre>
+     ** 兑换话费,京东卡金额超限 
+     * </pre>
+     *
+     * <code>errChargeOrJdCard = 516;</code>
+     */
+    public static final int errChargeOrJdCard_VALUE = 516;
     /**
      * <pre>
      ** 加入房间错误码 
@@ -1666,6 +1762,14 @@ public final class PbCode {
      * <code>errSnatchRequireAddrDetail = 1406;</code>
      */
     public static final int errSnatchRequireAddrDetail_VALUE = 1406;
+    /**
+     * <pre>
+     ** 夺宝投入最少为100 
+     * </pre>
+     *
+     * <code>errSnatchRequire = 1407;</code>
+     */
+    public static final int errSnatchRequire_VALUE = 1407;
     /**
      * <pre>
      ** 钻石宝箱接口错误 
@@ -2154,11 +2258,83 @@ public final class PbCode {
      * <code>errRankShareAwardHasGet = 2701;</code>
      */
     public static final int errRankShareAwardHasGet_VALUE = 2701;
+    /**
+     * <pre>
+     ** 成就奖励领取错误 
+     * </pre>
+     *
+     * <code>errGetAchievementAward = 2801;</code>
+     */
+    public static final int errGetAchievementAward_VALUE = 2801;
+    /**
+     * <pre>
+     ** 活动已过期 
+     * </pre>
+     *
+     * <code>errActivityExpire = 2901;</code>
+     */
+    public static final int errActivityExpire_VALUE = 2901;
+    /**
+     * <pre>
+     ** 实物商城领取次数超限 
+     * </pre>
+     *
+     * <code>errPhysicalStoreLimit = 2902;</code>
+     */
+    public static final int errPhysicalStoreLimit_VALUE = 2902;
+    /**
+     * <pre>
+     ** 活动积分不足 
+     * </pre>
+     *
+     * <code>errScoreNotEnough = 3001;</code>
+     */
+    public static final int errScoreNotEnough_VALUE = 3001;
+    /**
+     * <pre>
+     ** 请在第7天来领取 
+     * </pre>
+     *
+     * <code>errAdvanceReceive = 3002;</code>
+     */
+    public static final int errAdvanceReceive_VALUE = 3002;
+    /**
+     * <pre>
+     ** 兑换次数超限 
+     * </pre>
+     *
+     * <code>errConvertLimit = 3003;</code>
+     */
+    public static final int errConvertLimit_VALUE = 3003;
+    /**
+     * <pre>
+     ** 奖励已经领取 
+     * </pre>
+     *
+     * <code>errHaveGetAward = 3004;</code>
+     */
+    public static final int errHaveGetAward_VALUE = 3004;
+    /**
+     * <pre>
+     ** 拉取数字已达上限 
+     * </pre>
+     *
+     * <code>errPullMax = 3005;</code>
+     */
+    public static final int errPullMax_VALUE = 3005;
+    /**
+     * <pre>
+     ** 玩家进入场次货币不足 
+     * </pre>
+     *
+     * <code>errGoldenNotEnough = 3101;</code>
+     */
+    public static final int errGoldenNotEnough_VALUE = 3101;
 
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
             "Can't get the number of an unknown enum value.");
       }
       return value;
@@ -2167,7 +2343,7 @@ public final class PbCode {
     /**
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static ResultCode valueOf(int value) {
       return forNumber(value);
     }
@@ -2205,6 +2381,7 @@ public final class PbCode {
         case 513: return errWxSystemError;
         case 514: return errLotteryWaitTime;
         case 515: return errExchangeExhaust;
+        case 516: return errChargeOrJdCard;
         case 600: return errRoom;
         case 601: return errRoomChipNotEnough;
         case 602: return errRoomDiamondNotEnough;
@@ -2246,6 +2423,7 @@ public final class PbCode {
         case 1404: return errSnatchInvaildGetAward;
         case 1405: return errSnatchNoMoreHistories;
         case 1406: return errSnatchRequireAddrDetail;
+        case 1407: return errSnatchRequire;
         case 1500: return errDG;
         case 1501: return errDGExpired;
         case 1502: return errBoxIsOver;
@@ -2307,6 +2485,15 @@ public final class PbCode {
         case 2602: return errCorbanNotStart;
         case 2603: return errThisTimeGetOnce;
         case 2701: return errRankShareAwardHasGet;
+        case 2801: return errGetAchievementAward;
+        case 2901: return errActivityExpire;
+        case 2902: return errPhysicalStoreLimit;
+        case 3001: return errScoreNotEnough;
+        case 3002: return errAdvanceReceive;
+        case 3003: return errConvertLimit;
+        case 3004: return errHaveGetAward;
+        case 3005: return errPullMax;
+        case 3101: return errGoldenNotEnough;
         default: return null;
       }
     }
@@ -2341,7 +2528,7 @@ public final class PbCode {
     public static ResultCode valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
@@ -2367,8 +2554,8 @@ public final class PbCode {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
-      "\n\017pb_result.proto\022\002pb*\245\030\n\nResultCode\022\013\n\007" +
+    java.lang.String[] descriptorData = {
+      "\n\017pb_result.proto\022\002pb*\253\032\n\nResultCode\022\013\n\007" +
       "success\020\000\022\007\n\003err\020\001\022\017\n\013errNoMethod\020\002\022\r\n\te" +
       "rrNulMsg\020\003\022\023\n\017errLoginInvalid\020\004\022\021\n\rerrNe" +
       "tConnect\020\005\022\022\n\016errGameNotOver\020\006\022\014\n\010errLog" +
@@ -2385,69 +2572,75 @@ public final class PbCode {
       "\017errEnPayNoMoney\020\376\003\022\024\n\017errWxRedNoMoney\020\377" +
       "\003\022\022\n\rerrChargeOver\020\200\004\022\025\n\020errWxSystemErro" +
       "r\020\201\004\022\027\n\022errLotteryWaitTime\020\202\004\022\027\n\022errExch" +
-      "angeExhaust\020\203\004\022\014\n\007errRoom\020\330\004\022\031\n\024errRoomC" +
-      "hipNotEnough\020\331\004\022\034\n\027errRoomDiamondNotEnou" +
-      "gh\020\332\004\022\024\n\017errRoomNotExist\020\333\004\022\021\n\014errRoomNo" +
-      "tIn\020\334\004\022\026\n\021errRoomChipToMuch\020\335\004\022\031\n\024errRoo" +
-      "mDiamondToMuch\020\336\004\022\023\n\016errRoomInMatch\020\337\004\022\022" +
-      "\n\rerrUserIsNull\020\275\005\022\014\n\007errGame\020\240\006\022\030\n\023errG" +
-      "ameRoomNotExist\020\241\006\022\024\n\017errGameAutoPlay\020\242\006" +
-      "\022\027\n\022errGameInvaildOper\020\243\006\022\035\n\030errGameInva" +
-      "ildCatchPoint\020\244\006\022\031\n\024errGameEnterRoomFail" +
-      "\020\245\006\022\027\n\022errGamePlayerNotIn\020\246\006\022\027\n\022errGameC" +
-      "ardInvaild\020\247\006\022\032\n\025errGameSendActionTime\020\250" +
-      "\006\022\n\n\005errPm\020\204\007\022\027\n\022errPmTelNumInvaild\020\205\007\022\030" +
-      "\n\023errPmVerifyCodeFail\020\206\007\022\033\n\026errPmGetAwar" +
-      "dNotFinish\020\207\007\022\034\n\027errPmGetAwardNotBindTel" +
-      "\020\210\007\022\025\n\020errPmAlreadyBind\020\211\007\022!\n\034errPmReque" +
-      "stIntervalTooShort\020\212\007\022\032\n\025errPmSharePacka" +
-      "geFail\020\213\007\022\021\n\014errPmNoSlave\020\214\007\022\031\n\024errPmNot" +
-      "Relationship\020\215\007\022\030\n\023errPmTelAlreadyUsed\020\216" +
-      "\007\022\025\n\020errAwardMsgIsNul\020\350\007\022\026\n\021errGetDailyF" +
-      "ailed\020\314\010\022\031\n\024errNoviceTaskexpired\020\260\t\022\027\n\022e" +
-      "rrGetNoviceFailed\020\261\t\022\022\n\rerrDeleteMail\020\224\n" +
-      "\022\016\n\terrSnatch\020\370\n\022\025\n\020errSnatchGetList\020\371\n\022" +
-      "\030\n\023errSnatchInvaildBet\020\372\n\022\035\n\030errSnatchWi" +
-      "ncupNotEnough\020\373\n\022\035\n\030errSnatchInvaildGetA" +
-      "ward\020\374\n\022\035\n\030errSnatchNoMoreHistories\020\375\n\022\037" +
-      "\n\032errSnatchRequireAddrDetail\020\376\n\022\n\n\005errDG" +
-      "\020\334\013\022\021\n\014errDGExpired\020\335\013\022\021\n\014errBoxIsOver\020\336" +
-      "\013\022\r\n\010errReset\020\337\013\022\016\n\terrOpenDg\020\340\013\022\022\n\rerrN" +
-      "oLeftCont\020\341\013\022\020\n\013errNoChance\020\342\013\022\014\n\007errPro" +
-      "p\020\300\014\022\033\n\026errPropNotHaveThisProp\020\301\014\022\034\n\027err" +
-      "NotMatchUseCondition\020\302\014\022\014\n\007errSign\020\244\r\022\023\n" +
-      "\016errSignRepeate\020\245\r\022\030\n\023errSignRSCNotEnoug" +
-      "h\020\246\r\022\030\n\023errSignRSDNotEnough\020\247\r\022\020\n\013errSig" +
-      "nTime\020\250\r\022\016\n\terrSignLT\020\251\r\022\023\n\016errSignVipLa" +
-      "ck\020\252\r\022\030\n\023errSignRewardHasGet\020\253\r\022\030\n\023errSi" +
-      "gnDayNotEnough\020\254\r\022\026\n\021errVipLvNotEnough\020\211" +
-      "\016\022\036\n\031errVipWeekAwardAlreadyGet\020\212\016\022\034\n\027err" +
-      "VipAlreadyGetDayGift\020\213\016\022\025\n\020errVipNotLott" +
-      "ery\020\214\016\022\n\n\005errDD\020\354\016\022\022\n\rerrDNotEnough\020\355\016\022\017" +
-      "\n\nerrDDClose\020\356\016\022\027\n\022errDTimesNotEnough\020\357\016" +
-      "\022\031\n\024errReviveExceedLimit\020\321\017\022\027\n\022errRevive" +
-      "NotEnough\020\322\017\022\027\n\022errReviveGoldLimit\020\323\017\022\026\n" +
-      "\021errMatchApplyOver\020\265\020\022\037\n\032errMatchApplyCa" +
-      "rdNotEnough\020\266\020\022\027\n\022errMatchCancelFail\020\267\020\022" +
-      "\036\n\031errMatchEnterLimitDiamond\020\270\020\022\033\n\026errMa" +
-      "tchEnterLimitGold\020\271\020\022\030\n\023errMatchAlreadyO" +
-      "ver\020\272\020\022\026\n\021errAlreadyInMatch\020\273\020\022\020\n\013errIdV" +
-      "erify\020\231\021\022\026\n\021errIdVerifyFormat\020\232\021\022\027\n\022errR" +
-      "epeateIdVerify\020\233\021\022\025\n\020errGoldNotEnough\020\375\021" +
-      "\022\030\n\023errDiamondNotEnough\020\376\021\022\025\n\020errPlayTim" +
-      "esOver\020\377\021\022\024\n\017errKeyNotEnough\020\200\022\022\022\n\rerrCd" +
-      "keyFaild\020\341\022\022\020\n\013errCdkeyErr\020\342\022\022\024\n\017errCdke" +
-      "yExpired\020\343\022\022\025\n\020errCdkeyReceived\020\344\022\022\024\n\017er" +
-      "rCdkeyGetOver\020\345\022\022\020\n\013errGodLight\020\304\023\022\031\n\024er" +
-      "rGodLightNotJoiner\020\305\023\022\035\n\030errGodLightActi" +
-      "veNotOpen\020\306\023\022\034\n\027errGodLightRoomNotAllow\020" +
-      "\307\023\022\030\n\023errGodLightNotAward\020\310\023\022$\n\037errGodLi" +
-      "ghtAlreadyAwardThisTurn\020\311\023\022\030\n\023errGodFigh" +
-      "tNextTime\020\312\023\022\016\n\terrCorban\020\250\024\022\030\n\023errCorba" +
-      "nRepeateGet\020\251\024\022\026\n\021errCorbanNotStart\020\252\024\022\027" +
-      "\n\022errThisTimeGetOnce\020\253\024\022\034\n\027errRankShareA" +
-      "wardHasGet\020\215\025B\024\n\ncom.kys.pbB\006PbCodeb\006pro" +
-      "to3"
+      "angeExhaust\020\203\004\022\026\n\021errChargeOrJdCard\020\204\004\022\014" +
+      "\n\007errRoom\020\330\004\022\031\n\024errRoomChipNotEnough\020\331\004\022" +
+      "\034\n\027errRoomDiamondNotEnough\020\332\004\022\024\n\017errRoom" +
+      "NotExist\020\333\004\022\021\n\014errRoomNotIn\020\334\004\022\026\n\021errRoo" +
+      "mChipToMuch\020\335\004\022\031\n\024errRoomDiamondToMuch\020\336" +
+      "\004\022\023\n\016errRoomInMatch\020\337\004\022\022\n\rerrUserIsNull\020" +
+      "\275\005\022\014\n\007errGame\020\240\006\022\030\n\023errGameRoomNotExist\020" +
+      "\241\006\022\024\n\017errGameAutoPlay\020\242\006\022\027\n\022errGameInvai" +
+      "ldOper\020\243\006\022\035\n\030errGameInvaildCatchPoint\020\244\006" +
+      "\022\031\n\024errGameEnterRoomFail\020\245\006\022\027\n\022errGamePl" +
+      "ayerNotIn\020\246\006\022\027\n\022errGameCardInvaild\020\247\006\022\032\n" +
+      "\025errGameSendActionTime\020\250\006\022\n\n\005errPm\020\204\007\022\027\n" +
+      "\022errPmTelNumInvaild\020\205\007\022\030\n\023errPmVerifyCod" +
+      "eFail\020\206\007\022\033\n\026errPmGetAwardNotFinish\020\207\007\022\034\n" +
+      "\027errPmGetAwardNotBindTel\020\210\007\022\025\n\020errPmAlre" +
+      "adyBind\020\211\007\022!\n\034errPmRequestIntervalTooSho" +
+      "rt\020\212\007\022\032\n\025errPmSharePackageFail\020\213\007\022\021\n\014err" +
+      "PmNoSlave\020\214\007\022\031\n\024errPmNotRelationship\020\215\007\022" +
+      "\030\n\023errPmTelAlreadyUsed\020\216\007\022\025\n\020errAwardMsg" +
+      "IsNul\020\350\007\022\026\n\021errGetDailyFailed\020\314\010\022\031\n\024errN" +
+      "oviceTaskexpired\020\260\t\022\027\n\022errGetNoviceFaile" +
+      "d\020\261\t\022\022\n\rerrDeleteMail\020\224\n\022\016\n\terrSnatch\020\370\n" +
+      "\022\025\n\020errSnatchGetList\020\371\n\022\030\n\023errSnatchInva" +
+      "ildBet\020\372\n\022\035\n\030errSnatchWincupNotEnough\020\373\n" +
+      "\022\035\n\030errSnatchInvaildGetAward\020\374\n\022\035\n\030errSn" +
+      "atchNoMoreHistories\020\375\n\022\037\n\032errSnatchRequi" +
+      "reAddrDetail\020\376\n\022\025\n\020errSnatchRequire\020\377\n\022\n" +
+      "\n\005errDG\020\334\013\022\021\n\014errDGExpired\020\335\013\022\021\n\014errBoxI" +
+      "sOver\020\336\013\022\r\n\010errReset\020\337\013\022\016\n\terrOpenDg\020\340\013\022" +
+      "\022\n\rerrNoLeftCont\020\341\013\022\020\n\013errNoChance\020\342\013\022\014\n" +
+      "\007errProp\020\300\014\022\033\n\026errPropNotHaveThisProp\020\301\014" +
+      "\022\034\n\027errNotMatchUseCondition\020\302\014\022\014\n\007errSig" +
+      "n\020\244\r\022\023\n\016errSignRepeate\020\245\r\022\030\n\023errSignRSCN" +
+      "otEnough\020\246\r\022\030\n\023errSignRSDNotEnough\020\247\r\022\020\n" +
+      "\013errSignTime\020\250\r\022\016\n\terrSignLT\020\251\r\022\023\n\016errSi" +
+      "gnVipLack\020\252\r\022\030\n\023errSignRewardHasGet\020\253\r\022\030" +
+      "\n\023errSignDayNotEnough\020\254\r\022\026\n\021errVipLvNotE" +
+      "nough\020\211\016\022\036\n\031errVipWeekAwardAlreadyGet\020\212\016" +
+      "\022\034\n\027errVipAlreadyGetDayGift\020\213\016\022\025\n\020errVip" +
+      "NotLottery\020\214\016\022\n\n\005errDD\020\354\016\022\022\n\rerrDNotEnou" +
+      "gh\020\355\016\022\017\n\nerrDDClose\020\356\016\022\027\n\022errDTimesNotEn" +
+      "ough\020\357\016\022\031\n\024errReviveExceedLimit\020\321\017\022\027\n\022er" +
+      "rReviveNotEnough\020\322\017\022\027\n\022errReviveGoldLimi" +
+      "t\020\323\017\022\026\n\021errMatchApplyOver\020\265\020\022\037\n\032errMatch" +
+      "ApplyCardNotEnough\020\266\020\022\027\n\022errMatchCancelF" +
+      "ail\020\267\020\022\036\n\031errMatchEnterLimitDiamond\020\270\020\022\033" +
+      "\n\026errMatchEnterLimitGold\020\271\020\022\030\n\023errMatchA" +
+      "lreadyOver\020\272\020\022\026\n\021errAlreadyInMatch\020\273\020\022\020\n" +
+      "\013errIdVerify\020\231\021\022\026\n\021errIdVerifyFormat\020\232\021\022" +
+      "\027\n\022errRepeateIdVerify\020\233\021\022\025\n\020errGoldNotEn" +
+      "ough\020\375\021\022\030\n\023errDiamondNotEnough\020\376\021\022\025\n\020err" +
+      "PlayTimesOver\020\377\021\022\024\n\017errKeyNotEnough\020\200\022\022\022" +
+      "\n\rerrCdkeyFaild\020\341\022\022\020\n\013errCdkeyErr\020\342\022\022\024\n\017" +
+      "errCdkeyExpired\020\343\022\022\025\n\020errCdkeyReceived\020\344" +
+      "\022\022\024\n\017errCdkeyGetOver\020\345\022\022\020\n\013errGodLight\020\304" +
+      "\023\022\031\n\024errGodLightNotJoiner\020\305\023\022\035\n\030errGodLi" +
+      "ghtActiveNotOpen\020\306\023\022\034\n\027errGodLightRoomNo" +
+      "tAllow\020\307\023\022\030\n\023errGodLightNotAward\020\310\023\022$\n\037e" +
+      "rrGodLightAlreadyAwardThisTurn\020\311\023\022\030\n\023err" +
+      "GodFightNextTime\020\312\023\022\016\n\terrCorban\020\250\024\022\030\n\023e" +
+      "rrCorbanRepeateGet\020\251\024\022\026\n\021errCorbanNotSta" +
+      "rt\020\252\024\022\027\n\022errThisTimeGetOnce\020\253\024\022\034\n\027errRan" +
+      "kShareAwardHasGet\020\215\025\022\033\n\026errGetAchievemen" +
+      "tAward\020\361\025\022\026\n\021errActivityExpire\020\325\026\022\032\n\025err" +
+      "PhysicalStoreLimit\020\326\026\022\026\n\021errScoreNotEnou" +
+      "gh\020\271\027\022\026\n\021errAdvanceReceive\020\272\027\022\024\n\017errConv" +
+      "ertLimit\020\273\027\022\024\n\017errHaveGetAward\020\274\027\022\017\n\nerr" +
+      "PullMax\020\275\027\022\027\n\022errGoldenNotEnough\020\235\030B\024\n\nc" +
+      "om.kys.pbB\006PbCodeb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

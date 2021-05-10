@@ -75,6 +75,22 @@ public final class PbGate {
      * <code>ELIMINATE = 6;</code>
      */
     ELIMINATE(6),
+    /**
+     * <pre>
+     ** 梦想金花 
+     * </pre>
+     *
+     * <code>GOLDENFLOWER = 7;</code>
+     */
+    GOLDENFLOWER(7),
+    /**
+     * <pre>
+     ** 百变黑A 
+     * </pre>
+     *
+     * <code>ATT = 8;</code>
+     */
+    ATT(8),
     UNRECOGNIZED(-1),
     ;
 
@@ -130,11 +146,27 @@ public final class PbGate {
      * <code>ELIMINATE = 6;</code>
      */
     public static final int ELIMINATE_VALUE = 6;
+    /**
+     * <pre>
+     ** 梦想金花 
+     * </pre>
+     *
+     * <code>GOLDENFLOWER = 7;</code>
+     */
+    public static final int GOLDENFLOWER_VALUE = 7;
+    /**
+     * <pre>
+     ** 百变黑A 
+     * </pre>
+     *
+     * <code>ATT = 8;</code>
+     */
+    public static final int ATT_VALUE = 8;
 
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
             "Can't get the number of an unknown enum value.");
       }
       return value;
@@ -143,7 +175,7 @@ public final class PbGate {
     /**
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static ServiceType valueOf(int value) {
       return forNumber(value);
     }
@@ -157,6 +189,8 @@ public final class PbGate {
         case 4: return CATCHFISH;
         case 5: return BILLIARD;
         case 6: return ELIMINATE;
+        case 7: return GOLDENFLOWER;
+        case 8: return ATT;
         default: return null;
       }
     }
@@ -191,7 +225,7 @@ public final class PbGate {
     public static ServiceType valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
@@ -211,7 +245,7 @@ public final class PbGate {
 
   /**
    * <pre>
-   ** 网关消息号
+   ** 网关消息号 
    * </pre>
    *
    * Protobuf enum {@code pb.MSG}
@@ -224,7 +258,7 @@ public final class PbGate {
     UNKNOWNGATEWAYCMD(0),
     /**
      * <pre>
-     ** 心跳消息
+     ** 心跳消息 
      * </pre>
      *
      * <code>HEARTBEAT = 1;</code>
@@ -232,12 +266,20 @@ public final class PbGate {
     HEARTBEAT(1),
     /**
      * <pre>
-     ** 踢人的消息
+     ** 踢人的消息 
      * </pre>
      *
      * <code>KICKOFF = 2;</code>
      */
     KICKOFF(2),
+    /**
+     * <pre>
+     ** 复制landlord 比赛场-赛事准备开始的推送 
+     * </pre>
+     *
+     * <code>B_M_MatchStart = 1202;</code>
+     */
+    B_M_MatchStart(1202),
     UNRECOGNIZED(-1),
     ;
 
@@ -247,7 +289,7 @@ public final class PbGate {
     public static final int UNKNOWNGATEWAYCMD_VALUE = 0;
     /**
      * <pre>
-     ** 心跳消息
+     ** 心跳消息 
      * </pre>
      *
      * <code>HEARTBEAT = 1;</code>
@@ -255,17 +297,25 @@ public final class PbGate {
     public static final int HEARTBEAT_VALUE = 1;
     /**
      * <pre>
-     ** 踢人的消息
+     ** 踢人的消息 
      * </pre>
      *
      * <code>KICKOFF = 2;</code>
      */
     public static final int KICKOFF_VALUE = 2;
+    /**
+     * <pre>
+     ** 复制landlord 比赛场-赛事准备开始的推送 
+     * </pre>
+     *
+     * <code>B_M_MatchStart = 1202;</code>
+     */
+    public static final int B_M_MatchStart_VALUE = 1202;
 
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
             "Can't get the number of an unknown enum value.");
       }
       return value;
@@ -274,7 +324,7 @@ public final class PbGate {
     /**
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static MSG valueOf(int value) {
       return forNumber(value);
     }
@@ -284,6 +334,7 @@ public final class PbGate {
         case 0: return UNKNOWNGATEWAYCMD;
         case 1: return HEARTBEAT;
         case 2: return KICKOFF;
+        case 1202: return B_M_MatchStart;
         default: return null;
       }
     }
@@ -318,7 +369,7 @@ public final class PbGate {
     public static MSG valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
@@ -342,7 +393,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 服务器时间戳，单位到毫秒
+     ** 服务器时间戳，单位到毫秒 
      * </pre>
      *
      * <code>int64 time = 1;</code>
@@ -351,7 +402,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 消息延时,单位是毫秒
+     ** 消息延时,单位是毫秒 
      * </pre>
      *
      * <code>int32 delay = 2;</code>
@@ -360,7 +411,7 @@ public final class PbGate {
   }
   /**
    * <pre>
-   ** 心跳消息
+   ** 心跳消息 
    * </pre>
    *
    * Protobuf type {@code pb.Heartbeat}
@@ -377,14 +428,14 @@ public final class PbGate {
     private Heartbeat() {
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new Heartbeat();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -395,7 +446,7 @@ public final class PbGate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -438,13 +489,13 @@ public final class PbGate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return internal_static_pb_Heartbeat_descriptor;
+      return com.kys.pb.PbGate.internal_static_pb_Heartbeat_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return internal_static_pb_Heartbeat_fieldAccessorTable
+      return com.kys.pb.PbGate.internal_static_pb_Heartbeat_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.kys.pb.PbGate.Heartbeat.class, com.kys.pb.PbGate.Heartbeat.Builder.class);
     }
@@ -453,7 +504,7 @@ public final class PbGate {
     private long time_;
     /**
      * <pre>
-     ** 服务器时间戳，单位到毫秒
+     ** 服务器时间戳，单位到毫秒 
      * </pre>
      *
      * <code>int64 time = 1;</code>
@@ -466,7 +517,7 @@ public final class PbGate {
     private int delay_;
     /**
      * <pre>
-     ** 消息延时,单位是毫秒
+     ** 消息延时,单位是毫秒 
      * </pre>
      *
      * <code>int32 delay = 2;</code>
@@ -476,7 +527,7 @@ public final class PbGate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -486,7 +537,7 @@ public final class PbGate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (time_ != 0L) {
@@ -498,7 +549,7 @@ public final class PbGate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -517,8 +568,8 @@ public final class PbGate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
@@ -535,7 +586,7 @@ public final class PbGate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -622,7 +673,7 @@ public final class PbGate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
@@ -630,21 +681,21 @@ public final class PbGate {
     public static Builder newBuilder(com.kys.pb.PbGate.Heartbeat prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
     /**
      * <pre>
-     ** 心跳消息
+     ** 心跳消息 
      * </pre>
      *
      * Protobuf type {@code pb.Heartbeat}
@@ -655,13 +706,13 @@ public final class PbGate {
         com.kys.pb.PbGate.HeartbeatOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return internal_static_pb_Heartbeat_descriptor;
+        return com.kys.pb.PbGate.internal_static_pb_Heartbeat_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return internal_static_pb_Heartbeat_fieldAccessorTable
+        return com.kys.pb.PbGate.internal_static_pb_Heartbeat_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.kys.pb.PbGate.Heartbeat.class, com.kys.pb.PbGate.Heartbeat.Builder.class);
       }
@@ -672,7 +723,7 @@ public final class PbGate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -681,7 +732,7 @@ public final class PbGate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         time_ = 0L;
@@ -691,18 +742,18 @@ public final class PbGate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return internal_static_pb_Heartbeat_descriptor;
+        return com.kys.pb.PbGate.internal_static_pb_Heartbeat_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.Heartbeat getDefaultInstanceForType() {
-        return getDefaultInstance();
+        return com.kys.pb.PbGate.Heartbeat.getDefaultInstance();
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.Heartbeat build() {
         com.kys.pb.PbGate.Heartbeat result = buildPartial();
         if (!result.isInitialized()) {
@@ -711,7 +762,7 @@ public final class PbGate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.Heartbeat buildPartial() {
         com.kys.pb.PbGate.Heartbeat result = new com.kys.pb.PbGate.Heartbeat(this);
         result.time_ = time_;
@@ -720,39 +771,39 @@ public final class PbGate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.kys.pb.PbGate.Heartbeat) {
           return mergeFrom((com.kys.pb.PbGate.Heartbeat)other);
@@ -763,7 +814,7 @@ public final class PbGate {
       }
 
       public Builder mergeFrom(com.kys.pb.PbGate.Heartbeat other) {
-        if (other == getDefaultInstance()) return this;
+        if (other == com.kys.pb.PbGate.Heartbeat.getDefaultInstance()) return this;
         if (other.getTime() != 0L) {
           setTime(other.getTime());
         }
@@ -775,12 +826,12 @@ public final class PbGate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -802,7 +853,7 @@ public final class PbGate {
       private long time_ ;
       /**
        * <pre>
-       ** 服务器时间戳，单位到毫秒
+       ** 服务器时间戳，单位到毫秒 
        * </pre>
        *
        * <code>int64 time = 1;</code>
@@ -812,26 +863,26 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 服务器时间戳，单位到毫秒
+       ** 服务器时间戳，单位到毫秒 
        * </pre>
        *
        * <code>int64 time = 1;</code>
        */
       public Builder setTime(long value) {
-
+        
         time_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 服务器时间戳，单位到毫秒
+       ** 服务器时间戳，单位到毫秒 
        * </pre>
        *
        * <code>int64 time = 1;</code>
        */
       public Builder clearTime() {
-
+        
         time_ = 0L;
         onChanged();
         return this;
@@ -840,7 +891,7 @@ public final class PbGate {
       private int delay_ ;
       /**
        * <pre>
-       ** 消息延时,单位是毫秒
+       ** 消息延时,单位是毫秒 
        * </pre>
        *
        * <code>int32 delay = 2;</code>
@@ -850,37 +901,37 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 消息延时,单位是毫秒
+       ** 消息延时,单位是毫秒 
        * </pre>
        *
        * <code>int32 delay = 2;</code>
        */
       public Builder setDelay(int value) {
-
+        
         delay_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 消息延时,单位是毫秒
+       ** 消息延时,单位是毫秒 
        * </pre>
        *
        * <code>int32 delay = 2;</code>
        */
       public Builder clearDelay() {
-
+        
         delay_ = 0;
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -902,7 +953,7 @@ public final class PbGate {
 
     private static final com.google.protobuf.Parser<Heartbeat>
         PARSER = new com.google.protobuf.AbstractParser<Heartbeat>() {
-      @Override
+      @java.lang.Override
       public Heartbeat parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -915,12 +966,12 @@ public final class PbGate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Heartbeat> getParserForType() {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.kys.pb.PbGate.Heartbeat getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
@@ -933,7 +984,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 原因码
+     ** 原因码 
      * </pre>
      *
      * <code>int32 code = 1;</code>
@@ -942,15 +993,15 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 踢下线的原因
+     ** 踢下线的原因 
      * </pre>
      *
      * <code>string reason = 2;</code>
      */
-    String getReason();
+    java.lang.String getReason();
     /**
      * <pre>
-     ** 踢下线的原因
+     ** 踢下线的原因 
      * </pre>
      *
      * <code>string reason = 2;</code>
@@ -960,7 +1011,7 @@ public final class PbGate {
   }
   /**
    * <pre>
-   ** 服务器踢人下线
+   ** 服务器踢人下线 
    * </pre>
    *
    * Protobuf type {@code pb.KickOff}
@@ -978,14 +1029,14 @@ public final class PbGate {
       reason_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new KickOff();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -996,7 +1047,7 @@ public final class PbGate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1014,7 +1065,7 @@ public final class PbGate {
               break;
             }
             case 18: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               reason_ = s;
               break;
@@ -1040,13 +1091,13 @@ public final class PbGate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return internal_static_pb_KickOff_descriptor;
+      return com.kys.pb.PbGate.internal_static_pb_KickOff_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return internal_static_pb_KickOff_fieldAccessorTable
+      return com.kys.pb.PbGate.internal_static_pb_KickOff_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.kys.pb.PbGate.KickOff.class, com.kys.pb.PbGate.KickOff.Builder.class);
     }
@@ -1055,7 +1106,7 @@ public final class PbGate {
     private int code_;
     /**
      * <pre>
-     ** 原因码
+     ** 原因码 
      * </pre>
      *
      * <code>int32 code = 1;</code>
@@ -1065,40 +1116,40 @@ public final class PbGate {
     }
 
     public static final int REASON_FIELD_NUMBER = 2;
-    private volatile Object reason_;
+    private volatile java.lang.Object reason_;
     /**
      * <pre>
-     ** 踢下线的原因
+     ** 踢下线的原因 
      * </pre>
      *
      * <code>string reason = 2;</code>
      */
-    public String getReason() {
-      Object ref = reason_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getReason() {
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         reason_ = s;
         return s;
       }
     }
     /**
      * <pre>
-     ** 踢下线的原因
+     ** 踢下线的原因 
      * </pre>
      *
      * <code>string reason = 2;</code>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
-      Object ref = reason_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         reason_ = b;
         return b;
       } else {
@@ -1107,7 +1158,7 @@ public final class PbGate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1117,7 +1168,7 @@ public final class PbGate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (code_ != 0) {
@@ -1129,7 +1180,7 @@ public final class PbGate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1147,8 +1198,8 @@ public final class PbGate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
@@ -1165,7 +1216,7 @@ public final class PbGate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1251,7 +1302,7 @@ public final class PbGate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
@@ -1259,21 +1310,21 @@ public final class PbGate {
     public static Builder newBuilder(com.kys.pb.PbGate.KickOff prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
     /**
      * <pre>
-     ** 服务器踢人下线
+     ** 服务器踢人下线 
      * </pre>
      *
      * Protobuf type {@code pb.KickOff}
@@ -1284,13 +1335,13 @@ public final class PbGate {
         com.kys.pb.PbGate.KickOffOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return internal_static_pb_KickOff_descriptor;
+        return com.kys.pb.PbGate.internal_static_pb_KickOff_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return internal_static_pb_KickOff_fieldAccessorTable
+        return com.kys.pb.PbGate.internal_static_pb_KickOff_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.kys.pb.PbGate.KickOff.class, com.kys.pb.PbGate.KickOff.Builder.class);
       }
@@ -1301,7 +1352,7 @@ public final class PbGate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1310,7 +1361,7 @@ public final class PbGate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         code_ = 0;
@@ -1320,18 +1371,18 @@ public final class PbGate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return internal_static_pb_KickOff_descriptor;
+        return com.kys.pb.PbGate.internal_static_pb_KickOff_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.KickOff getDefaultInstanceForType() {
-        return getDefaultInstance();
+        return com.kys.pb.PbGate.KickOff.getDefaultInstance();
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.KickOff build() {
         com.kys.pb.PbGate.KickOff result = buildPartial();
         if (!result.isInitialized()) {
@@ -1340,7 +1391,7 @@ public final class PbGate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.KickOff buildPartial() {
         com.kys.pb.PbGate.KickOff result = new com.kys.pb.PbGate.KickOff(this);
         result.code_ = code_;
@@ -1349,39 +1400,39 @@ public final class PbGate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.kys.pb.PbGate.KickOff) {
           return mergeFrom((com.kys.pb.PbGate.KickOff)other);
@@ -1392,7 +1443,7 @@ public final class PbGate {
       }
 
       public Builder mergeFrom(com.kys.pb.PbGate.KickOff other) {
-        if (other == getDefaultInstance()) return this;
+        if (other == com.kys.pb.PbGate.KickOff.getDefaultInstance()) return this;
         if (other.getCode() != 0) {
           setCode(other.getCode());
         }
@@ -1405,12 +1456,12 @@ public final class PbGate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1432,7 +1483,7 @@ public final class PbGate {
       private int code_ ;
       /**
        * <pre>
-       ** 原因码
+       ** 原因码 
        * </pre>
        *
        * <code>int32 code = 1;</code>
@@ -1442,65 +1493,65 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 原因码
+       ** 原因码 
        * </pre>
        *
        * <code>int32 code = 1;</code>
        */
       public Builder setCode(int value) {
-
+        
         code_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 原因码
+       ** 原因码 
        * </pre>
        *
        * <code>int32 code = 1;</code>
        */
       public Builder clearCode() {
-
+        
         code_ = 0;
         onChanged();
         return this;
       }
 
-      private Object reason_ = "";
+      private java.lang.Object reason_ = "";
       /**
        * <pre>
-       ** 踢下线的原因
+       ** 踢下线的原因 
        * </pre>
        *
        * <code>string reason = 2;</code>
        */
-      public String getReason() {
-        Object ref = reason_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getReason() {
+        java.lang.Object ref = reason_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           reason_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
        * <pre>
-       ** 踢下线的原因
+       ** 踢下线的原因 
        * </pre>
        *
        * <code>string reason = 2;</code>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
-        Object ref = reason_;
+        java.lang.Object ref = reason_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           reason_ = b;
           return b;
         } else {
@@ -1509,37 +1560,37 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 踢下线的原因
+       ** 踢下线的原因 
        * </pre>
        *
        * <code>string reason = 2;</code>
        */
       public Builder setReason(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-
+  
         reason_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 踢下线的原因
+       ** 踢下线的原因 
        * </pre>
        *
        * <code>string reason = 2;</code>
        */
       public Builder clearReason() {
-
+        
         reason_ = getDefaultInstance().getReason();
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 踢下线的原因
+       ** 踢下线的原因 
        * </pre>
        *
        * <code>string reason = 2;</code>
@@ -1550,18 +1601,18 @@ public final class PbGate {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-
+        
         reason_ = value;
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1583,7 +1634,7 @@ public final class PbGate {
 
     private static final com.google.protobuf.Parser<KickOff>
         PARSER = new com.google.protobuf.AbstractParser<KickOff>() {
-      @Override
+      @java.lang.Override
       public KickOff parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1596,12 +1647,12 @@ public final class PbGate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<KickOff> getParserForType() {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.kys.pb.PbGate.KickOff getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
@@ -1614,7 +1665,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 服务器序列
+     ** 服务器序列 
      * </pre>
      *
      * <code>int32 sid = 1;</code>
@@ -1623,7 +1674,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+     ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
      * </pre>
      *
      * <code>int32 cid = 2;</code>
@@ -1632,7 +1683,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 消息序号，用作客户端识别服务器响应
+     ** 消息序号，用作客户端识别服务器响应 
      * </pre>
      *
      * <code>int32 sequence = 3;</code>
@@ -1641,7 +1692,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 消息体数据
+     ** 消息体数据 
      * </pre>
      *
      * <code>bytes body = 4;</code>
@@ -1650,7 +1701,7 @@ public final class PbGate {
   }
   /**
    * <pre>
-   ** 客户端向服务器发送消息
+   ** 客户端向服务器发送消息 
    * </pre>
    *
    * Protobuf type {@code pb.C2S}
@@ -1668,14 +1719,14 @@ public final class PbGate {
       body_ = com.google.protobuf.ByteString.EMPTY;
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new C2S();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -1686,7 +1737,7 @@ public final class PbGate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1739,13 +1790,13 @@ public final class PbGate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return internal_static_pb_C2S_descriptor;
+      return com.kys.pb.PbGate.internal_static_pb_C2S_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return internal_static_pb_C2S_fieldAccessorTable
+      return com.kys.pb.PbGate.internal_static_pb_C2S_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.kys.pb.PbGate.C2S.class, com.kys.pb.PbGate.C2S.Builder.class);
     }
@@ -1754,7 +1805,7 @@ public final class PbGate {
     private int sid_;
     /**
      * <pre>
-     ** 服务器序列
+     ** 服务器序列 
      * </pre>
      *
      * <code>int32 sid = 1;</code>
@@ -1767,7 +1818,7 @@ public final class PbGate {
     private int cid_;
     /**
      * <pre>
-     ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+     ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
      * </pre>
      *
      * <code>int32 cid = 2;</code>
@@ -1780,7 +1831,7 @@ public final class PbGate {
     private int sequence_;
     /**
      * <pre>
-     ** 消息序号，用作客户端识别服务器响应
+     ** 消息序号，用作客户端识别服务器响应 
      * </pre>
      *
      * <code>int32 sequence = 3;</code>
@@ -1793,7 +1844,7 @@ public final class PbGate {
     private com.google.protobuf.ByteString body_;
     /**
      * <pre>
-     ** 消息体数据
+     ** 消息体数据 
      * </pre>
      *
      * <code>bytes body = 4;</code>
@@ -1803,7 +1854,7 @@ public final class PbGate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1813,7 +1864,7 @@ public final class PbGate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sid_ != 0) {
@@ -1831,7 +1882,7 @@ public final class PbGate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1858,8 +1909,8 @@ public final class PbGate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
@@ -1880,7 +1931,7 @@ public final class PbGate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1970,7 +2021,7 @@ public final class PbGate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
@@ -1978,21 +2029,21 @@ public final class PbGate {
     public static Builder newBuilder(com.kys.pb.PbGate.C2S prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
     /**
      * <pre>
-     ** 客户端向服务器发送消息
+     ** 客户端向服务器发送消息 
      * </pre>
      *
      * Protobuf type {@code pb.C2S}
@@ -2003,13 +2054,13 @@ public final class PbGate {
         com.kys.pb.PbGate.C2SOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return internal_static_pb_C2S_descriptor;
+        return com.kys.pb.PbGate.internal_static_pb_C2S_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return internal_static_pb_C2S_fieldAccessorTable
+        return com.kys.pb.PbGate.internal_static_pb_C2S_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.kys.pb.PbGate.C2S.class, com.kys.pb.PbGate.C2S.Builder.class);
       }
@@ -2020,7 +2071,7 @@ public final class PbGate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2029,7 +2080,7 @@ public final class PbGate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         sid_ = 0;
@@ -2043,18 +2094,18 @@ public final class PbGate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return internal_static_pb_C2S_descriptor;
+        return com.kys.pb.PbGate.internal_static_pb_C2S_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.C2S getDefaultInstanceForType() {
-        return getDefaultInstance();
+        return com.kys.pb.PbGate.C2S.getDefaultInstance();
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.C2S build() {
         com.kys.pb.PbGate.C2S result = buildPartial();
         if (!result.isInitialized()) {
@@ -2063,7 +2114,7 @@ public final class PbGate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.C2S buildPartial() {
         com.kys.pb.PbGate.C2S result = new com.kys.pb.PbGate.C2S(this);
         result.sid_ = sid_;
@@ -2074,39 +2125,39 @@ public final class PbGate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.kys.pb.PbGate.C2S) {
           return mergeFrom((com.kys.pb.PbGate.C2S)other);
@@ -2117,7 +2168,7 @@ public final class PbGate {
       }
 
       public Builder mergeFrom(com.kys.pb.PbGate.C2S other) {
-        if (other == getDefaultInstance()) return this;
+        if (other == com.kys.pb.PbGate.C2S.getDefaultInstance()) return this;
         if (other.getSid() != 0) {
           setSid(other.getSid());
         }
@@ -2135,12 +2186,12 @@ public final class PbGate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2162,7 +2213,7 @@ public final class PbGate {
       private int sid_ ;
       /**
        * <pre>
-       ** 服务器序列
+       ** 服务器序列 
        * </pre>
        *
        * <code>int32 sid = 1;</code>
@@ -2172,26 +2223,26 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 服务器序列
+       ** 服务器序列 
        * </pre>
        *
        * <code>int32 sid = 1;</code>
        */
       public Builder setSid(int value) {
-
+        
         sid_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 服务器序列
+       ** 服务器序列 
        * </pre>
        *
        * <code>int32 sid = 1;</code>
        */
       public Builder clearSid() {
-
+        
         sid_ = 0;
         onChanged();
         return this;
@@ -2200,7 +2251,7 @@ public final class PbGate {
       private int cid_ ;
       /**
        * <pre>
-       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
        * </pre>
        *
        * <code>int32 cid = 2;</code>
@@ -2210,26 +2261,26 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
        * </pre>
        *
        * <code>int32 cid = 2;</code>
        */
       public Builder setCid(int value) {
-
+        
         cid_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
        * </pre>
        *
        * <code>int32 cid = 2;</code>
        */
       public Builder clearCid() {
-
+        
         cid_ = 0;
         onChanged();
         return this;
@@ -2238,7 +2289,7 @@ public final class PbGate {
       private int sequence_ ;
       /**
        * <pre>
-       ** 消息序号，用作客户端识别服务器响应
+       ** 消息序号，用作客户端识别服务器响应 
        * </pre>
        *
        * <code>int32 sequence = 3;</code>
@@ -2248,26 +2299,26 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 消息序号，用作客户端识别服务器响应
+       ** 消息序号，用作客户端识别服务器响应 
        * </pre>
        *
        * <code>int32 sequence = 3;</code>
        */
       public Builder setSequence(int value) {
-
+        
         sequence_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 消息序号，用作客户端识别服务器响应
+       ** 消息序号，用作客户端识别服务器响应 
        * </pre>
        *
        * <code>int32 sequence = 3;</code>
        */
       public Builder clearSequence() {
-
+        
         sequence_ = 0;
         onChanged();
         return this;
@@ -2276,7 +2327,7 @@ public final class PbGate {
       private com.google.protobuf.ByteString body_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <pre>
-       ** 消息体数据
+       ** 消息体数据 
        * </pre>
        *
        * <code>bytes body = 4;</code>
@@ -2286,7 +2337,7 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 消息体数据
+       ** 消息体数据 
        * </pre>
        *
        * <code>bytes body = 4;</code>
@@ -2295,31 +2346,31 @@ public final class PbGate {
         if (value == null) {
     throw new NullPointerException();
   }
-
+  
         body_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 消息体数据
+       ** 消息体数据 
        * </pre>
        *
        * <code>bytes body = 4;</code>
        */
       public Builder clearBody() {
-
+        
         body_ = getDefaultInstance().getBody();
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -2341,7 +2392,7 @@ public final class PbGate {
 
     private static final com.google.protobuf.Parser<C2S>
         PARSER = new com.google.protobuf.AbstractParser<C2S>() {
-      @Override
+      @java.lang.Override
       public C2S parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2354,12 +2405,12 @@ public final class PbGate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<C2S> getParserForType() {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.kys.pb.PbGate.C2S getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
@@ -2372,7 +2423,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 服务器序列
+     ** 服务器序列 
      * </pre>
      *
      * <code>int32 sid = 1;</code>
@@ -2381,7 +2432,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+     ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
      * </pre>
      *
      * <code>int32 cid = 2;</code>
@@ -2390,7 +2441,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 消息序号，用作客户端识别服务器响应
+     ** 消息序号，用作客户端识别服务器响应 
      * </pre>
      *
      * <code>int32 sequence = 3;</code>
@@ -2399,7 +2450,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误
+     ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误 
      * </pre>
      *
      * <code>int32 code = 4;</code>
@@ -2408,7 +2459,7 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 消息体数据
+     ** 消息体数据 
      * </pre>
      *
      * <code>bytes body = 5;</code>
@@ -2417,15 +2468,15 @@ public final class PbGate {
 
     /**
      * <pre>
-     ** 错误信息
+     ** 错误信息 
      * </pre>
      *
      * <code>string errStr = 6;</code>
      */
-    String getErrStr();
+    java.lang.String getErrStr();
     /**
      * <pre>
-     ** 错误信息
+     ** 错误信息 
      * </pre>
      *
      * <code>string errStr = 6;</code>
@@ -2435,7 +2486,7 @@ public final class PbGate {
   }
   /**
    * <pre>
-   ** 服务端向客户端发送消息
+   ** 服务端向客户端发送消息 
    * </pre>
    *
    * Protobuf type {@code pb.S2C}
@@ -2454,14 +2505,14 @@ public final class PbGate {
       errStr_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new S2C();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -2472,7 +2523,7 @@ public final class PbGate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2510,7 +2561,7 @@ public final class PbGate {
               break;
             }
             case 50: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               errStr_ = s;
               break;
@@ -2536,13 +2587,13 @@ public final class PbGate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return internal_static_pb_S2C_descriptor;
+      return com.kys.pb.PbGate.internal_static_pb_S2C_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return internal_static_pb_S2C_fieldAccessorTable
+      return com.kys.pb.PbGate.internal_static_pb_S2C_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.kys.pb.PbGate.S2C.class, com.kys.pb.PbGate.S2C.Builder.class);
     }
@@ -2551,7 +2602,7 @@ public final class PbGate {
     private int sid_;
     /**
      * <pre>
-     ** 服务器序列
+     ** 服务器序列 
      * </pre>
      *
      * <code>int32 sid = 1;</code>
@@ -2564,7 +2615,7 @@ public final class PbGate {
     private int cid_;
     /**
      * <pre>
-     ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+     ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
      * </pre>
      *
      * <code>int32 cid = 2;</code>
@@ -2577,7 +2628,7 @@ public final class PbGate {
     private int sequence_;
     /**
      * <pre>
-     ** 消息序号，用作客户端识别服务器响应
+     ** 消息序号，用作客户端识别服务器响应 
      * </pre>
      *
      * <code>int32 sequence = 3;</code>
@@ -2590,7 +2641,7 @@ public final class PbGate {
     private int code_;
     /**
      * <pre>
-     ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误
+     ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误 
      * </pre>
      *
      * <code>int32 code = 4;</code>
@@ -2603,7 +2654,7 @@ public final class PbGate {
     private com.google.protobuf.ByteString body_;
     /**
      * <pre>
-     ** 消息体数据
+     ** 消息体数据 
      * </pre>
      *
      * <code>bytes body = 5;</code>
@@ -2613,40 +2664,40 @@ public final class PbGate {
     }
 
     public static final int ERRSTR_FIELD_NUMBER = 6;
-    private volatile Object errStr_;
+    private volatile java.lang.Object errStr_;
     /**
      * <pre>
-     ** 错误信息
+     ** 错误信息 
      * </pre>
      *
      * <code>string errStr = 6;</code>
      */
-    public String getErrStr() {
-      Object ref = errStr_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getErrStr() {
+      java.lang.Object ref = errStr_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         errStr_ = s;
         return s;
       }
     }
     /**
      * <pre>
-     ** 错误信息
+     ** 错误信息 
      * </pre>
      *
      * <code>string errStr = 6;</code>
      */
     public com.google.protobuf.ByteString
         getErrStrBytes() {
-      Object ref = errStr_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = errStr_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         errStr_ = b;
         return b;
       } else {
@@ -2655,7 +2706,7 @@ public final class PbGate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -2665,7 +2716,7 @@ public final class PbGate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sid_ != 0) {
@@ -2689,7 +2740,7 @@ public final class PbGate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -2723,8 +2774,8 @@ public final class PbGate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
@@ -2749,7 +2800,7 @@ public final class PbGate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -2843,7 +2894,7 @@ public final class PbGate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
@@ -2851,21 +2902,21 @@ public final class PbGate {
     public static Builder newBuilder(com.kys.pb.PbGate.S2C prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
     /**
      * <pre>
-     ** 服务端向客户端发送消息
+     ** 服务端向客户端发送消息 
      * </pre>
      *
      * Protobuf type {@code pb.S2C}
@@ -2876,13 +2927,13 @@ public final class PbGate {
         com.kys.pb.PbGate.S2COrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return internal_static_pb_S2C_descriptor;
+        return com.kys.pb.PbGate.internal_static_pb_S2C_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return internal_static_pb_S2C_fieldAccessorTable
+        return com.kys.pb.PbGate.internal_static_pb_S2C_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.kys.pb.PbGate.S2C.class, com.kys.pb.PbGate.S2C.Builder.class);
       }
@@ -2893,7 +2944,7 @@ public final class PbGate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2902,7 +2953,7 @@ public final class PbGate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         sid_ = 0;
@@ -2920,18 +2971,18 @@ public final class PbGate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return internal_static_pb_S2C_descriptor;
+        return com.kys.pb.PbGate.internal_static_pb_S2C_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.S2C getDefaultInstanceForType() {
-        return getDefaultInstance();
+        return com.kys.pb.PbGate.S2C.getDefaultInstance();
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.S2C build() {
         com.kys.pb.PbGate.S2C result = buildPartial();
         if (!result.isInitialized()) {
@@ -2940,7 +2991,7 @@ public final class PbGate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public com.kys.pb.PbGate.S2C buildPartial() {
         com.kys.pb.PbGate.S2C result = new com.kys.pb.PbGate.S2C(this);
         result.sid_ = sid_;
@@ -2953,39 +3004,39 @@ public final class PbGate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.kys.pb.PbGate.S2C) {
           return mergeFrom((com.kys.pb.PbGate.S2C)other);
@@ -2996,7 +3047,7 @@ public final class PbGate {
       }
 
       public Builder mergeFrom(com.kys.pb.PbGate.S2C other) {
-        if (other == getDefaultInstance()) return this;
+        if (other == com.kys.pb.PbGate.S2C.getDefaultInstance()) return this;
         if (other.getSid() != 0) {
           setSid(other.getSid());
         }
@@ -3021,12 +3072,12 @@ public final class PbGate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -3048,7 +3099,7 @@ public final class PbGate {
       private int sid_ ;
       /**
        * <pre>
-       ** 服务器序列
+       ** 服务器序列 
        * </pre>
        *
        * <code>int32 sid = 1;</code>
@@ -3058,26 +3109,26 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 服务器序列
+       ** 服务器序列 
        * </pre>
        *
        * <code>int32 sid = 1;</code>
        */
       public Builder setSid(int value) {
-
+        
         sid_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 服务器序列
+       ** 服务器序列 
        * </pre>
        *
        * <code>int32 sid = 1;</code>
        */
       public Builder clearSid() {
-
+        
         sid_ = 0;
         onChanged();
         return this;
@@ -3086,7 +3137,7 @@ public final class PbGate {
       private int cid_ ;
       /**
        * <pre>
-       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
        * </pre>
        *
        * <code>int32 cid = 2;</code>
@@ -3096,26 +3147,26 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
        * </pre>
        *
        * <code>int32 cid = 2;</code>
        */
       public Builder setCid(int value) {
-
+        
         cid_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复）
+       ** 消息号（各个服独立的，跨服之间可以重复，同一个服内不可重复） 
        * </pre>
        *
        * <code>int32 cid = 2;</code>
        */
       public Builder clearCid() {
-
+        
         cid_ = 0;
         onChanged();
         return this;
@@ -3124,7 +3175,7 @@ public final class PbGate {
       private int sequence_ ;
       /**
        * <pre>
-       ** 消息序号，用作客户端识别服务器响应
+       ** 消息序号，用作客户端识别服务器响应 
        * </pre>
        *
        * <code>int32 sequence = 3;</code>
@@ -3134,26 +3185,26 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 消息序号，用作客户端识别服务器响应
+       ** 消息序号，用作客户端识别服务器响应 
        * </pre>
        *
        * <code>int32 sequence = 3;</code>
        */
       public Builder setSequence(int value) {
-
+        
         sequence_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 消息序号，用作客户端识别服务器响应
+       ** 消息序号，用作客户端识别服务器响应 
        * </pre>
        *
        * <code>int32 sequence = 3;</code>
        */
       public Builder clearSequence() {
-
+        
         sequence_ = 0;
         onChanged();
         return this;
@@ -3162,7 +3213,7 @@ public final class PbGate {
       private int code_ ;
       /**
        * <pre>
-       ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误
+       ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误 
        * </pre>
        *
        * <code>int32 code = 4;</code>
@@ -3172,26 +3223,26 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误
+       ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误 
        * </pre>
        *
        * <code>int32 code = 4;</code>
        */
       public Builder setCode(int value) {
-
+        
         code_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误
+       ** 响应结果，0是成功，1是请求超时（消息已发出），2是请求错误（消息未发出），大于100是服务器响应返回的错误 
        * </pre>
        *
        * <code>int32 code = 4;</code>
        */
       public Builder clearCode() {
-
+        
         code_ = 0;
         onChanged();
         return this;
@@ -3200,7 +3251,7 @@ public final class PbGate {
       private com.google.protobuf.ByteString body_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <pre>
-       ** 消息体数据
+       ** 消息体数据 
        * </pre>
        *
        * <code>bytes body = 5;</code>
@@ -3210,7 +3261,7 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 消息体数据
+       ** 消息体数据 
        * </pre>
        *
        * <code>bytes body = 5;</code>
@@ -3219,59 +3270,59 @@ public final class PbGate {
         if (value == null) {
     throw new NullPointerException();
   }
-
+  
         body_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 消息体数据
+       ** 消息体数据 
        * </pre>
        *
        * <code>bytes body = 5;</code>
        */
       public Builder clearBody() {
-
+        
         body_ = getDefaultInstance().getBody();
         onChanged();
         return this;
       }
 
-      private Object errStr_ = "";
+      private java.lang.Object errStr_ = "";
       /**
        * <pre>
-       ** 错误信息
+       ** 错误信息 
        * </pre>
        *
        * <code>string errStr = 6;</code>
        */
-      public String getErrStr() {
-        Object ref = errStr_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getErrStr() {
+        java.lang.Object ref = errStr_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           errStr_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
        * <pre>
-       ** 错误信息
+       ** 错误信息 
        * </pre>
        *
        * <code>string errStr = 6;</code>
        */
       public com.google.protobuf.ByteString
           getErrStrBytes() {
-        Object ref = errStr_;
+        java.lang.Object ref = errStr_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           errStr_ = b;
           return b;
         } else {
@@ -3280,37 +3331,37 @@ public final class PbGate {
       }
       /**
        * <pre>
-       ** 错误信息
+       ** 错误信息 
        * </pre>
        *
        * <code>string errStr = 6;</code>
        */
       public Builder setErrStr(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-
+  
         errStr_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 错误信息
+       ** 错误信息 
        * </pre>
        *
        * <code>string errStr = 6;</code>
        */
       public Builder clearErrStr() {
-
+        
         errStr_ = getDefaultInstance().getErrStr();
         onChanged();
         return this;
       }
       /**
        * <pre>
-       ** 错误信息
+       ** 错误信息 
        * </pre>
        *
        * <code>string errStr = 6;</code>
@@ -3321,18 +3372,18 @@ public final class PbGate {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-
+        
         errStr_ = value;
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -3354,7 +3405,7 @@ public final class PbGate {
 
     private static final com.google.protobuf.Parser<S2C>
         PARSER = new com.google.protobuf.AbstractParser<S2C>() {
-      @Override
+      @java.lang.Override
       public S2C parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -3367,13 +3418,685 @@ public final class PbGate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<S2C> getParserForType() {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.kys.pb.PbGate.S2C getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface P_MatchStartOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:pb.P_MatchStart)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     ** 当前轮数 
+     * </pre>
+     *
+     * <code>int32 curRound = 1;</code>
+     */
+    int getCurRound();
+
+    /**
+     * <pre>
+     ** 赛事轮数 
+     * </pre>
+     *
+     * <code>int32 totalRound = 2;</code>
+     */
+    int getTotalRound();
+
+    /**
+     * <pre>
+     ** 倒计时 
+     * </pre>
+     *
+     * <code>int32 timeDown = 3;</code>
+     */
+    int getTimeDown();
+  }
+  /**
+   * <pre>
+   ** 复制landlord 比赛场-赛事准备开始的推送 
+   * </pre>
+   *
+   * Protobuf type {@code pb.P_MatchStart}
+   */
+  public  static final class P_MatchStart extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:pb.P_MatchStart)
+      P_MatchStartOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use P_MatchStart.newBuilder() to construct.
+    private P_MatchStart(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private P_MatchStart() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new P_MatchStart();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private P_MatchStart(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              curRound_ = input.readInt32();
+              break;
+            }
+            case 16: {
+
+              totalRound_ = input.readInt32();
+              break;
+            }
+            case 24: {
+
+              timeDown_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.kys.pb.PbGate.internal_static_pb_P_MatchStart_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.kys.pb.PbGate.internal_static_pb_P_MatchStart_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.kys.pb.PbGate.P_MatchStart.class, com.kys.pb.PbGate.P_MatchStart.Builder.class);
+    }
+
+    public static final int CURROUND_FIELD_NUMBER = 1;
+    private int curRound_;
+    /**
+     * <pre>
+     ** 当前轮数 
+     * </pre>
+     *
+     * <code>int32 curRound = 1;</code>
+     */
+    public int getCurRound() {
+      return curRound_;
+    }
+
+    public static final int TOTALROUND_FIELD_NUMBER = 2;
+    private int totalRound_;
+    /**
+     * <pre>
+     ** 赛事轮数 
+     * </pre>
+     *
+     * <code>int32 totalRound = 2;</code>
+     */
+    public int getTotalRound() {
+      return totalRound_;
+    }
+
+    public static final int TIMEDOWN_FIELD_NUMBER = 3;
+    private int timeDown_;
+    /**
+     * <pre>
+     ** 倒计时 
+     * </pre>
+     *
+     * <code>int32 timeDown = 3;</code>
+     */
+    public int getTimeDown() {
+      return timeDown_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (curRound_ != 0) {
+        output.writeInt32(1, curRound_);
+      }
+      if (totalRound_ != 0) {
+        output.writeInt32(2, totalRound_);
+      }
+      if (timeDown_ != 0) {
+        output.writeInt32(3, timeDown_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (curRound_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, curRound_);
+      }
+      if (totalRound_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, totalRound_);
+      }
+      if (timeDown_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, timeDown_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.kys.pb.PbGate.P_MatchStart)) {
+        return super.equals(obj);
+      }
+      com.kys.pb.PbGate.P_MatchStart other = (com.kys.pb.PbGate.P_MatchStart) obj;
+
+      if (getCurRound()
+          != other.getCurRound()) return false;
+      if (getTotalRound()
+          != other.getTotalRound()) return false;
+      if (getTimeDown()
+          != other.getTimeDown()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CURROUND_FIELD_NUMBER;
+      hash = (53 * hash) + getCurRound();
+      hash = (37 * hash) + TOTALROUND_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalRound();
+      hash = (37 * hash) + TIMEDOWN_FIELD_NUMBER;
+      hash = (53 * hash) + getTimeDown();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kys.pb.PbGate.P_MatchStart parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.kys.pb.PbGate.P_MatchStart prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     ** 复制landlord 比赛场-赛事准备开始的推送 
+     * </pre>
+     *
+     * Protobuf type {@code pb.P_MatchStart}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:pb.P_MatchStart)
+        com.kys.pb.PbGate.P_MatchStartOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.kys.pb.PbGate.internal_static_pb_P_MatchStart_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.kys.pb.PbGate.internal_static_pb_P_MatchStart_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.kys.pb.PbGate.P_MatchStart.class, com.kys.pb.PbGate.P_MatchStart.Builder.class);
+      }
+
+      // Construct using com.kys.pb.PbGate.P_MatchStart.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        curRound_ = 0;
+
+        totalRound_ = 0;
+
+        timeDown_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.kys.pb.PbGate.internal_static_pb_P_MatchStart_descriptor;
+      }
+
+      @java.lang.Override
+      public com.kys.pb.PbGate.P_MatchStart getDefaultInstanceForType() {
+        return com.kys.pb.PbGate.P_MatchStart.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.kys.pb.PbGate.P_MatchStart build() {
+        com.kys.pb.PbGate.P_MatchStart result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.kys.pb.PbGate.P_MatchStart buildPartial() {
+        com.kys.pb.PbGate.P_MatchStart result = new com.kys.pb.PbGate.P_MatchStart(this);
+        result.curRound_ = curRound_;
+        result.totalRound_ = totalRound_;
+        result.timeDown_ = timeDown_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.kys.pb.PbGate.P_MatchStart) {
+          return mergeFrom((com.kys.pb.PbGate.P_MatchStart)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.kys.pb.PbGate.P_MatchStart other) {
+        if (other == com.kys.pb.PbGate.P_MatchStart.getDefaultInstance()) return this;
+        if (other.getCurRound() != 0) {
+          setCurRound(other.getCurRound());
+        }
+        if (other.getTotalRound() != 0) {
+          setTotalRound(other.getTotalRound());
+        }
+        if (other.getTimeDown() != 0) {
+          setTimeDown(other.getTimeDown());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.kys.pb.PbGate.P_MatchStart parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.kys.pb.PbGate.P_MatchStart) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int curRound_ ;
+      /**
+       * <pre>
+       ** 当前轮数 
+       * </pre>
+       *
+       * <code>int32 curRound = 1;</code>
+       */
+      public int getCurRound() {
+        return curRound_;
+      }
+      /**
+       * <pre>
+       ** 当前轮数 
+       * </pre>
+       *
+       * <code>int32 curRound = 1;</code>
+       */
+      public Builder setCurRound(int value) {
+        
+        curRound_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 当前轮数 
+       * </pre>
+       *
+       * <code>int32 curRound = 1;</code>
+       */
+      public Builder clearCurRound() {
+        
+        curRound_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int totalRound_ ;
+      /**
+       * <pre>
+       ** 赛事轮数 
+       * </pre>
+       *
+       * <code>int32 totalRound = 2;</code>
+       */
+      public int getTotalRound() {
+        return totalRound_;
+      }
+      /**
+       * <pre>
+       ** 赛事轮数 
+       * </pre>
+       *
+       * <code>int32 totalRound = 2;</code>
+       */
+      public Builder setTotalRound(int value) {
+        
+        totalRound_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 赛事轮数 
+       * </pre>
+       *
+       * <code>int32 totalRound = 2;</code>
+       */
+      public Builder clearTotalRound() {
+        
+        totalRound_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int timeDown_ ;
+      /**
+       * <pre>
+       ** 倒计时 
+       * </pre>
+       *
+       * <code>int32 timeDown = 3;</code>
+       */
+      public int getTimeDown() {
+        return timeDown_;
+      }
+      /**
+       * <pre>
+       ** 倒计时 
+       * </pre>
+       *
+       * <code>int32 timeDown = 3;</code>
+       */
+      public Builder setTimeDown(int value) {
+        
+        timeDown_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       ** 倒计时 
+       * </pre>
+       *
+       * <code>int32 timeDown = 3;</code>
+       */
+      public Builder clearTimeDown() {
+        
+        timeDown_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:pb.P_MatchStart)
+    }
+
+    // @@protoc_insertion_point(class_scope:pb.P_MatchStart)
+    private static final com.kys.pb.PbGate.P_MatchStart DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.kys.pb.PbGate.P_MatchStart();
+    }
+
+    public static com.kys.pb.PbGate.P_MatchStart getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<P_MatchStart>
+        PARSER = new com.google.protobuf.AbstractParser<P_MatchStart>() {
+      @java.lang.Override
+      public P_MatchStart parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new P_MatchStart(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<P_MatchStart> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<P_MatchStart> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.kys.pb.PbGate.P_MatchStart getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3381,24 +4104,29 @@ public final class PbGate {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_pb_Heartbeat_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_pb_Heartbeat_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_pb_KickOff_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_pb_KickOff_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_pb_C2S_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_pb_C2S_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_pb_S2C_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_pb_S2C_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_pb_P_MatchStart_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_pb_P_MatchStart_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3407,19 +4135,22 @@ public final class PbGate {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\010pb.proto\022\002pb\"(\n\tHeartbeat\022\014\n\004time\030\001 \001(" +
       "\003\022\r\n\005delay\030\002 \001(\005\"\'\n\007KickOff\022\014\n\004code\030\001 \001(" +
       "\005\022\016\n\006reason\030\002 \001(\t\"?\n\003C2S\022\013\n\003sid\030\001 \001(\005\022\013\n" +
       "\003cid\030\002 \001(\005\022\020\n\010sequence\030\003 \001(\005\022\014\n\004body\030\004 \001" +
       "(\014\"]\n\003S2C\022\013\n\003sid\030\001 \001(\005\022\013\n\003cid\030\002 \001(\005\022\020\n\010s" +
       "equence\030\003 \001(\005\022\014\n\004code\030\004 \001(\005\022\014\n\004body\030\005 \001(" +
-      "\014\022\016\n\006errStr\030\006 \001(\t*v\n\013ServiceType\022\022\n\016UNKN" +
-      "OW_SERVICE\020\000\022\013\n\007GATEWAY\020\001\022\014\n\010PLATFORM\020\002\022" +
-      "\014\n\010LANDLORD\020\003\022\r\n\tCATCHFISH\020\004\022\014\n\010BILLIARD" +
-      "\020\005\022\r\n\tELIMINATE\020\006*8\n\003MSG\022\025\n\021UNKNOWNGATEW" +
-      "AYCMD\020\000\022\r\n\tHEARTBEAT\020\001\022\013\n\007KICKOFF\020\002B\024\n\nc" +
-      "om.kys.pbB\006PbGateb\006proto3"
+      "\014\022\016\n\006errStr\030\006 \001(\t\"F\n\014P_MatchStart\022\020\n\010cur" +
+      "Round\030\001 \001(\005\022\022\n\ntotalRound\030\002 \001(\005\022\020\n\010timeD" +
+      "own\030\003 \001(\005*\221\001\n\013ServiceType\022\022\n\016UNKNOW_SERV" +
+      "ICE\020\000\022\013\n\007GATEWAY\020\001\022\014\n\010PLATFORM\020\002\022\014\n\010LAND" +
+      "LORD\020\003\022\r\n\tCATCHFISH\020\004\022\014\n\010BILLIARD\020\005\022\r\n\tE" +
+      "LIMINATE\020\006\022\020\n\014GOLDENFLOWER\020\007\022\007\n\003ATT\020\010*M\n" +
+      "\003MSG\022\025\n\021UNKNOWNGATEWAYCMD\020\000\022\r\n\tHEARTBEAT" +
+      "\020\001\022\013\n\007KICKOFF\020\002\022\023\n\016B_M_MatchStart\020\262\tB\024\n\n" +
+      "com.kys.pbB\006PbGateb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3430,25 +4161,31 @@ public final class PbGate {
     internal_static_pb_Heartbeat_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_pb_Heartbeat_descriptor,
-        new String[] { "Time", "Delay", });
+        new java.lang.String[] { "Time", "Delay", });
     internal_static_pb_KickOff_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_pb_KickOff_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_pb_KickOff_descriptor,
-        new String[] { "Code", "Reason", });
+        new java.lang.String[] { "Code", "Reason", });
     internal_static_pb_C2S_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_pb_C2S_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_pb_C2S_descriptor,
-        new String[] { "Sid", "Cid", "Sequence", "Body", });
+        new java.lang.String[] { "Sid", "Cid", "Sequence", "Body", });
     internal_static_pb_S2C_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_pb_S2C_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_pb_S2C_descriptor,
-        new String[] { "Sid", "Cid", "Sequence", "Code", "Body", "ErrStr", });
+        new java.lang.String[] { "Sid", "Cid", "Sequence", "Code", "Body", "ErrStr", });
+    internal_static_pb_P_MatchStart_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_pb_P_MatchStart_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_pb_P_MatchStart_descriptor,
+        new java.lang.String[] { "CurRound", "TotalRound", "TimeDown", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

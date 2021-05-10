@@ -22,7 +22,7 @@ public final class PbEnum {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\rpb_enum.proto\022\002pbB\024\n\ncom.kys.pbB\006PbEnu" +
       "mb\006proto3"
     };

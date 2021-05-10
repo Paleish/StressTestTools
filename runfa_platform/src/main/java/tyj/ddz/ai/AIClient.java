@@ -68,9 +68,20 @@ public class AIClient extends Thread {
             case JOIN_LANDLORD:
                 joinLandLord();
                 break;
+            case JOIN_GF:
+                joinGoldenFlower();
+                break;
             default:
                 break;
         }
+    }
+
+    private void joinGoldenFlower() {
+        //发送加入金花请求
+        log.info("发送加入梦金花游戏请求");
+        GoldenCli.C_JoinRoom.Builder joinBuilder = GoldenCli.C_JoinRoom.newBuilder();
+        joinBuilder.setLevel(1);
+        MessageSender.sendSingleSuccessMsg(channel, PbGate.ServiceType.GOLDENFLOWER_VALUE, GoldenProto.MSG.JoinRoom_VALUE, joinBuilder.build().toByteString());
     }
 
     private void joinLandLord() {
@@ -88,10 +99,11 @@ public class AIClient extends Thread {
         JSONObject object = JSON.parseObject(result);
         String url = object.getString("url");
         String token = object.getString("token");
+        log.info("玩家与{}建立连接！", url);
         WebSocketClient client = new WebSocketClient(url, token);
         ScheduledThreadPoolUtil.getInstance().addRun(client, 0, TimeUnit.MICROSECONDS);
         try {
-            Thread.sleep(30000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
